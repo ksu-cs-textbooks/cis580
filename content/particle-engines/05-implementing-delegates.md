@@ -2,7 +2,7 @@
 title: "Implementing Delegates"
 pre: "5. "
 weight: 5
-date: 2018-08-24T10:53:26-05:00
+date: 2020-03-21T10:53:05-05:00
 ---
 While we have a working particle system, it's not very flexible.  There are a number of approaches we can use to add some flexibility to it.  Let's start by thinking about what will change between different particle systems.  Let's think through a couple of examples:
 
@@ -142,4 +142,4 @@ We also are using MonoGame's [MathHelper.Lerp](https://docs.microsoft.com/en-us/
 
 Try running the game now.  See how different our particle system behaves based on a few changes?  By moving the spawning and updating functionality to delegates, we can quickly modify each particle system we create to meet our needs.
 
-Next, let's look at how we can define a few commonly-used particle system effects quickly.
+Next, let's look at how we can define a few commonly-used particle system effects quickly.ls -l

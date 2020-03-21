@@ -2,7 +2,7 @@
 title: "The Particle Structure"
 pre: "2. "
 weight: 2
-date: 2018-08-24T10:53:26-05:00
+date: 2020-03-20T10:53:05-05:00
 ---
 At the heart of a particle engine is a collection of particles - tiny sprites that move independently of one another, but when rendered together, create the interesting effects we are after.  To draw each individual particle, we need to know where on the screen it should appear, as well as the texture we should be rendering, and any color effects we might want to apply.  Morever, each frame our particles will be moving, so we'll also want to be able to track information to make that process easier, like velocity, acceleration, and how long a particle has been "alive".  
 

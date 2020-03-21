@@ -2,7 +2,7 @@
 title: "The Particle System Class"
 pre: "3. "
 weight: 3
-date: 2018-08-24T10:53:26-05:00
+date: 2020-03-20T10:53:05-05:00
 ---
 The next part of the particle system is the class representing the particle system itself.  Go ahead and create a new class file, _ParticleSystem.cs_ and define a `ParticleSystem` class in it:
 

@@ -2,7 +2,7 @@
 title: "Using the Particle System"
 pre: "4. "
 weight: 4
-date: 2018-08-24T10:53:26-05:00
+date: 2020-03-20T10:53:05-05:00
 ---
 To use our particle system, we'll need to create one in our `Game1` class in our _Game1.cs_ file.  Let's start by adding a private field to hold a reference to one:
 

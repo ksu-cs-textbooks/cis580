@@ -1,9 +1,9 @@
 +++
-title = "CIS 580 Textbook"
-date = 2020-03-21T10:53:05-05:00
+title = "Homepage"
+date = 2020-03-20T10:53:05-05:00
 +++
 
-# K-State CIS 580 - Foundations of game Programming Textbook
+# Foundations of Game Programming
 
 This is an open textbook written for the <b>Kansas State University CIS 580 - Foundations of Game Programming</b> course.  
 
