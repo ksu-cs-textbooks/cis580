@@ -2,7 +2,7 @@
 title: "Implementing Delegates"
 pre: "5. "
 weight: 5
-date: 2020-03-21T10:53:05-05:00
+date: 2020-03-20T10:53:05-05:00
 ---
 While we have a working particle system, it's not very flexible.  There are a number of approaches we can use to add some flexibility to it.  Let's start by thinking about what will change between different particle systems.  Let's think through a couple of examples:
 
@@ -141,5 +141,3 @@ Also note how we no longer need the `Emitter` property - we can now set the spaw
 We also are using MonoGame's [MathHelper.Lerp](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/bb197816(v%3Dxnagamestudio.35)) method to linearly interpolate our random value between 0 and 1 to the ranges [-50, +50] and [0, 100].  There are many such helpful methods packed into the [MathHelper](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/bb197892(v=xnagamestudio.35)) class.
 
 Try running the game now.  See how different our particle system behaves based on a few changes?  By moving the spawning and updating functionality to delegates, we can quickly modify each particle system we create to meet our needs.
-
-Next, let's look at how we can define a few commonly-used particle system effects quickly.ls -l
