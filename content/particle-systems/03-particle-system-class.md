@@ -77,12 +77,12 @@ Now let's turn our attention to our constructor.  In order to create our own `Sp
 
 ```csharp
     /// <summary>
-    /// Constructs a new particle engine 
+    /// Constructs a new particle system 
     /// </summary>
     /// <param name="graphicsDevice">The graphics device</param>
     /// <param name="size">The maximum number of particles in the system</param>
     /// <param name="texture">The texture of the particles</param> 
-    public ParticleEngine(GraphicsDevice graphicsDevice, int size, Texture2D texture)
+    public ParticleSystem(GraphicsDevice graphicsDevice, int size, Texture2D texture)
     {
         this.particles = new Particles[size];
         this.spriteBatch = new SpriteBatch(graphicsDevice);

@@ -32,18 +32,18 @@ Now we'll need to invoke its `Update()` method in the `Game1`'s `Update()` metho
 
 ```csharp
     // TODO: Add your update logic here
-    particleEngine.Update(gameTime);
+    particleSystem.Update(gameTime);
 ```
 
 And our `Draw()` method in the `Game1`'s `Draw()` method:
 
 ```csharp
     // TODO: Add your drawing code here
-    particleEngine.Draw();
+    particleSystem.Draw();
 ```
 
 If you run the project now, you should see particles emerging at position (100, 100) and flaring out into a cone between 0 and -90 degrees:
 
-![screenshot of particles](/static/images/particles-0.png)
+![screenshot of particles]({{<static "static/images/particles-0.png">}})
 
 Now that we have a basic particle system up and running, it's time to make it more flexible and powerful!

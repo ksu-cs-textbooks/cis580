@@ -110,7 +110,7 @@ Our `ParticleSystem` is now ready to go.  Let's refactor our `Game1` class to us
 
 ```csharp
     // Set the SpawnParticle method
-    particleEngine.SpawnParticle = (ref Particle particle) =>
+    particleSystem.SpawnParticle = (ref Particle particle) =>
     {
         MouseState mouse = Mouse.GetState();
         particle.Position = new Vector2(mouse.X, mouse.Y);
@@ -125,7 +125,7 @@ Our `ParticleSystem` is now ready to go.  Let's refactor our `Game1` class to us
     };
 
     // Set the UpdateParticle method
-    particleEngine.UpdateParticle = (float deltaT, ref Particle particle) =>
+    particleSystem.UpdateParticle = (float deltaT, ref Particle particle) =>
     {
         particle.Velocity += deltaT * particle.Acceleration;
         particle.Position += deltaT * particle.Velocity;
