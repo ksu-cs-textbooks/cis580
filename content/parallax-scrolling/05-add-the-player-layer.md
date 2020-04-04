@@ -69,4 +69,4 @@ Since our `playerLayer` component will take care of rendering the player, we can
 
 Now when you run the game, you can once again see the player helicopter, but now over the background!
 
-![Player over background layer]({{<static "static/images/parallax-5.1.png">}})
+![Player over background layer]({{<static "images/parallax-5.1.png">}})
