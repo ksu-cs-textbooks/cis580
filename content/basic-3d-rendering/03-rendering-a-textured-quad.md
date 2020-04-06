@@ -147,7 +147,18 @@ Now let's write our `Draw()` method:
 
 To wrap up the `Quad`, we'll need to add a constructor that takes a parameter of type `Game` and invokes our initialization:
 
-```
+```csharp
+    /// <summary>
+    /// Constructs the Quad
+    /// </summary>
+    /// <param name="game">The Game the Quad belongs to</param>
+    public Quad(Game game)
+    {
+        this.game = game;
+        InitializeVertices();
+        InitializeIndices();
+        InitializeEffect();
+    }   
 ```
 
 ## Adding our Quad to Game1
