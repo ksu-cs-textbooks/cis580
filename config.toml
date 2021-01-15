@@ -1,4 +1,4 @@
-baseURL = "https://cs.ksu.edu/~nhbean/cis580"
+baseURL = "https://textbooks.cs.ksu.edu/cis580"
 languageCode = "en-us"
 title = "K-State CIS 580 Textbook"
 staticDir = ["static"]
@@ -13,7 +13,7 @@ page = [ "HTML", "Iframeable", "Teleprompter"]
 section = [ "HTML", "Iframeable", "Teleprompter"]
 
 [params]
-  textbookUrl = "https://people.cs.ksu.edu/~nhbean/cis580"
+  textbookUrl = "https://textbooks.cs.ksu.edu/cis580"
   editURL = "https://gitlab.cs.ksu.edu/nhbean/cis580-textbook/tree/master/content/"
   description = "K-State CIS 580 Textbook"
   author = "Nathan H. Bean"
