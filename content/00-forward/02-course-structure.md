@@ -57,12 +57,12 @@ In the past we have done a "final game project" as a team, which allowed for a m
 
 The solution I would like to pilot this year is allowing you to work with other students on no more than three of your original game submissions.  These cannot be one of the first four original game assignments.  If you choose to work as a team, you must send me an email listing each member of the team, ideally before you start working on the game.  Students working on teams will also be required to submit a peer review evaluating the contributions of each member of the team.  This will be used to modify the game score assigned to each student.  **Be aware that I will not tolerate students letting their teammates do all the work - any student who does will receive a 0 for the assignment.**
 
-### Workshopping
+## Workshopping
 Workshopping is an approach common to the creative arts that we are adapting to game design.  Each student will need to workshop two of their games during the semester (only one of which may be a group game).  The class will be broken into three workshop groups of ten students each (A, B, and C) which will meet Monday, Wednesday, and Friday respectively.  Each class period we will workshop one game (so each team will have one workshop per week).  
 
 For each workshopped game there will be a group discussion created on Canvas; the student's game will be distributed to the workshop team through the first post in the discussion.  The rest of the team should each download and play the game.  Then, these students will then prepare a roughly one-page critique and post it back to the discussion board.  Then, in the corresponding class meeting, the workshopping students will discuss the game for 10 to 15 minutes while the creator of the game remains a silent observer and takes notes.  After this time has elapsed, the team can ask questions of the game creator, and visa versa.
 
-#### Workshop Participation
+### Workshop Participation
 Each student on a workshop team is responsible for attending and contributing to their assigned workshops (i.e. Group A on Monday, Group B on Wednesday, and Group C on Friday).  Attendance can be either in-person or remotely via Zoom (if attending remotely, you are **required** to have your web cam turned on during the workshop).  It is not enough to attend the workshop - you must also give some degree of feedback.
 
 **Due to COVID-19 class restrictions, you should only attend class in-person on your team's assigned workshop day.**  You may choose to attend the other workshops remotely, though if it is not your team's workshop please observe politely during the workshop.

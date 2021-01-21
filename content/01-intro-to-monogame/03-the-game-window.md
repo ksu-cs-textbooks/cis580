@@ -1,5 +1,5 @@
 ---
-title: "The Game Screen"
+title: "The Game Window"
 pre: "3. "
 weight: 30
 date: 2018-08-24T10:53:26-05:00

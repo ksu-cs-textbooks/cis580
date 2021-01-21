@@ -26,6 +26,9 @@ All of our activities this semester will be informed by these goals.
 * [Syllabus]({{<ref "00-forward/09-syllabus.md">}})
 * [Course Textbook]({{<param textbookURL>}})
 * [Game Programming Patterns Textbook](https://gameprogrammingpatterns.com/)
+* [MonoGame Documentation](https://docs.monogame.net/)
 
 ## Welcome Message
 Hello students, and welcome to CIS 580 - Foundations of Game Programming.  My name is Nathan Bean, and I will be your instructor for this course.
+
+![Playing Sequence]({{<static "images/nathan-and-cait.jpg">}})

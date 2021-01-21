@@ -5,10 +5,14 @@ date = 2020-03-20T10:53:05-05:00
 
 # Foundations of Game Programming
 
+CIS 580 Textbook
+
+Nathan Bean
+
+Kansas State University
+
+&copy; 2021
+
 This is an open textbook written for the <b>Kansas State University CIS 580 - Foundations of Game Programming</b> course.  
 
-## Companion Textbook
-It is intended to be used in conjunction with Robert Nystrom's excellent [Game Programming Patterns](https://gameprogrammingpatterns.com/) textbook (available free online).
-
-## Platform
-This text focuses on programming using [Microsoft's C# Language](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/) and the open-source [MonoGame](http://www.monogame.net/) framework.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
