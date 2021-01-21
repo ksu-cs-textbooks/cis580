@@ -39,6 +39,11 @@ For many of you, workshopping represents a new kind of activity you have never e
 Remember too, that _you_ will be the creator for an upcoming workshop.  Treat the creator as you hope they will treat you!
 
 
+{{% notice warning %}}
+When attending a workshop remotely, good manners dictate you should have your webcam enabled and be clearly visible and not have a distracting background.  You should strive to be as much in-person as is possible remotely!
+{{% /notice %}}
+
+
 ## Netiquitte
 Online communication is inherently different than in-person communication. When speaking in person, many times we can take advantage of the context and body language of the person speaking to better understand what the speaker means, not just what is said. This information is not present when communicating online, so we must be much more careful about what we say and how we say it in order to get our meaning across.
 
