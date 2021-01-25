@@ -39,14 +39,15 @@ Note that instead of `booleans`, buttons are represented by the [`ButtonState`](
 Thus, to check if the `LeftButton` is down, we'd need to use:
 
 ```csharp
-if(currentMouseState.LeftButton == ButtonState.Pressed) {
+if(currentMouseState.LeftButton == ButtonState.Pressed) 
+{
     // left mouse button is pressed.
 }
 ```
 
 {{% notice info %}}
-Note that not all mice have all of these possible inputs - the Horizontal scroll wheel and X buttons, especially, but many mice also lack the middle button and scroll wheel.  In those cases these values will be `ButtonState.Up` or `false`.
-{{% notice %}}
+Note that not all mice have all of these possible inputs - the Horizontal scroll wheel and X buttons, especially, but many mice also lack the middle button and scroll wheel.  In those cases these values will be `ButtonState.Released` or `false`.
+{{% /notice %}}
 
 ## The Mouse Cursor
 You can set what cursor the mouse should use with the `Mouse.SetCursor(MouseCursor cursor)`, and supply the cursor of your choice, i.e. `MouseCursor.Crosshair`.  A full list of cursors can be found [in the documentation](https://docs.monogame.net/api/Microsoft.Xna.Framework.Input.MouseCursor.html#properties).
