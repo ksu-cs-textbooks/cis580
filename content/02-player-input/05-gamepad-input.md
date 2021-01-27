@@ -64,7 +64,7 @@ And to determine if the X button was _just pressed this frame:
 ```
 
 #### DPad
-The `GamePad.DPad` property is a [`GamePadDPad`](https://docs.monogame.net/api/Microsoft.Xna.Framework.Input.GamePadButtons.html) struct, also composed of `ButtonValues` for the four directions of the DPad (Up, Down, Left, Right).  I.e. to check if the right direction pad button is pressed:
+The `GamePadState.DPad` property is a [`GamePadDPad`](https://docs.monogame.net/api/Microsoft.Xna.Framework.Input.GamePadButtons.html) struct, also composed of `ButtonValues` for the four directions of the DPad (Up, Down, Left, Right).  I.e. to check if the right direction pad button is pressed:
 
 ```csharp
     if(currentGamePadState.DPad.Right == ButtonState.Pressed)
@@ -74,7 +74,7 @@ The `GamePad.DPad` property is a [`GamePadDPad`](https://docs.monogame.net/api/M
 ```
 
 #### Triggers
-The `GamePad.Triggers` property is a [`GamePadTriggers`](https://docs.monogame.net/api/Microsoft.Xna.Framework.Input.GamePadTriggers.html) struct representing the two triggers (Left and Right).  Unlike other buttons, these measure the _travel_, or the amount of pull that has been applied to them.  Thus, they are represented by a `single` floating point number between 0 and 1.
+The `GamePadState.Triggers` property is a [`GamePadTriggers`](https://docs.monogame.net/api/Microsoft.Xna.Framework.Input.GamePadTriggers.html) struct representing the two triggers (Left and Right).  Unlike other buttons, these measure the _travel_, or the amount of pull that has been applied to them.  Thus, they are represented by a `single` floating point number between 0 and 1.
 
 To see if the left trigger is pulled back 3/4 of the way, we might use:
 
@@ -86,13 +86,16 @@ To see if the left trigger is pulled back 3/4 of the way, we might use:
 ```
 
 #### ThumbSticks
-The `GamePad.Thumbsticks` property is a [`GamePadThumbSticks`](https://docs.monogame.net/api/Microsoft.Xna.Framework.Input.GamePadThumbSticks.html) struct representing the two thumbsticks (Left and Right).  These are represented by `Vector2` values with the `X` and `Y` falling between -1 and 1.
+The `GamePadState.Thumbsticks` property is a [`GamePadThumbSticks`](https://docs.monogame.net/api/Microsoft.Xna.Framework.Input.GamePadThumbSticks.html) struct representing the two thumbsticks (Left and Right).  These are represented by `Vector2` values with the `X` and `Y` falling between -1 and 1.
 
 Thus, to get where the right thumbstick is pointing, we might use:
 
 ```csharp
     Vector2 direction = GamePad.Thumbsticks.Right;
 ```
+
+#### IsButtonDown/IsButtonUp
+The `GamePadState` also implements convenience functions `IsButtonUp(Button button)` and `IsButtonDown(Button button)` that operate like the keyboards' equivalents.
 
 ## Vibration
 Many gamepads come equipped with two vibration-inducing motors (left and right).  These are exposed through the `GamePad.SetVibration(int index, single left, single right)` method, where you can set a vibration in either motor using a floating point value between 0 and 1.  
