@@ -24,3 +24,9 @@ MonoGame was one of several attempts to re-implement the XNA 4 API and provide a
 You can find the documentation for MonoGame at [https://docs.monogame.net/](https://docs.monogame.net/).  This includes **Articles** discussing MonoGame and the published **API**.
 
 See the **Getting Started** section for details on installing MonoGame and starting your first project.
+
+{{% notice warning %}}
+MonoGame's libraries are now loaded _as a Nuget package_, which means the first time you create a MonoGame library on your computer, it will need to download these packages.  This happens automatically, but takes a moment.  Until they finish downloading, your game will report that items in the `Microsoft.XNA.Framework` namespace cannot be found.
+
+Additionally, MonoGame uses the dotnet mgcb command-line tool to build content.  As Nuget downloads its packages under your user account, and Visual Studio places projects in your user account, this means your user account will be in the path to both.  **If your user folder has spaces in the name, i.e. "C:/Users/Bob Test", the space will cause an error when the build process attempts to build the content**.  The only fix I am aware of for this is to create another user account that does not contain spaces, and run your builds from there.
+{{% /notice %}}
