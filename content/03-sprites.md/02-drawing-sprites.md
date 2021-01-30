@@ -59,8 +59,11 @@ Thus, for our 64x64 pixel ball texture, if we wanted the origin to be at the cen
 #### float scale 
 The `scale` is a scalar value to scale the sprite by.  For example, a value of $2.0f$ will make the sprite twice as big, while $0.5f$ would make it half as big.  This scaling is in relation to the `origin`, so if the origin is at the center of the sprite grows in all directions equally.  If instead it is at $(0,0)$, the sprite will grow to the right and down only.
 
+#### Vector2 scale 
+The `scale` can also be specified as a `Vector2`, which allows for a different horizontal and vertical scaling factor.
+
 #### SpriteEffects effects
-The `effects` parameter is one of the `SpriteEffects` enum's values.  THese are:
+The `effects` parameter is one of the `SpriteEffects` enum's values.  These are:
 
 * `SpriteEffects.None` - the sprite is drawn normally
 * `SpriteEffects.FlipHorizontally` - the sprite is drawn with the texture flipped in the horizontal direction 
