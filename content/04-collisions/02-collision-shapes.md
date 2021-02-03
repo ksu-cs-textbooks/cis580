@@ -73,25 +73,25 @@ $$
 This can then be compared to the sum of the two circle’s radii, giving us an indication of the relationship between the two shapes:
 
 $$
-(r_2 + r1) < \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \tag{The circles do not intersect}
+(r_2 + r1) < \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{The circles do not intersect}
 $$
 $$
-(r_2 + r1) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \tag{The circles touch}
+(r_2 + r1) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{The circles touch}
 $$
 $$
-(r_2 + r1) > \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \tag{The circles overlap}
+(r_2 + r1) > \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{The circles overlap}
 $$
 
 However, computing the square root is a costly operation in computational terms, so we will typically square both sides of the equation and use a comparison of the squares instead:
 
 $$
-(r_2 + r1)^2 < (x_2 - x_1)^2 + (y_2 - y_1)^2 \tag{The circles do not intersect}
+(r_2 + r1)^2 < (x_2 - x_1)^2 + (y_2 - y_1)^2 \quad \text{The circles do not intersect}
 $$
 $$
-(r_2 + r1)^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2 \tag{The circles touch}
+(r_2 + r1)^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2 \quad \text{The circles touch}
 $$
 $$
-(r_2 + r1)^2 > (x_2 - x_1)^2 + (y_2 - y_1)^2 \tag{The circles overlap}
+(r_2 + r1)^2 > (x_2 - x_1)^2 + (y_2 - y_1)^2 \quad \text{The circles overlap}
 $$
 From these inequalities we can very easily write a test for determining if our shapes collide.
 
@@ -162,13 +162,13 @@ public static bool Collides(BoundingRectangle r1, BoundingRectangle r2)
 To determine if a point and circle collide is a degenerate case of circle on circle collision where one circle has a radius of 0. THus:
 
 $$
-r >= \sqrt{(x_c - x_p)^2 + (y_c - y_p)^2} \tag{collision}
+r >= \sqrt{(x_c - x_p)^2 + (y_c - y_p)^2} \quad \text{collision}
 $$
 
 Which can be rewritten to avoid the square root as:
 
 $$
-r^2 >= (x_c - x_p)^2 + (y_c - y_p)^2 \tag{collision}
+r^2 >= (x_c - x_p)^2 + (y_c - y_p)^2 \quad \text{collision}
 $$
 
 And in code:
@@ -198,7 +198,7 @@ Similarly, a point and rectangle collide if the point falls within the bounds or
 /// <returns>true on collision, false otherwise</returns>
 public static bool Collides(BoundingRectangle r, BoundingPoint p)
 {
-    return p.X >= r.X && p.X <= r.X + r.Width && p.Y >= r.Y && p.X <= r.Y + r.Width;
+    return p.X >= r.X && p.X <= r.X + r.Width && p.Y >= r.Y && p.Y <= r.Y + r.Height;
 }
 ```
 
