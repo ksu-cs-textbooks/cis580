@@ -82,4 +82,8 @@ public struct BoundingPoint
 }
 ```
 
-We could, of course, directly implement the collision methods within the structs, but this approach avoids duplicating code.
+We could, of course, directly implement the collision methods within the structs, but this approach avoids duplicating code.  It also more closely follows the style of the XNA framework.
+
+{{% notice warning %}}
+For your collision detection to be accurate, you must keep your bounding volumes in sync with your sprites - i.e. every time you move a sprite, you must also move its bounding volume.  Alternatively, you may wish to _create_ yh
+{{% /notice %}}
