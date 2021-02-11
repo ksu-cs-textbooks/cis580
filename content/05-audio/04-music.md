@@ -8,6 +8,7 @@ date: 2018-08-24T10:53:26-05:00
 Music also has a powerful role to play in setting the mood.  It can also be used to convey information to the player, as _Super Mario Bros_ does when the remaining time to finish the level falls below 1 minute.
 
 ### Song Class
+While it is possible to play music using a `SoundEffect`, 
 MonoGame supports music through the [`Song`](https://docs.monogame.net/api/Microsoft.Xna.Framework.Media.Song.html) class.  This represents a song loaded from a wav or mp4 file.
 
 In addition to the audio data, the `Song` defines properties for accessing the audio file's metadata:

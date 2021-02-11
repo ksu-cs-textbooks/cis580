@@ -18,10 +18,20 @@ The polygon can be represented as a data structure using a collection of vectors
 ![Bounding Polygon vectors]({{<static "images/4.4.3.png">}})
 
 ```csharp
-public static BoundingPolygon 
+/// <summary>
+/// A struct representing a convex bounding polygon
+/// </summary>
+public class BoundingPolygon
 {
-    public IEnumerable Corners;
+    /// <summary>
+    /// The corners of the bounding polygon, 
+    /// in relation to its origin
+    /// </summary>
+    public IEnumerable<Vector2> Corners;
 
+    /// <summary>
+    /// The center of the polygon in the game world
+    /// </summary>
     public Vector2 Center;
 }
 ```
@@ -67,6 +77,48 @@ $$
 projection\ of\ A\ onto\ B = A \cdot \overline{B}, where\ \overline{B} \text{ is a unit vector in the direction of B} \tag{3}
 $$
 
-Thus, given two vectors - one for the axis (which needs to be a unit vector), and one to a corner of our collision polygon, we can project the corner onto the axis.  If we do this for _all_ corners, we can find the minimum and maximum projection from the group.  If we do this for _both_ shapes, we can see if they overlap:
+Thus, given two vectors - one for the axis (which needs to be a unit vector), and one to a corner of our collision polygon, we can project the corner onto the axis.  If we do this for _all_ corners, we can find the minimum and maximum projection from the polygon.  
+
+A helper method to do this might be: 
+
+```csharp 
+private static MinMax FindMaxMinProjection(BoundingPolygon poly, Vector2 axis)
+{
+    var projection = Vector2.Dot(poly.Corners[0], axis);
+    var max = projection;
+    var min = projection;
+    for (var i = 1; i < poly.Corners.Length; i++)
+    {
+        projection = Vector2.Dot(poly.Corners[i], axis);
+        max = max > projection ? max : projection;
+        min = min < projection ? min : projection;
+    }
+    return new MinMax(min, max);
+}
+```
+
+If we do this for _both_ shapes, we can see if they overlap:
 
 ![Projecting Bounding Polygons onto an axis]({{<static "images/4.4.6.png">}})
+
+If there is no overlap, then we have found a separating axis, and can terminate the search.
+
+But just which axes should we test?  Ideally we’d like a minimal set that promises if a separating axis does exist, it will be found.  Geometrically, it can be shown that the bare minimum we need to test is an axis parallel to each edge normal of the polygon - that is, an axis at a right angle to the polygon’s edge.  Each edge has two normals, a left and right:
+
+![The edge normals]({{<static "images/4.4.7.png">}})
+
+Depending on the order we’ve declared our points (clockwise or anti-clockwise) one of these normals will face out of the polygon, while the other will face in.  As long as we’re consistent, either direction will work.  We calculate the normals by iterating over our points and creating vectors to represent each edge:
+
+```csharp
+public static GetEdgeNormals(BoundingP) {
+    var normals = [shape[shape.length-1][1]-shape[0] [1], -(shape[shape.length-1][0]-shape[0][0])];
+    for(var i = 1; i < shape.length; i++) {
+        normals.push([shape[i-1][1]-shape[i][1], -(shape[i-1][1]-shape[i][1])]);
+    } 
+    return normals;
+}
+```
+
+All that remains is to determine which axes to check for separation.  Unfortunately, there are infinite possibilities.  But as with the rectangle test we saw earlier, we can turn the question around.  Is there a minimum set of axes we can check to see if a collision _is_ happening?  And the answer is yes - the set defined by the _sides_ of both collision polygons.
+
+We can create that set by iterating over the points, and subtracting each point's `Vector2` from the one before it.  Then, for each of these 

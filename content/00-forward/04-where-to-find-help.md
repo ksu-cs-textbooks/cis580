@@ -23,13 +23,13 @@ Discord can be used through its web app at [https://discord.com/webapp](https://
 In addition to class channels, the Discord server hosts channels for student clubs, announcements, and general discussion.  It is a good place to socialize while we are unable to meet face-to-face.
 {{% /notice %}}
 
-#### Course Channel
+### Course Channel
 
 Discord uses _channels_ - the equivalent of chat rooms - to provide a place for related conversations.  The channel for this course is **#CIS-580**.  It is the best place to go to get help with anything related to this course, from the tutorials and projects to issues with Visual Studio and Canvas. Before you post on Discord, use the search feature in the channel or scroll back in the chat history to make sure the question has not already been posted before. It will save everyone quite a bit of time.
 
 Additionally, all course announcements will be made in the course channel (as well as through the Canvas announcements), so make a habit of checking the channel regularly.
 
-#### Direct Messaging
+### Direct Messaging
 
 Discord also supports direct messaging - you can use this when you have a procedural or grading question.  Type the name or eid of the person you'd like to message into the search bar, and then select them from the results to start a direct message.  Once you've started a direct message with a user, their name will also show up in your side menu.  
 
@@ -39,7 +39,7 @@ However, for general questions, asking them in the course channel will give you 
 The **helping hand** extra credit assignment provides bonus points for students who are caught helping other students in the class Discord channel.
 {{% /notice %}}
 
-#### Other Features
+### Other Features
 
 Discord includes lots of useful features:
 
@@ -79,7 +79,7 @@ So, in summary, Discord should always be your first stop when you have a questio
 Our goal in this program is to make sure that you have the resources available to you to be successful. Please don’t be afraid to take advantage of them and ask questions whenever you want.
 
 
-#### Resources
+### Resources
 * [CS Discordbot](https://discordbot.cs.ksu.edu)
 * [K-State IT Help Desk](https://www.k-state.edu/its/helpdesk/) - Email: [helpdesk@ksu.edu](mailto:helpdesk@ksu.edu)
 * [K-State Online Canvas Help](http://public.online.k-state.edu/help/)
