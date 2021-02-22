@@ -98,12 +98,11 @@ Let's work through an example.  Consider this diagram:
 
 The red arrow is the force vector applied from the left rocket.  The green arrow is the vector from the position the force is applied to the center of mass of the ship.  Firing just this one rocket will impose a rotation on the ship in the direction of the white arrow.  Firing _both_ rockets will impose an opposite torque, cancelling both.
 
-Let's write the control code for this spaceship.  We'll define class fields for both linear and angular velocity and acceleration, as well as position, direction, and angle.  We'll also supply a constant for the amount of "force" applied by our spaceship:
+Let's write the control code for this spaceship.  We'll define class fields for both linear and angular velocity and acceleration, as well as position, direction, and angle.  We'll also supply a constant for the amount of linear acceleration applied by our spaceship:
 
 ```csharp
 // Constants
-float LINEAR_FORCE_MAGNITUDE = 1000;
-float ANGULAR_ACCELERATION = 500;
+float LINEAR_ACCELERATION = 10;
 
 // Linear movement fields
 Vector2 position;
@@ -111,8 +110,8 @@ Vector2 direction;
 Vector2 velocity;
 
 // Angular movement fields
-float theta; // angle 
-float omega; // angular velocity
+float angle; 
+float angularVelocity;
 ```
 
 Then we'll use these in our update method:
@@ -122,14 +121,14 @@ public void Update(GameTime gameTime)
 {
     KeyBoardState keyboardState = Keyboard.GetState();
     float t = (float)gameTime.ElapsedGameTime.TotalSeconds;
-    Vector2 force = Vector2.Zero; // linear force
-    float alpha = 0; // angular acceleration
+    Vector2 acceleration = Vector2.Zero; // linear acceleration
+    float angularAcceleration = 0; // angular acceleration
 
     // Determine if the left rocket is firing
     if(keyboardState.IsKeyPressed(Keys.A))
     {
         // LABEL A: Apply linear force in the direction we face from left rocket
-        force += direction * LINEAR_FORCE_MAGNITUDE * t;
+        acceleration += direction * LINEAR_ACCELERATION * t;
 
         // TODO 1: Calculate and apply torque from left rocket
     }
@@ -138,7 +137,7 @@ public void Update(GameTime gameTime)
     if(keyboardState.IsKeyPressed(Keys.D))
     {
         // LABEL B: Apply linear force in the direction we face from right rocket
-        force += direction * LINEAR_FORCE_MAGNITUDE * t;
+        acceleration += direction * LINEAR_ACCELERATION * t;
 
         // TODO 2: Calculate and apply torque from right rocket
     }
@@ -148,8 +147,8 @@ public void Update(GameTime gameTime)
     position += velocity * t;
 
     // update angular velocity and rotation 
-    omega += alpha * t;
-    theta += omega * t;
+    angularVelocity += angularAcceleration * t;
+    angle += angularVelocity * t;
 
     // LABEL C: Apply rotation to our direction vector  
     direction = Vector2.Transform(Vector2.UnitY, new Matrix.CreateRotationZ(theta));
@@ -160,12 +159,12 @@ There's a lot  going on in this method, so let's break it down in pieces, starti
 
 #### LABEL A & B - Apply linear force in the direction we face from left rocket and right rocket
 
-When we apply force against a body _not toward its center_, part of that force becomes torque, but the rest of it is linear acceleration.  Technically, we can calculate exactly what this is with trigonometry.  But in this case, we don't care - we just want the ship to accelerate in the direction it is facing.  So we multiply the `direction` vector by a constant representing the force divided by the mass of our spaceship, and the number of seconds that force was applied.
+When we apply force against a body _not toward its center_, part of that force becomes torque, but the rest of it is linear acceleration.  Technically, we can calculate exactly what this is with trigonometry.  But in this case, we don't care - we just want the ship to accelerate in the direction it is facing.  So we multiply the `direction` vector by a constant representing the force divided by the mass of our spaceship (acceleration), and the number of seconds that force was applied.
 
-Note that we consider our spaceship mass to be constant here.  If we were really trying to be 100% accurate, the mass would change over time as we burn fuel.  But that's extra calculations, so unless you are going for realism, it's simpler to provide a constant, a lá `LINEAR_FORCE_MAGNITUDE`.  Yet another example of simplifying physics for games.
+Note that we consider our spaceship mass to be constant here.  If we were really trying to be 100% accurate, the mass would change over time as we burn fuel.  But that's extra calculations, so unless you are going for realism, it's simpler to provide a constant, a lá `LINEAR_ACCELERATION`.  Yet another example of simplifying physics for games.
 
 #### LABEL C - Apply rotation to our direction vector 
-We need to know the direction the ship is facing to apply our linear acceleration.  Thus, we need to convert our angle `theta` into a `Vector2`.  We can do this with trigonometry:
+We need to know the direction the ship is facing to apply our linear acceleration.  Thus, we need to convert our angle `angle` into a `Vector2`.  We can do this with trigonometry:
 
 ```csharp 
 direction.X = (float)Math.Cos(theta);
@@ -206,19 +205,13 @@ float torque = force.X * r.Y - force.Y * r.X;
 And then calculate the rotational acceleration:
 
 ```csharp
-float alpha += torque / ROTATIONAL_INERTIA;
+float angularAcceleration += torque / ROTATIONAL_INERTIA;
 ```
 
 The `ROTATIONAL_INERTIA` represents the resistance of the body to rotation (basically, it plays the same role as mass in linear dynamics).  For simplicity, we could treat it as $1$ (no real effect - after all, we're in a vacuum), which allows us to refactor as:
 
 ```csharp
-float alpha += torque;
-```
-
-Finally, we need to convert back to screen coordinates... except our `torque` value is a _relative_ rotation, i.e. a _change_ in rotation.  So the coordinate system doesn't really matter, as long as the z-axis is the same (and for this example, it is)!  So we can apply it directly to our rotational velocity:
-
-```csharp
-omega += alpha * t;
+float angularAcceleration += torque;
 ```
 
 ### TODO 2: Calculate and apply torque from right rocket
@@ -227,10 +220,10 @@ Now that we've seen the longhand way of doing things "properly", let's apply som
 Note that for this example, the vector `r` does not change - the engine should always be the same distance from the center of mass, and the force vector of the engine will always be in the same direction. relative to `r`.  So the cross product of the two will _always be the same_.  So we could pre-calculate this value, _and_ apply the proper moment of inertia, leaving us with a single constant representing the angular acceleration from the engines which we can represent as a constant, `ANGULAR_ACCELERATION`.  Since this is reversed for the  right engine, our simplified acceleration calculation would be:
 
 ```csharp
-alpha -= ANGULAR_ACCELERATION * t;
+angularAcceleration -= ANGULAR_ACCELERATION * t;
 ```
 
-(and the right engine would have been `alpha += ANGULAR_ACCELERATION * t;`)
+(and the right engine would have been `angularAcceleration += ANGULAR_ACCELERATION * t;`)
 
 Thus, with careful thought we can simplify six addition operations, four multiplications, one subtraction, one multiplication, and two struct allocation operations to just _two multiplications and two additions_.  This kind of simplification and optimization is common in game programming.  And, in fact, after calculating the `ANGULAR_ACCELERATION` value we would probably tweak it until the movement felt natural and fun (or just guess at the value to begin with)!
 
