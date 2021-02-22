@@ -1,12 +1,12 @@
 ---
 title: "Platformer Physics"
-pre: "3. "
-weight: 30
+pre: "5. "
+weight: 50
 date: 2018-08-24T10:53:26-05:00
 draft: true
 ---
 
-Platformer physics are an interesting study.  Consider the NES classic _Super Mario Brothers_.  When Mario (or Luigi) jump in this game, we don't actually follow real-world physics.  Most notably, you can change direction mid-air (try doing that in real life).  But gravity is also not the 9.8m/s<sup>2</sup> we've studied - Mario and Luigi's jumps are actually a logarithmic curve.  
+Not all game physics are realistic, as is the case with _platformer physics_.  Consider the NES classic _Super Mario Brothers_.  When Mario (or Luigi) jump in this game, we don't actually follow real-world physics.  Most notably, you can change direction mid-air (try doing that in real life).  But gravity is also not the 9.8m/s<sup>2</sup> we've studied - Mario and Luigi's jumps are actually a logarithmic curve.  
 
 <iframe src="https://www.desmos.com/calculator/ynydl6sdjv?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
 

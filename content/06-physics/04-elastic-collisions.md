@@ -65,4 +65,53 @@ $$cos\theta = a \cdotp b \tag {10}$$
 
 And $\theta$ can be solved for by:
 
-$$\theta = cos^{-1}(a \cdotp b)$$
+$$\theta = cos^{-1}(a \cdotp b) \tag{11}$$
+
+Given two rigid bodies `A` and `B`, we could then calculate this angle using their centers:
+
+```csharp
+// Determine the line between centers of colliding objects A and B
+Vector2 collisionLine = A.Center - B.Center;
+// Normalize that line
+collisionLine.Normalize();
+// Determine the angle between the collision line and the x-axis
+float angle = Math.Acos(Vector2.Dot(collisionLine, Vector2.UnitX));
+```
+
+Once we have this angle, we can rotate our velocity vectors using it, so that the coordinate system now aligns with that axis:
+
+```csharp 
+Vector2 u0 = Vector2.Transform(Matrix.CreateRotationZ(A.Velocity, angle));
+Vector2 u1 = Vector2.Transform(Matrix.CreateRotationZ(B.Velocity, angle));
+```
+
+We can use these values, along with the masses of the two objects, to calculate the changes in the X-component of the velocity using equations (7) and (8):
+
+```csharp
+float m0 = A.Mass;
+float m1 = B.Mass;
+Vector2 v0;
+v0.X = ((m0 - m1) / (m0 + m1)) * u0.X + ((2 * m1) / (m0 + m1)) * u1.X;
+Vector2 v1;
+v1.X = ((2 * m0) / (m0 + m1)) * u0.X + ((m1 - m0) / (m0 + m1)) * u1.X;
+```
+
+And, because the collision axis and the x-axis are the same, this transfer of velocity _only_ occurs along the x-axis.  The y components stay the same!
+
+```csharp
+v0.Y = u0.Y;
+v1.Y = u0.Y;
+```
+
+Then, we can rotate the velocities back to the original coordinate system and assign the transformed velocities to our bodies:
+
+```csharp
+A.Velocity = Vector2.Transform(v0, Matrix.CreateRotationZ(-angle));
+B.Velocity = Vector2.Transform(v1, Matrix.CreateRotationZ(-angle));
+```
+
+Some notes on this process:
+
+1) at this point we are not accounting for when the collision has gone some way into the bodies; it is possible that after velocity is transferred one will be "stuck" inside the other.  A common approach to avoid this is to move the two apart based on how much overlap there is.  A more accurate and costly approach is to calculate the time from the moment of impact until end of frame, move the bodies with the inverse of their original velocities multiplied by this delta t, and then apply the _new_ velocities for the same delta t.
+
+2) this approach only works on two bodies at a time.  If you have three or more colliding, the common approach is to solve for each pair in the collision multiple times until they are not colliding.  This is not accurate, but gives a reasonable approximation in many cases.  
