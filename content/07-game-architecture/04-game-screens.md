@@ -254,7 +254,6 @@ public class ScreenManager : DrawableGameComponent
     /// <param name="game">The game this ScreenManager belongs to</param>
     public ScreenManager(Game game) : base(game) 
     {
-        game.Components.Add(this);
         _content = new ContentManager(game.Services, "Content");
     }
 
