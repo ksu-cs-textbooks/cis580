@@ -1,12 +1,11 @@
 +++
-title = "Particle Systems"
+title = "9. Particle Systems"
 date = 2020-03-20T10:53:05-05:00
-weight = 10
+weight = 90
 chapter = true
-draft = true
 +++
 
-### Game Development Techniques
+### Chapter 9
 
 # Particle Systems
 

@@ -74,7 +74,7 @@ Thus, each frame you update the offset vector based on the offset and the player
 public void Draw(GameTime gameTime)
 {
     // Player-synched scrolling
-    offset = Player.Position - PlayerOffset;
+    offset = PlayerOffset - Player.Position;
 
     // Create the translation matrix representing the offset
     Matrix transform = Matrix.CreateTranslation(offset.X, offset.Y, 0);
