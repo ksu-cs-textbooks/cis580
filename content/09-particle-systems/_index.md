@@ -10,3 +10,5 @@ chapter = true
 # Particle Systems
 
 One, Two, three, ... BOOM!
+
+<img src="https://media.giphy.com/media/2dnGHOAQt1tIziib5X/giphy.gif" />

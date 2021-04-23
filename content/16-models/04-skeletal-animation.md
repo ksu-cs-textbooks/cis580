@@ -7,7 +7,7 @@ date: 2020-03-24T10:00:00-05:00
 
 Now that we can see our tank clearly, let's see if we can't get that turret to aim. Doing so requires us to explore the concept of _skeletal animation_.  If you remember in our discussion of models, we said most models include both triangle meshes and _bones_.  These "bones" are really just transformation matrices, which are applied to a specific mesh in the model.  Often they also are arranged in a hierarchy, often referred to as a skeleton.  The transformations represented by bones earlier in the hierarchy are concatenated with those lower to compute a final transformation to apply to that mesh.
 
-In our tank, the turret bone is a child of the tank body.  Thus, the turrent is transformed by _both_ by the bone of the tank body _and_ the bone of the turret.  Thus, if the tank body moves through the world, the turret comes along for the ride.  Without using this heirarchical approach, we would have to calculate the turret transform based on where the tank currenlty is, a more challenging proposition.
+In our tank, the turret bone is a child of the tank body.  Thus, the turret is transformed by _both_ by the bone of the tank body _and_ the bone of the turret.  Thus, if the tank body moves through the world, the turret comes along for the ride.  Without using this hierarchical approach, we would have to calculate the turret transform based on where the tank currently is, a more challenging proposition.
 
 ## Exposing The Tank's Transformations
 
@@ -30,7 +30,7 @@ And in our `Tank.Draw()` method, we'll apply the model's transforms.
     model.CopyAbsoluteBoneTransformsTo(transforms);
 ```
 
-This method walks down the skeleton, concactenating the parent transforms with those of the children bones.  Thus, the transformation matrices in the `transforms` array after this point are the final transformation that will be applied to the mesh in question.
+This method walks down the skeleton, concatenating the parent transforms with those of the children bones.  Thus, the transformation matrices in the `transforms` array after this point are the final transformation that will be applied to the mesh in question.
 
 Then, instead of simply invoking `model.draw()`, we'll iterate over each mesh, applying its bone transform manually:
 
@@ -76,7 +76,7 @@ And we'll also create an angle field to track the turret rotation:
 
 We still need to know the bone we want to transform.  If we look through the _tank.fbx_ file, we can find it is named "turret_geo".  The [model.Bones](https://www.monogame.net/documentation/?page=P_Microsoft_Xna_Framework_Graphics_Model_Bones) property can be accessed with either an index, or a key string (like a dictionary).  
 
-Thus, after the model is loaded in the construtor we can get a reference to our bone from its name, and from that bone get its original transformation:
+Thus, after the model is loaded in the constructor we can get a reference to our bone from its name, and from that bone get its original transformation:
 
 ```csharp 
     // Set the turret fields

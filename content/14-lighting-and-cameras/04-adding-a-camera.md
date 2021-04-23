@@ -9,7 +9,7 @@ So far we've set the World, View, and Transform matrix of each 3D object within 
 
 What we want is a _camera_ - an object that maintains a position and derives a view matrix from that position.  Our camera also should provide a projection matrix, as we may want to tweak it in response to game activity - i.e. we might swap it for another matrix when the player uses a sniper rifle.
 
-In fact, we may want _multiple_ cameras in a game.  We might want to change from a first-person camera to an overhead camera when the player gets into a vehicle, or we may want to present a flythrough of the level before the player starts playing.  Since each of these may work in very different ways, let's start by defining an interface of thier common aspects.
+In fact, we may want _multiple_ cameras in a game.  We might want to change from a first-person camera to an overhead camera when the player gets into a vehicle, or we may want to present a fly-through of the level before the player starts playing.  Since each of these may work in very different ways, let's start by defining an interface of their common aspects.
 
 ## The ICamera Interface
 
@@ -129,7 +129,7 @@ Then we can add our constructor:
     }
 ```
 
-This just sets our inital variables.  Finally, we can write our update method:
+This just sets our initial variables.  Finally, we can write our update method:
 
 ```csharp
     /// <summary>

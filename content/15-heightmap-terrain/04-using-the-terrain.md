@@ -12,7 +12,7 @@ Let's see our terrain in action.  First we'll need to make some changes in our `
     Terrain terrain;
 ```
 
-In our `Game1.LoadContent()`, we'll load the heihtmap and construct our terrain:
+In our `Game1.LoadContent()`, we'll load the heightmap and construct our terrain:
 
 ```csharp 
     // Build the terrain
@@ -56,7 +56,7 @@ Rather than linking our camera _directly_ to our terrain implementation, let's d
     }
 ```
 
-The interface defines a single method, `GetHeightAt()`.  Note that we take the X and Z coordiate - these are _world coordinates_ in the game.  The return value is the Y world coordinate corresponding to the elevation of the terrain at `x` and `z`.
+The interface defines a single method, `GetHeightAt()`.  Note that we take the X and Z coordinate - these are _world coordinates_ in the game.  The return value is the Y world coordinate corresponding to the elevation of the terrain at `x` and `z`.
 
 ## Refactoring FPSCamera
 
@@ -88,7 +88,7 @@ And we'll modify our `FPSCamera.Update()` to use the `HeightMap` and `HeightOffs
     }
 ```
 
-Notice that we wrap this in a `null` check.  If there is no heightmap, we want to keep our defalt behavior.
+Notice that we wrap this in a `null` check.  If there is no heightmap, we want to keep our default behavior.
 
 ## Refactoring Game1 
 
@@ -124,7 +124,7 @@ And add the method it calls for:
 
 Now, let's talk through the process of finding the height.  As our comments suggest, we're using _world_ coordinates, not _model_ coordinates.  As long as the world matrix remains the identity matrix, these are the same.  But as soon as that changes, the world coordinates no longer line up.  So the first thing we need to do is transform them from world coordinates to model coordinates.  
 
-Since multiplying a vector in model coordinates by the world matrix transforms them into world coordinates, the inverse should be true.  Specficially, multiplying world coordinates by the _inverse of the world matrix_ should transform them into model coordinates.  
+Since multiplying a vector in model coordinates by the world matrix transforms them into world coordinates, the inverse should be true.  Specifically, multiplying world coordinates by the _inverse of the world matrix_ should transform them into model coordinates.  
 
 The [Matrix.Invert()](https://www.monogame.net/documentation/?page=M_Microsoft_Xna_Framework_Matrix_Invert_1) method can create this inverse matrix:
 
@@ -146,7 +146,7 @@ Then we can apply the transformation with [Vector3.Transform()](https://www.mono
     Vector3 modelCoordinates = Vector3.Transform(worldCoordinates, inverseWorld);
 ```
 
-At this point, `modelCoordinates.X` and `modelCoordinates.Z` correspond to the x and -y indices of our `heights` array, respectively.  The y coordinate needs to be inverted, because our terrrain was defined along the negative z-axis (as the positive z-axis is towards the screen).  Let's save them in float variables so we don't have to remember to invert the z as our y coordinate:
+At this point, `modelCoordinates.X` and `modelCoordinates.Z` correspond to the x and -y indices of our `heights` array, respectively.  The y coordinate needs to be inverted, because our terrain was defined along the negative z-axis (as the positive z-axis is towards the screen).  Let's save them in float variables so we don't have to remember to invert the z as our y coordinate:
 
 ```csharp 
     float tx = modelCoordinates.X;

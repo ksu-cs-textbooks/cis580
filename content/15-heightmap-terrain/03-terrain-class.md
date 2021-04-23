@@ -198,7 +198,7 @@ Instead, we'll create _two_ extra triangles between each row.
 
 ![Our Triangle Strip Layout Strategy]({{<static "images/heightmap-terrain-3.4.png">}})
 
-Notice that for the two extra triangles created by this pattern, 6 and 7, two of thier vertices are the same.  This means they are actually lines!  And they will be rendered as part of the edge of triangles 5 and 8.  Moreover, all our diagonals are slanting the same direction.  
+Notice that for the two extra triangles created by this pattern, 6 and 7, two of their vertices are the same.  This means they are actually lines!  And they will be rendered as part of the edge of triangles 5 and 8.  Moreover, all our diagonals are slanting the same direction.  
 
 Let's use this pattern as we declare our indices in the helper method `InitializeIndices()`:
 
@@ -227,7 +227,7 @@ We'll also need a couple of index variables:
     int z = 0;
 ```
 
-Now as we iterate over the terrain, we'll need to reverse the direction each row.  So we'll use _two_ inner loops, one for the row runnnig left, and one for the row runnning right.  Since we don't know which will be our last row, we'll use the same invariant for both (`z < height - 1`):
+Now as we iterate over the terrain, we'll need to reverse the direction each row.  So we'll use _two_ inner loops, one for the row running left, and one for the row running right.  Since we don't know which will be our last row, we'll use the same invariant for both (`z < height - 1`):
 
 ```csharp
     while(z < height - 1)
@@ -285,16 +285,16 @@ We can skip setting the view and projection matrices, as these will come from ou
 
 ### The Constructor 
 
-The constructor will invoke each of the intialization helper methods we just wrote:
+The constructor will invoke each of the initialization helper methods we just wrote:
 
 ```csharp
     /// <summary>
     /// Constructs a new Terrain
     /// </summary>
     /// <param name="game">The game this Terrain belongs to</param>
-    /// <param name="heightmap">The hieghtmap used to set heihgts</param>
+    /// <param name="heightmap">The heightmap used to set heights</param>
     /// <param name="heightRange">The difference between the lowest and highest elevation in the terrain</param>
-    /// <param name="world">The terrain's positon and orientation in the world</param>
+    /// <param name="world">The terrain's position and orientation in the world</param>
     public Terrain(Game game, Texture2D heightmap, float heightRange, Matrix world)
     {
         this.game = game;

@@ -40,6 +40,7 @@ While not strictly required for the course, these additional software packages m
 
 * [BFXR](https://www.bfxr.net/) A free online sound effect generator perfect for creating 8-bit sound effects.
 * [Piskel](https://www.piskelapp.com/) A free online pixel art program specifically for drawing animated sprites.
+* [Graphics Gale](https://graphicsgale.com/us/) A downloadable freeware animation editor.
 * [Inkscape](https://inkscape.org/) an open-source vector graphics editor you can install (and is installed in the labs).
 * [Tiled Map Editor](https://www.mapeditor.org/) an open-source tool for creating tile maps you can install (and is installed in the labs).
 
