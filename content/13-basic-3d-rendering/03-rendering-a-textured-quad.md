@@ -49,21 +49,20 @@ As with our triangle, we'll initialize our vertices in a helper method, `Initial
     /// <summary>
     /// Initializes the vertices of our quad
     /// </summary>
-    public void InitializeVertices()
-    {
+    public void InitializeVertices() {
         vertices = new VertexPositionTexture[4];
         // Define vertex 0 (top left)
         vertices[0].Position = new Vector3(-1, 1, 0);
-        vertices[0].TextureCoordinate = new Vector2(0, 0);
+        vertices[0].TextureCoordinate = new Vector2(0, -1);
         // Define vertex 1 (top right)
         vertices[1].Position = new Vector3(1, 1, 0);
-        vertices[1].TextureCoordinate = new Vector2(1, 0);
+        vertices[1].TextureCoordinate = new Vector2(1, -1);
         // define vertex 2 (bottom right)
         vertices[2].Position = new Vector3(1, -1, 0);
-        vertices[2].TextureCoordinate = new Vector2(1, -1);
+        vertices[2].TextureCoordinate = new Vector2(1, 0);
         // define vertex 3 (bottom left) 
         vertices[3].Position = new Vector3(-1, -1, 0);
-        vertices[3].TextureCoordinate = new Vector2(-1, -1);
+        vertices[3].TextureCoordinate = new Vector2(0, 0);
     }
 ```
 
@@ -71,23 +70,23 @@ The quad is two by two, centered on the origin.  The texture coordinates are exp
 
 ### Defining the Indices
 
-Now let's define our indices in thier own helper method, `InitializeIndices`.  Let's assume we're using a triangle list, so we'll need to define all six vertices (with a triangle strip we could cut this to 4):
+Now let's define our indices in their own helper method, `InitializeIndices`.  Let's assume we're using a triangle list, so we'll need to define all six vertices (with a triangle strip we could cut this to 4):
 
 ```csharp 
     /// <summary>
     /// Initialize the indices of our quad
     /// </summary>
-    public void InitializeIndices()
-    {
+    public void InitializeIndices() {
         indices = new short[6];
+
         // Define triangle 0 
         indices[0] = 0;
         indices[1] = 1;
         indices[2] = 2;
         // define triangle 1
-        indices[3] = 1;
-        indices[4] = 2;
-        indices[5] = 3;
+        indices[3] = 2;
+        indices[4] = 3;
+        indices[5] = 0;
     }
 ```
 ## Initializing the Effect
@@ -186,7 +185,7 @@ And finally, let's render it in our `Game1.Draw()` method:
 
 If you run your code, you should now see the textured quad rendered:
 
-![The renderd quad]({{<static "images/basic-3d-3.1.png">}})
+![The rendered quad]({{<static "images/basic-3d-3.1.png">}})
 
 Notice that even though our texture has a transparent background, the background is rendered in black.  Alpha blending is managed by the `GraphicsDevice.BlendState`, so we'll need to tweak it before we draw the quad:
 
@@ -231,6 +230,6 @@ public void Draw()
 }
 ```
 
-This `Quad` is very similar to the sprites we've worked with already - in fact, the `SpriteBatch` is an optimized way of drawing a lot of textured quads.  It also configures the graphics device and has its own effect, the [SpriteEffect](https://www.monogame.net/documentation/?page=T_Microsoft_Xna_Framework_Graphics_SpriteEffect).  Becuase of this optimization, in most cases, you'll want to use the `SpriteBatch` for textured quads.  But it is good to understand how it is drawing 2D sprites using the 3D pipeline.  
+This `Quad` is very similar to the sprites we've worked with already - in fact, the `SpriteBatch` is an optimized way of drawing a lot of textured quads.  It also configures the graphics device and has its own effect, the [SpriteEffect](https://www.monogame.net/documentation/?page=T_Microsoft_Xna_Framework_Graphics_SpriteEffect).  Because of this optimization, in most cases, you'll want to use the `SpriteBatch` for textured quads.  But it is good to understand how it is drawing 2D sprites using the 3D pipeline.  
 
 Speaking of... so far we've only drawn 2D shapes in a 3D world.  Let's move on to an actual 3D shape next.

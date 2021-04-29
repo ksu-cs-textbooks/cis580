@@ -36,7 +36,7 @@ Note the [VertexPositionColor](https://www.monogame.net/documentation/?page=T_Mi
 
 ## Triangles
 
-Triangles are then defined by the order the vertices are presented to the graphics card, defined by a _graphics primitive type_.  There are four supported by XNA, and appear in the [PrimativeType enumeration](https://www.monogame.net/documentation/?page=T_Microsoft_Xna_Framework_Graphics_PrimitiveType).  These are _LineList_, _LineStrip_, _TriangleList_, and _TriangleStrip_.  The first two vertices in a `LineList` define the two endpoints of a line, the second two, a second line.  In contrast, with a `LineStrip` each successive line connects to the previous one, sharing a vertex.  Thus vertices 0 and 1 define the first line, vertices 1 and 2 define the second, vertices 2 and 3 the third, and so on...
+Triangles are then defined by the order the vertices are presented to the graphics card, defined by a _graphics primitive type_.  There are four supported by XNA, and appear in the [PrimitiveType enumeration](https://www.monogame.net/documentation/?page=T_Microsoft_Xna_Framework_Graphics_PrimitiveType).  These are _LineList_, _LineStrip_, _TriangleList_, and _TriangleStrip_.  The first two vertices in a `LineList` define the two endpoints of a line, the second two, a second line.  In contrast, with a `LineStrip` each successive line connects to the previous one, sharing a vertex.  Thus vertices 0 and 1 define the first line, vertices 1 and 2 define the second, vertices 2 and 3 the third, and so on...
 
 The `TriangleList` and `TriangleStrip` work the same way.  In a `TriangleList` each three vertices define a single triangle.  Hence vertices 0, 1, and 2 define the first triangle, and vertices 3, 4, and 5, the second, and so on.  With the `TriangleStrip`, vertices 0, 1, and 2 define the first triangle; vertices 1, 2, and 3 define the second, vertices 3, 4, and 5 the third, and so on...
 
@@ -63,7 +63,7 @@ Our `Triangle` will only be using vertices 0, 1, and 2, so either approach will 
 
 ## The Effect 
 
-One of the major innovations of hardware graphics has been the introduction of _programmable shaders_.  A shader is simply a program that runs on a GPU, and peforms some steps of the graphics pipeline.  At the time XNA was created, there were three points in the graphics pipeline where programmable shaders could be inserted: the _vertex shader_, the _geometry shader_, and the _pixel shader_ (additional shader points have been added to graphics cards since).  These shaders are written in a language specific to the GPU and graphics library (DirectX or OpenGL).  In XNA, this langauge is [HLSL](https://en.wikipedia.org/wiki/High-Level_Shading_Language).
+One of the major innovations of hardware graphics has been the introduction of _programmable shaders_.  A shader is simply a program that runs on a GPU, and peforms some steps of the graphics pipeline.  At the time XNA was created, there were three points in the graphics pipeline where programmable shaders could be inserted: the _vertex shader_, the _geometry shader_, and the _pixel shader_ (additional shader points have been added to graphics cards since).  These shaders are written in a language specific to the GPU and graphics library (DirectX or OpenGL).  In XNA, this language is [HLSL](https://en.wikipedia.org/wiki/High-Level_Shading_Language).
 
 XNA seeks to simplify the details of setting up shaders by abstracting the heavy lifting into the [Effect Class](https://www.monogame.net/documentation/?page=T_Microsoft_Xna_Framework_Graphics_Effect).  An `Effect` handles configuring the graphics device to produce a specific effect through a combination of shaders and hardware settings.  We can create custom classes derived from the `Effect` class, or use one of those already defined in XNA:
 
@@ -75,7 +75,7 @@ XNA seeks to simplify the details of setting up shaders by abstracting the heavy
 * [SpriteEffect](https://www.monogame.net/docs/html/T_Microsoft_Xna_Framework_Graphics_SpriteEffect.html)
 
 
-With our triangle, we'll use the `BasicEffect`, which provides a basic rendering pipline.  Let's add a field for one to our `Triangle` class:
+With our triangle, we'll use the `BasicEffect`, which provides a basic rendering pipeline.  Let's add a field for one to our `Triangle` class:
 
 ```csharp 
     /// <summary>
@@ -130,21 +130,21 @@ Instead of thinking of triangles, think of crates.  We probably would use the sa
 ### The View Matrix 
 The line `effect.View = Matrix.CreateLookAt(..)` creates the _view matrix_.  This is the transform that shifts us from _world space_ into _view space_.  View space is relative to the position of the observer - the eye (or camera) is at the origin (0, 0, 0), and they are looking along the z-axis.  Since the observer exists somewhere in the game world, the view transformation shifts the coordinate system so that that position becomes the origin, and everything in the world moves along with it.
 
-[Matrix.CreateLookAt()](https://www.monogame.net/documentation/?page=M_Microsoft_Xna_Framework_Matrix_CreateLookAt) is a method for creating a matrix to embody this transformation, and allows us to specify where the observer is looking from, and to.  The first arguement is the position of the observer - where the observer's eye would be in the world.  The second argument is a vector in the direction the observer is looking.  The third helps orient the observer by defining which direction is up.  Normally this would be the up vector (0, 1, 0), but if the observer was a plane that was executing a barrel roll, it would be the down vector (0, -1, 0) halfway throught the roll, and every value between as the plane rolled.  
+[Matrix.CreateLookAt()](https://www.monogame.net/documentation/?page=M_Microsoft_Xna_Framework_Matrix_CreateLookAt) is a method for creating a matrix to embody this transformation, and allows us to specify where the observer is looking from, and to.  The first argument is the position of the observer - where the observer's eye would be in the world.  The second argument is a vector in the direction the observer is looking.  The third helps orient the observer by defining which direction is up.  Normally this would be the up vector (0, 1, 0), but if the observer was a plane that was executing a barrel roll, it would be the down vector (0, -1, 0) halfway throught the roll, and every value between as the plane rolled.  
 
 ### The Projection Matrix 
 The line `effect.Projection = Matrix.CreatePerspectiveFieldOfView(...)` creates the _projection matrix_.  This is the matrix that transforms our 3D scene into a 2D one.  It does this by setting z-values to 0 while (possibly) tweaking x- and y-values to create the illusion of perspective.  There are two commonly used projections in video games: _orthographic_, which simply removes the z-values, flattening the scene; and _perspective_, which stretches distant objects an squishes near ones, creating the illusion of depth.
 
 [Matrix.CreatePerspectiveFieldOfView()](https://www.monogame.net/documentation/?page=M_Microsoft_Xna_Framework_Matrix_CreatePerspectiveFieldOfView) creates a perspective matrix that accounts for the field of view of the observer.  The first argument is an angle measuring how wide the field of view should be, measured in radians.  Humans have approximately a 120 degree field-of-view, but most of this is peripheral vision, so we typically use smaller numbers.  This can also be tweaked to provide the illusion of using a telescope or wide lens.  The second argument is the aspect ratio - this should match the aspect ratio of the screen, or the result will seem distorted.  For this reason we draw its value directly from the `GraphicsDevice`.  The last two values are floats indicating the far and near planes.  The near plane is how close objects can be to the observer before they won't be rendered, and the far plan is how far away they can be.
 
-[Matrix.CreateOrthorgraphic()](https://www.monogame.net/documentation/?page=M_Microsoft_Xna_Framework_Matrix_CreateOrthographic) creates an orthographic matrix.  As there is no distortion, its arguments simply describe a cube, with the near plane and far plane composing the nearest and farthest sides.  The near face is centered on the observer, and only the vertices within the cube are rendered.
+[Matrix.CreateOrthographic()](https://www.monogame.net/documentation/?page=M_Microsoft_Xna_Framework_Matrix_CreateOrthographic) creates an orthographic matrix.  As there is no distortion, its arguments simply describe a cube, with the near plane and far plane composing the nearest and farthest sides.  The near face is centered on the observer, and only the vertices within the cube are rendered.
 
 ### Vertex Color 
-Finally, the line `effect.VertexColorEnabled` indicates we want to use the colors in the vertex data to set the color of the triangle.  Since each corner has a different color, the pixels on the face of the triangle will be linearlly interpolated by the distance to each corner, creating a gradient.
+Finally, the line `effect.VertexColorEnabled` indicates we want to use the colors in the vertex data to set the color of the triangle.  Since each corner has a different color, the pixels on the face of the triangle will be linearly interpolated by the distance to each corner, creating a gradient.
 
 ## Constructing the Triangle
 
-We'll need to write a constructor that will call both the initialization methods, as well as acccept the `Game` instance:
+We'll need to write a constructor that will call both the initialization methods, as well as accept the `Game` instance:
 
 ```csharp
     /// <summary>
@@ -179,7 +179,7 @@ And we'll need to draw our triangle using our `BasicEffect` and `GraphicDevice`.
     }
 ```
 
-An `Effect` can require multiple passes through the rendering pipeline, and can even contain multiple techniques.  The line `effect.CurrentTechnique.Passes[0].Apply()` therefore sets up the graphics device for the first pass with the current technique (with our `BasicEffect`, it only has one pass).  Then we trigger the rendering with `game.GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(...)`.  We need to specify what kind of vertex data the graphics card should expect, hence the template `<VertexPositionColor>`.  The first argument is the type of primitive to render.  In our case, either `PrimitiveType.TriangleList` or `PrimitiveType.TriangleStrip` will work, as both use the first three vertices to define the first triangle, and we only have one.  The second argument is an offset in our vertex data - we're starting with the first, so its value is `0`.  The last argument is the number of primatives (in this case, triangles) to draw.  We only have one defined, so its value is `1`.
+An `Effect` can require multiple passes through the rendering pipeline, and can even contain multiple techniques.  The line `effect.CurrentTechnique.Passes[0].Apply()` therefore sets up the graphics device for the first pass with the current technique (with our `BasicEffect`, it only has one pass).  Then we trigger the rendering with `game.GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(...)`.  We need to specify what kind of vertex data the graphics card should expect, hence the template `<VertexPositionColor>`.  The first argument is the type of primitive to render.  In our case, either `PrimitiveType.TriangleList` or `PrimitiveType.TriangleStrip` will work, as both use the first three vertices to define the first triangle, and we only have one.  The second argument is an offset in our vertex data - we're starting with the first, so its value is `0`.  The last argument is the number of primitives (in this case, triangles) to draw.  We only have one defined, so its value is `1`.
 
 ## Adding the Triangle to Game1
 
@@ -233,13 +233,13 @@ Finally, we'll need to add the `Triangle.Update()` call to our `Game1.Update()` 
     triangle.Update(gameTime);
 ```
 
-Now when you run the program, your triangle rotates around the y-axis.  But for 180 degrees of the rotation, it dissappears!  What is happening?
+Now when you run the program, your triangle rotates around the y-axis.  But for 180 degrees of the rotation, it disappears!  What is happening?
 
 ## Backface Culling 
 
 If we think back to the idea that the triangles in a 3D mesh are the _surface_ of the object, it makes sense that we woul only want to draw the _outside_ faces (as the inside faces will always be obscured).  This is exactly what the graphics device is doing - using a technique called [backface culling](https://en.wikipedia.org/wiki/Back-face_culling) to only draw triangles that are facing the camera (which eliminates around half the triangles in the scene).  
 
-But how do we know which face is the front-facing one?  The graphics device uses _winding order_ to determine this.  Winding order refers to the order the vertices are presented to the hardware.  We can change this value by changing the [CullMode]().  By default, XNA uses `CullCounterClockwiseFace`; let's try swapping that.  Add these lines to your `Triangle.Draw()` method, before you invoke  `DrawUserPrimatives()`:
+But how do we know which face is the front-facing one?  The graphics device uses _winding order_ to determine this.  Winding order refers to the order the vertices are presented to the hardware.  We can change this value by changing the [CullMode]().  By default, XNA uses `CullCounterClockwiseFace`; let's try swapping that.  Add these lines to your `Triangle.Draw()` method, before you invoke  `DrawUserPrimitives()`:
 
 ```csharp
     // Change the backface culling mode

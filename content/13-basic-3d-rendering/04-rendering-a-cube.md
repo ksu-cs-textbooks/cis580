@@ -6,7 +6,7 @@ date: 2020-03-24T10:00:00-05:00
 ---
 We'll continue our exploration of the rendering pipeline with another shape - a cube.  And as before, we'll introduce another concept - _vertex_ and _index buffers_.  
 
-For our triangle and quad, we drew our shapes using `GraphicsDevice.DrawUserPrimatives<T>()` and `GraphicsDevice.DrawUserIndexedPrimitives<T>()`.   Our `vertices` and `indices` were simply arrays we declared normally, that we passed to the graphics card using the aforementioned methods.  As with most variables we deal with in C#, the memory used by the `vertices` and `indices` arrays was allocated from the computer's RAM.  When we invoked the methods, one of the tasks they do is stream the data to the GPU, so that it can be rendered.
+For our triangle and quad, we drew our shapes using `GraphicsDevice.DrawUserPrimitives<T>()` and `GraphicsDevice.DrawUserIndexedPrimitives<T>()`.   Our `vertices` and `indices` were simply arrays we declared normally, that we passed to the graphics card using the aforementioned methods.  As with most variables we deal with in C#, the memory used by the `vertices` and `indices` arrays was allocated from the computer's RAM.  When we invoked the methods, one of the tasks they do is stream the data to the GPU, so that it can be rendered.
 
 This process can be significantly sped up if, instead of storing the vertex and index data in RAM, we store it in Video Ram (VRAM).  VRAM is the memory that is a part of our graphics card.  Not surprisingly, the GPU has direct access to VRAM and can stream data from it quite quickly - more quickly than it can from RAM.  Especially if we are drawing the same shape using the same vertex and index data every frame.
 
@@ -76,7 +76,7 @@ We need to create the vertex data in much the same way we did with our other sha
     }
 ```
 
-We declare our `vertexData` as an instance variable, which means once this method returns, its memory will be reclamed.  The `VertexBuffer` constructor allocates the space needed for the data in VRAM, while the `VertexBufer.SetData()` method whaat actually copies it into that location, mananaging the process for us.
+We declare our `vertexData` as an instance variable, which means once this method returns, its memory will be reclaimed.  The `VertexBuffer` constructor allocates the space needed for the data in VRAM, while the `VertexBuffer.SetData()` method what actually copies it into that location, managing the process for us.
 
 If we were writing DirectX code in C++, we would need to:
 1. Allocate memory in VRAM for the buffer 
@@ -84,7 +84,7 @@ If we were writing DirectX code in C++, we would need to:
 3. Copy the bytes of the buffer into that location, and 
 4. Release the lock
 
-If you are interested in seeing what the equiavalent code in C++ looks like, visit [www.directxtutorial.com](http://www.directxtutorial.com/Lesson.aspx?lessonid=9-4-7).  Our vertex and index data is adapted from the cube presented there.
+If you are interested in seeing what the equivalent code in C++ looks like, visit [www.directxtutorial.com](http://www.directxtutorial.com/Lesson.aspx?lessonid=9-4-7).  Our vertex and index data is adapted from the cube presented there.
 
 ### Creating the Index Buffer
 
@@ -173,7 +173,7 @@ Our `cube.Draw()` method will be a bit different though:
         );
     }
 ```
-Before we can use [GraphicsDevice.DrawIndexedPrimitives()](https://www.monogame.net/documentation/?page=M_Microsoft_Xna_Framework_Graphics_GraphicsDevice_DrawIndexedPrimitives), we need to tell the `GraphicsDevice` which `VertexBuffer` and `IndexBuffer` to use.  The first is set with a method, the second through assignment.  With both set, we can invoke `GraphicsDevice.DrawIndexedPrimatives()` and it will draw the contents of the buffers.
+Before we can use [GraphicsDevice.DrawIndexedPrimitives()](https://www.monogame.net/documentation/?page=M_Microsoft_Xna_Framework_Graphics_GraphicsDevice_DrawIndexedPrimitives), we need to tell the `GraphicsDevice` which `VertexBuffer` and `IndexBuffer` to use.  The first is set with a method, the second through assignment.  With both set, we can invoke `GraphicsDevice.DrawIndexedPrimitives()` and it will draw the contents of the buffers.
 
 ### Constructing the Cube
 
