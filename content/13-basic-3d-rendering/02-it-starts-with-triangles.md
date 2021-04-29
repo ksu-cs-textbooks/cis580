@@ -14,7 +14,7 @@ Complex objects are therefore composed of multiple triangles, which typically sh
 
 ## Vertices
 
-Rather than creating structures for storing triangles, we store the endpoints of the triangles as _vertices_.  These vertices are a data structure that (at a minimum) defines the coordinate of the triangle endpoint in three dimensions (A Vector3 in XNA).  Vertices can contain additonal data needed to render the mesh, including color, texture coordinates, and additional vectors like the surface normal (a Vector3 pointing _out_ from the surface). 
+Rather than creating structures for storing triangles, we store the endpoints of the triangles as _vertices_.  These vertices are a data structure that (at a minimum) defines the coordinate of the triangle endpoint in three dimensions (A Vector3 in XNA).  Vertices can contain additional data needed to render the mesh, including color, texture coordinates, and additional vectors like the surface normal (a Vector3 pointing _out_ from the surface). 
 
 Let's create a class to represent our cube, and give it an array of vertices that have both a position and a color:
 
@@ -63,7 +63,7 @@ Our `Triangle` will only be using vertices 0, 1, and 2, so either approach will 
 
 ## The Effect 
 
-One of the major innovations of hardware graphics has been the introduction of _programmable shaders_.  A shader is simply a program that runs on a GPU, and peforms some steps of the graphics pipeline.  At the time XNA was created, there were three points in the graphics pipeline where programmable shaders could be inserted: the _vertex shader_, the _geometry shader_, and the _pixel shader_ (additional shader points have been added to graphics cards since).  These shaders are written in a language specific to the GPU and graphics library (DirectX or OpenGL).  In XNA, this language is [HLSL](https://en.wikipedia.org/wiki/High-Level_Shading_Language).
+One of the major innovations of hardware graphics has been the introduction of _programmable shaders_.  A shader is simply a program that runs on a GPU, and performs some steps of the graphics pipeline.  At the time XNA was created, there were three points in the graphics pipeline where programmable shaders could be inserted: the _vertex shader_, the _geometry shader_, and the _pixel shader_ (additional shader points have been added to graphics cards since).  These shaders are written in a language specific to the GPU and graphics library (DirectX or OpenGL).  In XNA, this language is [HLSL](https://en.wikipedia.org/wiki/High-Level_Shading_Language).
 
 XNA seeks to simplify the details of setting up shaders by abstracting the heavy lifting into the [Effect Class](https://www.monogame.net/documentation/?page=T_Microsoft_Xna_Framework_Graphics_Effect).  An `Effect` handles configuring the graphics device to produce a specific effect through a combination of shaders and hardware settings.  We can create custom classes derived from the `Effect` class, or use one of those already defined in XNA:
 
@@ -125,12 +125,12 @@ There's a lot going on here, so lets' break it down.
 ### The World Matrix 
 The line `effect.World = Matrix.Identity` creates the _world matrix_.  This matrix embodies a transformation that transforms our vertices from _model space_ to _game space_.  Consider our triangle - it has three endpoints (0, 1, 0), (1, 1, 0), and (1, 0, 0).  As it is defined, it has one endpoint above the origin, one to the right, and the third is above and to the right - in line with the others.  This is its _model space_.  We might want it to appear somewhere else in our game world - say at (100, 100, 0).  We call our game world _world space_, and a matrix that would embody the transformation needed to move our triangle from its model space coordinates to its world space coordinates is the _world matrix_.  We're using `Matrix.Identity` here, which won't change those coordinates at all.
 
-Instead of thinking of triangles, think of crates.  We probably would use the same crate mulitiple times throughout our game.  The crate would have been drawn in a modeling program, and probably had its origin at a corner or bottom conter (model space).  When we put it into the level, we would translate and rotate it to get it in just the right spot (world space).  We might put a second copy in a different location, with its own translation.  Hence, the two instances would have the same model coordinates, but different transformations to place them in the world, embodied in different world matrices.
+Instead of thinking of triangles, think of crates.  We probably would use the same crate multiple times throughout our game.  The crate would have been drawn in a modeling program, and probably had its origin at a corner or bottom corner (model space).  When we put it into the level, we would translate and rotate it to get it in just the right spot (world space).  We might put a second copy in a different location, with its own translation.  Hence, the two instances would have the same model coordinates, but different transformations to place them in the world, embodied in different world matrices.
 
 ### The View Matrix 
 The line `effect.View = Matrix.CreateLookAt(..)` creates the _view matrix_.  This is the transform that shifts us from _world space_ into _view space_.  View space is relative to the position of the observer - the eye (or camera) is at the origin (0, 0, 0), and they are looking along the z-axis.  Since the observer exists somewhere in the game world, the view transformation shifts the coordinate system so that that position becomes the origin, and everything in the world moves along with it.
 
-[Matrix.CreateLookAt()](https://www.monogame.net/documentation/?page=M_Microsoft_Xna_Framework_Matrix_CreateLookAt) is a method for creating a matrix to embody this transformation, and allows us to specify where the observer is looking from, and to.  The first argument is the position of the observer - where the observer's eye would be in the world.  The second argument is a vector in the direction the observer is looking.  The third helps orient the observer by defining which direction is up.  Normally this would be the up vector (0, 1, 0), but if the observer was a plane that was executing a barrel roll, it would be the down vector (0, -1, 0) halfway throught the roll, and every value between as the plane rolled.  
+[Matrix.CreateLookAt()](https://www.monogame.net/documentation/?page=M_Microsoft_Xna_Framework_Matrix_CreateLookAt) is a method for creating a matrix to embody this transformation, and allows us to specify where the observer is looking from, and to.  The first argument is the position of the observer - where the observer's eye would be in the world.  The second argument is a vector in the direction the observer is looking.  The third helps orient the observer by defining which direction is up.  Normally this would be the up vector (0, 1, 0), but if the observer was a plane that was executing a barrel roll, it would be the down vector (0, -1, 0) halfway through the roll, and every value between as the plane rolled.  
 
 ### The Projection Matrix 
 The line `effect.Projection = Matrix.CreatePerspectiveFieldOfView(...)` creates the _projection matrix_.  This is the matrix that transforms our 3D scene into a 2D one.  It does this by setting z-values to 0 while (possibly) tweaking x- and y-values to create the illusion of perspective.  There are two commonly used projections in video games: _orthographic_, which simply removes the z-values, flattening the scene; and _perspective_, which stretches distant objects an squishes near ones, creating the illusion of depth.
@@ -206,7 +206,7 @@ And finally, let's render it in our `Game1.Draw()` method:
 
 If you run your code, you should now see the triangle rendered:
 
-![The renderd triangle]({{<static "images/basic-3d-2.1.png">}})
+![The rendered triangle]({{<static "images/basic-3d-2.1.png">}})
 
 ## Rotating the Triangle 
 
@@ -237,7 +237,7 @@ Now when you run the program, your triangle rotates around the y-axis.  But for 
 
 ## Backface Culling 
 
-If we think back to the idea that the triangles in a 3D mesh are the _surface_ of the object, it makes sense that we woul only want to draw the _outside_ faces (as the inside faces will always be obscured).  This is exactly what the graphics device is doing - using a technique called [backface culling](https://en.wikipedia.org/wiki/Back-face_culling) to only draw triangles that are facing the camera (which eliminates around half the triangles in the scene).  
+If we think back to the idea that the triangles in a 3D mesh are the _surface_ of the object, it makes sense that we would only want to draw the _outside_ faces (as the inside faces will always be obscured).  This is exactly what the graphics device is doing - using a technique called [backface culling](https://en.wikipedia.org/wiki/Back-face_culling) to only draw triangles that are facing the camera (which eliminates around half the triangles in the scene).  
 
 But how do we know which face is the front-facing one?  The graphics device uses _winding order_ to determine this.  Winding order refers to the order the vertices are presented to the hardware.  We can change this value by changing the [CullMode]().  By default, XNA uses `CullCounterClockwiseFace`; let's try swapping that.  Add these lines to your `Triangle.Draw()` method, before you invoke  `DrawUserPrimitives()`:
 
