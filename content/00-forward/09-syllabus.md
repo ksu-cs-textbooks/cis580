@@ -91,11 +91,9 @@ In addition, games that fulfill _aesthetic goals_ of being engaging and/or elici
 You have the option of collaborating with other students in the class to create larger, group games for any original game project after the first four. As part of participating in a group development effort, you must complete a peer review for each of your teammates, due along with the game.  The results of the peer review will be shared with your teammates to help develop teamwork skills.  Additionally, your individual grade for the game assignment may be modified based on the peer review feedback.
 
 #### Workshops
-Over the course of the semester, you will need to submit two of your games (only one of which can be a group game) to be workshopped by your peers.  The class will be split into three workshop groups, each performing two workshops during one class period (Monday, Wednesday, or Friday depending on the group) starting the third week of class.
+Over the course of the semester, you will have the opportunity to have your games be workshopped by your peers. This is a valuable opportunity to gain critical feedback on your work, and you can earn up to 100 extra credit points (the equivalent of one game assignment) for each game you workshop.
 
-Each week you should download and play the games that will be workshopped, and submit your roughly one-page feedback to the game creators in the corresponding Canvas discussion thread.  You will also need to attend the workshop meeting, either remotely or in person, to discuss the game following the workshopping procedures. 
-
-**When attending workshops remotely, you are expected to keep your webcam turned on at all times.**
+Each week you should download and play the games that will be workshopped that week and be ready to discuss the game in class.
 
 #### Exams
 There will be no exams given in this course.
@@ -103,11 +101,15 @@ There will be no exams given in this course.
 ### Grading
 In theory, each student begins the course with an A. As you submit work, you can either maintain your A (for good work) or chip away at it (for less adequate or incomplete work). In practice, each student starts with 0 points in the gradebook and works upward toward a final point total out of the possible number of points. In this course, it is perfectly possible to get an A simply by completing all the software milestones in a satisfactory manner and attending and participating in class each day. In such a case, the examinations will simply reflect the learning you’ve been doing through that work. Each work category constitutes a portion of the final grade, as detailed below:
 
-30% - Activities (The lowest 2 scores are dropped)
+38% - Activities (The lowest score is dropped)
 
-36% - Original Game Projects (6% each, 7 games total; The single lowest assignment score will be dropped)
+42% - Original Game Projects (7% each, 7 games total)
 
-34% - Workshops (1.7% each; 20 workshops total)
+20% - Final Game
+
+Extra Credit
+
+14% - Workshops (7% each, 2 workshops total)
 
 Letter grades will be assigned following the standard scale:
 90% - 100% - A; 80% - 89.99% - B; 70% - 79.99% - C; 60% - 69.99% - D; 00% - 59.99% - F
@@ -122,7 +124,7 @@ Game development is almost always a team activity, so you may choose to tackle t
 Read the late work policy very carefully! If you are unsure how to interpret it, please contact the instructor via email. Not understanding the policy does not mean that it won't apply to you!
 {{% /notice %}}
 
-Every student should strive to turn in work on time. Late work will receive a penalty of 10% of the possible points for each day it is late. Missed workshop attendance cannot be made up. If you are getting behind in the class, you are encouraged to speak to the instructor for options to make up missed work.
+Every student should strive to turn in work on time. Late work will receive a penalty of 10% of the possible points for each day it is late. If you are getting behind in the class, you are encouraged to speak to the instructor for options to make up missed work.
 
 ### Software
 We will be using Visual Studio 2019 as our development environment. You can download a free copy of Visual Studio Community for your own machine at
@@ -160,64 +162,9 @@ Authorized aid - which is not a violation of the honor policy - includes using t
 
 Be aware that using assets (images, sounds, etc.) that you do not have permission to use constitutes both _unauthorized aid_ **and** copyright infringement.
 
-### Students with Disabilities
-Students with disabilities who need classroom accommodations, access to technology, or information about emergency building/campus evacuation processes should contact the Student Access Center and/or their instructor. Services are available to students with a wide range of disabilities including, but not limited to, physical disabilities, medical conditions, learning disabilities, attention deficit disorder, depression, and anxiety. If you are a student enrolled in campus/online courses through the Manhattan or Olathe campuses, contact the Student Access Center at [accesscenter@k-state.edu](accesscenter@k-state.edu), 785-532-6441; for K-State Polytechnic campus, contact Academic and Student Services at [polytechnicadvising@ksu.edu](polytechnicadvising@ksu.edu) or call 785-826-2674.
-
-### Diversity and Inclusion
-{{% notice note %}}
-This is our personal policy and not a required syllabus statement from K-State. It has been adapted from [this statement](https://tomprof.stanford.edu/posting/1625) created by two educators at Brown University. We feel that a statement such as this is very powerful and important in today’s world, and we’ll do our best to live up to it. 
-{{% /notice %}}
-
-In an ideal world, science and technology would be objective. However, much of science and technology is subjective and is historically built on a small subset of privileged voices. In this class, we will reference many materials from a diverse set of sources, but limits still exist on this diversity. I acknowledge that it is possible that there may be both overt and covert biases in the material due to the lens with which it was written, even though the material is primarily of a technical nature.
-
-Please contact me or submit anonymous feedback through the Computer Science department office if you have any concerns or suggestions regarding this course and related materials.
-
-### Netiquette
-{{% notice note %}}
-This is our personal policy and not a required syllabus statement from K-State. It has been adapted from [this statement](https://global.k-state.edu/students/courses/netiquette/) from K-State Global Campus, and the [Recurse Center Manual](https://www.recurse.com/manual). We have adapted their ideas to fit this course.
-{{% /notice %}}
-
-Online communication is inherently different than in-person communication. When speaking in person, many times we can take advantage of the context and body language of the person speaking to better understand what the speaker means, not just what is said. This information is not present when communicating online, so we must be much more careful about what we say and how we say it in order to get our meaning across.
-
-Here are a few general rules to help us all communicate online in this course, especially while using tools such as email or Canvas:
-
-* **Use a clear and meaningful subject line to announce your topic.** Subject lines such as “Question” or “Problem” are not helpful. Subjects such as “Logic Question in Project 5, Part 1 in Java” or “Unexpected Exception when Opening Text File in Python” give plenty of information about your topic.
-* **Use only one topic per message.** If you have multiple topics, post multiple messages so each one can be discussed independently.
-* **Be thorough, concise, and to the point.** Ideally, each message should be a page or less.
-* **Include exact error messages, code snippets, or screenshots, as well as any previous steps taken to fix the problem.** It is much easier to solve a problem when the exact error message or screenshot is provided. If we know what you’ve tried so far, we can get to the root cause of the issue more quickly.
-* **Consider carefully what you write before you post it.** Once a message is posted, it becomes part of the permanent record of the course and can easily be found by others.
-* **If you are lost, don’t know an answer, or don’t understand something, speak up!** Email allows you to send a message privately to the instructors. Don’t be afraid to ask questions anytime, as you can choose to do so without any fear of being identified by your fellow students.
-* **Class discussions are confidential.** Do not share information from the course with anyone outside of the course without explicit permission.
-Do not quote entire message chains; only include the relevant parts. When replying to a previous message, only quote the relevant lines in your response.
-* **Do not use all caps.** It makes it look like you are shouting. Use appropriate text markup (bold, italics, etc.) to highlight a point if needed.
-* **No feigning surprise.** If someone asks a question, saying things like “I can’t believe you don’t know that!” are not helpful, and only serve to make that person feel bad.
-* **No “well-actually’s."** If someone makes a statement that is not entirely correct, resist the urge to offer a “well, actually…” correction, especially if it is not relevant to the discussion. If you can help solve their problem, feel free to provide correct information, but don’t post a correction just for the sake of being correct.
-* **Do not correct someone’s grammar or spelling.** Again, it is not helpful, and only serves to make that person feel bad. If there is a genuine mistake that may affect the meaning of the post, please contact the person privately or let the instructors know privately so it can be resolved.
-* **Avoid subtle -isms and microaggressions.** Avoid comments that could make others feel uncomfortable based on their personal identity. See the syllabus section on Diversity and Inclusion above for more information on this topic. If a comment makes you uncomfortable, please contact the instructor.
-* **Avoid sarcasm, flaming, advertisements, lingo, trolling, doxxing, and other bad online habits.** They have no place in an academic environment. Tasteful humor is fine, but sarcasm can be misunderstood.
-
-### Expectations of Conduct 
-All student activities in the University, including this course, are governed by the [Student Judicial Conduct Code](http://www.k-state.edu/sga/judicial/) as outlined in the Student Governing Association [By Laws](http://www.k-state.edu/sga/old_files/sgadocs/ByLaws.pdf), Article V, Section 3, number 2. Students who engage in behavior that disrupts the learning environment may be asked to leave the class.
-
-### Face Coverings
-To protect the health and safety of the K-State community, students, faculty, staff and visitors must wear face coverings over their mouths and noses while on K-State campuses in all hallways, public spaces, classrooms and other common areas of campus buildings, and when in offices or other work spaces or outdoor settings when 6-feet social distancing cannot be maintained. In addition, all students, faculty, and staff are required to take the [COVID-19 and Face Mask Safety training](https://www.k-state.edu/safety/covid-19/training/). Employees who need reasonable accommodations and assistance related to required face coverings may contact the ADA coordinator at [charlott@k-state.edu](mailto:charlott@k-state.edu), and students needing accommodations may contact the Student Access Center at [accesscenter@k-state.edu](accesscenter@k-state.edu).
-
-In classrooms, faculty have the right to deny a student entry into the room if the student is not wearing a face covering. Students not wearing a face covering will be reminded to do so and offered a clean face covering, if one is available. If the student does not comply, the faculty member will ask the student to leave the space, and if available, join the class remotely.  As a last resort, campus police will be called. The faculty members will complete the [Code of Conduct form](https://www.k-state.edu/report/conduct-violation/) and the Office of Student Life will look further into the issue and take the non-compliance with the request to leave into consideration of further accountability measures. 
-
-At no point should the professor or other students put themselves into an unsafe situation while attempting to enforce the face-covering policy. Manhattan campus police: 785-532-6412
-
-### Campus Safety
-Kansas State University is committed to providing a safe teaching and learning environment for student and faculty members. In order to enhance your safety in the unlikely case of a campus emergency make sure that you know where and how to quickly exit your classroom and how to follow any emergency directives. To view additional campus emergency information go to the University’s main page, [www.k-state.edu](http://www.k-state.edu/), and click on the Emergency Information button, located at the bottom of the page.
-
-### Student Resources
-K-State has many resources to help contribute to student success. These resources include accommodations for academics, paying for college, student life, health and safety, and others found at [www.k-state.edu/onestop](http://www.k-state.edu/onestop).
-
-### Academic Freedom Statement
-Kansas State University is a community of students, faculty, and staff who work together to discover new knowledge, create new ideas, and share the results of their scholarly inquiry with the wider public. Although new ideas or research results may be controversial or challenge established views, the health and growth of any society requires frank intellectual exchange. Academic freedom protects this type of free exchange and is thus essential to any university’s mission.
-
-Moreover, academic freedom supports collaborative work in the pursuit of truth and the dissemination of knowledge in an environment of inquiry, respectful debate, and professionalism. Academic freedom is not limited to the classroom or to scientific and scholarly research, but extends to the life of the university as well as to larger social and political questions. It is the right and responsibility of the university community to engage with such issues.
+{{% include "themes/ksucs-hugo-theme/static/files/syllabus-no-copyright-no-honesty.md" %}} 
 
 ### Copyright Notice
-©2020 The materials in this online course fall under the protection of all intellectual property, copyright and trademark laws of the U.S. The digital materials included here come with the legal permissions and releases of the copyright holders. These course materials should be used for educational purposes only; the contents should not be distributed electronically or otherwise beyond the confines of this online course. The URLs listed here do not suggest endorsement of either the site owners or the contents found at the sites. Likewise, mentioned brands (products and services) do not suggest endorsement. Students own copyright to what they create.
+©2021 The materials in this online course fall under the protection of all intellectual property, copyright and trademark laws of the U.S. The digital materials included here come with the legal permissions and releases of the copyright holders. These course materials should be used for educational purposes only; the contents should not be distributed electronically or otherwise beyond the confines of this online course. The URLs listed here do not suggest endorsement of either the site owners or the contents found at the sites. Likewise, mentioned brands (products and services) do not suggest endorsement. Students own copyright to what they create.
 
 Original content in the course textbook at [{{< param textbookURL >}}]({{< param textbookURL >}}) is licensed under a Creative Commons BY-SA license by Nathan Bean unless otherwise stated.

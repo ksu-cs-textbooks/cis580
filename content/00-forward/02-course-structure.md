@@ -23,13 +23,11 @@ In addition to learning about the programming techniques used in games, you are 
 4. You will also submit some of your original games to be "workshopped" by the class - critiqued by your peers as a strategy to help you evaluate your own work.
 
 ## Class Meetings
-We will be holding a mixture of in-person and remote class meetings throughout the semester.  If you are ill or have been asked to self-isolate, you should join remotely via Zoom.  You may also choose to attend entirely remotely.  Links to the class Zoom session are accessible from the **Zoom** menu in canvas.  We will also record class sessions and post the recordings (also under the **Zoom** menu on canvas).
+This class is presented in a "flipped" format.  This means that you will need to do readings and work through tutorials _before_ the class period.  Instead of lectures, class meetings are reserved for discussion, brainstorming, development, and workshops. In light of the pandemic, attendance is not mandatory, but be aware that class time is your opportunity to ask questions, get help, and garner feedback on your game designs.
 
-Because of the limits on our classroom capacity, the class will be split into three teams, each of which will have the option of attending in-person one day a week (as described in the section on **Workshop Attendance** below).  We will open each class with answering any questions that have arisen from the week's work, before starting that day's workshop, so if you have questions, plan to attend - at least remotely.
-
-**Additionally, for the first two weeks of class we will meet entirely remotely.**
-
-It is also possible we may shift to entirely remote during the semester depending on circumstances or student wishes.
+{{% notice warning %}}
+If you are sick, having symptoms, or have been asked to quarantine, **do not come to class**.  If you will miss a class session due to COVID, you may be able to arrange a Zoom session by contacting the instructor prior to class.
+{{% /notice %}}
 
 ## Course Modules
 The course activities have been organized into modules in Canvas which help group related materials and activities.  You should work your way through each module from start to finish.
@@ -53,18 +51,20 @@ I have adopted this grading system as I have found it allows for more creative f
 In this course, it is acceptable to submit the same game project for multiple assignments. Each time you submit your game, you will need to incorporate the new set of requirements.  This allows you to make more complex games by evolving a concept through multiple iterations.  
 
 #### Working in Teams
-In the past we have done a "final game project" as a team, which allowed for a much more expansive game to be built.  This can be challenging to manage under current circumstances, but I would like to retain that flexibility for students who are interested in working together.
-
-The solution I would like to pilot this year is allowing you to work with other students on no more than three of your original game submissions.  These cannot be one of the first four original game assignments.  If you choose to work as a team, you must send me an email listing each member of the team, ideally before you start working on the game.  Students working on teams will also be required to submit a peer review evaluating the contributions of each member of the team.  This will be used to modify the game score assigned to each student.  **Be aware that I will not tolerate students letting their teammates do all the work - any student who does will receive a 0 for the assignment.**
+You may work with other students as a team to develop no more than three of your original game submissions.  These cannot be one of the first four original game assignments.  If you choose to work as a team, you must send me an email listing each member of the team, ideally before you start working on the game.  Students working on teams will also be required to submit a peer review evaluating the contributions of each member of the team.  This will be used to modify the game score assigned to each student.  **Be aware that I will not tolerate students letting their teammates do all the work - any student who does will receive a 0 for the assignment.**
 
 ## Workshopping
-Workshopping is an approach common to the creative arts that we are adapting to game design.  Each student will need to workshop two of their games during the semester (only one of which may be a group game).  The class will be broken into three workshop groups of ten students each (A, B, and C) which will meet Monday, Wednesday, and Friday respectively.  Each class period we will workshop one game (so each team will have one workshop per week).  
+Workshopping is an approach common to the creative arts that we are adapting to game design.  Each student will have the opportunity to workshop their games during the semester.  In addition, for your first two workshops you may and earn up to 100 extra credit points (50 points for each).  
 
-For each workshopped game there will be a group discussion created on Canvas; the student's game will be distributed to the workshop team through the first post in the discussion.  The rest of the team should each download and play the game.  Then, these students will then prepare a roughly one-page critique and post it back to the discussion board.  Then, in the corresponding class meeting, the workshopping students will discuss the game for 10 to 15 minutes while the creator of the game remains a silent observer and takes notes.  After this time has elapsed, the team can ask questions of the game creator, and visa versa.
+Workshops will be held on Wednesdays, and we can have up to four workshops per day.  Workshops are available on a first-come basis.  To reserve your slot, You must sign up by posting to the **Workshops discussion board** in Canvas.  
 
-### Workshop Participation
-Each student on a workshop team is responsible for attending and contributing to their assigned workshops (i.e. Group A on Monday, Group B on Wednesday, and Group C on Friday).  Attendance can be either in-person or remotely via Zoom (if attending remotely, you are **required** to have your web cam turned on during the workshop).  It is not enough to attend the workshop - you must also give some degree of feedback.
+The class should play the week's workshop games _before_ the class meeting on Wednesday. In that class meeting we will discuss the game for ~10 minutes while the creator of the game remains a silent observer and takes notes.  After this time has elapsed, the team can ask questions of the game creator, and visa versa.  During these workshops, please use good [workshop etiquette]({{<ref "00-forward/03-workshop-etiquette">}}).
 
-**Due to COVID-19 class restrictions, you should only attend class in-person on your team's assigned workshop day.**  You may choose to attend the other workshops remotely, though if it is not your team's workshop please observe politely during the workshop.
+{{% notice warning %}}
+In order to earn points for a workshop, you must:
+1. Post your game to be workshopped _before_ the Monday of the week the workshop will be held.
+2. This post should include a description of your game, and a link to a release in your **public** GitHub repository for the game.
+3. The release **must contain a the game binaries as additional downloads**, i.e. zip your release build folder and upload it to the GitHub release page.
 
-Please keep in mind the Netiquitte standards (discussed in the next section) for both online and in-person communication during the workshops.  The goal is to help everyone become a better game developer and to bring their game ideas to full fruition, not to insult or tear down!
+If one or more of these conditions are not met, you will earn NO POINTS for your workshop. 
+{{% /notice %}}

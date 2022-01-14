@@ -12,7 +12,7 @@ This textbook was authored for the **CIS 580 - Fundamentals of Game Programming*
 As you work on the materials in this course, you may run into questions or problems and need assistance.
 
 ## Class Sessions
-A portion of each class session is set aside for questions that have come up as you've worked through the course materials.  Please take advantage of this time; not only will you benefit from the answer, but so will your classmates!  Remember you are always welcome to join class sessions remotely, even if it is not your day to attend in-person.
+A portion of each class session is set aside for questions that have come up as you've worked through the course materials.  Please take advantage of this time; not only will you benefit from the answer, but so will your classmates!  
 
 ## Discord
 For questions that crop up outside of class times, your first line of communication for this course is the course channel on the departmental Discord server. If you have not yet signed into the course discord channel, or are not yet a Discord user, please visit [https://discordbot.cs.ksu.edu](https://discordbot.cs.ksu.edu).  This assistant will link your K-State and Discord accounts and set your username for the server in accordance with K-State policy.
@@ -23,13 +23,13 @@ Discord can be used through its web app at [https://discord.com/webapp](https://
 In addition to class channels, the Discord server hosts channels for student clubs, announcements, and general discussion.  It is a good place to socialize while we are unable to meet face-to-face.
 {{% /notice %}}
 
-### Course Channel
+#### Course Channel
 
 Discord uses _channels_ - the equivalent of chat rooms - to provide a place for related conversations.  The channel for this course is **#CIS-580**.  It is the best place to go to get help with anything related to this course, from the tutorials and projects to issues with Visual Studio and Canvas. Before you post on Discord, use the search feature in the channel or scroll back in the chat history to make sure the question has not already been posted before. It will save everyone quite a bit of time.
 
 Additionally, all course announcements will be made in the course channel (as well as through the Canvas announcements), so make a habit of checking the channel regularly.
 
-### Direct Messaging
+#### Direct Messaging
 
 Discord also supports direct messaging - you can use this when you have a procedural or grading question.  Type the name or eid of the person you'd like to message into the search bar, and then select them from the results to start a direct message.  Once you've started a direct message with a user, their name will also show up in your side menu.  
 
