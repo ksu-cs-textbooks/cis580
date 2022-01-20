@@ -33,7 +33,7 @@ The `KeyboardState` struct contains properties:
 * `CapsLock` - a boolean indicating if the caps lock is on
 * `NumLock` - a boolean indicating if the num lock is on
 
-But more often, we'll use its method `IsKeyDown(Keys key)` or `IsKeyUp(Keys key)`, both of which take a `Keys` value.  For example, we can check of the escape key is pressed with:
+But more often, we'll use its method `IsKeyDown(Keys key)` or `IsKeyUp(Keys key)`, both of which take a `Keys` value.  For example, we can check if the escape key is pressed with:
 
 ```csharp
     if(currentKeyboardState.IsKeyDown(Keys.Escape))
