@@ -112,7 +112,7 @@ public static bool Collides(BoundingCircle c1, BoundingCircle c2)
 
 There are many possible algorithms to use in detecting when a rectangle collides with another rectangle, each with its own strengths and weaknesses.  Again, we can turn to a graphical representation to help us generate our test:
 
-[Rectangle on rectangle collisions]({{<static "images/4.2.3.png">}}
+![Rectangle on rectangle collisions]({{<static "images/4.2.3.png">}})
 
 From this first image, we might assume that two rectangles collide if one of their corners falls within the other.  Thus, we might think that simply checking if any of the corners of one rectangle fall within the other would give us our result.  But that overlooks one important case:
 
@@ -205,7 +205,7 @@ public static bool Collides(BoundingRectangle r, BoundingPoint p)
 ### Circle on Rectangle Collisions
 A circle-on-rectangle collision is a bit more challenging. To understand our strategy, let's start with a number line:
 
-{{<static "images/4.5.3.png">}}
+![Number Line]({{<static "images/4.2.5.png">}})
 
 Notice the red line from 0 to 4?  What is the closest point that falls within that line to the value -2? To the value 5?  To the value 3?  The answers are: 0, 3, and 4.  Basically, if the point falls within the section, it is the point itself.  Otherwise it is the closest endpoint.  Mathematically, this is the clamp operation, and MonoGame provides a method to calculate it: `MathHelper.Clamp(float value, float min, float max)`.  It will clamp the provided value to the provided min and max.
 

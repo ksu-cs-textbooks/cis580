@@ -21,7 +21,7 @@ The polygon can be represented as a data structure using a collection of vectors
 /// <summary>
 /// A struct representing a convex bounding polygon
 /// </summary>
-public class BoundingPolygon
+public struct BoundingPolygon
 {
     /// <summary>
     /// The corners of the bounding polygon, 
@@ -97,7 +97,38 @@ private static MinMax FindMaxMinProjection(BoundingPolygon poly, Vector2 axis)
 }
 ```
 
-If we do this for _both_ shapes, we can see if they overlap:
+And the class to represent the minimum and maximum bounds:
+
+```csharp
+/// <summary>
+/// An object representing minimum and maximum bounds
+/// </summary>
+private struct MinMax
+{
+    /// <summary>
+    /// The minimum bound
+    /// </summary>
+    public float Min;
+
+    /// <summary>
+    /// The maximum bound
+    /// </summary>
+    public float Max;
+
+    /// <summary>
+    /// Constructs a new MinMax pair
+    /// </summary>
+    public MinMax(float min, float max)
+    {
+        Min = min;
+        Max = max;
+    }
+}
+```
+
+Since we would only be using this class within the collision helper, we could declare it within that class and make it private - one of the few times it makes sense to declare a private class.
+
+If we determine the minimum and maximum projection for _both_ shapes, we can see if they overlap:
 
 ![Projecting Bounding Polygons onto an axis]({{<static "images/4.4.6.png">}})
 
@@ -107,18 +138,112 @@ But just which axes should we test?  Ideally we’d like a minimal set that prom
 
 ![The edge normals]({{<static "images/4.4.7.png">}})
 
-Depending on the order we’ve declared our points (clockwise or anti-clockwise) one of these normals will face out of the polygon, while the other will face in.  As long as we’re consistent, either direction will work.  We calculate the normals by iterating over our points and creating vectors to represent each edge:
+In 2D, an edge normal is a unit vector (of length 1) perpendicular to the edge vector (a vector along the edge).  We can calculate it by exchanging the x and y components and negating one of them.
+
+Depending on the order we’ve declared our points (clockwise or anti-clockwise) one of these normals will face out of the polygon, while the other will face in.  As long as we’re consistent, either direction will work.  We calculate the normals by iterating over our points and creating vectors to represent each edge, and then calculating a perpendicular vector to that edge.
+
+If we were to keep using a `struct` to represent our collision shape, we could add a field for the normals and implement the normal generation within the constructor:
 
 ```csharp
-public static GetEdgeNormals(BoundingP) {
-    var normals = [shape[shape.length-1][1]-shape[0] [1], -(shape[shape.length-1][0]-shape[0][0])];
-    for(var i = 1; i < shape.length; i++) {
-        normals.push([shape[i-1][1]-shape[i][1], -(shape[i-1][1]-shape[i][1])]);
-    } 
-    return normals;
+/// <summary>
+/// A struct representing a convex bounding polygon
+/// </summary>
+public struct BoundingPolygon
+{
+    /// <summary>
+    /// The corners of the bounding polygon, 
+    /// in relation to its center
+    /// </summary>
+    public Vector2[] Corners;
+
+    /// <summary>
+    /// The center of the polygon in the game world
+    /// </summary>
+    public Vector2 Center;
+
+    /// <summary>
+    /// The normals of each corner of this bounding polygon
+    /// </summary>
+    public Vector2[] Normals;
+
+
+    /// <summary>
+    /// Constructs a new arbitrary convex bounding polygon
+    /// </summary>
+    /// <remarks>
+    /// In order to be used with Separating Axis Theorem, 
+    /// the bounding polygon MUST be convex.
+    /// </remarks>
+    /// <param name="center">The center of the polygon</param>
+    /// <param name="corners">The corners of the polygon</param>
+    public BoundingPolygon(Vector2 center, IEnumerable<Vector2> corners)
+    {
+        // Store the center and corners
+        Center = center;
+        Corners = corners.ToArray();
+        // Determine the normal vectors for the sides of the shape
+        // We can use a hashset to avoid duplicating normals
+        var normals = new HashSet<Vector2>();
+        // Calculate the first edge by subtracting the first from the last corner
+        var edge = Corners[Corners.Length - 1] - Corners[0];
+        // Then determine a perpendicular vector 
+        var perp = new Vector2(edge.Y, -edge.X);
+        // Then normalize 
+        perp.Normalize();
+        // Add the normal to the list
+        normals.Add(perp);
+        // Repeat for the remaining edges
+        for (var i = 1; i < Corners.Length; i++)
+        {
+            edge = Corners[i] - Corners[i - 1];
+            perp = new Vector2(edge.Y, -edge.X);
+            perp.Normalize();
+            normals.Add(perp);
+        }
+        // Store the normals
+        Normals = normals.ToArray();
+    }    
+```
+
+To detect a collision between two `BoundingPolygons`, we iterate over their combined normals, generating the `MinMax` of each and testing it for an overlap.  Implemented as a method in our `CollisionHelper`, it would look like something like this:
+
+```csharp
+/// <summary>
+/// Detects a collision between two convex polygons
+/// </summary>
+/// <param name="p1">the first polygon</param>
+/// <param name="p2">the second polygon</param>
+/// <returns>true when colliding, false otherwise</returns>
+public static bool Collides(BoundingPolygon p1, BoundingPolygon p2)
+{
+    // Check the first polygon's normals
+    foreach(var normal in p1.Normals)
+    {
+        // Determine the minimum and maximum projection 
+        // for both polygons
+        var mm1 = FindMaxMinProjection(p1, normal);
+        var mm2 = FindMaxMinProjection(p2, normal);
+        // Test for separation (as soon as we find a separating axis,
+        // we know there is no possibility of collision, so we can 
+        // exit early)
+        if (mm1.Max < mm2.Min || mm2.Max < mm1.Min) return false;
+    }
+    // Repeat for the second polygon's normals
+    foreach (var normal in p2.Normals)
+    {
+        // Determine the minimum and maximum projection 
+        // for both polygons
+        var mm1 = FindMaxMinProjection(p1, normal);
+        var mm2 = FindMaxMinProjection(p2, normal);
+        // Test for separation (as soon as we find a separating axis,
+        // we know there is no possibility of collision, so we can 
+        // exit early)
+        if (mm1.Max < mm2.Min || mm2.Max < mm1.Min) return false;
+    }
+    // If we reach this point, no separating axis was found
+    // and the two polygons are colliding
+    return true;
 }
 ```
 
-All that remains is to determine which axes to check for separation.  Unfortunately, there are infinite possibilities.  But as with the rectangle test we saw earlier, we can turn the question around.  Is there a minimum set of axes we can check to see if a collision _is_ happening?  And the answer is yes - the set defined by the _sides_ of both collision polygons.
-
-We can create that set by iterating over the points, and subtracting each point's `Vector2` from the one before it.  Then, for each of these 
+We can also treat our other collision shapes as special cases, handling the projection onto an axis based on their characteristics (i.e. a circle will always have a min and max of projection of center - radius and projection of center + radius).
