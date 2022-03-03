@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
 pre: "1. "
-weight: 1
+weight: 10
 date: 2020-03-20T10:53:05-05:00
 ---
 
@@ -19,4 +19,4 @@ With the concept of palettized image formats in mind, let’s look at an example
 
 Notice how so much of the scene seems to be the same texture repeated?  Much like the color palette applies a collection of colors on a regular grid, a tile engine applies a collection of tile textures on a regular grid.  This allows a large level to be drawn with only a handful of textures.  Moreover, these textures are typically stored in a texture atlas (i.e. all the tiles appear in a single texture).
 
-Let's look at how we can implement this strategy in MonoGame.  But first, we need to review the basics of 1D and 2D arrays.
+Let's look at how we can implement this strategy in our own games.

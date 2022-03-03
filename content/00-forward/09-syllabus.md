@@ -16,7 +16,7 @@ This textbook was authored for the **CIS 580 - Fundamentals of Game Programming*
 * **Office:** DUE 2216
 * **Phone:** (785)483-9264 (Call/Text)
 * **Website:** [https://nathanhbean.com](https://nathanhbean.com)
-* **Virtual Office Hours:** By appointment via [Zoom](ksu.zoom.us).  Schedule a meeting via email or Discord
+* **Office Hours:** MW 10:30-11:30 or by appointment
 
 ### Preferred Methods of Communication:
 * **Chat:** Quick questions via Discord are the preferred means of communication.   Questions whose answers may benefit the class I would encourage you to post in the` #cis400` channel, as this keeps a public history your classmates can review.  More personal questions should be direct messaged to `@Nathan Bean`.
