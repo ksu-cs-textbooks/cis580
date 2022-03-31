@@ -57,7 +57,7 @@ We need to create the vertex data in much the same way we did with our other sha
     public void InitializeVertices()
     {
         var vertexData = new VertexPositionColor[] { 
-            new VertexPositionColor() { Position = new Vector3(-3, -3, -3), Color = Color.Blue },
+            new VertexPositionColor() { Position = new Vector3(-3,  3, -3), Color = Color.Blue },
             new VertexPositionColor() { Position = new Vector3( 3,  3, -3), Color = Color.Green },
             new VertexPositionColor() { Position = new Vector3(-3, -3, -3), Color = Color.Red },
             new VertexPositionColor() { Position = new Vector3( 3, -3, -3), Color = Color.Cyan },
