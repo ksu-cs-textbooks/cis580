@@ -73,25 +73,25 @@ $$
 This can then be compared to the sum of the two circle’s radii, giving us an indication of the relationship between the two shapes:
 
 $$
-(r_2 + r1) < \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{The circles do not intersect}
+(r_2 + r_1) < \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{The circles do not intersect}
 $$
 $$
-(r_2 + r1) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{The circles touch}
+(r_2 + r_1) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{The circles touch}
 $$
 $$
-(r_2 + r1) > \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{The circles overlap}
+(r_2 + r_1) > \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{The circles overlap}
 $$
 
 However, computing the square root is a costly operation in computational terms, so we will typically square both sides of the equation and use a comparison of the squares instead:
 
 $$
-(r_2 + r1)^2 < (x_2 - x_1)^2 + (y_2 - y_1)^2 \quad \text{The circles do not intersect}
+(r_2 + r_1)^2 < (x_2 - x_1)^2 + (y_2 - y_1)^2 \quad \text{The circles do not intersect}
 $$
 $$
-(r_2 + r1)^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2 \quad \text{The circles touch}
+(r_2 + r_1)^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2 \quad \text{The circles touch}
 $$
 $$
-(r_2 + r1)^2 > (x_2 - x_1)^2 + (y_2 - y_1)^2 \quad \text{The circles overlap}
+(r_2 + r_1)^2 > (x_2 - x_1)^2 + (y_2 - y_1)^2 \quad \text{The circles overlap}
 $$
 From these inequalities we can very easily write a test for determining if our shapes collide.
 
