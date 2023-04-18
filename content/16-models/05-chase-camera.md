@@ -17,12 +17,12 @@ public interface IFollowable
     /// <summary>
     /// The IFollowable's position in the world 
     /// </summary>
-    Vector3 Position { get; set; }
+    Vector3 Position { get; }
 
     /// <summary>
     /// The angle the IFollowable is facing, in radians 
     /// </summary>
-    float Facing { get; set; }
+    float Facing { get; }
 }
 ```
 

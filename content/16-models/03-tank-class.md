@@ -81,7 +81,7 @@ In our update, let's control our movement with the WASD keys.  Let's also assume
 Before we can move forward or backward, we first need to determine just what direction that is.  An easy way to do so is to rotate a unit vector facing forward by the facing angle:
 
 ```csharp
-    var direction = Vector3.Transform(Vector3.Foreward, Matrix.CreateRotationY(facing));
+    var direction = Vector3.Transform(Vector3.Forward, Matrix.CreateRotationY(facing));
 ```
 
 We can then subtract this facing vector, multiplied by our speed, to the tank's position when it is moving forward:
@@ -182,7 +182,7 @@ Rather than have our tank plow through the ground unrelistically, let's get it t
     public IHeightMap HeightMap { get; set; }
 ```
 
-We can then use the `IHeightMap.GetHeightAt()` method in our `Tank.Update()` to set the tank to the height of the terrain where it is curently at:
+We can then use the `IHeightMap.GetHeightAt()` method in our `Tank.Update()` to set the tank to the height of the terrain where it is currently at:
 
 ```csharp
     // Set the tank's height based on the HeightMap
