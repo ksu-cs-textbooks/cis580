@@ -1,13 +1,11 @@
 +++
-title = "11. Content Pipeline"
+title = "Content Pipeline"
 date = 2020-03-20T10:53:05-05:00
 weight = 100
-chapter = true
+archteype = "chapter"
+ordinal = "11"
+pre = "11. "
 +++
-
-### Chapter 11
-
-# The Content Pipeline
 
 Get Your Assets into the Game!
 

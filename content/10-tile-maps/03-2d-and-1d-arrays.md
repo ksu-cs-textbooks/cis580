@@ -7,15 +7,15 @@ date: 2020-03-20T10:53:05-05:00
 
 Let's talk briefly about how a 2d array is actually stored _in memory_.  We like to think of it as looking something like this visualization:
 
-![2D array visualization]({{<static "images/10.2.5.png">}})
+![2D array visualization](/images/10.2.5.png)
 
 But in reality, it is stored _linearly_, like this:
 
-![2D array in memory]({{<static "images/10.2.6.png">}})
+![2D array in memory](/images/10.2.6.png)
 
 To access a particular element in the array, the 2d coordinates must be transformed into a 1d index.  Note that each row follows the proceeding rows, so the starting index of each row would be the width of the row, _plus_ the x-coordinate, i.e. the index of $(3,1)$ would be $1 * width + 3$:
 
-![Accessing (3,1)]({{<static "images/10.2.7.png">}})
+![Accessing (3,1)](/images/10.2.7.png)
 
 This can be generalized into the equation:
 
@@ -79,10 +79,10 @@ When you load a variable into a hardware register to do a calculation, it is loa
 
 Consider the order in which loop 1 accesses the array.  It first accesses the first element in the first row.  Then the first element in the second row, and then the first element in the third row, then the second element in the first row, and so on... You can see this in the figure below:
 
-![Loop 1 access order]({{<static "images/10.2.8.png">}})
+![Loop 1 access order](/images/10.2.8.png)
 
 Now, consider the same process for Loop 2:
 
-![Loop 2 access order]({{<static "images/10.2.9.png">}})
+![Loop 2 access order](/images/10.2.9.png)
 
 Notice how all the memory access happens linearly? This makes the most efficient use of the cached data, and will perform much better when your array is large.

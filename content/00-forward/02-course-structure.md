@@ -38,7 +38,7 @@ Most modules will contain assigned readings and/or videos for you to study as a 
 We will make heavy use of Robert Nystrom's _Game Programming Patterns_, an exploration of common design patterns used in video games.  It can be bought in print, but he also has a free web version: https://gameprogrammingpatterns.com/contents.html.  
 
 ### Course Tutorials
-Most modules will also contain a tutorial exploring implementing the covered topic with the MonoGame/XNA technologies we will be using in this course.  These are organized into the course textbook (which you are reading now).  It is available in its entirety at [{{< param textbookURL >}}]({{< param textbookURL >}}).  
+Most modules will also contain a tutorial exploring implementing the covered topic with the MonoGame/XNA technologies we will be using in this course.  These are organized into the course textbook (which you are reading now).  It is available in its entirety at [{{< ref "/" >}}]({{< ref "/" >}}).  
 
 ### Original Game Assignments
 Every few topics you will be challenged to create an original game that draws upon the techniques you have learned about. For each game, there will be a limited number of algorithms, data structures, or approaches you are required to implement.  Each original game is worth 100 points. 

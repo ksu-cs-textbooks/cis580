@@ -177,5 +177,5 @@ The rest of the existing camera code (in the `Update()` and `Draw()` methods) do
 
 If you run the game now, you should see the backside of your tank:
 
-![The ChaseCamera in Action]({{<static "images/models-6.1.png">}})
+![The ChaseCamera in Action](/images/models-6.1.png)
             

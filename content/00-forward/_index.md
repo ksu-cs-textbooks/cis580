@@ -2,13 +2,10 @@
 title = "Course Information"
 date = 2018-08-24T10:53:05-05:00
 weight = 1
-chapter = true
+archteype = "chapter"
+ordinal = "0"
 pre = "0. "
 +++
-
-### Forward
-
-# CIS 580 Course Information
 
 Press Start to Begin 
 

@@ -1,13 +1,11 @@
 +++
-title = "14. Lighting and Cameras"
+title = "Lighting and Cameras"
 date = 2020-03-20T10:53:05-05:00
 weight = 140
-chapter = true
+archteype = "chapter"
+ordinal = "14"
+pre = "14. "
 +++
-
-### Chapter 14
-
-# Lights and Cameras
 
 Lights, Camera, Action!
 

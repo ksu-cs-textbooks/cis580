@@ -9,7 +9,7 @@ To create a particle system, we'll derive a class from the `ParticleSystem` clas
 
 ### Rain Particle System
 
-This is a simplistic implementation of rain that is spawned in a predefined rectangle and falls to the bottom of the screen.  The texture we'll use is [this drop]({{<static "images/drop.png">}})
+This is a simplistic implementation of rain that is spawned in a predefined rectangle and falls to the bottom of the screen.  The texture we'll use is [this drop](/images/drop.png)
 
 We start by defining a class extending the `ParticleSystem`:
 
@@ -120,7 +120,7 @@ Finally, we'll override the `Update()` method from `DrawableGameComponent` to ad
 
 ### Explosion Particle System 
 
-Another particle effect we see often in games is explosions.  Let's create an effect that will let us create explosions at specific points on-screen as our game is running.  We'll use [this explosion texture]({{<static "images/explosion.png">}}).
+Another particle effect we see often in games is explosions.  Let's create an effect that will let us create explosions at specific points on-screen as our game is running.  We'll use [this explosion texture](/images/explosion.png).
 
 We again start by defining a new class derived from `ParticleSystem`:
 
@@ -254,7 +254,7 @@ And finally, we need to allow the game to place explosion effects, so we'll add 
 
 ### PixieParticleSystem 
 
-Another common use for particle systems is to have them _emitted_ from an object in the game - i.e. the player, an enemy, or something the player can interact with.  Let's explore this idea by making a particle system that emits colored sparks that fall to the ground, like pixie dust.  For this particle system, we'll use [this particle texture with a circular gradient]({{<static "images/particle.png">}}).
+Another common use for particle systems is to have them _emitted_ from an object in the game - i.e. the player, an enemy, or something the player can interact with.  Let's explore this idea by making a particle system that emits colored sparks that fall to the ground, like pixie dust.  For this particle system, we'll use [this particle texture with a circular gradient](/images/particle.png).
 
 Let's start by defining an interface that can serve as our emitter representation.  With an emitter, the particle starts in the same place as the emitter, so need to know its location in the game world, so a `Vector2` we'll name `Position`.  Also, if the emitter is moving, we need to know the velocity it is moving at, as the particle will also start with that as its initial velocity, so we'll add a second `Vector2` named `Velocity`:
 

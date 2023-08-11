@@ -9,7 +9,7 @@ Perhaps the most common use of transforms with the sprite batch is to support _s
 
 Consider what it would take to shift the game world using just what we've learned about sprites.  We'd need to keep track of an offset for where the viewport begins relative to the world:
 
-![The Game World and Viewport]({{<static "images/8.3.1.png">}})
+![The Game World and Viewport](/images/8.3.1.png)
 
 Then, when we draw our game objects (like sprites), we'd need to add this offset vector to the position of _each_ as we draw them:
 
@@ -66,7 +66,7 @@ You can of course vary the scrolling speed as well - perhaps scrolling faster as
 
 A second possibility is to keep the player centered in the screen by scrolling the world around them.  For this, you need to know a vector from the player to the origin of the screen (`PlayerOffset`) and the position of the player in the world (`PlayerPosition`).  The `ViewportOffset` is the difference of these:
 
-![Player-synched Scrolling]({{<static "images/8.3.2.png">}})
+![Player-synched Scrolling](/images/8.3.2.png)
 
 Thus, each frame you update the offset vector based on the offset and the player's current position in the world:
 
@@ -87,7 +87,7 @@ public void Draw(GameTime gameTime)
 
 If we want our player to be able to reach the edge of the screen without the "blank space" at the edge of the game world showing, we can clamp the offset vector to a region defined by a `MinScroll` and `MaxScroll` vector:
 
-![Clamped Player-Synched Scrolling]({{<static "images/8.3.3.png">}})
+![Clamped Player-Synched Scrolling](/images/8.3.3.png)
 
 ```csharp
 public void Draw(GameTime gameTime)

@@ -44,7 +44,7 @@ For 2, we can use `GraphicsDevice.Viewport` to get a rectangle defining the scre
 
 It can be very helpful to draw a diagram of this kind of setup _before_ you try to derive the necessary calculations, i.e.:
 
-![A diagram of the game]({{<static "images/1.5.1.png">}})
+![A diagram of the game](/images/1.5.1.png)
 
 To check if the ball is moving off the left of the screen, we could use an `if` statement:
 

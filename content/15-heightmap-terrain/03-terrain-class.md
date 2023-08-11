@@ -177,26 +177,26 @@ Armed with our vertex data, we can create and populate our  `VertexBuffer`:
 
 Before we dive into code, let's think about how we want to lay out our triangle mesh.  We could use either a triangle list, or a triangle strip.  With a triangle list, we need to have an index for _each_ of the corners of _each_ triangle.  Since we have two triangles per grid cell, the total number of indices would be `indexCount = 3 * width * height`.  Conversely, with a triangle strip, we only need _one_ index for each triangle after the first, which needs three.  So its size would be `indexCount = width * height + 2`.  This is nearly _a third_ of the size!  So naturally, we'd like to use a triangle list.  This is pretty straightforward for a single row:
 
-![Single Row Triangle Strip]({{<static "images/heightmap-terrain-3.1.png">}})
+![Single Row Triangle Strip](/images/heightmap-terrain-3.1.png)
 
 The diagram above shows what a row defined as a triangle strip looks like.  Each vertex (the purple circle) is labeled by the order it appears in the indices.  The blue arrows denote the triangle edges defined by successive vertices.  The gray dashed lines denote the side of the triangle inferred from the order of the vertices.  And each triangle is numbered in blue by the order it is defined.
 
 
 But what about the next row?  You might be tempted to start on the left again, but doing so will result in a triangle that stretches across the breadth of the terrain - which will look terrible! 
 
-![Triangle Stretching Across the Row]({{<static "images/heightmap-terrain-3.2.png">}})
+![Triangle Stretching Across the Row](/images/heightmap-terrain-3.2.png)
 
 This triangle is outlined in the above diagram by the ochre lines.  Note that in the game they won't be curved - the triangle will just slice through the terrain.
 
 Or, we can try zig-zagging, by going right-to-left with the second row.  
 
-![Zig-zagging Triangle Strip]({{<static "images/heightmap-terrain-3.3.png">}})
+![Zig-zagging Triangle Strip](/images/heightmap-terrain-3.3.png)
 
 Notice that doing so creates a triangle that stretches along the end of the terrain.  This probably wouldn't be a problem as we probably would obscure the edge of our terrain in the game anyway.  But also notice that the diagonals of each terrain row slant the opposite ways.  This _does_ cause a problem for us, which we'll understand in a bit.
 
 Instead, we'll create _two_ extra triangles between each row.
 
-![Our Triangle Strip Layout Strategy]({{<static "images/heightmap-terrain-3.4.png">}})
+![Our Triangle Strip Layout Strategy](/images/heightmap-terrain-3.4.png)
 
 Notice that for the two extra triangles created by this pattern, 6 and 7, two of their vertices are the same.  This means they are actually lines!  And they will be rendered as part of the edge of triangles 5 and 8.  Moreover, all our diagonals are slanting the same direction.  
 

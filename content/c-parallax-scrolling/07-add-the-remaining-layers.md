@@ -136,4 +136,4 @@ We want our player layer to scroll as fast as the foreground, so let's set it to
 
 Try running the game now.  You should see all three layers scrolling, and you can fly your helicopter behind the telephone lines!
 
-![All layers]({{<static "images/parallax-7.1.png">}})
+![All layers](/images/parallax-7.1.png)

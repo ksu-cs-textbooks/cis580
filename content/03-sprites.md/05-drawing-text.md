@@ -20,7 +20,7 @@ A `SpriteFont` object is similar to the sprite `BatSprite` class we worked on in
 
 The content pipeline _creates_ a sprite font from an existing font installed on your computer.  Essentially, it renders each needed character from the font into a texture atlas, and combines that with information about where each character is in that atlas.  To create your sprite font, choose the _create new item_ from the MGCB Editor, and then select "SpriteFont Description (.spritefont)":
 
-![Creating the sprite font in the MGCB Editor]({{<static "images/3.5.1.png">}})
+![Creating the sprite font in the MGCB Editor](/images/3.5.1.png)
 
 This will create a SpriteFont Description, which will be compiled into a `SpriteFont`.  It also adds this description into your _Content_ folder.  Open it, and you will see it is nothing more than an XML file, which specifies some details of the font:
 

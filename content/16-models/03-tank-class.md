@@ -204,4 +204,4 @@ That setting is accomplished in `Game1.LoadContent`, after we've created both th
 
 Now if you run the game, the tank rises and falls with the land it travels over:
 
-![The Tank, No Longer Stuck in the Terrain]({{<static "images/models-3.1.png">}})
+![The Tank, No Longer Stuck in the Terrain](/images/models-3.1.png)

@@ -15,6 +15,6 @@ The pipeline is broken up into several steps:
 
 You can see the process here:
 
-![XNA Content Pipeline]({{<static "images/11.2.1.png">}})
+![XNA Content Pipeline](/images/11.2.1.png)
 
 Each of these steps is accomplished by a different class.

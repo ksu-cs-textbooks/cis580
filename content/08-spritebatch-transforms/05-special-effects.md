@@ -69,4 +69,4 @@ Will create a three-second shaking of the screen, when the resulting translation
 
 ### GitHub Example
 
-You can of course combine these effects into a composite operation.  I've posted an example project doing just that on GitHub: {{<link "https://github.com/zombiepaladin/spritebatch-transform-special-effects">}} for your perusal.  And this is just a small sampling of what you could possibly do.
+You can of course combine these effects into a composite operation.  I've posted an example project doing just that on GitHub: [https://github.com/zombiepaladin/spritebatch-transform-special-effects](https://github.com/zombiepaladin/spritebatch-transform-special-effects) for your perusal.  And this is just a small sampling of what you could possibly do.

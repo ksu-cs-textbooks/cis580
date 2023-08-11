@@ -13,6 +13,6 @@ This means that not only do you need to process user input, update a simulated w
 
 As with any software system, organization can go a long way to managing this complexity.  Consider this diagram of a AAA game engine's software architecture:
 
-![Software Engine Architecture]({{<static "images/7.1.1.png">}})
+![Software Engine Architecture](/images/7.1.1.png)
 
 Note how the engine is broken into systems and organized into layers.  Building an engine like this is outside the scope of this book (I encourage you to read Jason Gregory's _Game Engine Architecture_ if you'd like to delve into it), but the idea of loosely coupled systems is certainly something we can adapt.  Moreover, it is already explicitly supported by the MonoGame framework.  We'll explore how in this chapter.

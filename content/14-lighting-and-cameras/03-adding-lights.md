@@ -13,7 +13,7 @@ effect.EnableDefaultLighting();
 
 Into your `Crate.IntializeEffect()` method.  Then run the program again.  Notice a difference?
 
-![Side-by-side comparison of a lit and unlit crate]({{<static "images/lighting-and-cameras-3.1.png">}}).
+![Side-by-side comparison of a lit and unlit crate](/images/lighting-and-cameras-3.1.png).
 
 The default lighting is useful to quickly see what our object will look like illuminated, but ultimately, we'll want to define our own lights and how they interact with our objects.
 
@@ -21,7 +21,7 @@ The default lighting is useful to quickly see what our object will look like ill
 
 The `BasicEffect` uses the [Phong shading model](https://en.wikipedia.org/wiki/Phong_shading) (named after its inventor, Bui Tuong Phong).  This model approximates shading accounting for the smoothness of the object.  It uses an equation to calculate the color of each pixel.  This equation appears in the image below:
 
-![Phong equation]({{<static "images/phong-equation.png">}})
+![Phong equation](/images/phong-equation.png)
 
 Essentailly, the Phong approach calculates three different lighting values, and combines them into shading values to apply to a model.  Each of these is based on the behavior of light, which is a particle (and a wave) that travels in (largely) stright lines.  We can think of these lines as rays.
 
@@ -51,7 +51,7 @@ Let's see this in action.  Delete the `effect.EnableDefaultLighting()` line in y
 
 Notice the difference?  We're shining a red light onto our crate from an oblique angle, above and to the left.
 
-![The Illuminated Crate]({{<static "images/lighting-and-cameras-3.2.png">}})
+![The Illuminated Crate](/images/lighting-and-cameras-3.2.png)
 
 Notice how one face of the crate is in complete shadow?  Let's add some ambient light with the command:
 
@@ -59,7 +59,7 @@ Notice how one face of the crate is in complete shadow?  Let's add some ambient 
     effect.AmbientLightColor = new Vector3(0.3f, 0.3f, 0.3f);
 ```
 
-![The crate with ambient light]({{<static "images/lighting-and-cameras-3.3.png">}})
+![The crate with ambient light](/images/lighting-and-cameras-3.3.png)
 
 Notice how the shadowed face is now somewhat visible?
 

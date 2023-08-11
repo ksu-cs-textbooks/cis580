@@ -7,15 +7,15 @@ date: 2018-08-24T10:53:26-05:00
 
 But what about sprites with shapes _don't_ map to a circle or rectangle, such as this spaceship sprite:
 
-![Polygonal spaceship sprite]({{<static "images/4.4.1.png">}})
+![Polygonal spaceship sprite](/images/4.4.1.png)
 
 We could represent this sprite with a bounding polygon:
 
-![Bounding Polygon]({{<static "images/4.4.2.png">}})
+![Bounding Polygon](/images/4.4.2.png)
 
 The polygon can be represented as a data structure using a collection of vectors from its origin (the same `origin` we use in rendering the sprite) to the points defining its corners:
 
-![Bounding Polygon vectors]({{<static "images/4.4.3.png">}})
+![Bounding Polygon vectors](/images/4.4.3.png)
 
 ```csharp
 /// <summary>
@@ -55,11 +55,11 @@ We can accomplish this by _projecting_ the shapes onto an axis and checking for 
 
 Mathematically, we represent this by projecting the shapes onto an axis - think of it as casting a shadow.  If we can find an axis where the two shadows don't overlap, then we know the two don't intersect:
 
-![Projecting arbitrary shapes onto a separating axis]({{<static "images/4.4.4.png">}})
+![Projecting arbitrary shapes onto a separating axis](/images/4.4.4.png)
 
 How do we accomplish the projection?  Consider each edge (the line between vertices in our polygon) as vector $A$, and the projection axis as vector $B$, as in the following figure:
 
-![Mathematical projection onto an axis]({{<static "images/4.4.5.png">}})
+![Mathematical projection onto an axis](/images/4.4.5.png)
 
 We have two formula that can be useful for interpreting this figure: the trigonometric definition of cosine (1) and the geometric definition of the cross-product (2).
 
@@ -130,13 +130,13 @@ Since we would only be using this class within the collision helper, we could de
 
 If we determine the minimum and maximum projection for _both_ shapes, we can see if they overlap:
 
-![Projecting Bounding Polygons onto an axis]({{<static "images/4.4.6.png">}})
+![Projecting Bounding Polygons onto an axis](/images/4.4.6.png)
 
 If there is no overlap, then we have found a separating axis, and can terminate the search.
 
 But just which axes should we test?  Ideally we’d like a minimal set that promises if a separating axis does exist, it will be found.  Geometrically, it can be shown that the bare minimum we need to test is an axis parallel to each edge normal of the polygon - that is, an axis at a right angle to the polygon’s edge.  Each edge has two normals, a left and right:
 
-![The edge normals]({{<static "images/4.4.7.png">}})
+![The edge normals](/images/4.4.7.png)
 
 In 2D, an edge normal is a unit vector (of length 1) perpendicular to the edge vector (a vector along the edge).  We can calculate it by exchanging the x and y components and negating one of them.
 

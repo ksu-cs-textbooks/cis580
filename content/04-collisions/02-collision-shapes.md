@@ -7,7 +7,7 @@ date: 2018-08-24T10:53:26-05:00
 
 Perhaps the most straightforward approach is the use of a _collision shape_ (also called a _collision primitive_ or _bounding area_).  This is a simplified representation of the sprite - simplified in a way that allows for easy mathematical detection of collision events.  The collision shape mimics the shape of the overall sprite:
 
-![Collision shapes in Sonic and Super Mario Bros.]({{<static "images/4.2.1.png">}})
+![Collision shapes in Sonic and Super Mario Bros.](/images/4.2.1.png)
 
 > For a good visualization of collision shapes and the mathematics behind the collision detection, visit [Jeffrey Thompson's Collision Detection Page](http://www.jeffreythompson.org/collision-detection/table_of_contents.php)
 
@@ -62,7 +62,7 @@ public static bool Collides(BoundingPoint p1, BoundingPoint p2)
 ### Circle on Circle Collisions
 Only slightly harder than checking for collisions between two points is a collision between two circles.  Remember a circle is defined as all points that are $radius$ distance from the $center$.  For two circles to collide, some of these points must fall within the region defined by the other.  If we were to draw a line from center to center:
 
-![Colliding and non-colliding bounding circles]({{<static "images/4.2.2.png">}})
+![Colliding and non-colliding bounding circles](/images/4.2.2.png)
 
 We can very quickly see that if the length of this line is greater than the sum of the radii of the circle, the two circles do not overlap.  We can calculate the distance between the circles using the distance formula:
 
@@ -112,11 +112,11 @@ public static bool Collides(BoundingCircle c1, BoundingCircle c2)
 
 There are many possible algorithms to use in detecting when a rectangle collides with another rectangle, each with its own strengths and weaknesses.  Again, we can turn to a graphical representation to help us generate our test:
 
-![Rectangle on rectangle collisions]({{<static "images/4.2.3.png">}})
+![Rectangle on rectangle collisions](/images/4.2.3.png)
 
 From this first image, we might assume that two rectangles collide if one of their corners falls within the other.  Thus, we might think that simply checking if any of the corners of one rectangle fall within the other would give us our result.  But that overlooks one important case:
 
-![Overlapping Rectangles]({{<static "images/4.2.4.png">}})
+![Overlapping Rectangles](/images/4.2.4.png)
 
 As this example makes clear, the important concept is that one rectangle must overlap the other rectangle in two dimensions (both the X and the Y) for a collision to occur.  Thus, we could check:
 
@@ -205,7 +205,7 @@ public static bool Collides(BoundingRectangle r, BoundingPoint p)
 ### Circle on Rectangle Collisions
 A circle-on-rectangle collision is a bit more challenging. To understand our strategy, let's start with a number line:
 
-![Number Line]({{<static "images/4.2.5.png">}})
+![Number Line](/images/4.2.5.png)
 
 Notice the red line from 0 to 4?  What is the closest point that falls within that line to the value -2? To the value 5?  To the value 3?  The answers are: 0, 3, and 4.  Basically, if the point falls within the section, it is the point itself.  Otherwise it is the closest endpoint.  Mathematically, this is the clamp operation, and MonoGame provides a method to calculate it: `MathHelper.Clamp(float value, float min, float max)`.  It will clamp the provided value to the provided min and max.
 

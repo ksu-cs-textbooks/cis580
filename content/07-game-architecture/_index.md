@@ -2,14 +2,12 @@
 title = "Game Architecture"
 date = 2020-03-20T10:53:05-05:00
 weight = 10
-chapter = true
+archteype = "chapter"
+ordinal = "7"
 pre = "7. "
 +++
 
 
-### Chapter 7
-
-# Game Architecture
 
 Reorganizing your code...
 

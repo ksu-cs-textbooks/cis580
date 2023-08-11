@@ -1,9 +1,7 @@
 +++
-title = "Homepage"
-date = 2020-03-20T10:53:05-05:00
+title = "CIS 580: Foundations of Game Programming"
+archetype = "home"
 +++
-
-# Foundations of Game Programming
 
 CIS 580 Textbook
 

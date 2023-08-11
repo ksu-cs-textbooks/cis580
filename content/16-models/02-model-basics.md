@@ -49,7 +49,7 @@ Note we need to provide a world, view, and projection matrix to the model to dra
 
 If we run the game now, you should see the tank on (actually a bit _in_) the terrain:
 
-![The Rendered Model]({{<static "images/models-2.1.png">}})
+![The Rendered Model](/images/models-2.1.png)
 
 But, that is about the extent of the functionality offered to us by the `Model` class.  Much like the `Texture2D`, it is simply providing us with the data from a content file in a more manageable format.  But as with the `Texture2D`, we will only use that as a starting point for doing some really interesting things.  
 

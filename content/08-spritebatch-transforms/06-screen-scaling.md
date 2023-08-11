@@ -141,7 +141,7 @@ Another alternative is that instead of determining the resolution based on the g
 
 ### GitHub Example
 
-I've posted an example project that allows you to explore these concepts on GitHub: {{<link "https://github.com/zombiepaladin/scale-to-screen">}}
+I've posted an example project that allows you to explore these concepts on GitHub: [https://github.com/zombiepaladin/scale-to-screen](https://github.com/zombiepaladin/scale-to-screen)
 
 {{% notice info %}}
 While the discussion here focused on games which are sized to the screen, it can _also_ apply to games in which the world is _larger_ than the screen, and the displayed portions of the game scroll with the player.  In those cases, you still need to define your game's design resolution, which determines how much of the game will appear on-screen at any given time. 

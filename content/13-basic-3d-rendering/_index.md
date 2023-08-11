@@ -1,13 +1,12 @@
 +++
-title = "13. Basic 3D Rendering"
+title = "Basic 3D Rendering"
 date = 2020-03-20T10:53:05-05:00
 weight = 130
-chapter = true
+archteype = "chapter"
+ordinal = "13"
+pre = "13. "
 +++
 
-### Chapter 13
-
-# Basic 3D Rendering
 
 It's all triangles!
 

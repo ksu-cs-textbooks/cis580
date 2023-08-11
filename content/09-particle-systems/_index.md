@@ -1,13 +1,11 @@
 +++
-title = "9. Particle Systems"
+title = "Particle Systems"
 date = 2020-03-20T10:53:05-05:00
 weight = 90
-chapter = true
+archteype = "chapter"
+ordinal = "9"
+pre = "9. "
 +++
-
-### Chapter 9
-
-# Particle Systems
 
 One, Two, three, ... BOOM!
 

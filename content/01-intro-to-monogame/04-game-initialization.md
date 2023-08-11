@@ -68,11 +68,11 @@ For now we'll use the `System.Random` class you are used to.  For some game purp
 #### Adding the Image to the Project
 As we said above, `LoadContent()` is where we load our assets.  For now, we just need an image of a ball.  However, getting this image into our game takes a bit of doing.
 
-First, we need to find an image to use - a .jpeg, .gif, or .png will work fine. Feel free to use this one ![a golden ball]({{<static "images/ball.png">}}).
+First, we need to find an image to use - a .jpeg, .gif, or .png will work fine. Feel free to use this one ![a golden ball](/images/ball.png).
 
 Look in the _Content_ folder of your **solution explorer** in Visual Studio.  You should also notice a file, _Content.mgcb_ in the same folder.  This is a listing of all content to bring into the game.  Go ahead and open it; it will look something like:
 
-![The MGCB Editor]({{<static "images/1.4.1.png">}})
+![The MGCB Editor](/images/1.4.1.png)
 
 {{% notice tip %}}
 If instead of the editor program a text file is loaded in your VisualStudio instance, try right-click the file and choose "open with".  From the dialog, choose the **mgcb-editor-wpf**.  If it is not listed, you may need to install it.  From the command line:
@@ -85,15 +85,15 @@ If instead of the editor program a text file is loaded in your VisualStudio inst
 
 Click the "Add Existing Item" toolbar button:
 
-![Add Existing Item toolbar button]({{<static "images/1.4.2.png">}})
+![Add Existing Item toolbar button](/images/1.4.2.png)
 
 In the Open dialog that appears, select the ball image and click "Open".  Then in the next dialog, choose "Copy the file to the directory":
 
-![Add File Dialog]({{<static "images/1.4.3.png">}})
+![Add File Dialog](/images/1.4.3.png)
 
 Finally, save the .mgcb file:
 
-![Save the .mgcb file]({{<static "images/1.4.4.png">}})
+![Save the .mgcb file](/images/1.4.4.png)
 
 Now the image will be built into a game-specific binary format as part of the build process.  We'll delve deeper into how this works in the chapter on the Content Pipeline.
 

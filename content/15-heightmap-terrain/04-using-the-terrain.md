@@ -29,7 +29,7 @@ And in our `Game1.Draw()` we'll render it with the existing camera:
 
 Now if you run the game, you should see your terrain, and even be able to move around it using the camera controls (WASD + Mouse).
 
-![The rendered terrain]({{<static "images/heightmap-terrain-4.1.png">}})
+![The rendered terrain](/images/heightmap-terrain-4.1.png)
 
 You'll probably notice that your camera does not change position as you move over the terrain - in fact, in some parts of the map you can actually end up looking up from underneath!  
 

@@ -10,7 +10,7 @@ We model our three-dimensional worlds with triangles.  Lots and lots of triangle
 
 Complex objects are therefore composed of multiple triangles, which typically share sides and create a closed shape with a distinct inside and outside.  We call these _triangle meshes_, and they effectively create a hollow shell in the shape of the object to be rendered:
 
-![Triangle Mesh]({{<static "images/triangle-mesh.png">}})
+![Triangle Mesh](/images/triangle-mesh.png)
 
 ## Vertices
 
@@ -206,7 +206,7 @@ And finally, let's render it in our `Game1.Draw()` method:
 
 If you run your code, you should now see the triangle rendered:
 
-![The rendered triangle]({{<static "images/basic-3d-2.1.png">}})
+![The rendered triangle](/images/basic-3d-2.1.png)
 
 ## Rotating the Triangle 
 

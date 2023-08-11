@@ -2,13 +2,10 @@
 title = "Sprites"
 date = 2018-08-24T10:53:05-05:00
 weight = 3
-chapter = true
+archteype = "chapter"
+ordinal = "3"
 pre = "3. "
 +++
-
-### Chapter 3
-
-# Sprites
 
 Who are you calling a fairy?
 

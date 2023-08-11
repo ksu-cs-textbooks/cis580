@@ -16,6 +16,6 @@ MonoGame supports both, through different kinds of projects, and provides abstra
 
 This process of rendering using 3D accelerated hardware is often described as the Graphics Pipeline:
 
-![Graphics Pipeline]({{<static "images/graphics-pipeline.png">}})
+![Graphics Pipeline](/images/graphics-pipeline.png)
 
 We'll walk through this process as we write a demonstration project that will render a rotating 3D cube.  The starter code for this project can be found on [GitHub](https://github.com/ksu-cis/basic-3d-starter).

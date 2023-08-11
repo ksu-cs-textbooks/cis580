@@ -9,7 +9,7 @@ Positional sounds provide the illusion of depth and movement by using panning, d
 
 To create positional sound effects, we need to place the sound in a 3D (or pseudo 2D) soundscape, which incorporates both a _listener_ (i.e. the player) and an _emitter_ (the source of the sound).  Consider the example soundscape below:
 
-![An example soundscape]({{<static "images/5.3.1.png">}})
+![An example soundscape](/images/5.3.1.png)
 
 We have two sound effects, one played by _emitter A_ and one by _emitter B_, and the player is represented by the _listener_.  If we imagine the listener is facing downwards, we would expect that the sound from emitter A will play more on the right speaker, and emitter B on the left (given stereo speakers).  For a surround sound system, these would be further distinguished by playing on the _front_ speakers.
 

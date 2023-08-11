@@ -67,4 +67,4 @@ And draw the collection in `Game1.Draw()`:
 
 Try running your code now - you should see a collection of crates.
 
-![Crates]({{<static "images/lighting-and-cameras-5.1.png">}})
+![Crates](/images/lighting-and-cameras-5.1.png)

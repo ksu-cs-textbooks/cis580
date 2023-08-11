@@ -9,11 +9,11 @@ While you can now walk over your terrain, you probably notice that the camera se
 
 Think about how we render our terrain.  The diagram below shows the terrain in one dimension.  At each integral step, we have a height value.  The terrain (represented by green lines) is interpolated between these heights.
 
-![The terrain as rendered]({{<static "images/heightmap-terrain-5.1.png">}})
+![The terrain as rendered](/images/heightmap-terrain-5.1.png)
 
 Now think about what our function transforming world coordinates to heights is doing.  It casts `tx` to an `int` to throw away the fractional part of the coordinate in order to get an array index.  Thus, it is a step-like function, as indicated by the red lines in the diagram below:
 
-![The current height function]({{<static "images/heightmap-terrain-5.2.png">}})
+![The current height function](/images/heightmap-terrain-5.2.png)
 
 No wonder our movement is jerky!  
 
@@ -52,7 +52,7 @@ However, we aren't working with just _one_ dimension, we need to consider _two_.
 
 Bilinear interpolation is the extension of linear interpolation into two dimensions.  Instead of interpolating a point on a line (as is the case with linear interpolation), in bilinear interpolation we are interpolating a point on a _plane_.  But with our terrain, we have _two_ planes per grid cell:
 
-![Terrain triangles]({{<static "images/heightmap-terrain-5.3.png">}})
+![Terrain triangles](/images/heightmap-terrain-5.3.png)
 
 In this diagram, _n_ and _m_ are coordinates in our `heights` array, corresponding to the vertex making up the grid cell.  So if our `(x, y)` point is in this grid cell,  `n < x < n+1` and `m < y < m+1`.
 

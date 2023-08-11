@@ -139,7 +139,7 @@ Discord also offers some free desktop and mobile clients that you may prefer ove
 ### Recommended Texts & Supplies
 To participate in this course, students must have access to a modern web browser, broadband internet connection, and webcam and microphone. All course materials will be provided via Canvas. Modules may also contain links to external resources for additional information, such as programming language documentation.
 
-This course offers an instructor-written textbook, which is broken up into a specific reading order and interleaved with activities and quizzes in the modules. It can also be directly accessed at [{{< param textbookURL >}}]({{< param textbookURL >}}).
+This course offers an instructor-written textbook, which is broken up into a specific reading order and interleaved with activities and quizzes in the modules. It can also be directly accessed at [{{< ref "/" >}}]({{< ref "/" >}}).
 
 Additionally, we will be using Robert Nystrom's _Game Programming Patterns_, an exploration of common design patterns used in video games.  It can be bought in print, but he also has a free web version at [https://gameprogrammingpatterns.com/contents.html](https://gameprogrammingpatterns.com/contents.html)
 
@@ -167,4 +167,4 @@ Be aware that using assets (images, sounds, etc.) that you do not have permissio
 ### Copyright Notice
 ©2021 The materials in this online course fall under the protection of all intellectual property, copyright and trademark laws of the U.S. The digital materials included here come with the legal permissions and releases of the copyright holders. These course materials should be used for educational purposes only; the contents should not be distributed electronically or otherwise beyond the confines of this online course. The URLs listed here do not suggest endorsement of either the site owners or the contents found at the sites. Likewise, mentioned brands (products and services) do not suggest endorsement. Students own copyright to what they create.
 
-Original content in the course textbook at [{{< param textbookURL >}}]({{< param textbookURL >}}) is licensed under a Creative Commons BY-SA license by Nathan Bean unless otherwise stated.
+Original content in the course textbook at [{{< ref "/" >}}]({{< ref "/" >}}) is licensed under a Creative Commons BY-SA license by Nathan Bean unless otherwise stated.

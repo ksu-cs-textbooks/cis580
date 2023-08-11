@@ -9,7 +9,7 @@ You might be wondering just what a _heightmap_ is.  If you've ever used a [topog
 
 A heightmap is similar, but instead of using lines, each _pixel_ in the map represents a square section of land, and the color value at that point indicates the average altitude of that square.  Since there is only one value to represent, heightmaps are typically created in grayscale.  And, to optimize space, they may also be saved in a monochrome format (where each pixel is stored as a single 8-bit value, instead of the 32-bits typical for storing RGB values).  
 
-![Heightmap Example]({{<static "images/Heightmap.png">}})
+![Heightmap Example](/images/Heightmap.png)
 
 You can obtain heightmaps in a number of ways.  You can draw a heightmap with any raster graphics program, though it takes a lot of skill and patience to make one that mimics natural terrain.  You can also get real-world heightmaps directly from organizations like the [USGS](http://earthexplorer.usgs.gov/) or [NASA's Viewfinder Project](http://viewfinderpanoramas.org/Coverage%20map%20viewfinderpanoramas_org3.htm).  Or you can generate one using Perlin Noise and algorithms that mimic the results of plate tectonics.  There also exist many height-map generation programs, both open-source and commercial.
 

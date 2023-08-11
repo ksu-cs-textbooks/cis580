@@ -247,4 +247,4 @@ And render in our `Game.Draw()` method:
 
 If you run the game now, you should see our crate appear!
 
-![The rendered crate]({{<static "images/lighting-and-cameras-2.1.png">}})
+![The rendered crate](/images/lighting-and-cameras-2.1.png)

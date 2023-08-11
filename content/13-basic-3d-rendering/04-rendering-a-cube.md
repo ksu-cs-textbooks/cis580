@@ -247,7 +247,7 @@ And invoke this method in the `Game1.Update()` method:
 
 Now if you run the program, you should see the cube, and be able to see that its edges are distorted to simulate depth:
 
-![Rendered Cube]({{<static "images/basic-3d-4.1.png">}})
+![Rendered Cube](/images/basic-3d-4.1.png)
 
 Let's set our viewpoint rotating around the cube by refactoring our `Cube.Update()` method:
 

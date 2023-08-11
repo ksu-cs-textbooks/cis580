@@ -7,19 +7,19 @@ date: 2020-03-20T10:53:05-05:00
 
 Let's start from a purely conceptual level, with some diagrams using tile assets created [by Eris available from OpenGameArt](https://opengameart.org/content/platform-tileset-nature).  A tile map could be thought of as a grid of tiles, as demonstrated in this image:
 
-![Tile map Example]({{<static "images/10.2.1.png">}})
+![Tile map Example](/images/10.2.1.png)
 
 Along with the map is the tile set, which defines the individual tiles that can be used within the map, i.e.:
 
-![Tile set Example]({{<static "images/10.2.2.png">}})
+![Tile set Example](/images/10.2.2.png)
 
 We assign a number to each tile in the tile set:
 
-![Numbered tile set]({{<static "images/10.2.3.png">}})
+![Numbered tile set](/images/10.2.3.png)
 
 We can then specify what tile fills a grid cell in the tile map with the same number, i.e.:
 
-![Tile map with numbered tiles]({{<static "images/10.2.4.png">}})
+![Tile map with numbered tiles](/images/10.2.4.png)
 
 You can see that a relatively complex map can be quickly assembled from a relative handful of tiles.  Looking at the image above, you may naturally consider a 2-dimensional array:
 

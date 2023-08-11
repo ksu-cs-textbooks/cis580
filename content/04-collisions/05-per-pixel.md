@@ -7,7 +7,7 @@ date: 2018-08-24T10:53:26-05:00
 
 Another brute-force approach that can be used with raster graphics when a high degree of accuracy is needed is per-pixel collision detection.  This process assumes that a portion of the raster graphics being examined are composed of transparent pixels (i.e. not a part of the object portrayed).  
 
-![An example of where per-pixel collision detection is useful - the two raster graphics overlap, yet the helicopters are not colliding]({{<static "images/4.5.1.png">}})
+![An example of where per-pixel collision detection is useful - the two raster graphics overlap, yet the helicopters are not colliding](/images/4.5.1.png)
 
 Consider the figure above - there are two raster graphics that overlap.  To determine if they collide on a per-pixel basis, we must compare every overlapping pixel between the two images (the purple area).  To do this, we must 1) establish the size of the overlapping area, 2) map pixel indices within that area to an index in each graphic, and 3) compare the corresponding pixels in each graphic to see if they are both non-transparent (and therefore colliding).  
 

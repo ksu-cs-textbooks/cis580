@@ -185,7 +185,7 @@ And finally, let's render it in our `Game1.Draw()` method:
 
 If you run your code, you should now see the textured quad rendered:
 
-![The rendered quad]({{<static "images/basic-3d-3.1.png">}})
+![The rendered quad](/images/basic-3d-3.1.png)
 
 Notice that even though our texture has a transparent background, the background is rendered in black.  Alpha blending is managed by the `GraphicsDevice.BlendState`, so we'll need to tweak it before we draw the quad:
 

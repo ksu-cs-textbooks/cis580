@@ -94,7 +94,7 @@ torque = force.Cross(r);
 
 Let's work through an example.  Consider this diagram:
 
-![Torque applied to a spaceship]({{<static "images/6.3.1.png">}})
+![Torque applied to a spaceship](/images/6.3.1.png)
 
 The red arrow is the force vector applied from the left rocket.  The green arrow is the vector from the position the force is applied to the center of mass of the ship.  Firing just this one rocket will impose a rotation on the ship in the direction of the white arrow.  Firing _both_ rockets will impose an opposite torque, cancelling both.
 
@@ -188,7 +188,7 @@ Vector2 r = new Vector2(76,50);
 
 The second value we need is our force.  We could factor in our ship rotation at this point, but it is easier if we instead rotate our coordinate system and place its origin at the center of mass for the ship, i.e.:
 
-![The rotated coordinate system]({{<static "images/6.3.2.png">}})
+![The rotated coordinate system](/images/6.3.2.png)
 
 Then our force vector is simply a vector in the upward direction, whose magnitude is the amount of the force tangential to the `r` vector.  For simplicity, we'll use a literal constant instead of calculating this:
 

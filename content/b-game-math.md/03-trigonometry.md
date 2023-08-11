@@ -7,7 +7,7 @@ date: 2018-08-24T10:53:26-05:00
 
 Trigonometry - the math that deals with the side lengths and angles of triangles, plays an important role in many games.  The trigonometric functions Sine, Cosine, and Tangent relate to the ratios of sides in a right triangle:
 
-![The trigonometry triangle]({{<static "images/b.3.2.png">}})
+![The trigonometry triangle](/images/b.3.2.png)
 
 $$
 \sin{A} = \frac{opposite}{hypotenuse} = \frac{a}{c} \tag{0}
@@ -36,7 +36,7 @@ You can inverse these operations (compute the angle whose $\sin$, $\cos$, or $\t
 
 These angles are measured in _radians_ - fractions of $\pi$. Positive angles rotate counter-clockwise and negative ones clockwise. It can be helpful to consider radians in relation to the unit circle - a circle with radius 1 centered on the origin:
 
-![The unit circle]({{<static "images/b.3.1.png">}})
+![The unit circle](/images/b.3.1.png)
 
 The angle of $0$ radians falls along the x-axis. MonoGame provides some helpful `float` constants for common measurements in radians:
 

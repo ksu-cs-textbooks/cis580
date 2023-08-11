@@ -11,5 +11,5 @@ This textbook was authored for the **CIS 580 - Fundamentals of Game Programming*
 
 The primary textbook for the class is Robert Nystrom's _Game Programming Patterns_, an exploration of common design patterns used in video games.  It can be bought in print, but he also has a free web version at [https://gameprogrammingpatterns.com/contents.html](https://gameprogrammingpatterns.com/contents.html).  
 
-The resources presented in the modules are also organized into an online textbook that can be accessed here: [{{< param textbookURL >}}]({{< param textbookURL >}}).  You may find this a useful reference if you prefer a traditional textbook layout.  Additionally, since the textbook exists outside of Canvas' access control, you can continue to utilize it after the course ends.
+The resources presented in the modules are also organized into an online textbook that can be accessed here: [{{< ref "/" >}}]({{< ref "/" >}}).  You may find this a useful reference if you prefer a traditional textbook layout.  Additionally, since the textbook exists outside of Canvas' access control, you can continue to utilize it after the course ends.
 

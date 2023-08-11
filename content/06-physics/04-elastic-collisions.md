@@ -49,11 +49,11 @@ $$v_1 = \frac{2m_0}{m_0+m_1}u_0 + \frac{m_1 - m_0}{m_0 + m_1}u_1 \tag{8}$$
 
 These two equations can give us the new velocities in a single dimension.  But we're primarily interested in _two_ dimensions, and our velocities are expressed as `Vector2` objects.  However, there is a simple solution; use a coordinate system that aligns with the axis of collision, i.e. for two masses colliding, A and B:
 
-![Aligning the coordinate system with the axis of collision]({{<static "images/6.4.1.png">}})
+![Aligning the coordinate system with the axis of collision](/images/6.4.1.png)
 
 Note how the X-axis in the diagram is aligned with the line between the centers of mass A and B.  We can accomplish this in code by calculating the vector between the center of the two bodies, and determining the angle between that vector and the x-Axis:
 
-![Finding the angle between the line of collision and x-axis]({{<static "images/6.4.2.png">}})
+![Finding the angle between the line of collision and x-axis](/images/6.4.2.png)
 
 Remember that the angle between two vectors is related to the dot product:
 

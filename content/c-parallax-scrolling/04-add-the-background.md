@@ -45,7 +45,7 @@ Finally, we need to add the layer to the `Game1.Components` list:
 
 By adding it to the list, we let the `Game1` instance take care of updating and rendering the `ParallaxLayer`.  If you run your code now, you should see the background:
 
-![Background Layer]({{<static "images/parallax-4.1.png">}})
+![Background Layer](/images/parallax-4.1.png)
 
 But what has happened to our player helicopter?  Let's look at our `Game1.Draw` method:
 

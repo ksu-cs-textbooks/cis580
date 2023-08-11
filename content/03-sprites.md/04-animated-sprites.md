@@ -7,7 +7,7 @@ date: 2018-08-24T10:53:26-05:00
 
 To animate a sprite, we simply swap the image it is using.  Animated sprites typically lay out all their frames in a single texture, just like a texture atlas. Consider this [animated bat sprite by bagzie](https://opengameart.org/content/bat-sprite) from OpenGameArt: 
 
-![Animated bat spritesheet]({{<static "images/32x32-bat-sprite.png">}})
+![Animated bat spritesheet](/images/32x32-bat-sprite.png)
 
 The images of the bat are laid out into a 4x4 grid of 32x32 pixel tiles.  We can create the illusion of motion by swapping which of these images we display.  However, we don't want to swap it every frame - doing so will be too quick for the viewer to follow, and destroy the illusion.  So we also need a timer and an idea of the direction the sprite is facing.
 
