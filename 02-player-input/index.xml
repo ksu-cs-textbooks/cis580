@@ -1,0 +1,737 @@
+
+
+
+
+
+	
+	
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Player Input on K-State CIS 580 Textbook</title>
+    <link>https://ksu-cs-textbooks.github.io/cis580/02-player-input/index.html</link>
+    <description>Recent content in Player Input on K-State CIS 580 Textbook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Aug 2018 10:53:05 -0500</lastBuildDate><atom:link href="https://ksu-cs-textbooks.github.io/cis580/02-player-input/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>https://ksu-cs-textbooks.github.io/cis580/02-player-input/01-introduction/index.html</link>
+      <pubDate>Fri, 24 Aug 2018 10:53:26 -0500</pubDate>
+      <guid>https://ksu-cs-textbooks.github.io/cis580/02-player-input/01-introduction/index.html</guid>
+      <description>By this point you have probably built a lot of programs with user interfaces. Most, or possibly all, were written in an event-driven fashion, i.e. you created a method to serve as an event handler, i.e.:
+public void OnButtonPress(object sender, EventArgs e) { // Your logic here... }This approach is a good fit for most productivity desktop applications. After all, most of the time your text editor is just waiting for you to do something interesting - like move the mouse or type a letter.</description>
+    </item>
+    <item>
+      <title>Input Polling</title>
+      <link>https://ksu-cs-textbooks.github.io/cis580/02-player-input/02-input-polling/index.html</link>
+      <pubDate>Fri, 24 Aug 2018 10:53:26 -0500</pubDate>
+      <guid>https://ksu-cs-textbooks.github.io/cis580/02-player-input/02-input-polling/index.html</guid>
+      <description>Instead of letting the OS tell us when an input event occurs (as we do with event-driven programming), in the game loop we use device polling with the input devices. This means that we ask the device for its current state when we start processing user input.
+Consider a gamepad with a button, A. We can represent such a button with a boolean value; true if it is pressed, and false if it is not.</description>
+    </item>
+    <item>
+      <title>Keyboard Input</title>
+      <link>https://ksu-cs-textbooks.github.io/cis580/02-player-input/03-keyboard-input/index.html</link>
+      <pubDate>Fri, 24 Aug 2018 10:53:26 -0500</pubDate>
+      <guid>https://ksu-cs-textbooks.github.io/cis580/02-player-input/03-keyboard-input/index.html</guid>
+      <description>Let&amp;rsquo;s start with the keyboard. MonoGame uses the KeyboardState struct to represent the state of a keyboard. It is essentially a wrapper around an array of bits - one for each key in a standard keyboard. The indices of each key are represented by the Keys enumeration (you can find a complete listing in the docs ).
+We get the current state of the keyboard with the static Keyboard &amp;rsquo;s GetState() method, which returns the aforementioned KeyboardState struct.</description>
+    </item>
+    <item>
+      <title>Mouse Input</title>
+      <link>https://ksu-cs-textbooks.github.io/cis580/02-player-input/04-mouse-input/index.html</link>
+      <pubDate>Fri, 24 Aug 2018 10:53:26 -0500</pubDate>
+      <guid>https://ksu-cs-textbooks.github.io/cis580/02-player-input/04-mouse-input/index.html</guid>
+      <description>Mouse input works much like keyboard input - we have a MouseState struct that represents the state of the mouse, and we can get the current state from the static Mouse class&amp;rsquo;s GetState() method. You&amp;rsquo;ll also want to use the same caching strategy of a current and prior state if you want to know when a button goes down or comes up, i.e.:
+MouseState currentMouseState; MouseState priorMouseState; public override void Update(GameTime gameTime) { priorMouseState = currentMouseState; currentMouseState = Mouse.</description>
+    </item>
+    <item>
+      <title>Gamepad Input</title>
+      <link>https://ksu-cs-textbooks.github.io/cis580/02-player-input/05-gamepad-input/index.html</link>
+      <pubDate>Fri, 24 Aug 2018 10:53:26 -0500</pubDate>
+      <guid>https://ksu-cs-textbooks.github.io/cis580/02-player-input/05-gamepad-input/index.html</guid>
+      <description>MonoGame handles gamepad input in a similar fashion to Keyboard and Mouse input. For example, there is a static GamePad class and a GamePadState struct.
+Player Indices However, XNA was originally designed to work with the XBox 360, which supported up to four players connected through XBox 360 gamepads. Thus, instead of using GamePad.GetState() we would use GamePad.GetState(PlayerIndex playerIndex), where the PlayerIndex enumeration value corresponded to which player&amp;rsquo;s gamepad we wanted to poll.</description>
+    </item>
+    <item>
+      <title>Input Manager</title>
+      <link>https://ksu-cs-textbooks.github.io/cis580/02-player-input/06-input-manager/index.html</link>
+      <pubDate>Fri, 24 Aug 2018 10:53:26 -0500</pubDate>
+      <guid>https://ksu-cs-textbooks.github.io/cis580/02-player-input/06-input-manager/index.html</guid>
+      <description>At this point, you may be noticing that our input processing could quickly dominate our Game class, and can be very messy. Especially if we want to support multiple forms of input in the same game. Consider if we wanted to do a platformer - we might want the player to be able to use the keyboard or a gamepad.
+One technique we can employ is an input manager, a class that handles polling the input and abstracts it to just the commands we care about.</description>
+    </item>
+    <item>
+      <title>Input State</title>
+      <link>https://ksu-cs-textbooks.github.io/cis580/02-player-input/07-input-state/index.html</link>
+      <pubDate>Fri, 24 Aug 2018 10:53:26 -0500</pubDate>
+      <guid>https://ksu-cs-textbooks.github.io/cis580/02-player-input/07-input-state/index.html</guid>
+      <description>The Game State Management Sample provides a contrasting approach to the input manager. Instead of being tailored to a specific game, it seeks to provide generic access to all input information. It also handles multiplayer input, and can be used to manage when a player switches gamepads. A simplified form (which does not handle gestural input) is provided below.
+In particular, the IsButtonPressed(Buttons button, PlayerIndex? controllingPlayer, out PlayerIndex playerIndex) can check for a key press on any connected keyboard, or identify what player&amp;rsquo;s keyboard was the source of the input.</description>
+    </item>
+    <item>
+      <title>Summary</title>
+      <link>https://ksu-cs-textbooks.github.io/cis580/02-player-input/08-summary/index.html</link>
+      <pubDate>Fri, 24 Aug 2018 10:53:26 -0500</pubDate>
+      <guid>https://ksu-cs-textbooks.github.io/cis580/02-player-input/08-summary/index.html</guid>
+      <description>In this chapter we learned about input polling and how it is implemented in XNA using structures representing input state and static GetState() methods. We saw the three primary forms of input we use in the MonoGame framework - the keyboard, the mouse, and the gamepad.
+We also saw how a variety of game controllers (i.e. RockBand gear, steering wheels, flight sticks, etc.) are mapped to the standard gamepad; how its state struct is actually composed of several sub-structs; and how to turn on and off the vibration motors.</description>
+    </item>
+  </channel>
+</rss>
