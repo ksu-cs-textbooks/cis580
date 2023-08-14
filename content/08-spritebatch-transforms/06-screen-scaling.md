@@ -45,11 +45,11 @@ Now, there are two primary strategies we might want to use for this scaling - sc
 
 To fit the screen, we need to scale the game until the bigger dimension matches the corresponding screen dimension.  Then we need to translate our game so it is centered in the other dimension.  Which dimension is bigger depends on the aspect ratios of both your game and screen.  Once we know the larger dimension (our _primary_ dimension), we determine a scaling factor by dividing the corresponding screen dimension by the corresponding game dimension:
 
-$$scale = \frac{screen_{primary}}{game_{primary}}$$
+{{< math >}}$$ scale = \frac{screen_{primary}}{game_{primary}} $${{< /math >}}
 
 We will scale both game dimensions using this scaling factor, so that our game maintains its aspect ratio.  If we wish our screen to be centered in the other dimension, we'll need to calculate an offset based on the other dimension (accounting for the scaling of the game screen):
 
-$$offset_{other} = \frac{(screen_{other} - game_{other} * scale)}{2}$$
+{{< math >}}$$ offset_{other} = \frac{(screen_{other} - game_{other} * scale)}{2} $${{< /math >}}
 
 We divide the leftover space in half, which determines how far down or over on the screen we need to start rendering our game.
 
@@ -80,11 +80,11 @@ else
 
 If instead we wish to fill all available screen space, and our aspect ratios of the game and screen do not match, some of the game will fall off-screen and not be visible.  The process is very similar - first we determine our primary dimension (which is now the _smaller_ dimension - opposite of the scale to fill approach).  Once we know it, we calculate the scale the same way:
 
-$$scale = \frac{screen_{primary}}{game_{primary}}$$
+{{< math >}}$$ scale = \frac{screen_{primary}}{game_{primary}} $${{< /math >}}
 
 And we calculate the offset in the other dimension the same way as well:
 
-$$offset_{other} = \frac{(screen_{other} - game_{other} * scale)}{2}$$
+{{< math >}}$$ offset_{other} = \frac{(screen_{other} - game_{other} * scale)}{2} $${{< /math >}}
 
 Note that in this case, because the scaled game is larger in the other dimension, this offset is negative.
 

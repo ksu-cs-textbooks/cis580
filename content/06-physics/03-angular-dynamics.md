@@ -5,19 +5,19 @@ weight: 30
 date: 2018-08-24T10:53:26-05:00
 ---
 
-There is a second set of equations that govern angular motion (rotation) you may have encountered, where $\omega$ is angular velocity, $\alpha$ the angular acceleration, and $\theta$ the rotation of the body:
+There is a second set of equations that govern angular motion (rotation) you may have encountered, where {{< math >}}$ \omega ${{< /math >}} is angular velocity, {{< math >}}$ \alpha ${{< /math >}} the angular acceleration, and {{< math >}}$ \theta ${{< /math >}} the rotation of the body:
 
-$$\omega = \omega_0 + \alpha t \tag{1}$$
-$$\theta = \theta_0 + \omega_0 t + \frac{1}{2}\alpha t^2 \tag{2}$$
-$$\theta = \theta_0 + \frac{1}{2}(\omega_0 + \omega)t \tag{3}$$
-$$\omega^2 = \omega_0^2 + 2\alpha(\theta-\theta_0) \tag{4}$$
-$$\theta = \theta_0 + \omega t - \frac{1}{2}\alpha t^2 \tag{5}$$
+{{< math >}}$$ \omega = \omega_0 + \alpha t \tag{1} $${{< /math >}}
+{{< math >}}$$ \theta = \theta_0 + \omega_0 t + \frac{1}{2}\alpha t^2 \tag{2} $${{< /math >}}
+{{< math >}}$$ \theta = \theta_0 + \frac{1}{2}(\omega_0 + \omega)t \tag{3} $${{< /math >}}
+{{< math >}}$$ \omega^2 = \omega_0^2 + 2\alpha(\theta-\theta_0) \tag{4} $${{< /math >}}
+{{< math >}}$$ \theta = \theta_0 + \omega t - \frac{1}{2}\alpha t^2 \tag{5} $${{< /math >}}
 
 These equations parallel those we saw for linear dynamics, and in fact, have the same derivative relationships between them:
 
-$$\theta(t) \tag{6}$$
-$$\omega(t) = \theta'(t) \tag{7}$$
-$$\alpha(t) = \omega'(t) \tag{8}$$
+{{< math >}}$$ \theta(t) \tag{6} $${{< /math >}}
+{{< math >}}$$ \omega(t) = \theta'(t) \tag{7} $${{< /math >}}
+{{< math >}}$$ \alpha(t) = \omega'(t) \tag{8} $${{< /math >}}
 
 And, just like linear dynamics, we can utilize this relationship and our small timestep to sidestep complex calculations in our code.  Thus, we can calculate the rotational change from the angular velocity (assuming `float rotation`, `angularVelocity`, and `angularAcceleration` values expressed in radians):
 
@@ -33,9 +33,9 @@ angularAcceleration = angularVelocity * gameTime.elapsedGameTime.TotalSeconds;
 
 Finally, angular acceleration can be imposed with an instantaneous force.  However, this is slightly more complex than we saw with linear dynamics, as this force needs to be applied somewhere _other than the center of mass_.  Doing so applies both rotational and linear motion to an object.  This rotational aspect is referred to as _torque_, and is calculated by taking the cross product of the force's point of application relative to the center of mass and the force vector.  Thus:
 
-$$\tau = \overline{r} x \overline{F}$$
+{{< math >}}$$ \tau = \overline{r} x \overline{F} $${{< /math >}}
 
-Where $tau$ is our torque, $\overline{r}$ is the vector from the center of mass to where the force is applied, and $\overline{F}$ is the force vector. 
+Where {{< math >}}$ tau ${{< /math >}} is our torque, {{< math >}}$ \overline{r} ${{< /math >}} is the vector from the center of mass to where the force is applied, and {{< math >}}$ \overline{F} ${{< /math >}} is the force vector. 
 
 ```csharp
 torque = force.X * r.Y - force.Y * r.X;
@@ -180,7 +180,7 @@ direction = Vector2.Transform(Vector2.UnitY, new Matrix.CreateRotationZ(theta));
 We'll discuss the math behind this second method soon.  Either method will work.
 
 ### TODO 1: Calculate and apply torque from left rocket
-Here we need to insert code for calculating the torque.  First, we need to know the distance from the rocket engine to the center of mass of the ship.  Let's assume our ship sprite is $152x115$, and our center of mass is at $<76,50>$.  Thus, our `r` vector would be:
+Here we need to insert code for calculating the torque.  First, we need to know the distance from the rocket engine to the center of mass of the ship.  Let's assume our ship sprite is {{< math >}}$ 152x115 ${{< /math >}}, and our center of mass is at {{< math >}}$ <76,50> ${{< /math >}}.  Thus, our `r` vector would be:
 
 ```csharp
 Vector2 r = new Vector2(76,50);
@@ -208,7 +208,7 @@ And then calculate the rotational acceleration:
 float angularAcceleration += torque / ROTATIONAL_INERTIA;
 ```
 
-The `ROTATIONAL_INERTIA` represents the resistance of the body to rotation (basically, it plays the same role as mass in linear dynamics).  For simplicity, we could treat it as $1$ (no real effect - after all, we're in a vacuum), which allows us to refactor as:
+The `ROTATIONAL_INERTIA` represents the resistance of the body to rotation (basically, it plays the same role as mass in linear dynamics).  For simplicity, we could treat it as {{< math >}}$ 1 ${{< /math >}} (no real effect - after all, we're in a vacuum), which allows us to refactor as:
 
 ```csharp
 float angularAcceleration += torque;

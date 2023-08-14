@@ -57,25 +57,24 @@ Mathematically, we represent this by projecting the shapes onto an axis - think 
 
 ![Projecting arbitrary shapes onto a separating axis](/images/4.4.4.png)
 
-How do we accomplish the projection?  Consider each edge (the line between vertices in our polygon) as vector $A$, and the projection axis as vector $B$, as in the following figure:
+How do we accomplish the projection?  Consider each edge (the line between vertices in our polygon) as vector {{< math >}}$ A ${{< /math >}}, and the projection axis as vector {{< math >}}$ B ${{< /math >}}, as in the following figure:
 
 ![Mathematical projection onto an axis](/images/4.4.5.png)
 
 We have two formula that can be useful for interpreting this figure: the trigonometric definition of cosine (1) and the geometric definition of the cross-product (2).
 
-$$
+{{< math >}}$$
 cos\theta = \frac{|projection\ of\ A\ onto\ B|}{|A|} \tag{1}
-$$
-
-$$
+$${{< /math >}}
+{{< math >}}$$
 A \cdot B = |A||B|cos\theta \tag{2}
-$$
+$${{< /math >}}
 
 These two equations can be combined to find a formula for projection (3):
 
-$$
+{{< math >}}$$
 projection\ of\ A\ onto\ B = A \cdot \overline{B}, where\ \overline{B} \text{ is a unit vector in the direction of B} \tag{3}
-$$
+$${{< /math >}}
 
 Thus, given two vectors - one for the axis (which needs to be a unit vector), and one to a corner of our collision polygon, we can project the corner onto the axis.  If we do this for _all_ corners, we can find the minimum and maximum projection from the polygon.  
 

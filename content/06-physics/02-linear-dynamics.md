@@ -7,11 +7,11 @@ date: 2018-08-24T10:53:26-05:00
 
 At some point in your K-12 education, you probably encountered the equations of linear motion, which describe motion in terms of time, i.e.:
 
-$$v = at + v_0 \tag{1}$$
-$$p = p_0 + v_ot + \frac{1}{2}at^2 \tag{2}$$
-$$p = p_0 + \frac{1}{2}(v+v_0)t \tag{3}$$
-$$v^2 = v_0^2 2a(r - r_0) \tag{4}$$
-$$p = p_0 + vt - \frac{1}{2}at^2 \tag{5}$$
+{{< math >}}$$ v = at + v_0 \tag{1} $${{< /math >}}
+{{< math >}}$$ p = p_0 + v_ot + \frac{1}{2}at^2 \tag{2} $${{< /math >}}
+{{< math >}}$$ p = p_0 + \frac{1}{2}(v+v_0)t \tag{3} $${{< /math >}}
+{{< math >}}$$ v^2 = v_0^2 2a(r - r_0) \tag{4} $${{< /math >}}
+{{< math >}}$$ p = p_0 + vt - \frac{1}{2}at^2 \tag{5} $${{< /math >}}
 
 These equations can be used to calculate motion in a video game setting as well, i.e. to calculate an updated position `vector2 position` given velocity `vector2 velocity` and acceleration `vector2 acceleration`, we can take equation (5):
 
@@ -27,9 +27,9 @@ This seems like a lot of calculations, and it is.  If you've also taken calculus
 
 If we represent the position as a function (6), then _velocity is the derivative of that function_ (7), and the acceleration _is the second derivative_ (8):
 
-$$s(t) \tag{6}$$
-$$v(t) = s'(t) \tag{7}$$
-$$a(t) = v'(t) \tag{8}$$
+{{< math >}}$$ s(t) \tag{6} $${{< /math >}}
+{{< math >}}$$ v(t) = s'(t) \tag{7} $${{< /math >}}
+{{< math >}}$$ a(t) = v'(t) \tag{8} $${{< /math >}}
 
 So, do we need to do calculus to perform game physics?  Well, yes and no.
 
@@ -49,11 +49,11 @@ position += velocity * gameTime.elapsedGameTime.TotalSeconds
 
 That's it.  We can consider our acceleration as an instantaneous change (i.e. we apply a force).  Remeber the definition of force?
 
-$$\overline{F} = m\overline{a} \tag{9}$$
+{{< math >}}$$ \overline{F} = m\overline{a} \tag{9} $${{< /math >}}
 
 So to find our acceleration, we rearrange equation 9 to read:
 
-$$\overline{a} = \overline{F}/m$$
+{{< math >}}$$ \overline{a} = \overline{F}/m $${{< /math >}}
 
 Thus, our acceleration would be the force acting on the body, divided by the mass of the body.  We could calculate this from real values, or try different numbers until we found ones that "felt right".
 

@@ -12,7 +12,7 @@ Before we delve deeper into how to use transforms with the SpriteBatch, we first
 
 An orthographic projection preserves parallelism - i.e. two lines that are parallel in the 3D version of the scene will also remain parallel in the projection.  But it is also _orthogonal_ to the projection plane, i.e. one of the primary axes (X, Y, or Z) is normal to (coming out of) the projection plane.  With MonoGame the projection plane is normally the X-Y plane, so the Z axis comes out of the screen.  The projection matrix for this case is almost the identity matrix, but with the Z component 0:
 
-$P = \begin{vmatrix} 1 & 0 & 0 & 0\\\0 & 1 & 0 & 0 \\\ 0 & 0 & 1 & 0 \\\ 0 & 0 & 0 & 0 \\\ 0 & 0 & 0 & 1 \end{vmatrix}$
+{{< math >}}$ P = \begin{vmatrix} 1 & 0 & 0 & 0\\\0 & 1 & 0 & 0 \\\ 0 & 0 & 1 & 0 \\\ 0 & 0 & 0 & 0 \\\ 0 & 0 & 0 & 1 \end{vmatrix} ${{< /math >}}
 
 When a vector is multiplied by this matrix, it's z-component is multiplied by that 0 - effectively stripping the z-coordinate.  Remember that our sprites are textured quads - basically a rectangle composed of two triangles, which are facing towards the camera (the screen).  You can envision the 3D scene as a room with a glass wall (the screen).  Our textured quads are basically cardboard cutouts positioned around the room, all facing towards that glass wall.  This projection matrix effectively moves each cutout along the z-axis until they are right against the glass.
 

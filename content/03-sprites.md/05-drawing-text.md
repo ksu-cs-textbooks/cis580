@@ -130,7 +130,7 @@ The `rotation` is a rotation value measured in radians that should be applied to
 The `origin` is the spot within the text where rotations and scaling are centered.  This _also_ affects text placement - the `position` vector indicates where the `origin` of the text will fall on-screen.  It is a vector measured relative to the upper-left-hand-corner of the text, in _texture_ coordinates (i.e. pixels of the source texture).  
 
 #### float scale 
-The `scale` is a scalar value to scale the text by.  For example, a value of $2.0f$ will make the text twice as big, while $0.5f$ would make it half as big.  This scaling is in relation to the `origin`, so if the origin is at the center of the text grows in all directions equally.  If instead it is at $(0,0)$, the text will grow to the right and down only.
+The `scale` is a scalar value to scale the text by.  For example, a value of {{< math >}}$ 2.0f ${{< /math >}} will make the text twice as big, while {{< math >}}$ 0.5f ${{< /math >}} would make it half as big.  This scaling is in relation to the `origin`, so if the origin is at the center of the text grows in all directions equally.  If instead it is at {{< math >}}$ (0,0) ${{< /math >}}, the text will grow to the right and down only.
 
 #### Vector2 scale 
 The `scale` can also be specified as a `Vector2`, which allows the horizontal and vertical scaling factors to be different.

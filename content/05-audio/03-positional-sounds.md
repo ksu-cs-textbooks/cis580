@@ -57,7 +57,7 @@ instance.Apply3D(listener, emitter);
 ```
 
 ### Using Positional Sound in a 2D Game
-The positional sound support in MonoGame is for 3D soundscapes, but just as we can render 2D sprites using 3D hardware, we can create 2D soundscapes in 3D.  The easiest technique for this is to position all our emitters and listeners in the plane $z=0$.  
+The positional sound support in MonoGame is for 3D soundscapes, but just as we can render 2D sprites using 3D hardware, we can create 2D soundscapes in 3D.  The easiest technique for this is to position all our emitters and listeners in the plane {{< math >}}$ z=0 ${{< /math >}}.  
 
 The `Vector3` constructor actually has support for this built-in as it can take a `Vector2` for the `X` and `Y` components, and a separate scalar for the `Z` component.  Consider a game where we represent the player's position with a `Vector2 position`, direction with a `Vector2 direction`, and velocity with a `Vector2 velocity`.  We can update our `AudioListener listener` with:
 
@@ -68,6 +68,6 @@ listener.Forward = new Vector3(direction, 0);
 listener.Velocity = new Vector3(velocity, 0);
 ```
 
-Since the `Up` vector will never change, we can just set it to `Vector3.UnitZ` (which is the vector $<0,0,1>$) when we first create the listener.  
+Since the `Up` vector will never change, we can just set it to `Vector3.UnitZ` (which is the vector {{< math >}}$ <0,0,1> ${{< /math >}}) when we first create the listener.  
 
 The emitters would be set up the same way.

@@ -13,9 +13,9 @@ MonoGame represents sound effects with the [`SoundEffect`](https://docs.monogame
 Once loaded, the `SoundEffect` can be played with the `SoundEffect.Play()` method. This is essentially a fire-and-forget method - you invoke, it and the framework takes care of loading and playing the sound.
 
 You can also use the `SoundEffect.Play(float volume, float pitch, float pan)` to customize the playback:
-* `volume` ranges from $0.0$ (silence) to $1.0$ (full volume)
-* `pitch` adjusts the pitch from $-1.0$ (down an octave) to $1.0$ (up an octave), with $0.0$ indicating no change 
-* `pan` pans the sound in stereo, with $-1.0$ entirely on the left speaker, and $1.0$ on the right, and $0.0$ centered.
+* `volume` ranges from {{< math >}}$ 0.0 ${{< /math >}} (silence) to {{< math >}}$ 1.0 ${{< /math >}} (full volume)
+* `pitch` adjusts the pitch from {{< math >}}$ -1.0 ${{< /math >}} (down an octave) to {{< math >}}$ 1.0 ${{< /math >}} (up an octave), with {{< math >}}$ 0.0 ${{< /math >}} indicating no change 
+* `pan` pans the sound in stereo, with {{< math >}}$ -1.0 ${{< /math >}} entirely on the left speaker, and {{< math >}}$ 1.0 ${{< /math >}} on the right, and {{< math >}}$ 0.0 ${{< /math >}} centered.
 
 Note that the per-sound-effect volume is multiplied by the static `SoundEffect.MasterVolume` property. This allows for the adjustment of _all_ sound effects in the game, separate from music.
 
@@ -28,9 +28,9 @@ If you need finer control of your sound effects, you can also create a [`SoundEf
 
 The `SoundEffectInstance` exposes properties that can be used to modify its behavior:
 * `IsLooped` is a boolean that when set to true, causes the sound effect to loop indefinitely.
-* `Pan` pans the sound in stereo, with $-1.0$ entirely on the left speaker, and $1.0$ on the right, and $0.0$ centered.
-* `Pitch` adjusts the pitch from $-1.0$ (down an octave) to $1.0$ (up an octave), with $0.0$ indicating no change 
-* `Volume` ranges from $0.0$ (silence) to $1.0$ (full volume)
+* `Pan` pans the sound in stereo, with {{< math >}}$ -1.0 ${{< /math >}} entirely on the left speaker, and {{< math >}}$ 1.0 ${{< /math >}} on the right, and {{< math >}}$ 0.0 ${{< /math >}} centered.
+* `Pitch` adjusts the pitch from {{< math >}}$ -1.0 ${{< /math >}} (down an octave) to {{< math >}}$ 1.0 ${{< /math >}} (up an octave), with {{< math >}}$ 0.0 ${{< /math >}} indicating no change 
+* `Volume` ranges from {{< math >}}$ 0.0 ${{< /math >}} (silence) to {{< math >}}$ 1.0 ${{< /math >}} (full volume)
 * `State` returns a `SoundState` enumeration value, one of (`SoundState.Paused`, `SoundState.Playing`, or `SoundState.Stopped`)
 
 The `SoundEffectInstance` also provides a number of methods:

@@ -14,9 +14,9 @@ Note the `GameTime` parameter - it provides us with both the total time the game
 ### Our Simple Example
 So in our example, we want the ball to move around the screen, according to its velocity.  If you remember your physics, the velocity is the change in position over time, i.e.:
 
-$$ 
+{{< math >}}$ 
 \overrightarrow{p'} = \overrightarrow{p} + \overrightarrow{v} * t
-$$
+${{< /math >}}
 
 We can express this in C# easily:
 
@@ -54,7 +54,7 @@ if(_ballPosition.X < GraphicsDevice.Viewport.X) {
 }
 ```
 
-We could then reverse the direction of the ball by multiplying its velocity in the horizontal plane by $-1$:
+We could then reverse the direction of the ball by multiplying its velocity in the horizontal plane by {{< math >}}$ -1 ${{< /math >}}:
 
 ```csharp
     _ballVelocity.X *= -1;

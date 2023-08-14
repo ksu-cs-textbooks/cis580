@@ -51,7 +51,7 @@ Matrix spinTransform = spinTranslation * spinRotation * Matrix.Invert(spinTransl
 
 ### Screen Shake
 
-A third technique that can create an interesting effect is to _shake_ the game world.  This could be used to visually represent an earthquake, rocket launch, or other intense action.  Basically we want to create small changes in the position of the viewport each frame.  This could be done completely randomly, but using a function like $sine$ or $cosine$ yields more predictable results (remember, the output of these functions falls the range $(-1 .. 1)$ and are the inverse of the other).
+A third technique that can create an interesting effect is to _shake_ the game world.  This could be used to visually represent an earthquake, rocket launch, or other intense action.  Basically we want to create small changes in the position of the viewport each frame.  This could be done completely randomly, but using a function like {{< math >}}$ sine ${{< /math >}} or {{< math >}}$ cosine ${{< /math >}} yields more predictable results (remember, the output of these functions falls the range {{< math >}}$ (-1 .. 1) ${{< /math >}} and are the inverse of the other).
 
 We can combine those functions with a timer to create a shaking effect, i.e.:
 

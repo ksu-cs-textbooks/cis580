@@ -13,34 +13,34 @@ But in reality, it is stored _linearly_, like this:
 
 ![2D array in memory](/images/10.2.6.png)
 
-To access a particular element in the array, the 2d coordinates must be transformed into a 1d index.  Note that each row follows the proceeding rows, so the starting index of each row would be the width of the row, _plus_ the x-coordinate, i.e. the index of $(3,1)$ would be $1 * width + 3$:
+To access a particular element in the array, the 2d coordinates must be transformed into a 1d index.  Note that each row follows the proceeding rows, so the starting index of each row would be the width of the row, _plus_ the x-coordinate, i.e. the index of {{< math >}}$ (3,1) ${{< /math >}} would be {{< math >}}$ 1 * width + 3 ${{< /math >}}:
 
 ![Accessing (3,1)](/images/10.2.7.png)
 
 This can be generalized into the equation:
 
-$$
+{{< math >}}$$ 
 i = y * width + x
-$$
+ $${{< /math >}}
 
 And the reverse operation, converting an index into 2d coordinates, would be:
 
-$$
+{{< math >}}$$ 
 x = i \\\% width
-$$
-$$
+ $${{< /math >}}
+{{< math >}}$$ 
 y = i / width
-$$
+ $${{< /math >}}
 
 {{% notice info %}}
-Note that we are using _integer division_ and _modulus_ in these equations, as the $y$ value is the number of full rows (i.e. $width$), and the $y$ is the distance into the partial row (i.e. the remainder).
+Note that we are using _integer division_ and _modulus_ in these equations, as the {{< math >}}$ y ${{< /math >}} value is the number of full rows (i.e. {{< math >}}$ width ${{< /math >}}), and the {{< math >}}$ y ${{< /math >}} is the distance into the partial row (i.e. the remainder).
 {{% /notice %}}
 
 Thus, all we need to treat a 1d array as a 2d array (in addition to the data) is the width of the array.  The height is only needed to calculate the array size (and thus the upper bound), which would be:
 
-$$
+{{< math >}}$$ 
 size = width * height
-$$
+ $${{< /math >}}
 
 The [C# Multidimensional Array](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/multidimensional-arrays) simply builds on this concept, wrapping the array data in an object (note that for each dimension, you will have a corresponding size for that dimension, i.e. width, height, and depth for a 3d array).
 

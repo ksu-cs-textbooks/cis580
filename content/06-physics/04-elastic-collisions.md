@@ -14,38 +14,38 @@ Thus, if we consider our two objects in isolation (as a system of two), the tota
 
 Momentum is the product of mass and velocity of an object:
 
-$$\rho = mv\tag{0}$$
+{{< math >}}$$ \rho = mv\tag{0} $${{< /math >}}
 
 Since we have two objects, the total momentum in the system is the sum of those:
 
-$$\rho = m_1v_1 + m_2v_2\tag{1}$$
+{{< math >}}$$ \rho = m_1v_1 + m_2v_2\tag{1} $${{< /math >}}
 
 And, due to the law of conservation of momentum, 
 
-$$\rho_{before} = \rho_{after} \tag{2}$$
+{{< math >}}$$ \rho_{before} = \rho_{after} \tag{2} $${{< /math >}}
 
 So, substituting equation 1 before and after the collision we find:
 
-$$m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2\tag{3}$$
+{{< math >}}$$ m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2\tag{3} $${{< /math >}}
 
-Where $u$ is the velocity _before_ a collision, and $v$ is the velocity _after_ (note that the mass of each object does not change).
+Where {{< math >}}$ u ${{< /math >}} is the velocity _before_ a collision, and {{< math >}}$ v ${{< /math >}} is the velocity _after_ (note that the mass of each object does not change).
 
 And since our objects are both moving, they also have kinetic energy:
 
-$$E_k = \frac{1}{2}mv^2\tag{4}$$
+{{< math >}}$$ E_k = \frac{1}{2}mv^2\tag{4} $${{< /math >}}
 
 As energy is conserved, the energy _before_ the collision and _after_ must likewise be conserved:
 
-$$E_{before} = E_{after} \tag{5}$$
+{{< math >}}$$ E_{before} = E_{after} \tag{5} $${{< /math >}}
 
 Substituting equation 4 into 5 yields:
 
-$$\frac{1}{2}m_0u_0^2 + \frac{1}{2}m_1u_1^2 = \frac{1}{2}m_0v_0^2 + \frac{1}{2}m_1v_1^2 \tag{6}$$
+{{< math >}}$$ \frac{1}{2}m_0u_0^2 + \frac{1}{2}m_1u_1^2 = \frac{1}{2}m_0v_0^2 + \frac{1}{2}m_1v_1^2 \tag{6} $${{< /math >}}
 
-Assuming we enter the collision knowing the values of $u_0, u_1, m_0, and m_1$, we have two unknowns $v_0$ and $v_1$ and two equations containing them (equations 3 and 6).  Thus, we can solve for $v_0$ and $v_1$:
+Assuming we enter the collision knowing the values of {{< math >}}$ u_0, u_1, m_0, and m_1 ${{< /math >}}, we have two unknowns {{< math >}}$ v_0 ${{< /math >}} and {{< math >}}$ v_1 ${{< /math >}} and two equations containing them (equations 3 and 6).  Thus, we can solve for {{< math >}}$ v_0 ${{< /math >}} and {{< math >}}$ v_1 ${{< /math >}}:
 
-$$v_0 = \frac{m_0 - m_1}{m_0 + m_1}u_0 + \frac{2m_1}{m_0+m_1}u_1 \tag{7}$$
-$$v_1 = \frac{2m_0}{m_0+m_1}u_0 + \frac{m_1 - m_0}{m_0 + m_1}u_1 \tag{8}$$
+{{< math >}}$$ v_0 = \frac{m_0 - m_1}{m_0 + m_1}u_0 + \frac{2m_1}{m_0+m_1}u_1 \tag{7} $${{< /math >}}
+{{< math >}}$$ v_1 = \frac{2m_0}{m_0+m_1}u_0 + \frac{m_1 - m_0}{m_0 + m_1}u_1 \tag{8} $${{< /math >}}
 
 These two equations can give us the new velocities in a single dimension.  But we're primarily interested in _two_ dimensions, and our velocities are expressed as `Vector2` objects.  However, there is a simple solution; use a coordinate system that aligns with the axis of collision, i.e. for two masses colliding, A and B:
 
@@ -57,15 +57,15 @@ Note how the X-axis in the diagram is aligned with the line between the centers 
 
 Remember that the angle between two vectors is related to the dot product:
 
-$$cos\theta = \frac{ a \cdotp b}{||a||*||b||} \tag {9}$$
+{{< math >}}$$ cos\theta = \frac{ a \cdotp b}{||a||*||b||} \tag {9} $${{< /math >}}
 
-If both vectors $a$ and $b$ are of unit length (normalized), then this simplifies to:
+If both vectors {{< math >}}$ a ${{< /math >}} and {{< math >}}$ b ${{< /math >}} are of unit length (normalized), then this simplifies to:
 
-$$cos\theta = a \cdotp b \tag {10}$$
+{{< math >}}$$ cos\theta = a \cdotp b \tag {10} $${{< /math >}}
 
-And $\theta$ can be solved for by:
+And {{< math >}}$ \theta ${{< /math >}} can be solved for by:
 
-$$\theta = cos^{-1}(a \cdotp b) \tag{11}$$
+{{< math >}}$$ \theta = cos^{-1}(a \cdotp b) \tag{11} $${{< /math >}}
 
 Given two rigid bodies `A` and `B`, we could then calculate this angle using their centers:
 

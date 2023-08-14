@@ -70,7 +70,7 @@ This looks just like how we updated state before.  The next step is to abstract 
     Direction = currentGamePadState.Thumbsticks.Right;
 ```
 
-If there is no gamepad available, this will be the vector $(0,0)$.  Then we can check the WASD keys, and assign a corresponding value
+If there is no gamepad available, this will be the vector {{< math >}}$ (0,0) ${{< /math >}}.  Then we can check the WASD keys, and assign a corresponding value
 
 ```csharp
     // WASD keys:

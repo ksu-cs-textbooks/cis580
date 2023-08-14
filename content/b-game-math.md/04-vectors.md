@@ -5,7 +5,7 @@ weight: 40
 date: 2018-08-24T10:53:26-05:00
 ---
 
-Games almost universally use vectors to represent coordinates rather than points, as these have additional mathematical properties which can be very helpful.  In mathematical notation, vectors are expressed similar to points, but use angle brackets, i.e.: $<x, y>$ and $<x, y, z>$ for two- and three-element vectors.  A vector represents both direction _and_ magnitude, and relates to the trigonometric right triangle.  Consider the case of a two-element vector - the vector _is the hypotenuse_ of a right triangle with adjacent leg formed by its X component and opposite leg formed by its Y component.  A three-element vector repeats this relationship in three dimensions.
+Games almost universally use vectors to represent coordinates rather than points, as these have additional mathematical properties which can be very helpful.  In mathematical notation, vectors are expressed similar to points, but use angle brackets, i.e.: {{< math >}}$ <x, y> ${{< /math >}} and {{< math >}}$ <x, y, z> ${{< /math >}} for two- and three-element vectors.  A vector represents both direction _and_ magnitude, and relates to the trigonometric right triangle.  Consider the case of a two-element vector - the vector _is the hypotenuse_ of a right triangle with adjacent leg formed by its X component and opposite leg formed by its Y component.  A three-element vector repeats this relationship in three dimensions.
 
 MonoGame provides structs to represent 2-, 3-, and 4- element vectors:
 
@@ -23,8 +23,8 @@ float length = a.Length();
 
 This is calculated using the distance formula:
 
-$$|\overline{v}| = \squareroot{(x_0 - x_1)^2 + (y_0 - y1)^2} \tag{0}$$
-$$|\overline{v}| = \squareroot{(x_0 - x_1)^2 + (y_0 - y1)^2 + (z_0 - z_1)^2} \tag{1}$$
+{{< math >}}$$ |\overline{v}| = \squareroot{(x_0 - x_1)^2 + (y_0 - y1)^2} \tag{0} $${{< /math >}}
+{{< math >}}$$ |\overline{v}| = \squareroot{(x_0 - x_1)^2 + (y_0 - y1)^2 + (z_0 - z_1)^2} \tag{1} $${{< /math >}}
 
 In some instances, we may be able to compare the square of the distance, and avoid the computation of a square root.  For these cases, the vector classes also define a `LengthSquared()` method:
 

@@ -54,10 +54,10 @@ The `rotation` is a rotation value measured in radians that should be applied to
 #### Vector2 origin
 The `origin` is the spot within the sprite where rotations and scaling are centered.  This _also_ affects sprite placement - the `position` vector indicates where the `origin` of the sprite will fall on-screen.  It is a vector measured relative to the upper-left-hand-corner of the sprite, in _texture_ coordinates (i.e. pixels of the source texture).  
 
-Thus, for our 64x64 pixel ball texture, if we wanted the origin to be at the center, we would specify a value of `new Vector2(32,32)`.  This would also mean that when our ball was at position $(0,0)$, it would be centered on the origin and 3/4 of the ball would be off-screen.
+Thus, for our 64x64 pixel ball texture, if we wanted the origin to be at the center, we would specify a value of `new Vector2(32,32)`.  This would also mean that when our ball was at position {{< math >}}$ (0,0) ${{< /math >}}, it would be centered on the origin and 3/4 of the ball would be off-screen.
 
 #### float scale 
-The `scale` is a scalar value to scale the sprite by.  For example, a value of $2.0f$ will make the sprite twice as big, while $0.5f$ would make it half as big.  This scaling is in relation to the `origin`, so if the origin is at the center of the sprite grows in all directions equally.  If instead it is at $(0,0)$, the sprite will grow to the right and down only.
+The `scale` is a scalar value to scale the sprite by.  For example, a value of {{< math >}}$ 2.0f ${{< /math >}} will make the sprite twice as big, while {{< math >}}$ 0.5f ${{< /math >}} would make it half as big.  This scaling is in relation to the `origin`, so if the origin is at the center of the sprite grows in all directions equally.  If instead it is at {{< math >}}$ (0,0) ${{< /math >}}, the sprite will grow to the right and down only.
 
 #### Vector2 scale 
 The `scale` can also be specified as a `Vector2`, which allows for a different horizontal and vertical scaling factor.

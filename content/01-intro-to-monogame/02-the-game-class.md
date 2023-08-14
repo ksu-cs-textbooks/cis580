@@ -37,9 +37,9 @@ Setting the `Game.IsFixedTimeStep` property to `false` instead runs the game loo
 {{% notice info %}}
 You might be wondering what timestep you should use.  It's a tricky question, but there are some easy parameters you can use to frame it:
 
-**Fast enough to provide the illusion of motion**  The human brain begins to translate quickly changing images to motion around 16 frames per second.  That's a timestep of $0.0625$
+**Fast enough to provide the illusion of motion**  The human brain begins to translate quickly changing images to motion around 16 frames per second.  That's a timestep of {{< math >}}$ 0.0625 ${{< /math >}}
 
-**At a multiple of 30 frames per second**  At least, in the Americas and parts of Asia televisions and monitors refresh at a multiple of 30, as AC power is delivered at 60 hertz cycles (other parts of the world use 50 hertz).  Cheaper monitors run at 30 frames per second (a timestep of $0.03\overline{3333}$), while most modern monitors and televisions run at 60 frames per second (a timestep of $0.01\overline{6666}$) and high-end devices might run at 120 frames per second (a timestep of $0.008\overline{3333}$).
+**At a multiple of 30 frames per second**  At least, in the Americas and parts of Asia televisions and monitors refresh at a multiple of 30, as AC power is delivered at 60 hertz cycles (other parts of the world use 50 hertz).  Cheaper monitors run at 30 frames per second (a timestep of {{< math >}}$ 0.03\overline{3333} ${{< /math >}}), while most modern monitors and televisions run at 60 frames per second (a timestep of {{< math >}}$ 0.01\overline{6666} ${{< /math >}}) and high-end devices might run at 120 frames per second (a timestep of {{< math >}}$ 0.008\overline{3333} ${{< /math >}}).
 
 **Slow enough your game doesn't lag**  This speed will vary depending on the hardware in question.  But if your game is consistently slow, you need to either increase the timestep or optimize your code.
 

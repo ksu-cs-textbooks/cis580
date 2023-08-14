@@ -63,7 +63,7 @@ We'll also give it a random velocity:
     _ballVelocity *= 100;
 ```
 
-For now we'll use the `System.Random` class you are used to.  For some game purposes, it is sufficient, though its randomness is not as random as we'll need for some kinds of games.  Also, note that because `Random.NextDouble()` returns a double, and `Vector2` uses floats, we need to implicitly cast the result.  Finally, `Vector2.Normalize()` will shorten our velocity vector to be of length $1$, which the `_ballVelocity *= 100;` line scales up to a length of $100$.  Eventually this will mean our ball will be traveling 100 pixels per second.
+For now we'll use the `System.Random` class you are used to.  For some game purposes, it is sufficient, though its randomness is not as random as we'll need for some kinds of games.  Also, note that because `Random.NextDouble()` returns a double, and `Vector2` uses floats, we need to implicitly cast the result.  Finally, `Vector2.Normalize()` will shorten our velocity vector to be of length {{< math >}}$ 1 ${{< /math >}}, which the `_ballVelocity *= 100;` line scales up to a length of {{< math >}}$ 100 ${{< /math >}}.  Eventually this will mean our ball will be traveling 100 pixels per second.
 
 #### Adding the Image to the Project
 As we said above, `LoadContent()` is where we load our assets.  For now, we just need an image of a ball.  However, getting this image into our game takes a bit of doing.

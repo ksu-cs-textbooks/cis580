@@ -15,7 +15,7 @@ In this case, each sprite is 15x15 pixels, with a 1 pixel outline.  So to draw t
 var sourceRect = new Rectangle(16, 96, 16, 16);
 ```
 
-Thus, to draw the sprite on-screen at position $(50,50)$ we could use:
+Thus, to draw the sprite on-screen at position {{< math >}}$ (50,50) ${{< /math >}} we could use:
 
 ```csharp
 protected override void Draw(GameTime gameTime)

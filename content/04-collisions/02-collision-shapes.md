@@ -60,39 +60,36 @@ public static bool Collides(BoundingPoint p1, BoundingPoint p2)
 ```
 
 ### Circle on Circle Collisions
-Only slightly harder than checking for collisions between two points is a collision between two circles.  Remember a circle is defined as all points that are $radius$ distance from the $center$.  For two circles to collide, some of these points must fall within the region defined by the other.  If we were to draw a line from center to center:
+Only slightly harder than checking for collisions between two points is a collision between two circles.  Remember a circle is defined as all points that are {{< math >}}$ radius ${{< /math >}} distance from the {{< math >}}$ center ${{< /math >}}.  For two circles to collide, some of these points must fall within the region defined by the other.  If we were to draw a line from center to center:
 
 ![Colliding and non-colliding bounding circles](/images/4.2.2.png)
 
 We can very quickly see that if the length of this line is greater than the sum of the radii of the circle, the two circles do not overlap.  We can calculate the distance between the circles using the distance formula:
 
-$$
+{{< math >}}$$
 distance = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
-$$
+$${{< /math >}}
 
 This can then be compared to the sum of the two circle’s radii, giving us an indication of the relationship between the two shapes:
 
-$$
-(r_2 + r_1) < \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{The circles do not intersect}
-$$
-$$
-(r_2 + r_1) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{The circles touch}
-$$
-$$
-(r_2 + r_1) > \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{The circles overlap}
-$$
+{{< math >}}$$
+\displaylines{
+(r_2 + r_1) < \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{The circles do not intersect} \\
+(r_2 + r_1) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{The circles touch} \\
+(r_2 + r_1) > \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{The circles overlap} \\
+}
+$${{< /math >}}
 
 However, computing the square root is a costly operation in computational terms, so we will typically square both sides of the equation and use a comparison of the squares instead:
 
-$$
-(r_2 + r_1)^2 < (x_2 - x_1)^2 + (y_2 - y_1)^2 \quad \text{The circles do not intersect}
-$$
-$$
-(r_2 + r_1)^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2 \quad \text{The circles touch}
-$$
-$$
-(r_2 + r_1)^2 > (x_2 - x_1)^2 + (y_2 - y_1)^2 \quad \text{The circles overlap}
-$$
+{{< math >}}$$
+\displaylines{
+(r_2 + r_1)^2 < (x_2 - x_1)^2 + (y_2 - y_1)^2 \quad \text{The circles do not intersect} \\
+(r_2 + r_1)^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2 \quad \text{The circles touch} \\
+(r_2 + r_1)^2 > (x_2 - x_1)^2 + (y_2 - y_1)^2 \quad \text{The circles overlap} \\
+}
+$${{< /math >}}
+
 From these inequalities we can very easily write a test for determining if our shapes collide.
 
 ```csharp
@@ -161,15 +158,15 @@ public static bool Collides(BoundingRectangle r1, BoundingRectangle r2)
 ### Point on Circle Collisions 
 To determine if a point and circle collide is a degenerate case of circle on circle collision where one circle has a radius of 0. THus:
 
-$$
+{{< math >}}$$
 r >= \sqrt{(x_c - x_p)^2 + (y_c - y_p)^2} \quad \text{collision}
-$$
+$${{< /math >}}
 
 Which can be rewritten to avoid the square root as:
 
-$$
+{{< math >}}$$
 r^2 >= (x_c - x_p)^2 + (y_c - y_p)^2 \quad \text{collision}
-$$
+$${{< /math >}}
 
 And in code:
 

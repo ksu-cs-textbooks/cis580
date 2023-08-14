@@ -24,7 +24,7 @@ for(x = 0; x < 200; x++) {
 }
 ```
 
-Note that we short-circuit our investigation as soon as we find an overlapping pixel that is not transparent in at least one of the raster arrays.  Yet our worse-case scenario is $O(width x height)$ of the overlapping region.
+Note that we short-circuit our investigation as soon as we find an overlapping pixel that is not transparent in at least one of the raster arrays.  Yet our worse-case scenario is {{< math >}}$ O(width x height) ${{< /math >}} of the overlapping region.
 
 Implementing per-pixel collision detection in MonoGame requires us to extract the texture data with `Texture2D.GetData()`, into which we need to pass an array of `Color`, i.e. given a `Texture2D` variable `texture`:
 

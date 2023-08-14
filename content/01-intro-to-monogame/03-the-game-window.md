@@ -5,7 +5,7 @@ weight: 30
 date: 2018-08-24T10:53:26-05:00
 ---
 
-While MonoGame does support 3D rendering, we're going to start with 2D games.  When working in 2D, MonoGame uses a coordinate system similar to the screen coordinates you've seen in your earlier classes.  The origin of the coordinate system $(0, 0)$, is the upper-left corner of the game window's client area, and the X-axis increases to the right and the Y-axis increases downward.  
+While MonoGame does support 3D rendering, we're going to start with 2D games.  When working in 2D, MonoGame uses a coordinate system similar to the screen coordinates you've seen in your earlier classes.  The origin of the coordinate system {{< math >}}$ (0, 0) ${{< /math >}}, is the upper-left corner of the game window's client area, and the X-axis increases to the right and the Y-axis increases downward.  
 
 The part of the game world that appears on-screen is determined by the active _viewport_, represented by a [Viewport](https://docs.monogame.net/api/Microsoft.Xna.Framework.Graphics.Viewport.html) struct - basically a rectangle plus a minimum and maximum depth.  From the `game` class, the active viewport is normally reached with `GraphicsDevice.Viewport`.  It defines the portion of the game world drawn on-screen with four measurements: 
 
