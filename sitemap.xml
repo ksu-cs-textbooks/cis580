@@ -724,7 +724,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/08-spritebatch-transforms/02-transforms/index.html</loc>
-    <lastmod>2021-03-11T13:44:31-06:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/02-player-input/index.html</loc>
@@ -812,11 +812,11 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/08-spritebatch-transforms/06-screen-scaling/index.html</loc>
-    <lastmod>2023-08-11T11:18:05-05:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/08-spritebatch-transforms/05-special-effects/index.html</loc>
-    <lastmod>2023-08-11T11:18:05-05:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/07-game-architecture/05-summary/index.html</loc>
@@ -920,11 +920,11 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/04-collisions/02-collision-shapes/index.html</loc>
-    <lastmod>2023-08-11T11:18:05-05:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/b-game-math.md/02-coordinate-systems/index.html</loc>
-    <lastmod>2023-08-11T11:18:05-05:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/00-forward/02-course-structure/index.html</loc>
@@ -932,7 +932,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/03-sprites.md/02-drawing-sprites/index.html</loc>
-    <lastmod>2021-01-29T19:36:44-06:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/02-player-input/02-input-polling/index.html</loc>
@@ -940,7 +940,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/06-physics/02-linear-dynamics/index.html</loc>
-    <lastmod>2021-02-21T22:16:10-06:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/a-simple-games/02-snake/index.html</loc>
@@ -948,15 +948,15 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/05-audio/02-sound-effects/index.html</loc>
-    <lastmod>2021-02-03T20:43:16-06:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/01-intro-to-monogame/02-the-game-class/index.html</loc>
-    <lastmod>2022-07-12T11:13:57-05:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/10-tile-maps/03-2d-and-1d-arrays/index.html</loc>
-    <lastmod>2023-08-11T11:18:05-05:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/11-content-pipeline/03-extending-the-pipline/index.html</loc>
@@ -972,7 +972,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/06-physics/03-angular-dynamics/index.html</loc>
-    <lastmod>2023-08-11T11:18:05-05:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/04-collisions/03-collision-helper/index.html</loc>
@@ -988,19 +988,19 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/05-audio/03-positional-sounds/index.html</loc>
-    <lastmod>2023-08-11T11:18:05-05:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/03-sprites.md/03-texture-atlases/index.html</loc>
-    <lastmod>2023-08-11T11:18:05-05:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/01-intro-to-monogame/03-the-game-window/index.html</loc>
-    <lastmod>2021-01-21T11:03:02-06:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/b-game-math.md/03-trigonometry/index.html</loc>
-    <lastmod>2023-08-11T11:18:05-05:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/00-forward/03-workshop-etiquette/index.html</loc>
@@ -1016,11 +1016,11 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/06-physics/04-elastic-collisions/index.html</loc>
-    <lastmod>2023-08-11T11:18:05-05:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/01-intro-to-monogame/04-game-initialization/index.html</loc>
-    <lastmod>2023-08-11T11:18:05-05:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/02-player-input/04-mouse-input/index.html</loc>
@@ -1036,15 +1036,15 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/04-collisions/04-separating-axis-theorem/index.html</loc>
-    <lastmod>2023-08-11T11:18:05-05:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/03-sprites.md/05-drawing-text/index.html</loc>
-    <lastmod>2023-08-11T11:18:05-05:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/b-game-math.md/04-vectors/index.html</loc>
-    <lastmod>2021-03-31T13:14:16-05:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/00-forward/04-where-to-find-help/index.html</loc>
@@ -1060,11 +1060,11 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/04-collisions/05-per-pixel/index.html</loc>
-    <lastmod>2023-08-11T11:18:05-05:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/01-intro-to-monogame/05-the-update-method/index.html</loc>
-    <lastmod>2023-08-11T11:18:05-05:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/00-forward/05-what-you-will-learn/index.html</loc>
@@ -1080,7 +1080,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/02-player-input/06-input-manager/index.html</loc>
-    <lastmod>2021-01-27T16:28:21-06:00</lastmod>
+    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis580/04-collisions/06-multiphase/index.html</loc>

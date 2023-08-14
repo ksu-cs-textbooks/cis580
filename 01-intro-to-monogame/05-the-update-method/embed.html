@@ -675,18 +675,18 @@
     <link href="https://ksu-cs-textbooks.github.io/cis580/01-intro-to-monogame/05-the-update-method/index.print.html" rel="alternate" type="text/html" title="The Update Method :: K-State CIS 580 Textbook">
     <link href="https://ksu-cs-textbooks.github.io/cis580/01-intro-to-monogame/05-the-update-method/tele.html" rel="alternate" type="text/html" title="The Update Method :: K-State CIS 580 Textbook">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1691771330" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1691771330" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/nucleus.css?1691771330" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1691771330" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1691771330" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/perfect-scrollbar.min.css?1691771330" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1691771330" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1691771330" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme.css?1691771330" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme-auto.css?1691771330" rel="stylesheet" id="variant-style">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/variant.css?1691771330" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/print.css?1691771330" rel="stylesheet" media="print">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/ie.css?1691771330" rel="stylesheet">
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/url.js?1691771330"></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/variant.js?1691771330"></script>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1692031296" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1692031296" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/nucleus.css?1692031296" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1692031296" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1692031296" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/perfect-scrollbar.min.css?1692031296" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1692031296" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1692031296" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme.css?1692031296" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme-auto.css?1692031296" rel="stylesheet" id="variant-style">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/variant.css?1692031296" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/print.css?1692031296" rel="stylesheet" media="print">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/ie.css?1692031296" rel="stylesheet">
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/url.js?1692031296"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/variant.js?1692031296"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -705,7 +705,7 @@
       window.variants && variants.init( [ 'auto', 'light-theme', 'dark-theme' ] );
     </script>
     
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/custom.css?1691771330" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/custom.css?1692031296" rel="stylesheet">
 
   </head>
   <body class="mobile-support embed disableInlineCopyToClipboard" data-url="https://ksu-cs-textbooks.github.io/cis580/01-intro-to-monogame/05-the-update-method/embed.html">
@@ -724,9 +724,10 @@
 <p>Note the <code>GameTime</code> parameter - it provides us with both the total time the game has been running, <em>and</em> the time that has elapsed between this and the previous step through the game loop (the frame).  We can use this in our physics calculations.</p>
 <h3 id="our-simple-example">Our Simple Example</h3>
 <p>So in our example, we want the ball to move around the screen, according to its velocity.  If you remember your physics, the velocity is the change in position over time, i.e.:</p>
-<p>$$
-\overrightarrow{p&rsquo;} = \overrightarrow{p} + \overrightarrow{v} * t
-$$</p>
+
+<span class="math align-center">$ 
+\overrightarrow{p'} = \overrightarrow{p} + \overrightarrow{v} * t
+$</span>
 <p>We can express this in C# easily:</p>
 <div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>_ballPosition += _ballVelocity * (<span style="color:#66d9ef">float</span>)gameTime.ElapsedGameTime.TotalSeconds;</span></span></code></pre></div><p>Add this code to the <code>Update()</code> method, just below the <code>// TODO</code> statement.  Note that MonoGame provides operator overrides for performing algebraic operations on <code>Vector2</code> structs, which makes writing expressions involving vectors very much like the mathematical notation.  Also, note again that we have to cast the double <code>TotalSeconds</code> into a float as we are loosing some precision in the operation.</p>
 <p>Also, note that because we multiply the velocity by the elapsed time, it does not matter <em>what</em> our timestep is - the ball will always move at the same speed.  Had we simply added the velocity to the position, a game running with a 60fps timestep would be twice as fast as one running at 30fps.</p>
@@ -750,16 +751,17 @@ $$</p>
 <p>For 2, we can use <code>GraphicsDevice.Viewport</code> to get a rectangle defining the screen.</p>
 <p>It can be very helpful to draw a diagram of this kind of setup <em>before</em> you try to derive the necessary calculations, i.e.:</p>
 <p>
-<a href="#image-25c340775d72b500801dc3288eda46d1" class="lightbox-link">
+<a href="#image-94dbd5d9c12cd2340a94d73bc0c78bae" class="lightbox-link">
 <img src="https://ksu-cs-textbooks.github.io/cis580/images/1.5.1.png" alt="A diagram of the game" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-25c340775d72b500801dc3288eda46d1">
+<a href="javascript:history.back();" class="lightbox" id="image-94dbd5d9c12cd2340a94d73bc0c78bae">
 <img src="https://ksu-cs-textbooks.github.io/cis580/images/1.5.1.png" alt="A diagram of the game" class="lightbox-image" loading="lazy">
 </a></p>
 <p>To check if the ball is moving off the left of the screen, we could use an <code>if</code> statement:</p>
 <div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(_ballPosition.X &lt; GraphicsDevice.Viewport.X) {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// TODO: Bounce ball</span>
-</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>We could then reverse the direction of the ball by multiplying its velocity in the horizontal plane by $-1$:</p>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>We could then reverse the direction of the ball by multiplying its velocity in the horizontal plane by 
+<span class="math align-center">$ -1 $</span>:</p>
 <div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>    _ballVelocity.X *= -<span style="color:#ae81ff">1</span>;</span></span></code></pre></div><p>Moving off-screen to the right would be almost identical, so we could actually combine the two into a single if-statement:</p>
 <div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>    <span style="color:#75715e">// Moving offscreen horizontally</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (_ballPosition.X &lt; GraphicsDevice.Viewport.X || _ballPosition.X &gt; GraphicsDevice.Viewport.Width - <span style="color:#ae81ff">64</span>)
@@ -794,8 +796,37 @@ In the worst case, it will actually so far off screen that with floating point e
     
     
     
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/clipboard.min.js?1691771330" defer></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/perfect-scrollbar.min.js?1691771330" defer></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/theme.js?1691771330" defer></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/clipboard.min.js?1692031296" defer></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/perfect-scrollbar.min.js?1692031296" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="https://ksu-cs-textbooks.github.io/cis580/js/mathjax/tex-mml-chtml.js?1692031296"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/theme.js?1692031296" defer></script>
   </body>
 </html>

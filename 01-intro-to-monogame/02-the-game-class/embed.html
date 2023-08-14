@@ -675,18 +675,18 @@
     <link href="https://ksu-cs-textbooks.github.io/cis580/01-intro-to-monogame/02-the-game-class/index.print.html" rel="alternate" type="text/html" title="The Game Class :: K-State CIS 580 Textbook">
     <link href="https://ksu-cs-textbooks.github.io/cis580/01-intro-to-monogame/02-the-game-class/tele.html" rel="alternate" type="text/html" title="The Game Class :: K-State CIS 580 Textbook">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1691771330" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1691771330" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/nucleus.css?1691771330" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1691771330" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1691771330" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/perfect-scrollbar.min.css?1691771330" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1691771330" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1691771330" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme.css?1691771330" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme-auto.css?1691771330" rel="stylesheet" id="variant-style">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/variant.css?1691771330" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/print.css?1691771330" rel="stylesheet" media="print">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/ie.css?1691771330" rel="stylesheet">
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/url.js?1691771330"></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/variant.js?1691771330"></script>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1692031296" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1692031296" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/nucleus.css?1692031296" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1692031296" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1692031296" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/perfect-scrollbar.min.css?1692031296" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1692031296" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1692031296" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme.css?1692031296" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme-auto.css?1692031296" rel="stylesheet" id="variant-style">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/variant.css?1692031296" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/print.css?1692031296" rel="stylesheet" media="print">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/ie.css?1692031296" rel="stylesheet">
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/url.js?1692031296"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/variant.js?1692031296"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -705,7 +705,7 @@
       window.variants && variants.init( [ 'auto', 'light-theme', 'dark-theme' ] );
     </script>
     
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/custom.css?1691771330" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/custom.css?1692031296" rel="stylesheet">
 
   </head>
   <body class="mobile-support embed disableInlineCopyToClipboard" data-url="https://ksu-cs-textbooks.github.io/cis580/01-intro-to-monogame/02-the-game-class/embed.html">
@@ -749,8 +749,12 @@
   <div class="box-content">
 
 <p>You might be wondering what timestep you should use.  It&rsquo;s a tricky question, but there are some easy parameters you can use to frame it:</p>
-<p><strong>Fast enough to provide the illusion of motion</strong>  The human brain begins to translate quickly changing images to motion around 16 frames per second.  That&rsquo;s a timestep of $0.0625$</p>
-<p><strong>At a multiple of 30 frames per second</strong>  At least, in the Americas and parts of Asia televisions and monitors refresh at a multiple of 30, as AC power is delivered at 60 hertz cycles (other parts of the world use 50 hertz).  Cheaper monitors run at 30 frames per second (a timestep of $0.03\overline{3333}$), while most modern monitors and televisions run at 60 frames per second (a timestep of $0.01\overline{6666}$) and high-end devices might run at 120 frames per second (a timestep of $0.008\overline{3333}$).</p>
+<p><strong>Fast enough to provide the illusion of motion</strong>  The human brain begins to translate quickly changing images to motion around 16 frames per second.  That&rsquo;s a timestep of
+<span class="math align-center">$ 0.0625 $</span></p>
+<p><strong>At a multiple of 30 frames per second</strong>  At least, in the Americas and parts of Asia televisions and monitors refresh at a multiple of 30, as AC power is delivered at 60 hertz cycles (other parts of the world use 50 hertz).  Cheaper monitors run at 30 frames per second (a timestep of
+<span class="math align-center">$ 0.03\overline{3333} $</span>), while most modern monitors and televisions run at 60 frames per second (a timestep of
+<span class="math align-center">$ 0.01\overline{6666} $</span>) and high-end devices might run at 120 frames per second (a timestep of
+<span class="math align-center">$ 0.008\overline{3333} $</span>).</p>
 <p><strong>Slow enough your game doesn&rsquo;t lag</strong>  This speed will vary depending on the hardware in question.  But if your game is consistently slow, you need to either increase the timestep or optimize your code.</p>
 <p>By default, the <code>Game.TargetElapsedTime</code> is set to the refresh rate of your monitor - which in most cases will be the ideal rate (as drawing frames more often gives no benefit).</p>
 </div>
@@ -775,8 +779,37 @@
     
     
     
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/clipboard.min.js?1691771330" defer></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/perfect-scrollbar.min.js?1691771330" defer></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/theme.js?1691771330" defer></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/clipboard.min.js?1692031296" defer></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/perfect-scrollbar.min.js?1692031296" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="https://ksu-cs-textbooks.github.io/cis580/js/mathjax/tex-mml-chtml.js?1692031296"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/theme.js?1692031296" defer></script>
   </body>
 </html>

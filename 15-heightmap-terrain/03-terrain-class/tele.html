@@ -675,18 +675,18 @@
     <link href="https://ksu-cs-textbooks.github.io/cis580/15-heightmap-terrain/03-terrain-class/index.print.html" rel="alternate" type="text/html" title="Terrain Class :: K-State CIS 580 Textbook">
     <link href="https://ksu-cs-textbooks.github.io/cis580/15-heightmap-terrain/03-terrain-class/embed.html" rel="alternate" type="text/html" title="Terrain Class :: K-State CIS 580 Textbook">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1691771333" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1691771333" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/nucleus.css?1691771333" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1691771333" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1691771333" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/perfect-scrollbar.min.css?1691771333" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1691771333" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1691771333" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme.css?1691771333" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme-auto.css?1691771333" rel="stylesheet" id="variant-style">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/variant.css?1691771333" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/print.css?1691771333" rel="stylesheet" media="print">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/ie.css?1691771333" rel="stylesheet">
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/url.js?1691771333"></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/variant.js?1691771333"></script>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1692031300" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1692031300" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/nucleus.css?1692031300" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1692031300" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1692031300" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/perfect-scrollbar.min.css?1692031300" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1692031300" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1692031300" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme.css?1692031300" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme-auto.css?1692031300" rel="stylesheet" id="variant-style">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/variant.css?1692031300" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/print.css?1692031300" rel="stylesheet" media="print">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/ie.css?1692031300" rel="stylesheet">
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/url.js?1692031300"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/variant.js?1692031300"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -705,7 +705,7 @@
       window.variants && variants.init( [ 'auto', 'light-theme', 'dark-theme' ] );
     </script>
     
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/custom.css?1691771333" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/custom.css?1692031300" rel="stylesheet">
 
   </head>
   <body class="mobile-support tele disableInlineCopyToClipboard" data-url="https://ksu-cs-textbooks.github.io/cis580/15-heightmap-terrain/03-terrain-class/index.html">
@@ -816,37 +816,37 @@
 </span></span><span style="display:flex;"><span>    vertices.SetData&lt;VertexPositionNormalTexture&gt;(terrainVertices);</span></span></code></pre></div><h3 id="creating-the-indices">Creating the Indices</h3>
 <p>Before we dive into code, let&rsquo;s think about how we want to lay out our triangle mesh.  We could use either a triangle list, or a triangle strip.  With a triangle list, we need to have an index for <em>each</em> of the corners of <em>each</em> triangle.  Since we have two triangles per grid cell, the total number of indices would be <code>indexCount = 3 * width * height</code>.  Conversely, with a triangle strip, we only need <em>one</em> index for each triangle after the first, which needs three.  So its size would be <code>indexCount = width * height + 2</code>.  This is nearly <em>a third</em> of the size!  So naturally, we&rsquo;d like to use a triangle list.  This is pretty straightforward for a single row:</p>
 <p>
-<a href="#image-30fb1b82fe3e2a1346ce473fffe89159" class="lightbox-link">
+<a href="#image-97ea1a99c9124fa2d89158b8eadd2d74" class="lightbox-link">
 <img src="https://ksu-cs-textbooks.github.io/cis580/images/heightmap-terrain-3.1.png" alt="Single Row Triangle Strip" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-30fb1b82fe3e2a1346ce473fffe89159">
+<a href="javascript:history.back();" class="lightbox" id="image-97ea1a99c9124fa2d89158b8eadd2d74">
 <img src="https://ksu-cs-textbooks.github.io/cis580/images/heightmap-terrain-3.1.png" alt="Single Row Triangle Strip" class="lightbox-image" loading="lazy">
 </a></p>
 <p>The diagram above shows what a row defined as a triangle strip looks like.  Each vertex (the purple circle) is labeled by the order it appears in the indices.  The blue arrows denote the triangle edges defined by successive vertices.  The gray dashed lines denote the side of the triangle inferred from the order of the vertices.  And each triangle is numbered in blue by the order it is defined.</p>
 <p>But what about the next row?  You might be tempted to start on the left again, but doing so will result in a triangle that stretches across the breadth of the terrain - which will look terrible!</p>
 <p>
-<a href="#image-028b98e13f7557164aa99fb10af47acb" class="lightbox-link">
+<a href="#image-b3339a69454a95731afc1cf5e2042160" class="lightbox-link">
 <img src="https://ksu-cs-textbooks.github.io/cis580/images/heightmap-terrain-3.2.png" alt="Triangle Stretching Across the Row" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-028b98e13f7557164aa99fb10af47acb">
+<a href="javascript:history.back();" class="lightbox" id="image-b3339a69454a95731afc1cf5e2042160">
 <img src="https://ksu-cs-textbooks.github.io/cis580/images/heightmap-terrain-3.2.png" alt="Triangle Stretching Across the Row" class="lightbox-image" loading="lazy">
 </a></p>
 <p>This triangle is outlined in the above diagram by the ochre lines.  Note that in the game they won&rsquo;t be curved - the triangle will just slice through the terrain.</p>
 <p>Or, we can try zig-zagging, by going right-to-left with the second row.</p>
 <p>
-<a href="#image-509526adff61a312d7a0952520c1ebe5" class="lightbox-link">
+<a href="#image-749d9f235b70c09c669f91e660090044" class="lightbox-link">
 <img src="https://ksu-cs-textbooks.github.io/cis580/images/heightmap-terrain-3.3.png" alt="Zig-zagging Triangle Strip" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-509526adff61a312d7a0952520c1ebe5">
+<a href="javascript:history.back();" class="lightbox" id="image-749d9f235b70c09c669f91e660090044">
 <img src="https://ksu-cs-textbooks.github.io/cis580/images/heightmap-terrain-3.3.png" alt="Zig-zagging Triangle Strip" class="lightbox-image" loading="lazy">
 </a></p>
 <p>Notice that doing so creates a triangle that stretches along the end of the terrain.  This probably wouldn&rsquo;t be a problem as we probably would obscure the edge of our terrain in the game anyway.  But also notice that the diagonals of each terrain row slant the opposite ways.  This <em>does</em> cause a problem for us, which we&rsquo;ll understand in a bit.</p>
 <p>Instead, we&rsquo;ll create <em>two</em> extra triangles between each row.</p>
 <p>
-<a href="#image-510398afb24d9afc5806295896034259" class="lightbox-link">
+<a href="#image-98113c4e44b524b8bfbad982866367b8" class="lightbox-link">
 <img src="https://ksu-cs-textbooks.github.io/cis580/images/heightmap-terrain-3.4.png" alt="Our Triangle Strip Layout Strategy" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-510398afb24d9afc5806295896034259">
+<a href="javascript:history.back();" class="lightbox" id="image-98113c4e44b524b8bfbad982866367b8">
 <img src="https://ksu-cs-textbooks.github.io/cis580/images/heightmap-terrain-3.4.png" alt="Our Triangle Strip Layout Strategy" class="lightbox-image" loading="lazy">
 </a></p>
 <p>Notice that for the two extra triangles created by this pattern, 6 and 7, two of their vertices are the same.  This means they are actually lines!  And they will be rendered as part of the edge of triangles 5 and 8.  Moreover, all our diagonals are slanting the same direction.</p>
@@ -943,11 +943,11 @@
     
     
     
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/clipboard.min.js?1691771333" defer></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/perfect-scrollbar.min.js?1691771333" defer></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/theme.js?1691771333" defer></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/clipboard.min.js?1692031300" defer></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/perfect-scrollbar.min.js?1692031300" defer></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/theme.js?1692031300" defer></script>
     
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/tele-scroll.js?1691771333 defer"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/tele-scroll.js?1692031300 defer"></script>
     
   </body>
 </html>

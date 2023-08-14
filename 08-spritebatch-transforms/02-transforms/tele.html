@@ -675,18 +675,18 @@
     <link href="https://ksu-cs-textbooks.github.io/cis580/08-spritebatch-transforms/02-transforms/index.print.html" rel="alternate" type="text/html" title="Transforms :: K-State CIS 580 Textbook">
     <link href="https://ksu-cs-textbooks.github.io/cis580/08-spritebatch-transforms/02-transforms/embed.html" rel="alternate" type="text/html" title="Transforms :: K-State CIS 580 Textbook">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1691771333" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1691771333" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/nucleus.css?1691771333" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1691771333" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1691771333" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/perfect-scrollbar.min.css?1691771333" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1691771333" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1691771333" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme.css?1691771333" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme-auto.css?1691771333" rel="stylesheet" id="variant-style">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/variant.css?1691771333" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/print.css?1691771333" rel="stylesheet" media="print">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/ie.css?1691771333" rel="stylesheet">
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/url.js?1691771333"></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/variant.js?1691771333"></script>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1692031300" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1692031300" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/nucleus.css?1692031300" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1692031300" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1692031300" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/perfect-scrollbar.min.css?1692031300" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1692031300" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1692031300" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme.css?1692031300" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme-auto.css?1692031300" rel="stylesheet" id="variant-style">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/variant.css?1692031300" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/print.css?1692031300" rel="stylesheet" media="print">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/ie.css?1692031300" rel="stylesheet">
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/url.js?1692031300"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/variant.js?1692031300"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -705,7 +705,7 @@
       window.variants && variants.init( [ 'auto', 'light-theme', 'dark-theme' ] );
     </script>
     
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/custom.css?1691771333" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/custom.css?1692031300" rel="stylesheet">
 
   </head>
   <body class="mobile-support tele disableInlineCopyToClipboard" data-url="https://ksu-cs-textbooks.github.io/cis580/08-spritebatch-transforms/02-transforms/index.html">
@@ -725,23 +725,27 @@
 
 <p>Before we delve into using the SpriteBatch, let&rsquo;s quickly revisit the concept of Transformations using Matrices.  Our MonoGame games use 3D hardware to render 2D scenes, and the individual sprites are represented as textured quads - a polygon consisting of two triangles arranged in a rectangle.  The SpriteBatch computes the coordinates of the corners of this quad from the <code>SpriteBatch.Draw()</code> parameters.  These vectors are then <em>transformed</em> for the final drawing process by multiplying them by a matrix specified in the <code>SpriteBatch.Begin()</code> method.</p>
 <p>By default, the matrix used by the <code>SpriteBatch</code> is the <em>identity</em> matrix:</p>
-<p>$$
-I = \begin{vmatrix} 1 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{vmatrix}
-$$</p>
+
+<span class="math align-center">$$ 
+I = \begin{vmatrix} 1 & 0 & 0 & 0 \\\ 0 & 1 & 0 & 0 \\\ 0 & 0 & 1 & 0 \\\ 0 & 0 & 0 & 1 \end{vmatrix}
+ $$</span>
 <p>Any vector multiplied by this matrix will be the same vector (This is why it is called the identity matrix, by the way):</p>
-<p>$$
-V_i = V_0 * I = \begin{vmatrix}4\\3\\8\\1\end{vmatrix} * \begin{vmatrix} 1 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{vmatrix} = \begin{vmatrix}4\\3\\8\\1\end{vmatrix}
-$$</p>
+
+<span class="math align-center">$$ 
+V_i = V_0 * I = \begin{vmatrix} 4 \\\ 3 \\\ 8 \\\ 1\end{vmatrix} * \begin{vmatrix} 1 & 0 & 0 & 0 \\\ 0 & 1 & 0 & 0 \\\ 0 & 0 & 1 & 0 \\\ 0 & 0 & 0 & 1 \end{vmatrix} = \begin{vmatrix}4 \\\ 3 \\\ 8 \\\ 1 \end{vmatrix}
+ $$</span>
 <p>But we can substitute a <em>different</em> matrix for the identity matrix.  The most common includes <em>scaling</em>, <em>translation</em>, and <em>rotation</em> matrices.  While it is possible to define the transformation matrices by hand by calling the <code>Matrix</code> constructor, MonoGame provides several methods for creating specific transformation matrices.</p>
 <h3 id="scale">Scale</h3>
 <p>A Scale matrix is similar to the Identity matrix, but instead of 1s on the diagonal, it provides scaling values:</p>
-<p>$$
-S = \begin{vmatrix} x &amp; 0 &amp; 0 &amp; 0\\0 &amp; y &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; z &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{vmatrix}
-$$</p>
+
+<span class="math align-center">$$ 
+S = \begin{vmatrix} x & 0 & 0 & 0 \\\ 0 & y & 0 & 0 \\\ 0 & 0 & z & 0 \\\ 0 & 0 & 0 & 1 \end{vmatrix}
+ $$</span>
 <p>Any vector multiplied by this matrix will have its components scaled correspondingly:</p>
-<p>$$
-V_s = V_0 * S = \begin{vmatrix}4\\3\\8\\1\end{vmatrix} * \begin{vmatrix} x &amp; 0 &amp; 0 &amp; 0\\0 &amp; y &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; z &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{vmatrix} = \begin{vmatrix}4x\\3y\\8z\\1\end{vmatrix}
-$$</p>
+
+<span class="math align-center">$$ 
+V_s = V_0 * S = \begin{vmatrix} 4\\\ 3\\\ 8\\\ 1\end{vmatrix} * \begin{vmatrix} x & 0 & 0 & 0\\\ 0 & y & 0 & 0 \\\ 0 & 0 & z & 0 \\\ 0 & 0 & 0 & 1 \end{vmatrix} = \begin{vmatrix}4x\\\ 3y\\\ 8z\\\ 1\end{vmatrix}
+ $$</span>
 <p>In MonoGame, a scale matrix can be created with one of the following methods:</p>
 <ul>
 <li><code>Matrix.CreateScale(float x, float y, float z)</code> - A scaling matrix using x, y, and z to scale in the corresponding axes</li>
@@ -750,19 +754,23 @@ $$</p>
 </ul>
 <h3 id="translation">Translation</h3>
 <p>A Translation matrix also begins with an identity matrix, and adds translation values in the x, y, and z in the fourth row (which is why transforms for 3D math use 4x4 matrices):</p>
-<p>$$
-T = \begin{vmatrix} 1 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ t_x &amp; t_y &amp; t_z &amp; 1 \end{vmatrix}
-$$</p>
+
+<span class="math align-center">$$ 
+T = \begin{vmatrix} 1 & 0 & 0 & 0\\\ 0 & 1 & 0 & 0 \\\ 0 & 0 & 1 & 0 \\\ t_x & t_y & t_z & 1 \end{vmatrix}
+ $$</span>
 <p>Any vector multiplied by this matrix will have its components translated accordingly:</p>
-<p>$$
-V_t = V_0 * T = \begin{vmatrix}4\\3\\8\\1\end{vmatrix} * \begin{vmatrix} 1 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ t_x &amp; t_y &amp; t_z &amp; 1 \end{vmatrix} = \begin{vmatrix}4+t_x\\3+t_y\\8+t_z\\1\end{vmatrix}
-$$</p>
+
+<span class="math align-center">$$ 
+V_t = V_0 * T = \begin{vmatrix}4\\\ 3\\\ 8\\\ 1\end{vmatrix} * \begin{vmatrix} 1 & 0 & 0 & 0\\\ 0 & 1 & 0 & 0 \\\ 0 & 0 & 1 & 0 \\\ t_x & t_y & t_z & 1 \end{vmatrix} = \begin{vmatrix}4+t_x\\\ 3+t_y\\\ 8+t_z\\\ 1\end{vmatrix}
+ $$</span>
 <h3 id="rotation">Rotation</h3>
 <p>A rotation matrix is a bit more involved, and there are separate matrices for each primary axis.  In a 2D game, we typically only rotate around the z-axis, whose rotation matrix is:</p>
-<p>$$
-R_z = \begin{vmatrix} \cos{\theta} &amp; \sin{\theta} &amp; 0 &amp; 0\\ -\sin{\theta} &amp; \cos{\theta} &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{vmatrix}
-$$</p>
-<p>Here $\theta$ is the rotation measured in radians in the clockwise direction.</p>
+
+<span class="math align-center">$$ 
+R_z = \begin{vmatrix} \cos{\theta} & \sin{\theta} & 0 & 0\\\ -\sin{\theta} & \cos{\theta} & 0 & 0 \\\ 0 & 0 & 1 & 0 \\\ 0 & 0 & 0 & 1 \end{vmatrix}
+ $$</span>
+<p>Here 
+<span class="math align-center">$ \theta $</span> is the rotation measured in radians in the clockwise direction.</p>
 <p>In MonoGame, a z-Rotation matrix can be created with one of the following method:</p>
 <ul>
 <li><code>Matrix.CreateRotationZ(float angle)</code> - A rotation matrix about the z-axis using the supplied angle</li>
@@ -773,10 +781,14 @@ $$</p>
 <li><code>Matrix.CreateRotationY(float angle)</code> - A rotation matrix about the y-axis using the supplied angle</li>
 </ul>
 <h3 id="composite-transformations">Composite Transformations</h3>
-<p>Moreover, we can <em>combine</em> multiple operations by multiplying their matrices together.  I.e. given the translation matrix $T$ and the rotation matrix $R$, we could apply the translation followed by the rotation by computing a composite matrix $C$ that combines the operations:</p>
-<p>$$
+<p>Moreover, we can <em>combine</em> multiple operations by multiplying their matrices together.  I.e. given the translation matrix 
+<span class="math align-center">$ T $</span> and the rotation matrix 
+<span class="math align-center">$ R $</span>, we could apply the translation followed by the rotation by computing a composite matrix 
+<span class="math align-center">$ C $</span> that combines the operations:</p>
+
+<span class="math align-center">$$ 
 C = T * R
-$$</p>
+ $$</span>
 <p>In MonoGame we can multiply matrices with <code>Matrix.Multiply()</code> or by using the <code>*</code> operator.  I.e. to perform the translation described above we could use either:</p>
 <div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> compositeTransform = Matrix.Multiply(Matrix.CreateTranslation(x, y, z), Matrix.CreateRotation(angle));</span></span></code></pre></div><p>or</p>
 <div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> translation = Matrix.CreateTranslation(x, y, z);
@@ -806,11 +818,40 @@ $$</p>
     
     
     
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/clipboard.min.js?1691771333" defer></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/perfect-scrollbar.min.js?1691771333" defer></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/theme.js?1691771333" defer></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/clipboard.min.js?1692031300" defer></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/perfect-scrollbar.min.js?1692031300" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="https://ksu-cs-textbooks.github.io/cis580/js/mathjax/tex-mml-chtml.js?1692031300"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/theme.js?1692031300" defer></script>
     
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/tele-scroll.js?1691771333 defer"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/tele-scroll.js?1692031300 defer"></script>
     
   </body>
 </html>

@@ -683,7 +683,7 @@ While game physics often correlate to the physics of the world we inhabit they d
       <pubDate>Fri, 24 Aug 2018 10:53:26 -0500</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis580/06-physics/02-linear-dynamics/index.html</guid>
       <description>At some point in your K-12 education, you probably encountered the equations of linear motion, which describe motion in terms of time, i.e.:
-$$v = at + v_0 \tag{1}$$ $$p = p_0 + v_ot + \frac{1}{2}at^2 \tag{2}$$ $$p = p_0 + \frac{1}{2}(v+v_0)t \tag{3}$$ $$v^2 = v_0^2 2a(r - r_0) \tag{4}$$ $$p = p_0 + vt - \frac{1}{2}at^2 \tag{5}$$
+$$ v = at + v_0 \tag{1} $$ $$ p = p_0 + v_ot + \frac{1}{2}at^2 \tag{2} $$ $$ p = p_0 + \frac{1}{2}(v+v_0)t \tag{3} $$ $$ v^2 = v_0^2 2a(r - r_0) \tag{4} $$ $$ p = p_0 + vt - \frac{1}{2}at^2 \tag{5} $$
 These equations can be used to calculate motion in a video game setting as well, i.</description>
     </item>
     <item>
@@ -691,8 +691,8 @@ These equations can be used to calculate motion in a video game setting as well,
       <link>https://ksu-cs-textbooks.github.io/cis580/06-physics/03-angular-dynamics/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:26 -0500</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis580/06-physics/03-angular-dynamics/index.html</guid>
-      <description>There is a second set of equations that govern angular motion (rotation) you may have encountered, where $\omega$ is angular velocity, $\alpha$ the angular acceleration, and $\theta$ the rotation of the body:
-$$\omega = \omega_0 + \alpha t \tag{1}$$ $$\theta = \theta_0 + \omega_0 t + \frac{1}{2}\alpha t^2 \tag{2}$$ $$\theta = \theta_0 + \frac{1}{2}(\omega_0 + \omega)t \tag{3}$$ $$\omega^2 = \omega_0^2 + 2\alpha(\theta-\theta_0) \tag{4}$$ $$\theta = \theta_0 + \omega t - \frac{1}{2}\alpha t^2 \tag{5}$$</description>
+      <description>There is a second set of equations that govern angular motion (rotation) you may have encountered, where $ \omega $ is angular velocity, $ \alpha $ the angular acceleration, and $ \theta $ the rotation of the body:
+$$ \omega = \omega_0 + \alpha t \tag{1} $$ $$ \theta = \theta_0 + \omega_0 t + \frac{1}{2}\alpha t^2 \tag{2} $$ $$ \theta = \theta_0 + \frac{1}{2}(\omega_0 + \omega)t \tag{3} $$ $$ \omega^2 = \omega_0^2 + 2\alpha(\theta-\theta_0) \tag{4} $$ $$ \theta = \theta_0 + \omega t - \frac{1}{2}\alpha t^2 \tag{5} $$</description>
     </item>
     <item>
       <title>Elastic Collisions</title>

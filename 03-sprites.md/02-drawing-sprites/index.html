@@ -675,18 +675,18 @@
     <link href="https://ksu-cs-textbooks.github.io/cis580/03-sprites.md/02-drawing-sprites/tele.html" rel="alternate" type="text/html" title="Drawing Sprites :: K-State CIS 580 Textbook">
     <link href="https://ksu-cs-textbooks.github.io/cis580/03-sprites.md/02-drawing-sprites/embed.html" rel="alternate" type="text/html" title="Drawing Sprites :: K-State CIS 580 Textbook">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1691771327" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1691771327" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/nucleus.css?1691771327" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1691771327" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1691771327" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/perfect-scrollbar.min.css?1691771327" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1691771327" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1691771327" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme.css?1691771327" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme-auto.css?1691771327" rel="stylesheet" id="variant-style">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/variant.css?1691771327" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/print.css?1691771327" rel="stylesheet" media="print">
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/ie.css?1691771327" rel="stylesheet">
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/url.js?1691771327"></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/variant.js?1691771327"></script>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1692031291" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fontawesome-all.min.css?1692031291" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/nucleus.css?1692031291" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1692031292" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/auto-complete.css?1692031292" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/perfect-scrollbar.min.css?1692031292" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1692031292" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis580/css/fonts.css?1692031292" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme.css?1692031292" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/theme-auto.css?1692031292" rel="stylesheet" id="variant-style">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/variant.css?1692031292" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/print.css?1692031292" rel="stylesheet" media="print">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/ie.css?1692031292" rel="stylesheet">
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/url.js?1692031292"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/variant.js?1692031292"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -705,7 +705,7 @@
       window.variants && variants.init( [ 'auto', 'light-theme', 'dark-theme' ] );
     </script>
     
-    <link href="https://ksu-cs-textbooks.github.io/cis580/css/custom.css?1691771327" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis580/css/custom.css?1692031292" rel="stylesheet">
 
   </head>
   <body class="mobile-support html disableInlineCopyToClipboard" data-url="https://ksu-cs-textbooks.github.io/cis580/03-sprites.md/02-drawing-sprites/index.html">
@@ -792,9 +792,13 @@
 <p>The <code>rotation</code> is a rotation value measured in radians that should be applied to the sprite.  This is one of the big benefits of textured quad sprites, as the graphics hardware makes rotations a very efficient operation (without this hardware, it becomes a much more difficult and computationally expensive operation).  This rotation is about the <code>origin</code> of the sprite, which is why all the overrides that specify the <code>rotation</code> also specify the <code>origin</code>.</p>
 <h4 id="vector2-origin">Vector2 origin</h4>
 <p>The <code>origin</code> is the spot within the sprite where rotations and scaling are centered.  This <em>also</em> affects sprite placement - the <code>position</code> vector indicates where the <code>origin</code> of the sprite will fall on-screen.  It is a vector measured relative to the upper-left-hand-corner of the sprite, in <em>texture</em> coordinates (i.e. pixels of the source texture).</p>
-<p>Thus, for our 64x64 pixel ball texture, if we wanted the origin to be at the center, we would specify a value of <code>new Vector2(32,32)</code>.  This would also mean that when our ball was at position $(0,0)$, it would be centered on the origin and 3/4 of the ball would be off-screen.</p>
+<p>Thus, for our 64x64 pixel ball texture, if we wanted the origin to be at the center, we would specify a value of <code>new Vector2(32,32)</code>.  This would also mean that when our ball was at position 
+<span class="math align-center">$ (0,0) $</span>, it would be centered on the origin and 3/4 of the ball would be off-screen.</p>
 <h4 id="float-scale">float scale</h4>
-<p>The <code>scale</code> is a scalar value to scale the sprite by.  For example, a value of $2.0f$ will make the sprite twice as big, while $0.5f$ would make it half as big.  This scaling is in relation to the <code>origin</code>, so if the origin is at the center of the sprite grows in all directions equally.  If instead it is at $(0,0)$, the sprite will grow to the right and down only.</p>
+<p>The <code>scale</code> is a scalar value to scale the sprite by.  For example, a value of 
+<span class="math align-center">$ 2.0f $</span> will make the sprite twice as big, while 
+<span class="math align-center">$ 0.5f $</span> would make it half as big.  This scaling is in relation to the <code>origin</code>, so if the origin is at the center of the sprite grows in all directions equally.  If instead it is at 
+<span class="math align-center">$ (0,0) $</span>, the sprite will grow to the right and down only.</p>
 <h4 id="vector2-scale">Vector2 scale</h4>
 <p>The <code>scale</code> can also be specified as a <code>Vector2</code>, which allows for a different horizontal and vertical scaling factor.</p>
 <h4 id="spriteeffects-effects">SpriteEffects effects</h4>
@@ -818,8 +822,8 @@
 <div class="git-footer">
 <p class="theme-version-footer">5.18.0</p>
 <p>Last modified by: 
-            <i class='fas fa-user'></i> Nathan Bean
-            <i class='fas fa-calendar'></i> <a href="https://gitlab.cs.ksu.edu/cs-textbooks/cis580-textbook/-/commit/74494f7dd9fcfa69e14ce436ec5eef0689e93856">Jan 29, 2021</a>
+            <i class='fas fa-user'></i> Russell Feldhausen
+            <i class='fas fa-calendar'></i> <a href="https://gitlab.cs.ksu.edu/cs-textbooks/cis580-textbook/-/commit/5f59dff29e6746cb45cf91bffa33b978549f76a8">Aug 14, 2023</a>
 </p>
 </div>
 
@@ -843,12 +847,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="https://ksu-cs-textbooks.github.io/cis580/js/auto-complete.js?1691771327" defer></script>
-        <script src="https://ksu-cs-textbooks.github.io/cis580/js/lunr/lunr.min.js?1691771327" defer></script>
-        <script src="https://ksu-cs-textbooks.github.io/cis580/js/lunr/lunr.stemmer.support.min.js?1691771327" defer></script>
-        <script src="https://ksu-cs-textbooks.github.io/cis580/js/lunr/lunr.multi.min.js?1691771327" defer></script>
-        <script src="https://ksu-cs-textbooks.github.io/cis580/js/lunr/lunr.en.min.js?1691771327" defer></script>
-        <script src="https://ksu-cs-textbooks.github.io/cis580/js/search.js?1691771327" defer></script>
+        <script src="https://ksu-cs-textbooks.github.io/cis580/js/auto-complete.js?1692031292" defer></script>
+        <script src="https://ksu-cs-textbooks.github.io/cis580/js/lunr/lunr.min.js?1692031292" defer></script>
+        <script src="https://ksu-cs-textbooks.github.io/cis580/js/lunr/lunr.stemmer.support.min.js?1692031292" defer></script>
+        <script src="https://ksu-cs-textbooks.github.io/cis580/js/lunr/lunr.multi.min.js?1692031292" defer></script>
+        <script src="https://ksu-cs-textbooks.github.io/cis580/js/lunr/lunr.en.min.js?1692031292" defer></script>
+        <script src="https://ksu-cs-textbooks.github.io/cis580/js/search.js?1692031292" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics enlarge morespace collapsible-menu">
@@ -1043,8 +1047,37 @@
         </div>
       </div>
     </aside>
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/clipboard.min.js?1691771327" defer></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/perfect-scrollbar.min.js?1691771327" defer></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis580/js/theme.js?1691771327" defer></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/clipboard.min.js?1692031292" defer></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/perfect-scrollbar.min.js?1692031292" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="https://ksu-cs-textbooks.github.io/cis580/js/mathjax/tex-mml-chtml.js?1692031292"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis580/js/theme.js?1692031292" defer></script>
   </body>
 </html>
