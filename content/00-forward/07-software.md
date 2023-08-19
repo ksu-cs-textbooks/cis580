@@ -11,7 +11,7 @@ This textbook was authored for the **CIS 580 - Fundamentals of Game Programming*
 
 ## MonoGame and Visual Studio
 For this course, we will be using a number of software packages including:
-* Microsoft Visual Studio 2019
+* Microsoft Visual Studio 2022
 * The MonoGame Framework
 
 These have been installed in the classroom lab, as well as all  Computer Science labs.  It is strongly suggested that you install the same versions on your own development machines if you plan on working from home.  Alternatively, you can _remote desktop_ into a lab computer and use the installed software there.
@@ -32,10 +32,6 @@ The Visual Studio Community Edition is also available as a free download [here](
 
 MonoGame can then be installed as a plugin to Visual Studio 2019, following the [Getting Started Guide](https://docs.monogame.net/articles/getting_started/0_getting_started.html).  While it is possible to develop on Linux or macOS, all course materials will be presented for Windows, and it is recommended you use that development environment.
 
-## Discord
-Discord can be used through its web app at [https://discord.com/webapp](https://discord.com/webapp) or you can [download a native app](https://discord.com/download) for Windows, Linux, Mac, iOS, or Android devices.
-
-## Other Useful Software 
 While not strictly required for the course, these additional software packages may come in very handy:
 
 * [BFXR](https://www.bfxr.net/) A free online sound effect generator perfect for creating 8-bit sound effects.

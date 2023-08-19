@@ -19,7 +19,7 @@ This textbook was authored for the **CIS 580 - Fundamentals of Game Programming*
 * **Office Hours:** MW 10:30-11:30 or by appointment
 
 ### Preferred Methods of Communication:
-* **Chat:** Quick questions via Discord are the preferred means of communication.   Questions whose answers may benefit the class I would encourage you to post in the` #cis400` channel, as this keeps a public history your classmates can review.  More personal questions should be direct messaged to `@Nathan Bean`.
+* **Chat:** Quick questions via Ed Discussions are the preferred means of communication.   Questions whose answers may benefit the class I would encourage you to post publicly.  More personal questions should be direct messaged to `@Nathan Bean`.
 * **Email:** For questions outside of this course, email to nhbean@ksu.edu is preferred.
 * **Phone/Text:** 785-483-9264 _Emergencies only!_ I will do my best to respond as quickly as I can.
 

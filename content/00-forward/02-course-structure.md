@@ -23,10 +23,10 @@ In addition to learning about the programming techniques used in games, you are 
 4. You will also submit some of your original games to be "workshopped" by the class - critiqued by your peers as a strategy to help you evaluate your own work.
 
 ## Class Meetings
-This class is presented in a "flipped" format.  This means that you will need to do readings and work through tutorials _before_ the class period.  Instead of lectures, class meetings are reserved for discussion, brainstorming, development, and workshops. In light of the pandemic, attendance is not mandatory, but be aware that class time is your opportunity to ask questions, get help, and garner feedback on your game designs.
+This class is presented in a "flipped" format.  This means that you will need to do readings and work through tutorials _before_ the class period.  Instead of lectures, class meetings are reserved for discussion, brainstorming, development, and workshops. Attendance is expected - remember class time is your opportunity to ask questions, get help, and garner feedback on your game designs. Active participation in discussions and critiques is likewise expected.
 
-{{% notice warning %}}
-If you are sick, having symptoms, or have been asked to quarantine, **do not come to class**.  If you will miss a class session due to COVID, you may be able to arrange a Zoom session by contacting the instructor prior to class.
+{{% notice info %}}
+In the case of illness, you should not attend class in-person, but may join via Zoom by notifying me before class begins. This will allow you to participate to the best of your ability. However, this option should *only* be used for illness.
 {{% /notice %}}
 
 ## Course Modules
@@ -51,7 +51,7 @@ I have adopted this grading system as I have found it allows for more creative f
 In this course, it is acceptable to submit the same game project for multiple assignments. Each time you submit your game, you will need to incorporate the new set of requirements.  This allows you to make more complex games by evolving a concept through multiple iterations.  
 
 #### Working in Teams
-You may work with other students as a team to develop no more than three of your original game submissions.  These cannot be one of the first four original game assignments.  If you choose to work as a team, you must send me an email listing each member of the team, ideally before you start working on the game.  Students working on teams will also be required to submit a peer review evaluating the contributions of each member of the team.  This will be used to modify the game score assigned to each student.  **Be aware that I will not tolerate students letting their teammates do all the work - any student who does will receive a 0 for the assignment.**
+You may work with other students as a team to develop no more than three of your original game submissions.  These cannot be one of the first four original game assignments.  If you choose to work as a team, you must send me a message in Ed Discussion board listing each member of the team, ideally before you start working on the game.  Students working on teams will also be required to submit a peer review evaluating the contributions of each member of the team.  This will be used to modify the game score assigned to each student.  **Be aware that I will not tolerate students letting their teammates do all the work - any student who does will receive a 0 for the assignment.**
 
 ## Workshopping
 Workshopping is an approach common to the creative arts that we are adapting to game design.  Each student will have the opportunity to workshop their games during the semester.  In addition, for your first two workshops you may and earn up to 100 extra credit points (50 points for each).  
