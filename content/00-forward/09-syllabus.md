@@ -16,7 +16,7 @@ This textbook was authored for the **CIS 580 - Fundamentals of Game Programming*
 * **Office:** DUE 2216
 * **Phone:** (785)483-9264 (Call/Text)
 * **Website:** [https://nathanhbean.com](https://nathanhbean.com)
-* **Office Hours:** MW 10:30-11:30 or by appointment
+* **Office Hours:** MW 2:00-3:30 or by appointment
 
 ### Preferred Methods of Communication:
 * **Chat:** Quick questions via Ed Discussions are the preferred means of communication.   Questions whose answers may benefit the class I would encourage you to post publicly.  More personal questions should be direct messaged to `@Nathan Bean`.
