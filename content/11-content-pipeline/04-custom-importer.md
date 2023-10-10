@@ -1,16 +1,79 @@
 ---
-title: "Extending the Pipeline"
-pre: "3. "
-weight: 30
+title: "Custom Importer"
+pre: "4. "
+weight: 40
 date: 2020-03-20T10:53:05-05:00
 ---
 
-You might be wondering why the content pipeline in XNA was created this way - with importers, processors, content writers, and content readers.  The answer is simple - modularity.  If you want to load a new image format that the `TextureImporter` does not handle, you can write your own custom importer to load its data into a `TextureContent` object, and then still use the existing `TextureProcessor` and serialization process.
+An importer is a class that extends the `ContentImporter<T>` class and overrides its `Import()` method.  Notice the class is a _template_ class (the `<T>` in the definition).  When we define our own class, we need to replace that `T` with the specific class we want the importer to populate.  In our case, this is the `BasicTilemapContent` we defined in the previous page.
 
-Alternatively, you may want to handle a new content type that has no associated classes in XNA at all.  In this case, you will need to write a custom importer, processor, writer, and reader.
+All importers need to override the `Import()` method. This method takes a filename (the filename of the asset) as an argument, and returns the class specified in the template.  The purpose of an importer is to read the important parts of the asset file and load them into an object that gets passed down the pipeline, to the content processor.
 
-The tilemaps created by Tiled that we discussed in the previous chapter are a good candidate for this - so let's use that as an example. In this case, our input file is a .tmx file, which is really just a specialized XML file. We can load this data using a process much like the `Squared.Tilemap` example in the last chapter.
+For our example, let's revisit our tilemap file, now named _example.tmap_:
 
-Once loaded, we want to convert the data into a form more akin to how we want to represent tilemaps in _our specific game_, i.e. transform the tile properties into specific properties we define for our game's tiles, and change the objects into actual spawn points, etc. Our custom content processor can accomplish these tasks.
+```
+tileset.png
+64,64
+10,10
+3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 2, 2, 2, 2, 2, 2, 3, 3, 2, 4, 4, 1, 4, 2, 2, 2, 3, 3, 2, 2, 2, 2, 4, 4, 4, 2, 3, 3, 2, 2, 2, 2, 2, 2, 1, 2, 3, 3, 3, 1, 3, 2, 2, 2, 4, 4, 3, 3, 2, 2, 3, 2, 3, 2, 2, 4, 4, 3, 2, 2, 3, 2, 3, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3
+```
 
-In addition to loading the tilemap, we'd also like to create the textures that correspond to the tilesets, so that we don't have to load them separately. This is also something we can do with a custom content processor.
+To quickly review, the first line is the name of our tileset image file, the second is the dimensions of a single tile (in the form **width,height**), the third is the size of our map in tiles (again, **width,height**), and the fourth is the indices of the individual tiles (with a **0** representing no tile).
+
+Now we want to load that file's information into a `TilemapContent` object in our importer:
+
+```csharp
+using System.IO;
+using System.Linq;
+using Microsoft.Xna.Framework.Content.Pipeline;
+using Microsoft.Xna.Framework.Content.Pipeline.Graphics;
+
+namespace BasicTilemapPipeline
+{
+    /// <summary>
+    /// An importer for a basic tilemap file. The purpose of an importer to to load all important data 
+    /// from a file into a content object; any processing of that data occurs in the subsequent content
+    /// processor step. 
+    /// </summary>
+    [ContentImporter(".tmap", DisplayName = "BasicTilemapImporter", DefaultProcessor = "BasicTilemapProcessor")]
+    public class BasicTilemapImporter : ContentImporter<BasicTilemapContent>
+    {
+        public override BasicTilemapContent Import(string filename, ContentImporterContext context)
+        {
+            // Create a new BasicTilemapContent
+            BasicTilemapContent map = new();
+
+            // Read in the map file and split along newlines 
+            string data = File.ReadAllText(filename);
+            var lines = data.Split('\n');
+
+            // First line in the map file is the image file name,
+            // we store it so it can be loaded in the processor
+            map.TilesetImageFilename = lines[0].Trim();
+
+            // Second line is the tileset image size
+            var secondLine = lines[1].Split(',');
+            map.TileWidth = int.Parse(secondLine[0]);
+            map.TileHeight = int.Parse(secondLine[1]);
+
+            // Third line is the map size (in tiles)
+            var thirdLine = lines[2].Split(',');
+            map.MapWidth = int.Parse(thirdLine[0]);
+            map.MapHeight = int.Parse(thirdLine[1]);
+
+            // Fourth line is the map data (the indices of tiles in the map)
+            // We can use the Linq Select() method to convert the array of strings
+            // into an array of ints
+            map.TileIndices = lines[3].Split(',').Select(index => int.Parse(index)).ToArray();
+
+            // At this point, we've copied all of the file data into our
+            // BasicTilemapContent object, so we pass it on to the processor
+            return map;
+        }
+    }
+}
+```
+
+We decorate the class with the `[ContentImporter]` attribute, which specifies a file extension this importer applies to (which is why we used the **.tmap** extension instead of the **.txt** we did previously), a name used by the MonoGame Content Editor to identify the importer, and also the suggested Content Processor to use next in the pipeline.
+
+The bulk of the `Import()` method is just the parts of the `Load()` method from our original tilemap project that populated variables based on the contents of the file.  The loading of the texture and the determination of tile bounds we save for the content processor (though we save the image filename so we will have it then). The populated `BasicTilemapContent` object will be passed to it next.

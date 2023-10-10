@@ -1,7 +1,7 @@
 +++
 title = "Content Pipeline"
 date = 2020-03-20T10:53:05-05:00
-weight = 100
+weight = 110
 archteype = "chapter"
 ordinal = "11"
 pre = "11. "
