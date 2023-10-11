@@ -18,30 +18,35 @@ namespace ExampleGame
 {
     public class BasicTilemap
     {
-        /// <summary>The map width (in tiles)</summary>
+        /// <summary>
+        /// The map width
+        /// </summary>
         public int MapWidth { get; init; }
 
-        /// <summary>The map height (in tiles)</summary>
+        /// <summary>
+        /// The map height
+        /// </summary>
         public int MapHeight { get; init; }
 
-        /// <summary>The width of a single tile</summary>
+        /// <summary>
+        /// The width of a tile in the map
+        /// </summary>
         public int TileWidth { get; init; }
 
-        /// <summary>The height of a single tile</summary>
+        /// <summary>
+        /// The height of a tile in the map
+        /// </summary>
         public int TileHeight { get; init; }
 
-        /// <summary>The texture containing the tiles</summary>
+        /// <summary>
+        /// The texture containing the tiles
+        /// </summary>
         public Texture2D TilesetTexture { get; init; }
 
-        /// <summary>An array of tiles (basically just the bounds)</summary>
         public Rectangle[] Tiles { get; init; }
 
-        /// <summary>The indices of the tiles in the map</summary>
         public int[] TileIndices { get; init; }
 
-        /// <summary>
-        /// Draws the tilemap using the supplied spritebatch
-        /// </summary>
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             for(int y = 0; y < MapHeight; y++)
@@ -57,9 +62,11 @@ namespace ExampleGame
                     // Draw the current tile
                     spriteBatch.Draw(
                         TilesetTexture,
-                        new Vector2(
+                        new Rectangle(
                             x * TileWidth,
-                            y * TileHeight
+                            y * TileHeight,
+                            TileWidth,
+                            TileHeight
                             ),
                         Tiles[index],
                         Color.White
@@ -75,7 +82,6 @@ namespace ExampleGame
 We also need to provide a content pipeline version of our tilemap class. For this one, we won't need any of the functionality of our `Draw()` or `Load()` methods (as we don't need to draw in the pipeline, and we'll move responsibility for loading into our content importer and processor). So really, we only nee to provide a class to contain all the data contained within our tilemap file. To keep things simple, we'll use the same file format we did in the previous chapter, but we'll give the file a new extension: **.tmap** (it will still be a text file). Such a class might look like:
 
 ```csharp
-
 namespace BasicTilemapPipeline
 {  
 
@@ -114,4 +120,4 @@ The `[ContentSerializerRuntimeType]` identifies what the runtime version of this
 
 The `[ContentSerializerIgnore]` attribute identifies attributes (properties and fields) of the content pipeline version that do not have a corresponding attribute in the runtime version. Thus, these will not be written to the **.xnb** file. For all other attributes, they need to be declared _in the same order_ in both classes.  For the most part, they also need to be the same `Type` (with the exception of any classes that have distinct content pipeline/runtime forms, like the `Texture2DContent`/`Texture2D`). 
 
-Also, all attributes that will be serialized/deserialized need to be declared `public`. They can be either fields or properties, and you can mix-and-match. Here in the runtime I am using properties with an `init` accessor so that each property can only be set once, during the deserialization process. In the pipeline version I am using fields. This is mostly to demonstrate the flexibility - feel free to use whatever you feel most comfortable with.
+Also, all members that will be serialized/deserialized need to be declared `public`. They can be either fields or properties, and you can mix-and-match. Here in the runtime I am using properties with an `init` accessor so that each property can only be set once, during the deserialization process. In the pipeline version I am using fields. This is mostly to demonstrate the flexibility - feel free to use whatever you feel most comfortable with.
