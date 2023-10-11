@@ -26,6 +26,7 @@ namespace SimpleTilemapPipeline
             //map.TilesetTexture = context.BuildAsset<Texture2DContent, Texture2DContent>(map.TilesetTexture, "Texture2DProcessor");
             map.TilesetTexture = context.BuildAndLoadAsset<TextureContent, Texture2DContent>(new ExternalReference<TextureContent>(map.TilesetImageFilename), "TextureProcessor");
 
+            // Determine the number of rows and columns of tiles in the tileset texture            
             int tilesetColumns = map.TilesetTexture.Mipmaps[0].Width / map.TileWidth;
             int tilesetRows = map.TilesetTexture.Mipmaps[0].Height / map.TileWidth;
 
@@ -46,6 +47,7 @@ namespace SimpleTilemapPipeline
                 }
             }
             
+            // Return the fully processed tilemap
             return map;
         }
     }
