@@ -5,14 +5,14 @@ weight: 4
 date: 2020-03-24T10:00:00-05:00
 ---
 
-Let's see our terrain in action.  First we'll need to make some changes in our `Game1` class.  We'll add a `Terrain` field:
+Let's see our terrain in action.  First we'll need to make some changes in our `ExampleGame` class.  We'll add a `Terrain` field:
 
 ```csharp
     // The terrain 
     Terrain terrain;
 ```
 
-In our `Game1.LoadContent()`, we'll load the heightmap and construct our terrain:
+In our `ExampleGame.LoadContent()`, we'll load the heightmap and construct our terrain:
 
 ```csharp 
     // Build the terrain
@@ -20,7 +20,7 @@ In our `Game1.LoadContent()`, we'll load the heightmap and construct our terrain
     terrain = new Terrain(this, heightmap, 10f, Matrix.Identity);
 ```
 
-And in our `Game1.Draw()` we'll render it with the existing camera:
+And in our `ExampleGame.Draw()` we'll render it with the existing camera:
 
 ```csharp
     // Draw the terrain
@@ -88,11 +88,13 @@ And we'll modify our `FPSCamera.Update()` to use the `HeightMap` and `HeightOffs
     }
 ```
 
+This should be done _before_ we set the updated `View` matrix.  
+
 Notice that we wrap this in a `null` check.  If there is no heightmap, we want to keep our default behavior.
 
-## Refactoring Game1 
+## Refactoring ExampleGame 
 
-Since the `HeightMap` is a property of the `FPSCamera`, we'll need to set it to our terrain in the `Game1.LoadContent()` method after both the camera and terrain have been created:
+Since the `HeightMap` is a property of the `FPSCamera`, we'll need to set it to our terrain in the `ExampleGame.LoadContent()` method after both the camera and terrain have been created:
 
 ```csharp 
     camera.HeightMap = Terrain;

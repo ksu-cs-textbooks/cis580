@@ -106,6 +106,6 @@ The upper-right triangle is similar, only we'll start with the height at (tx + 1
             - yFraction * yDifference;
 ```
 
-Now if you run your code, your camera should smootly glide over the terrain!
+Now if you run your code, your camera should smoothly glide over the terrain!
 
-This `GetHeightAt()` method can be used for other purposes as well.  For example, we could scatter instances of the crates we developed previously across the terrain, using it to determine what thier Y-position should be.
+This `GetHeightAt()` method can be used for other purposes as well.  For example, we could scatter instances of the crates we developed previously across the terrain, using it to determine what their Y-position should be.
