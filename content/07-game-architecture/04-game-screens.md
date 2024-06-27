@@ -385,7 +385,7 @@ public class ScreenManager : DrawableGameComponent
 
 ### Other Changes
 
-This sample also uses the `InputState` class [introduced in chapter 7]({{<ref "02-player-input/07-input-state.">}}).  In your game class, you need to create the `ScreenManager`, and then add your custom screen classes, which can be done in your constructor or `Initialize()` method:
+This sample also uses the `InputState` class [introduced in chapter 7]({{% ref "02-player-input/07-input-state" %}}).  In your game class, you need to create the `ScreenManager`, and then add your custom screen classes, which can be done in your constructor or `Initialize()` method:
 
 ```csharp
 var screenManager = new ScreenManager(this);

@@ -38,7 +38,7 @@ Most modules will contain assigned readings and/or videos for you to study as a 
 We will make heavy use of Robert Nystrom's _Game Programming Patterns_, an exploration of common design patterns used in video games.  It can be bought in print, but he also has a free web version: https://gameprogrammingpatterns.com/contents.html.  
 
 ### Course Tutorials
-Most modules will also contain a tutorial exploring implementing the covered topic with the MonoGame/XNA technologies we will be using in this course.  These are organized into the course textbook (which you are reading now).  It is available in its entirety at [{{< ref "/" >}}]({{< ref "/" >}}).  
+Most modules will also contain a tutorial exploring implementing the covered topic with the MonoGame/XNA technologies we will be using in this course.  These are organized into the course textbook (which you are reading now).  It is available in its entirety at [{{% ref "/"  %}}]({{% ref "/"  %}}).  
 
 ### Original Game Assignments
 Every few topics you will be challenged to create an original game that draws upon the techniques you have learned about. For each game, there will be a limited number of algorithms, data structures, or approaches you are required to implement.  Each original game is worth 100 points. 
@@ -58,7 +58,7 @@ Workshopping is an approach common to the creative arts that we are adapting to 
 
 Workshops will be held on Wednesdays, and we can have up to four workshops per day.  Workshops are available on a first-come basis.  To reserve your slot, You must sign up by posting to the **Workshops discussion board** in Canvas.  
 
-The class should play the week's workshop games _before_ the class meeting on Wednesday. In that class meeting we will discuss the game for ~10 minutes while the creator of the game remains a silent observer and takes notes.  After this time has elapsed, the team can ask questions of the game creator, and visa versa.  During these workshops, please use good [workshop etiquette]({{<ref "00-forward/03-workshop-etiquette">}}).
+The class should play the week's workshop games _before_ the class meeting on Wednesday. In that class meeting we will discuss the game for ~10 minutes while the creator of the game remains a silent observer and takes notes.  After this time has elapsed, the team can ask questions of the game creator, and visa versa.  During these workshops, please use good [workshop etiquette]({{% ref "00-forward/03-workshop-etiquette" %}}).
 
 {{% notice warning %}}
 In order to earn points for a workshop, you must:

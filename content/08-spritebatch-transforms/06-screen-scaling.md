@@ -5,7 +5,7 @@ weight: 5
 date: 2020-03-20T10:53:05-05:00
 ---
 
-One of the challenges of creating a computer game in the modern day is deciding the resolution you will display the game at.  We discussed this previously in our [coverage of the game window]({{<ref "01-intro-to-monogame/03-the-game-window">}}).  But instead of forcing a single resolution, we can instead use a scaling matrix with our `SpriteBatch.Begin()` call to adapt to the monitor resolution.
+One of the challenges of creating a computer game in the modern day is deciding the resolution you will display the game at.  We discussed this previously in our [coverage of the game window]({{% ref "01-intro-to-monogame/03-the-game-window" %}}).  But instead of forcing a single resolution, we can instead use a scaling matrix with our `SpriteBatch.Begin()` call to adapt to the monitor resolution.
 
 Let's begin by assuming we want to display our game full-screen using the monitor's default resolution.  We can get this from the `GraphicsAdapter` class (which represents the graphics hardware), and then use that as our preferred back buffer width and height.  This code in the constructor will accomplish this goal:
 

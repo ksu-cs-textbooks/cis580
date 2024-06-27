@@ -26,7 +26,7 @@ Tilesets are implemented in a similar fashion to our earlier discussions, howeve
 Instead of a single 2d array of tiles, Tiled allows you to create maps with _multiple_ layers, each with its own 2d array.  This can be used in a variety of ways:
 
 1. To create a foreground and background layer, a common approach in top-down views because it allows the player to walk behind foreground elements (i.e. the base of a tree is in the background layer, but the branches and crown is in the foreground)
-2. To implement parallax scrolling - where layers scroll at different speeds to create the illusion of depth.  We discuss the implementation details of parallax scrolling [in chapter 8]({{<ref "08-spritebatch-transforms/04-parallax-scrolling">}}). 
+2. To implement parallax scrolling - where layers scroll at different speeds to create the illusion of depth.  We discuss the implementation details of parallax scrolling [in chapter 8]({{% ref "08-spritebatch-transforms/04-parallax-scrolling" %}}). 
 3. To create complex, multi-level dungeons where players can move between layers
 
 Conceptually, a map layer is implemented the same way as the simple tile map we discussed earlier. It is a 2d array of tile indices implemented as a 1d array, along with storing the width, height, and any properties that apply to the entire layer.
