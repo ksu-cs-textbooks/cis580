@@ -28,6 +28,8 @@ This is largely because we are using the 3D hardware, which has its own RAM (vid
 
 And why not the constructor?  What if we want the player to be able to, upon loosing, immediately restart the game?  If our initialization logic is in `Initialize()`, we can simply re-invoke that method.  We can't re-construct the `Game` class though, as it is tied to the life of our application.
 
+Finally, the `Game.LoadContent()` is invoked after both our `Initialze()` and the `base.Initialize()` methods have finished. This means the graphics card is fully initialized, and we can now transfer graphics assets into its memory.
+
 ### A Simple Example
 Let's look at a super-simple example demonstrating the game loop.  We'll have a ball that moves a bit each frame and bounces off the sides of the window.  
 

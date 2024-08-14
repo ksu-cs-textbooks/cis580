@@ -9,13 +9,13 @@ At the heart of an XNA project is a class that inherits from [Game](https://docs
 
 ### The MonoGame Game Loop
 
-As you saw in _Game Programming Patterns_:
+As you saw in the [Game Loop Chapter](https://gameprogrammingpatterns.com/game-loop.html) of _Game Programming Patterns_:
 
 > A **game loop** runs continuously during gameplay. Each turn of the loop, it **processes user input** without blocking, **updates the game state**, and **renders** the game. It tracks the passage of time to **control the rate of gameplay**.
 
 This is precisely what the `Game` class implements for us - a loop that 1) processes user input, 2) updates the game state, and 3) renders the game.  
 
-As a MonoGame developer, you create a new class that inherits from `Game` (if you use one of the MonoGame templates, this class will probably be named `Game1`).  Then, you can write code to execute during steps 2 and 3 of the loop by overriding the virtual methods: `Update(GameTime gameTime)` and `Draw(GameTime gameTime)`.  These methods are invoked by `Game` each time it executes the game loop.  In software engineering parlance, we call this kind of method a "hook," as we can use it to pull new functionality into the existing class.
+As a MonoGame developer, you create a new class that inherits from `Game` (if you use one of the MonoGame templates, this class will probably be named `Game1`, but feel free to rename it).  Then, you can write code to execute during steps 2 and 3 of the loop by overriding the virtual methods: `Update(GameTime gameTime)` and `Draw(GameTime gameTime)`.  These methods are invoked by `Game` each time it executes the game loop.  In software engineering parlance, we call this kind of method a "hook," as we can use it to pull new functionality into the existing class.
 
 ### Time and the Game Loop
 Time in the MonoGame framework is typically measured using [System.TimeSpan](https://docs.microsoft.com/en-us/dotnet/api/system.timespan?view=net-5.0) struct.  While this struct has many general uses, for games we almost totally rely on the `TimeSpan.TotalSeconds` property, which is a double representing the full length of time the TimeSpan represents as a `double` measured in seconds.
