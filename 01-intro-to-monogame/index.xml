@@ -683,7 +683,7 @@
     <description>One Framework to Rule them All</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Aug 2023 11:41:07 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 14 Aug 2024 16:23:49 -0500</lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction</title>
@@ -697,7 +697,7 @@
       <link>https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/02-the-game-class/</link>
       <pubDate>Fri, 24 Aug 2018 10:53:26 -0500</pubDate>
       <guid>https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/02-the-game-class/</guid>
-      <description>At the heart of an XNA project is a class that inherits from Game. This class handles initializing the graphics device, manages components, and most importantly, implements the game loop.&#xA;The MonoGame Game Loop As you saw in Game Programming Patterns:&#xA;A game loop runs continuously during gameplay. Each turn of the loop, it processes user input without blocking, updates the game state, and renders the game. It tracks the passage of time to control the rate of gameplay.</description>
+      <description>At the heart of an XNA project is a class that inherits from Game. This class handles initializing the graphics device, manages components, and most importantly, implements the game loop.&#xA;The MonoGame Game Loop As you saw in the Game Loop Chapter of Game Programming Patterns:&#xA;A game loop runs continuously during gameplay. Each turn of the loop, it processes user input without blocking, updates the game state, and renders the game.</description>
     </item>
     <item>
       <title>The Game Window</title>

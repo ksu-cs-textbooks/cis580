@@ -706,17 +706,17 @@
     <link href="/cis580/11-content-pipeline/06-using-in-a-game/index.xml" rel="alternate" type="application/rss+xml" title="Using in a Game :: K-State CIS 580 Textbook">
     <link href="/cis580/11-content-pipeline/06-using-in-a-game/index.print.html" rel="alternate" type="text/html" title="Using in a Game :: K-State CIS 580 Textbook">
     <link href="/cis580/11-content-pipeline/06-using-in-a-game/embed.html" rel="alternate" type="text/html" title="Using in a Game :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/fontawesome-all.min.css?1719519541" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fontawesome-all.min.css?1719519541" rel="stylesheet"></noscript>
-    <link href="/cis580/css/nucleus.css?1719519541" rel="stylesheet">
-    <link href="/cis580/css/auto-complete.css?1719519541" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/auto-complete.css?1719519541" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar.min.css?1719519541" rel="stylesheet">
-    <link href="/cis580/css/fonts.css?1719519541" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fonts.css?1719519541" rel="stylesheet"></noscript>
-    <link href="/cis580/css/theme.css?1719519541" rel="stylesheet">
-    <link href="/cis580/css/theme-auto.css?1719519541" rel="stylesheet" id="R-variant-style">
-    <link href="/cis580/css/chroma-auto.css?1719519541" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/cis580/css/variant.css?1719519541" rel="stylesheet">
-    <link href="/cis580/css/print.css?1719519541" rel="stylesheet" media="print">
-    <script src="/cis580/js/variant.js?1719519541"></script>
+    <link href="/cis580/css/fontawesome-all.min.css?1723670681" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fontawesome-all.min.css?1723670681" rel="stylesheet"></noscript>
+    <link href="/cis580/css/nucleus.css?1723670681" rel="stylesheet">
+    <link href="/cis580/css/auto-complete.css?1723670681" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/auto-complete.css?1723670681" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar.min.css?1723670681" rel="stylesheet">
+    <link href="/cis580/css/fonts.css?1723670681" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fonts.css?1723670681" rel="stylesheet"></noscript>
+    <link href="/cis580/css/theme.css?1723670681" rel="stylesheet">
+    <link href="/cis580/css/theme-auto.css?1723670681" rel="stylesheet" id="R-variant-style">
+    <link href="/cis580/css/chroma-auto.css?1723670681" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/cis580/css/variant.css?1723670681" rel="stylesheet">
+    <link href="/cis580/css/print.css?1723670681" rel="stylesheet" media="print">
+    <script src="/cis580/js/variant.js?1723670681"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -736,7 +736,7 @@
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
     
-    <link href="/cis580/css/custom.css?1719519541" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1723670681" rel="stylesheet">
   </head>
   <body class="mobile-support tele disableInlineCopyToClipboard" data-url="/cis580/11-content-pipeline/06-using-in-a-game/">
     
@@ -757,11 +757,11 @@
 <h1 id="using-in-a-game">Using in a Game</h1>
 
 <p>Using our newly-created custom pipeline in a game we are building is not terribly complicated, but does require some understanding of how projects in Visual Studio interact. Perhaps most important to this is understanding that the <strong>Content.mgcb</strong> file in your game solution <em>is actually another Visual Studio project!</em> As such, it can reference other project, just like the C# projects you are used to. This can be done through the MGCB Editor.  Just select the content project itself, and scroll down in the properties until you find the <strong>References</strong> value:</p>
-<p><a href="#R-image-d0022b2232a522b1d95d186523de6c8c" class="lightbox-link"><img alt="Selecting the MGCB Project References" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/11.6.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d0022b2232a522b1d95d186523de6c8c"><img alt="Selecting the MGCB Project References" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/11.6.1.png"></a></p>
+<p><a href="#R-image-d1aa1f2cd2f90d4d4db28ac8787ee338" class="lightbox-link"><img alt="Selecting the MGCB Project References" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/11.6.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d1aa1f2cd2f90d4d4db28ac8787ee338"><img alt="Selecting the MGCB Project References" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/11.6.1.png"></a></p>
 <p>This opens a dialog you can use to add custom pipeline projects as references to your MGCB content project (in the form of <strong>.DLL</strong> files). Just browse to their location (and remember, they need to be <em>inside</em> your solution folder if you want them committed to your repository).</p>
-<p><a href="#R-image-0bafaa708dede56eab512d3b47ce67df" class="lightbox-link"><img alt="The references dialog" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/11.6.2.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0bafaa708dede56eab512d3b47ce67df"><img alt="The references dialog" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/11.6.2.png"></a></p>
+<p><a href="#R-image-6dc32a4db46511d6097319d21f9d4e26" class="lightbox-link"><img alt="The references dialog" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/11.6.2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6dc32a4db46511d6097319d21f9d4e26"><img alt="The references dialog" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/11.6.2.png"></a></p>
 <p>If your content pipeline project is in the same solution as your game project, you can browse to your content pipeline&rsquo;s <strong>/bin</strong> folder to find it.</p>
 <p>Alternatively you can set your content project as a dependency of your game project, which will ensure the custom pipeline project built and the DLL is copied into your game project&rsquo;s <strong>/bin</strong> folder <em>before</em> the content project is built.  This will keep everything up-to-date, but you don&rsquo;t need the DLL to run your game (so your <strong>/bin</strong> folder is slightly bloated by this approach). This extra reference can be removed before releasing though, and it is often worth it to ensure changes to your custom pipeline are being applied in development.</p>
 <p>You can also manually add the reference to your <strong>Content.mgcb</strong> file (it is just a text file, after all). The one for our example looks like:</p>
@@ -784,8 +784,8 @@
 /importer:BasicTilemapImporter
 /processor:BasicTilemapProcessor
 /build:example.tmap</code></pre></div><p>Once the reference is added using any of these methods, you can add your <strong>.tmap</strong> file to the content project, and it should automatically select the BasicTilemapImporter and BasicTilemapProcessor (You can also manually specify it in the <strong>.mgcb</strong> project file as shown above):</p>
-<p><a href="#R-image-251ab0725ee588ddd441a2164f4c47db" class="lightbox-link"><img alt="The importer and processor in the MGCBEditor" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/11.6.3.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-251ab0725ee588ddd441a2164f4c47db"><img alt="The importer and processor in the MGCBEditor" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/11.6.3.png"></a></p>
+<p><a href="#R-image-bed7762ed282a2189140403679e838de" class="lightbox-link"><img alt="The importer and processor in the MGCBEditor" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/11.6.3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bed7762ed282a2189140403679e838de"><img alt="The importer and processor in the MGCBEditor" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/11.6.3.png"></a></p>
 <p>Once added, you can build the project, and an <strong>example.xnb</strong> file will be built and deposited in the <strong>/bin/Content</strong> folder.</p>
 <p>Using it in our game simply requires using <code>Content.Load&lt;BasicTilemap&gt;(&quot;example.tmap&quot;)</code> to load the tilemap into a variable, and invoking its <code>Draw()</code> method to render it.</p>
 
@@ -805,11 +805,11 @@
 
 
 
-<script src="/cis580/js/clipboard.min.js?1719519541" defer></script>
-<script src="/cis580/js/perfect-scrollbar.min.js?1719519541" defer></script>
-<script src="/cis580/js/theme.js?1719519541" defer></script>
+<script src="/cis580/js/clipboard.min.js?1723670681" defer></script>
+<script src="/cis580/js/perfect-scrollbar.min.js?1723670681" defer></script>
+<script src="/cis580/js/theme.js?1723670681" defer></script>
 
-<script src="/cis580/js/tele-scroll.js?1719519541" defer></script>
+<script src="/cis580/js/tele-scroll.js?1723670681" defer></script>
 
 </body>
 </html>

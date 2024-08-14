@@ -683,49 +683,49 @@
     <meta name="generator" content="Hugo 0.128.0">
     <meta name="generator" content="Relearn 6.0.0">
     <meta name="description" content="At the heart of an XNA project is a class that inherits from Game. This class handles initializing the graphics device, manages components, and most importantly, implements the game loop.
-The MonoGame Game Loop As you saw in Game Programming Patterns:
-A game loop runs continuously during gameplay. Each turn of the loop, it processes user input without blocking, updates the game state, and renders the game. It tracks the passage of time to control the rate of gameplay.">
+The MonoGame Game Loop As you saw in the Game Loop Chapter of Game Programming Patterns:
+A game loop runs continuously during gameplay. Each turn of the loop, it processes user input without blocking, updates the game state, and renders the game.">
     <meta name="author" content="Nathan Bean">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="The Game Class :: K-State CIS 580 Textbook">
     <meta name="twitter:description" content="At the heart of an XNA project is a class that inherits from Game. This class handles initializing the graphics device, manages components, and most importantly, implements the game loop.
-The MonoGame Game Loop As you saw in Game Programming Patterns:
-A game loop runs continuously during gameplay. Each turn of the loop, it processes user input without blocking, updates the game state, and renders the game. It tracks the passage of time to control the rate of gameplay.">
+The MonoGame Game Loop As you saw in the Game Loop Chapter of Game Programming Patterns:
+A game loop runs continuously during gameplay. Each turn of the loop, it processes user input without blocking, updates the game state, and renders the game.">
     <meta property="og:url" content="https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/02-the-game-class/">
     <meta property="og:site_name" content="K-State CIS 580 Textbook">
     <meta property="og:title" content="The Game Class :: K-State CIS 580 Textbook">
     <meta property="og:description" content="At the heart of an XNA project is a class that inherits from Game. This class handles initializing the graphics device, manages components, and most importantly, implements the game loop.
-The MonoGame Game Loop As you saw in Game Programming Patterns:
-A game loop runs continuously during gameplay. Each turn of the loop, it processes user input without blocking, updates the game state, and renders the game. It tracks the passage of time to control the rate of gameplay.">
+The MonoGame Game Loop As you saw in the Game Loop Chapter of Game Programming Patterns:
+A game loop runs continuously during gameplay. Each turn of the loop, it processes user input without blocking, updates the game state, and renders the game.">
     <meta property="og:locale" content="en-us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Introduction to MonoGame">
     <meta property="article:published_time" content="2018-08-24T10:53:26-05:00">
-    <meta property="article:modified_time" content="2023-08-14T11:41:07-05:00">
+    <meta property="article:modified_time" content="2024-08-14T16:23:49-05:00">
     <meta itemprop="name" content="The Game Class :: K-State CIS 580 Textbook">
     <meta itemprop="description" content="At the heart of an XNA project is a class that inherits from Game. This class handles initializing the graphics device, manages components, and most importantly, implements the game loop.
-The MonoGame Game Loop As you saw in Game Programming Patterns:
-A game loop runs continuously during gameplay. Each turn of the loop, it processes user input without blocking, updates the game state, and renders the game. It tracks the passage of time to control the rate of gameplay.">
+The MonoGame Game Loop As you saw in the Game Loop Chapter of Game Programming Patterns:
+A game loop runs continuously during gameplay. Each turn of the loop, it processes user input without blocking, updates the game state, and renders the game.">
     <meta itemprop="datePublished" content="2018-08-24T10:53:26-05:00">
-    <meta itemprop="dateModified" content="2023-08-14T11:41:07-05:00">
-    <meta itemprop="wordCount" content="719">
+    <meta itemprop="dateModified" content="2024-08-14T16:23:49-05:00">
+    <meta itemprop="wordCount" content="730">
     <title>The Game Class :: K-State CIS 580 Textbook</title>
     <link href="https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/02-the-game-class/" rel="canonical" type="text/html" title="The Game Class :: K-State CIS 580 Textbook">
     <link href="/cis580/01-intro-to-monogame/02-the-game-class/index.xml" rel="alternate" type="application/rss+xml" title="The Game Class :: K-State CIS 580 Textbook">
     <link href="/cis580/01-intro-to-monogame/02-the-game-class/tele.html" rel="alternate" type="text/html" title="The Game Class :: K-State CIS 580 Textbook">
     <link href="/cis580/01-intro-to-monogame/02-the-game-class/embed.html" rel="alternate" type="text/html" title="The Game Class :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/fontawesome-all.min.css?1719519537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fontawesome-all.min.css?1719519537" rel="stylesheet"></noscript>
-    <link href="/cis580/css/nucleus.css?1719519537" rel="stylesheet">
-    <link href="/cis580/css/auto-complete.css?1719519537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/auto-complete.css?1719519537" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar.min.css?1719519537" rel="stylesheet">
-    <link href="/cis580/css/fonts.css?1719519537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fonts.css?1719519537" rel="stylesheet"></noscript>
-    <link href="/cis580/css/theme.css?1719519537" rel="stylesheet">
-    <link href="/cis580/css/theme-auto.css?1719519537" rel="stylesheet" id="R-variant-style">
-    <link href="/cis580/css/chroma-auto.css?1719519537" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/cis580/css/variant.css?1719519537" rel="stylesheet">
-    <link href="/cis580/css/print.css?1719519537" rel="stylesheet" media="print">
-    <link href="/cis580/css/format-print.css?1719519537" rel="stylesheet">
-    <script src="/cis580/js/variant.js?1719519537"></script>
+    <link href="/cis580/css/fontawesome-all.min.css?1723670678" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fontawesome-all.min.css?1723670678" rel="stylesheet"></noscript>
+    <link href="/cis580/css/nucleus.css?1723670678" rel="stylesheet">
+    <link href="/cis580/css/auto-complete.css?1723670678" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/auto-complete.css?1723670678" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar.min.css?1723670678" rel="stylesheet">
+    <link href="/cis580/css/fonts.css?1723670678" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fonts.css?1723670678" rel="stylesheet"></noscript>
+    <link href="/cis580/css/theme.css?1723670678" rel="stylesheet">
+    <link href="/cis580/css/theme-auto.css?1723670678" rel="stylesheet" id="R-variant-style">
+    <link href="/cis580/css/chroma-auto.css?1723670678" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/cis580/css/variant.css?1723670678" rel="stylesheet">
+    <link href="/cis580/css/print.css?1723670678" rel="stylesheet" media="print">
+    <link href="/cis580/css/format-print.css?1723670678" rel="stylesheet">
+    <script src="/cis580/js/variant.js?1723670678"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -745,7 +745,7 @@ A game loop runs continuously during gameplay. Each turn of the loop, it process
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
     
-    <link href="/cis580/css/custom.css?1719519537" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1723670678" rel="stylesheet">
   </head>
   <body class="mobile-support print disableInlineCopyToClipboard" data-url="/cis580/01-intro-to-monogame/02-the-game-class/">
     <div id="R-body" class="default-animation">
@@ -780,12 +780,12 @@ A game loop runs continuously during gameplay. Each turn of the loop, it process
 
 <p>At the heart of an XNA project is a class that inherits from <a href="https://docs.monogame.net/api/Microsoft.Xna.Framework.Game.html" rel="external" target="_blank">Game</a>.  This class handles initializing the graphics device, manages components, and most importantly, implements the game loop.</p>
 <h3 id="the-monogame-game-loop">The MonoGame Game Loop</h3>
-<p>As you saw in <em>Game Programming Patterns</em>:</p>
+<p>As you saw in the <a href="https://gameprogrammingpatterns.com/game-loop.html" rel="external" target="_blank">Game Loop Chapter</a> of <em>Game Programming Patterns</em>:</p>
 <blockquote>
 <p>A <strong>game loop</strong> runs continuously during gameplay. Each turn of the loop, it <strong>processes user input</strong> without blocking, <strong>updates the game state</strong>, and <strong>renders</strong> the game. It tracks the passage of time to <strong>control the rate of gameplay</strong>.</p>
 </blockquote>
 <p>This is precisely what the <code>Game</code> class implements for us - a loop that 1) processes user input, 2) updates the game state, and 3) renders the game.</p>
-<p>As a MonoGame developer, you create a new class that inherits from <code>Game</code> (if you use one of the MonoGame templates, this class will probably be named <code>Game1</code>).  Then, you can write code to execute during steps 2 and 3 of the loop by overriding the virtual methods: <code>Update(GameTime gameTime)</code> and <code>Draw(GameTime gameTime)</code>.  These methods are invoked by <code>Game</code> each time it executes the game loop.  In software engineering parlance, we call this kind of method a &ldquo;hook,&rdquo; as we can use it to pull new functionality into the existing class.</p>
+<p>As a MonoGame developer, you create a new class that inherits from <code>Game</code> (if you use one of the MonoGame templates, this class will probably be named <code>Game1</code>, but feel free to rename it).  Then, you can write code to execute during steps 2 and 3 of the loop by overriding the virtual methods: <code>Update(GameTime gameTime)</code> and <code>Draw(GameTime gameTime)</code>.  These methods are invoked by <code>Game</code> each time it executes the game loop.  In software engineering parlance, we call this kind of method a &ldquo;hook,&rdquo; as we can use it to pull new functionality into the existing class.</p>
 <h3 id="time-and-the-game-loop">Time and the Game Loop</h3>
 <p>Time in the MonoGame framework is typically measured using <a href="https://docs.microsoft.com/en-us/dotnet/api/system.timespan?view=net-5.0" rel="external" target="_blank">System.TimeSpan</a> struct.  While this struct has many general uses, for games we almost totally rely on the <code>TimeSpan.TotalSeconds</code> property, which is a double representing the full length of time the TimeSpan represents as a <code>double</code> measured in seconds.</p>
 <p>You probably noticed that both methods have a <a href="https://docs.monogame.net/api/Microsoft.Xna.Framework.GameTime.html" rel="external" target="_blank">GameTime</a> object as a parameter.  This is a class used to store measurements of time in the game.  It is basically a data object with three properties:</p>
@@ -838,15 +838,15 @@ A game loop runs continuously during gameplay. Each turn of the loop, it process
 <div class="git-footer">
   <p class="theme-version-footer">6.0.0</p>
   <p>Last modified by: 
-              <i class='fas fa-user'></i> Russell Feldhausen
-              <i class='fas fa-calendar'></i> <a href="https://github.com/ksu-cs-textbooks/cis580/commit/5f59dff29e6746cb45cf91bffa33b978549f76a8">Aug 14, 2023</a>
+              <i class='fas fa-user'></i> Nathan Bean
+              <i class='fas fa-calendar'></i> <a href="https://github.com/ksu-cs-textbooks/cis580/commit/a6edc04d106fd895b8806cee8a5e53054dd08b84">Aug 14, 2024</a>
   </p>
   </div>
   
     
     </div>
-    <script src="/cis580/js/clipboard.min.js?1719519537" defer></script>
-    <script src="/cis580/js/perfect-scrollbar.min.js?1719519537" defer></script>
+    <script src="/cis580/js/clipboard.min.js?1723670678" defer></script>
+    <script src="/cis580/js/perfect-scrollbar.min.js?1723670678" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -861,7 +861,7 @@ A game loop runs continuously during gameplay. Each turn of the loop, it process
       }
       useMathJax( JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1719519537"></script>
-    <script src="/cis580/js/theme.js?1719519537" defer></script>
+    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1723670678"></script>
+    <script src="/cis580/js/theme.js?1723670678" defer></script>
   </body>
 </html>

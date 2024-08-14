@@ -703,18 +703,18 @@
     <link href="/cis580/01-intro-to-monogame/index.xml" rel="alternate" type="application/rss+xml" title="Introduction to MonoGame :: K-State CIS 580 Textbook">
     <link href="/cis580/01-intro-to-monogame/tele.html" rel="alternate" type="text/html" title="Introduction to MonoGame :: K-State CIS 580 Textbook">
     <link href="/cis580/01-intro-to-monogame/embed.html" rel="alternate" type="text/html" title="Introduction to MonoGame :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/fontawesome-all.min.css?1719519537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fontawesome-all.min.css?1719519537" rel="stylesheet"></noscript>
-    <link href="/cis580/css/nucleus.css?1719519537" rel="stylesheet">
-    <link href="/cis580/css/auto-complete.css?1719519537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/auto-complete.css?1719519537" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar.min.css?1719519537" rel="stylesheet">
-    <link href="/cis580/css/fonts.css?1719519537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fonts.css?1719519537" rel="stylesheet"></noscript>
-    <link href="/cis580/css/theme.css?1719519537" rel="stylesheet">
-    <link href="/cis580/css/theme-auto.css?1719519537" rel="stylesheet" id="R-variant-style">
-    <link href="/cis580/css/chroma-auto.css?1719519537" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/cis580/css/variant.css?1719519537" rel="stylesheet">
-    <link href="/cis580/css/print.css?1719519537" rel="stylesheet" media="print">
-    <link href="/cis580/css/format-print.css?1719519537" rel="stylesheet">
-    <script src="/cis580/js/variant.js?1719519537"></script>
+    <link href="/cis580/css/fontawesome-all.min.css?1723670678" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fontawesome-all.min.css?1723670678" rel="stylesheet"></noscript>
+    <link href="/cis580/css/nucleus.css?1723670678" rel="stylesheet">
+    <link href="/cis580/css/auto-complete.css?1723670678" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/auto-complete.css?1723670678" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar.min.css?1723670678" rel="stylesheet">
+    <link href="/cis580/css/fonts.css?1723670678" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fonts.css?1723670678" rel="stylesheet"></noscript>
+    <link href="/cis580/css/theme.css?1723670678" rel="stylesheet">
+    <link href="/cis580/css/theme-auto.css?1723670678" rel="stylesheet" id="R-variant-style">
+    <link href="/cis580/css/chroma-auto.css?1723670678" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/cis580/css/variant.css?1723670678" rel="stylesheet">
+    <link href="/cis580/css/print.css?1723670678" rel="stylesheet" media="print">
+    <link href="/cis580/css/format-print.css?1723670678" rel="stylesheet">
+    <script src="/cis580/js/variant.js?1723670678"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..';
@@ -734,7 +734,7 @@
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
     
-    <link href="/cis580/css/custom.css?1719519537" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1723670678" rel="stylesheet">
   </head>
   <body class="mobile-support print disableInlineCopyToClipboard" data-url="/cis580/01-intro-to-monogame/">
     <div id="R-body" class="default-animation">
@@ -831,12 +831,12 @@
 
 <p>At the heart of an XNA project is a class that inherits from <a href="https://docs.monogame.net/api/Microsoft.Xna.Framework.Game.html" rel="external" target="_blank">Game</a>.  This class handles initializing the graphics device, manages components, and most importantly, implements the game loop.</p>
 <h3 id="the-monogame-game-loop">The MonoGame Game Loop</h3>
-<p>As you saw in <em>Game Programming Patterns</em>:</p>
+<p>As you saw in the <a href="https://gameprogrammingpatterns.com/game-loop.html" rel="external" target="_blank">Game Loop Chapter</a> of <em>Game Programming Patterns</em>:</p>
 <blockquote>
 <p>A <strong>game loop</strong> runs continuously during gameplay. Each turn of the loop, it <strong>processes user input</strong> without blocking, <strong>updates the game state</strong>, and <strong>renders</strong> the game. It tracks the passage of time to <strong>control the rate of gameplay</strong>.</p>
 </blockquote>
 <p>This is precisely what the <code>Game</code> class implements for us - a loop that 1) processes user input, 2) updates the game state, and 3) renders the game.</p>
-<p>As a MonoGame developer, you create a new class that inherits from <code>Game</code> (if you use one of the MonoGame templates, this class will probably be named <code>Game1</code>).  Then, you can write code to execute during steps 2 and 3 of the loop by overriding the virtual methods: <code>Update(GameTime gameTime)</code> and <code>Draw(GameTime gameTime)</code>.  These methods are invoked by <code>Game</code> each time it executes the game loop.  In software engineering parlance, we call this kind of method a &ldquo;hook,&rdquo; as we can use it to pull new functionality into the existing class.</p>
+<p>As a MonoGame developer, you create a new class that inherits from <code>Game</code> (if you use one of the MonoGame templates, this class will probably be named <code>Game1</code>, but feel free to rename it).  Then, you can write code to execute during steps 2 and 3 of the loop by overriding the virtual methods: <code>Update(GameTime gameTime)</code> and <code>Draw(GameTime gameTime)</code>.  These methods are invoked by <code>Game</code> each time it executes the game loop.  In software engineering parlance, we call this kind of method a &ldquo;hook,&rdquo; as we can use it to pull new functionality into the existing class.</p>
 <h3 id="time-and-the-game-loop">Time and the Game Loop</h3>
 <p>Time in the MonoGame framework is typically measured using <a href="https://docs.microsoft.com/en-us/dotnet/api/system.timespan?view=net-5.0" rel="external" target="_blank">System.TimeSpan</a> struct.  While this struct has many general uses, for games we almost totally rely on the <code>TimeSpan.TotalSeconds</code> property, which is a double representing the full length of time the TimeSpan represents as a <code>double</code> measured in seconds.</p>
 <p>You probably noticed that both methods have a <a href="https://docs.monogame.net/api/Microsoft.Xna.Framework.GameTime.html" rel="external" target="_blank">GameTime</a> object as a parameter.  This is a class used to store measurements of time in the game.  It is basically a data object with three properties:</p>
@@ -968,6 +968,7 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div><p>We can see that the <code>Game.Initialize()</code> is only invoked <em>after</em> our own initialization logic.  Thus, it is largely a matter of controlling timing.  We only want content (i.e. sounds, textures, etc.) to be loaded once the game is fully initialized.</p>
 <p>This is largely because we are using the 3D hardware, which has its own RAM (video memory).  Ideally, textures should be stored there for the fastest and most efficient rendering.  So we want to delay loading our graphics until we have finished configuring the graphics device.  Thus, we do any graphics card configuration in the <code>Initialize()</code> method, <em>before</em> invoking <code>base.Initialize()</code>.</p>
 <p>And why not the constructor?  What if we want the player to be able to, upon loosing, immediately restart the game?  If our initialization logic is in <code>Initialize()</code>, we can simply re-invoke that method.  We can&rsquo;t re-construct the <code>Game</code> class though, as it is tied to the life of our application.</p>
+<p>Finally, the <code>Game.LoadContent()</code> is invoked after both our <code>Initialze()</code> and the <code>base.Initialize()</code> methods have finished. This means the graphics card is fully initialized, and we can now transfer graphics assets into its memory.</p>
 <h3 id="a-simple-example">A Simple Example</h3>
 <p>Let&rsquo;s look at a super-simple example demonstrating the game loop.  We&rsquo;ll have a ball that moves a bit each frame and bounces off the sides of the window.</p>
 <h4 id="variable-declarations">Variable Declarations</h4>
@@ -991,11 +992,11 @@
 <span class="math align-center">$ 100 $</span>.  Eventually this will mean our ball will be traveling 100 pixels per second.</p>
 <h4 id="adding-the-image-to-the-project">Adding the Image to the Project</h4>
 <p>As we said above, <code>LoadContent()</code> is where we load our assets.  For now, we just need an image of a ball.  However, getting this image into our game takes a bit of doing.</p>
-<p>First, we need to find an image to use - a .jpeg, .gif, or .png will work fine. Feel free to use this one <a href="#R-image-8785bf8cfef78a7d144981f2b0beb126" class="lightbox-link"><img alt="a golden ball" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/ball.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8785bf8cfef78a7d144981f2b0beb126"><img alt="a golden ball" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/ball.png"></a>.</p>
+<p>First, we need to find an image to use - a .jpeg, .gif, or .png will work fine. Feel free to use this one <a href="#R-image-cecabd3e55177db3e90cea6f441ad75a" class="lightbox-link"><img alt="a golden ball" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/ball.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cecabd3e55177db3e90cea6f441ad75a"><img alt="a golden ball" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/ball.png"></a>.</p>
 <p>Look in the <em>Content</em> folder of your <strong>solution explorer</strong> in Visual Studio.  You should also notice a file, <em>Content.mgcb</em> in the same folder.  This is a listing of all content to bring into the game.  Go ahead and open it; it will look something like:</p>
-<p><a href="#R-image-e69ee9d003611539e5c4bce839566a00" class="lightbox-link"><img alt="The MGCB Editor" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/1.4.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e69ee9d003611539e5c4bce839566a00"><img alt="The MGCB Editor" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/1.4.1.png"></a></p>
+<p><a href="#R-image-79bcced4a97b1f485575fbca2e5a6865" class="lightbox-link"><img alt="The MGCB Editor" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/1.4.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-79bcced4a97b1f485575fbca2e5a6865"><img alt="The MGCB Editor" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/1.4.1.png"></a></p>
 
   
   
@@ -1008,14 +1009,14 @@
 </span></span><span class="line"><span class="cl">&gt; mgcb-editor --register</span></span></code></pre></div></div>
 </div>
 <p>Click the &ldquo;Add Existing Item&rdquo; toolbar button:</p>
-<p><a href="#R-image-aa187f77ed3eeec91c2e5b4e36a4cd16" class="lightbox-link"><img alt="Add Existing Item toolbar button" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/1.4.2.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-aa187f77ed3eeec91c2e5b4e36a4cd16"><img alt="Add Existing Item toolbar button" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/1.4.2.png"></a></p>
+<p><a href="#R-image-d8841facb9691ba04497910e16d5a69b" class="lightbox-link"><img alt="Add Existing Item toolbar button" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/1.4.2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d8841facb9691ba04497910e16d5a69b"><img alt="Add Existing Item toolbar button" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/1.4.2.png"></a></p>
 <p>In the Open dialog that appears, select the ball image and click &ldquo;Open&rdquo;.  Then in the next dialog, choose &ldquo;Copy the file to the directory&rdquo;:</p>
-<p><a href="#R-image-effb9be7c1e18284bb2351e25860d6d3" class="lightbox-link"><img alt="Add File Dialog" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/1.4.3.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-effb9be7c1e18284bb2351e25860d6d3"><img alt="Add File Dialog" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/1.4.3.png"></a></p>
+<p><a href="#R-image-24aef55d6e18390bd3026574b908ab09" class="lightbox-link"><img alt="Add File Dialog" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/1.4.3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-24aef55d6e18390bd3026574b908ab09"><img alt="Add File Dialog" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/1.4.3.png"></a></p>
 <p>Finally, save the .mgcb file:</p>
-<p><a href="#R-image-eb5505e0a16e15cc03c02897f4024bf7" class="lightbox-link"><img alt="Save the .mgcb file" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/1.4.4.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb5505e0a16e15cc03c02897f4024bf7"><img alt="Save the .mgcb file" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/1.4.4.png"></a></p>
+<p><a href="#R-image-45368bb005782d4aab60a8b918a58f7c" class="lightbox-link"><img alt="Save the .mgcb file" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/1.4.4.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-45368bb005782d4aab60a8b918a58f7c"><img alt="Save the .mgcb file" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/1.4.4.png"></a></p>
 <p>Now the image will be built into a game-specific binary format as part of the build process.  We&rsquo;ll delve deeper into how this works in the chapter on the Content Pipeline.</p>
 <h4 id="loadcontent-additions">LoadContent() Additions</h4>
 <p>To bring the ball texture into the game, we need to load it with a <code>ContentManager</code> class by invoking the <code>ContentManager.Load&lt;T&gt;()</code> method with the name of our content.  The <code>Game</code> class has one already created and ready in the <code>Game.Content</code> property; we&rsquo;ll use it:</p>
@@ -1070,8 +1071,8 @@ $</span>
 <p>For 1, we have <code>_ballPosition</code>.  Let&rsquo;s assume this is the upper-right corner of the ball image.  We&rsquo;ll also need to factor in the size of the ball.  The image linked above is 64 pixels, so I&rsquo;ll assume that is the size of the ball we&rsquo;re using.  Feel free to change it to match your asset.</p>
 <p>For 2, we can use <code>GraphicsDevice.Viewport</code> to get a rectangle defining the screen.</p>
 <p>It can be very helpful to draw a diagram of this kind of setup <em>before</em> you try to derive the necessary calculations, i.e.:</p>
-<p><a href="#R-image-66052bcf7060e6b584ac91540a32b874" class="lightbox-link"><img alt="A diagram of the game" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/1.5.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-66052bcf7060e6b584ac91540a32b874"><img alt="A diagram of the game" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/1.5.1.png"></a></p>
+<p><a href="#R-image-2fea657f1eabf1501d069116a7bb723b" class="lightbox-link"><img alt="A diagram of the game" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/1.5.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2fea657f1eabf1501d069116a7bb723b"><img alt="A diagram of the game" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/1.5.1.png"></a></p>
 <p>To check if the ball is moving off the left of the screen, we could use an <code>if</code> statement:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span><span class="n">_ballPosition</span><span class="p">.</span><span class="n">X</span> <span class="p">&lt;</span> <span class="n">GraphicsDevice</span><span class="p">.</span><span class="n">Viewport</span><span class="p">.</span><span class="n">X</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// TODO: Bounce ball</span>
@@ -1172,8 +1173,8 @@ In the worst case, it will actually so far off screen that with floating point e
   
     
     </div>
-    <script src="/cis580/js/clipboard.min.js?1719519537" defer></script>
-    <script src="/cis580/js/perfect-scrollbar.min.js?1719519537" defer></script>
+    <script src="/cis580/js/clipboard.min.js?1723670678" defer></script>
+    <script src="/cis580/js/perfect-scrollbar.min.js?1723670678" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -1188,7 +1189,7 @@ In the worst case, it will actually so far off screen that with floating point e
       }
       useMathJax( JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1719519537"></script>
-    <script src="/cis580/js/theme.js?1719519537" defer></script>
+    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1723670678"></script>
+    <script src="/cis580/js/theme.js?1723670678" defer></script>
   </body>
 </html>
