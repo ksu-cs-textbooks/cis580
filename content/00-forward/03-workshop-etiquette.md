@@ -27,7 +27,7 @@ For many of you, workshopping represents a new kind of activity you have never e
 
 * Always use "I" statements.
 
-* Avoid loaded judgment works like "tacky" or "cliche"
+* Avoid loaded judgment words like "tacky" or "cliche"
 
 * Never start with a disarming phrase like "I don't want to be mean, but" or "Not to be a jerk, but".  These automatically put the creator on the defensive, and undermine the positive benefit of your criticism.
 
