@@ -710,17 +710,17 @@ We model our three-dimensional worlds with triangles. Lots and lots of triangles
     <link href="/cis580/13-basic-3d-rendering/02-it-starts-with-triangles/index.xml" rel="alternate" type="application/rss+xml" title="It Starts with Triangles :: K-State CIS 580 Textbook">
     <link href="/cis580/13-basic-3d-rendering/02-it-starts-with-triangles/index.print.html" rel="alternate" type="text/html" title="It Starts with Triangles :: K-State CIS 580 Textbook">
     <link href="/cis580/13-basic-3d-rendering/02-it-starts-with-triangles/embed.html" rel="alternate" type="text/html" title="It Starts with Triangles :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/fontawesome-all.min.css?1723670681" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fontawesome-all.min.css?1723670681" rel="stylesheet"></noscript>
-    <link href="/cis580/css/nucleus.css?1723670681" rel="stylesheet">
-    <link href="/cis580/css/auto-complete.css?1723670681" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/auto-complete.css?1723670681" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar.min.css?1723670681" rel="stylesheet">
-    <link href="/cis580/css/fonts.css?1723670681" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fonts.css?1723670681" rel="stylesheet"></noscript>
-    <link href="/cis580/css/theme.css?1723670681" rel="stylesheet">
-    <link href="/cis580/css/theme-auto.css?1723670681" rel="stylesheet" id="R-variant-style">
-    <link href="/cis580/css/chroma-auto.css?1723670681" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/cis580/css/variant.css?1723670681" rel="stylesheet">
-    <link href="/cis580/css/print.css?1723670681" rel="stylesheet" media="print">
-    <script src="/cis580/js/variant.js?1723670681"></script>
+    <link href="/cis580/css/fontawesome-all.min.css?1737133121" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fontawesome-all.min.css?1737133121" rel="stylesheet"></noscript>
+    <link href="/cis580/css/nucleus.css?1737133121" rel="stylesheet">
+    <link href="/cis580/css/auto-complete.css?1737133121" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/auto-complete.css?1737133121" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar.min.css?1737133121" rel="stylesheet">
+    <link href="/cis580/css/fonts.css?1737133121" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fonts.css?1737133121" rel="stylesheet"></noscript>
+    <link href="/cis580/css/theme.css?1737133121" rel="stylesheet">
+    <link href="/cis580/css/theme-auto.css?1737133121" rel="stylesheet" id="R-variant-style">
+    <link href="/cis580/css/chroma-auto.css?1737133121" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/cis580/css/variant.css?1737133121" rel="stylesheet">
+    <link href="/cis580/css/print.css?1737133121" rel="stylesheet" media="print">
+    <script src="/cis580/js/variant.js?1737133121"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -740,7 +740,7 @@ We model our three-dimensional worlds with triangles. Lots and lots of triangles
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
     
-    <link href="/cis580/css/custom.css?1723670681" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1737133121" rel="stylesheet">
   </head>
   <body class="mobile-support tele disableInlineCopyToClipboard" data-url="/cis580/13-basic-3d-rendering/02-it-starts-with-triangles/">
     
@@ -763,8 +763,8 @@ We model our three-dimensional worlds with triangles. Lots and lots of triangles
 <p>You probably remember from our discussions of matrix math that we can create matrices to represent arbitrary transformations.  Moreover, we can transform a vector by multiplying it by one of these transformation matrices.  This is the mathematical foundations of hardware-accelerated 3D rendering.  In fact, the GPU is nothing more than a processor optimized for performing matrix and vector operations.</p>
 <p>We model our three-dimensional worlds with triangles.  Lots and lots of triangles.  Why triangles?  Remember that three points define a plane.  Three points also can define a triangle.  So we know that the three endpoints of a triangle will <em>always</em> be coplanar.  If we used more than three points, there is a possibility that we might screw up and have one out-of-plane, which would break the process.  So 3D rendering is almost entirely based on rendering triangles (you can also render lines and points with OpenGL and DirectX, but XNA only supports triangles and lines).</p>
 <p>Complex objects are therefore composed of multiple triangles, which typically share sides and create a closed shape with a distinct inside and outside.  We call these <em>triangle meshes</em>, and they effectively create a hollow shell in the shape of the object to be rendered:</p>
-<p><a href="#R-image-a9c0777c58bfe4c40283d5431e7521c8" class="lightbox-link"><img alt="Triangle Mesh" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/triangle-mesh.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a9c0777c58bfe4c40283d5431e7521c8"><img alt="Triangle Mesh" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/triangle-mesh.png"></a></p>
+<p><a href="#R-image-e22d8a712ed7723a03838fb7eee4a44f" class="lightbox-link"><img alt="Triangle Mesh" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/triangle-mesh.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e22d8a712ed7723a03838fb7eee4a44f"><img alt="Triangle Mesh" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/triangle-mesh.png"></a></p>
 <h2 id="vertices">Vertices</h2>
 <p>Rather than creating structures for storing triangles, we store the endpoints of the triangles as <em>vertices</em>.  These vertices are a data structure that (at a minimum) defines the coordinate of the triangle endpoint in three dimensions (A Vector3 in XNA).  Vertices can contain additional data needed to render the mesh, including color, texture coordinates, and additional vectors like the surface normal (a Vector3 pointing <em>out</em> from the surface).</p>
 <p>Let&rsquo;s create a class to represent our cube, and give it an array of vertices that have both a position and a color:</p>
@@ -885,8 +885,8 @@ We model our three-dimensional worlds with triangles. Lots and lots of triangles
 </span></span><span class="line"><span class="cl">    <span class="n">triangle</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Triangle</span><span class="p">(</span><span class="k">this</span><span class="p">);</span></span></span></code></pre></div><p>And finally, let&rsquo;s render it in our <code>Game1.Draw()</code> method:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">    <span class="c1">// Draw the triangle </span>
 </span></span><span class="line"><span class="cl">    <span class="n">triangle</span><span class="p">.</span><span class="n">Draw</span><span class="p">();</span></span></span></code></pre></div><p>If you run your code, you should now see the triangle rendered:</p>
-<p><a href="#R-image-e3ef2492c0a3c5dd6c20f114018ce5d6" class="lightbox-link"><img alt="The rendered triangle" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/basic-3d-2.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e3ef2492c0a3c5dd6c20f114018ce5d6"><img alt="The rendered triangle" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/basic-3d-2.1.png"></a></p>
+<p><a href="#R-image-b3a5746b29176fbaa508802b930aec35" class="lightbox-link"><img alt="The rendered triangle" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/basic-3d-2.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b3a5746b29176fbaa508802b930aec35"><img alt="The rendered triangle" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/basic-3d-2.1.png"></a></p>
 <h2 id="rotating-the-triangle">Rotating the Triangle</h2>
 <p>Let&rsquo;s go one step farther, and make our triangle rotate around the center of the world.  To do this, we&rsquo;ll add an <code>Update()</code> method to our <code>Triangle</code> class, and modify the <code>effect.World</code> matrix:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">    <span class="cs">/// &lt;summary&gt;</span>
@@ -953,11 +953,11 @@ We model our three-dimensional worlds with triangles. Lots and lots of triangles
 
 
 
-<script src="/cis580/js/clipboard.min.js?1723670681" defer></script>
-<script src="/cis580/js/perfect-scrollbar.min.js?1723670681" defer></script>
-<script src="/cis580/js/theme.js?1723670681" defer></script>
+<script src="/cis580/js/clipboard.min.js?1737133121" defer></script>
+<script src="/cis580/js/perfect-scrollbar.min.js?1737133121" defer></script>
+<script src="/cis580/js/theme.js?1737133121" defer></script>
 
-<script src="/cis580/js/tele-scroll.js?1723670681" defer></script>
+<script src="/cis580/js/tele-scroll.js?1737133121" defer></script>
 
 </body>
 </html>

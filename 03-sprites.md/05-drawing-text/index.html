@@ -710,17 +710,17 @@ But games used different modes that used the limited memory of the card to suppl
     <link href="/cis580/03-sprites.md/05-drawing-text/index.print.html" rel="alternate" type="text/html" title="Sprite Text :: K-State CIS 580 Textbook">
     <link href="/cis580/03-sprites.md/05-drawing-text/tele.html" rel="alternate" type="text/html" title="Sprite Text :: K-State CIS 580 Textbook">
     <link href="/cis580/03-sprites.md/05-drawing-text/embed.html" rel="alternate" type="text/html" title="Sprite Text :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/fontawesome-all.min.css?1723670672" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fontawesome-all.min.css?1723670672" rel="stylesheet"></noscript>
-    <link href="/cis580/css/nucleus.css?1723670672" rel="stylesheet">
-    <link href="/cis580/css/auto-complete.css?1723670672" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/auto-complete.css?1723670672" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar.min.css?1723670672" rel="stylesheet">
-    <link href="/cis580/css/fonts.css?1723670672" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fonts.css?1723670672" rel="stylesheet"></noscript>
-    <link href="/cis580/css/theme.css?1723670672" rel="stylesheet">
-    <link href="/cis580/css/theme-auto.css?1723670672" rel="stylesheet" id="R-variant-style">
-    <link href="/cis580/css/chroma-auto.css?1723670672" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/cis580/css/variant.css?1723670672" rel="stylesheet">
-    <link href="/cis580/css/print.css?1723670672" rel="stylesheet" media="print">
-    <script src="/cis580/js/variant.js?1723670672"></script>
+    <link href="/cis580/css/fontawesome-all.min.css?1737133116" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fontawesome-all.min.css?1737133116" rel="stylesheet"></noscript>
+    <link href="/cis580/css/nucleus.css?1737133116" rel="stylesheet">
+    <link href="/cis580/css/auto-complete.css?1737133116" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/auto-complete.css?1737133116" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar.min.css?1737133116" rel="stylesheet">
+    <link href="/cis580/css/fonts.css?1737133116" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fonts.css?1737133116" rel="stylesheet"></noscript>
+    <link href="/cis580/css/theme.css?1737133116" rel="stylesheet">
+    <link href="/cis580/css/theme-auto.css?1737133116" rel="stylesheet" id="R-variant-style">
+    <link href="/cis580/css/chroma-auto.css?1737133116" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/cis580/css/variant.css?1737133116" rel="stylesheet">
+    <link href="/cis580/css/print.css?1737133116" rel="stylesheet" media="print">
+    <script src="/cis580/js/variant.js?1737133116"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -740,7 +740,7 @@ But games used different modes that used the limited memory of the card to suppl
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
     
-    <link href="/cis580/css/custom.css?1723670672" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1737133116" rel="stylesheet">
   </head>
   <body class="mobile-support html disableInlineCopyToClipboard" data-url="/cis580/03-sprites.md/05-drawing-text/">
     <div id="R-body" class="default-animation">
@@ -812,8 +812,8 @@ But games used different modes that used the limited memory of the card to suppl
 <h2 id="spritefonts">SpriteFonts</h2>
 <p>A <code>SpriteFont</code> object is similar to the sprite <code>BatSprite</code> class we worked on in the last section.  It wraps around a texture containing rendered font characters, and provides details on how to render each character.  However, we don&rsquo;t construct <code>SpriteFont</code> objects ourselves, rather we load them through the <code>ContentManager</code> and the content pipeline.</p>
 <p>The content pipeline <em>creates</em> a sprite font from an existing font installed on your computer.  Essentially, it renders each needed character from the font into a texture atlas, and combines that with information about where each character is in that atlas.  To create your sprite font, choose the <em>create new item</em> from the MGCB Editor, and then select &ldquo;SpriteFont Description (.spritefont)&rdquo;:</p>
-<p><a href="#R-image-dbd03ef197067a1f6360cfd0791df517" class="lightbox-link"><img alt="Creating the sprite font in the MGCB Editor" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/3.5.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dbd03ef197067a1f6360cfd0791df517"><img alt="Creating the sprite font in the MGCB Editor" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/3.5.1.png"></a></p>
+<p><a href="#R-image-daec04aae270e17ea00696438b5213f0" class="lightbox-link"><img alt="Creating the sprite font in the MGCB Editor" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/3.5.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-daec04aae270e17ea00696438b5213f0"><img alt="Creating the sprite font in the MGCB Editor" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/3.5.1.png"></a></p>
 <p>This will create a SpriteFont Description, which will be compiled into a <code>SpriteFont</code>.  It also adds this description into your <em>Content</em> folder.  Open it, and you will see it is nothing more than an XML file, which specifies some details of the font:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="c">&lt;!--
@@ -964,12 +964,12 @@ But games used different modes that used the limited memory of the card to suppl
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/cis580/js/auto-complete.js?1723670672" defer></script>
-        <script src="/cis580/js/lunr/lunr.min.js?1723670672" defer></script>
-        <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1723670672" defer></script>
-        <script src="/cis580/js/lunr/lunr.multi.min.js?1723670672" defer></script>
-        <script src="/cis580/js/lunr/lunr.en.min.js?1723670672" defer></script>
-        <script src="/cis580/js/search.js?1723670672" defer></script>
+        <script src="/cis580/js/auto-complete.js?1737133116" defer></script>
+        <script src="/cis580/js/lunr/lunr.min.js?1737133116" defer></script>
+        <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1737133116" defer></script>
+        <script src="/cis580/js/lunr/lunr.multi.min.js?1737133116" defer></script>
+        <script src="/cis580/js/lunr/lunr.en.min.js?1737133116" defer></script>
+        <script src="/cis580/js/search.js?1737133116" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -1160,8 +1160,8 @@ But games used different modes that used the limited memory of the card to suppl
         </div>
       </div>
     </aside>
-    <script src="/cis580/js/clipboard.min.js?1723670672" defer></script>
-    <script src="/cis580/js/perfect-scrollbar.min.js?1723670672" defer></script>
+    <script src="/cis580/js/clipboard.min.js?1737133116" defer></script>
+    <script src="/cis580/js/perfect-scrollbar.min.js?1737133116" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -1176,7 +1176,7 @@ But games used different modes that used the limited memory of the card to suppl
       }
       useMathJax( JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1723670672"></script>
-    <script src="/cis580/js/theme.js?1723670672" defer></script>
+    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1737133116"></script>
+    <script src="/cis580/js/theme.js?1737133116" defer></script>
   </body>
 </html>

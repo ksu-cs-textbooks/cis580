@@ -714,18 +714,18 @@ This means that not only do you need to process user input, update a simulated w
     <link href="/cis580/07-game-architecture/01-introduction/index.xml" rel="alternate" type="application/rss+xml" title="Introduction :: K-State CIS 580 Textbook">
     <link href="/cis580/07-game-architecture/01-introduction/tele.html" rel="alternate" type="text/html" title="Introduction :: K-State CIS 580 Textbook">
     <link href="/cis580/07-game-architecture/01-introduction/embed.html" rel="alternate" type="text/html" title="Introduction :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/fontawesome-all.min.css?1723670679" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fontawesome-all.min.css?1723670679" rel="stylesheet"></noscript>
-    <link href="/cis580/css/nucleus.css?1723670679" rel="stylesheet">
-    <link href="/cis580/css/auto-complete.css?1723670679" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/auto-complete.css?1723670679" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar.min.css?1723670679" rel="stylesheet">
-    <link href="/cis580/css/fonts.css?1723670679" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fonts.css?1723670679" rel="stylesheet"></noscript>
-    <link href="/cis580/css/theme.css?1723670679" rel="stylesheet">
-    <link href="/cis580/css/theme-auto.css?1723670679" rel="stylesheet" id="R-variant-style">
-    <link href="/cis580/css/chroma-auto.css?1723670679" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/cis580/css/variant.css?1723670679" rel="stylesheet">
-    <link href="/cis580/css/print.css?1723670679" rel="stylesheet" media="print">
-    <link href="/cis580/css/format-print.css?1723670679" rel="stylesheet">
-    <script src="/cis580/js/variant.js?1723670679"></script>
+    <link href="/cis580/css/fontawesome-all.min.css?1737133120" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fontawesome-all.min.css?1737133120" rel="stylesheet"></noscript>
+    <link href="/cis580/css/nucleus.css?1737133120" rel="stylesheet">
+    <link href="/cis580/css/auto-complete.css?1737133120" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/auto-complete.css?1737133120" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar.min.css?1737133120" rel="stylesheet">
+    <link href="/cis580/css/fonts.css?1737133120" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fonts.css?1737133120" rel="stylesheet"></noscript>
+    <link href="/cis580/css/theme.css?1737133120" rel="stylesheet">
+    <link href="/cis580/css/theme-auto.css?1737133120" rel="stylesheet" id="R-variant-style">
+    <link href="/cis580/css/chroma-auto.css?1737133120" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/cis580/css/variant.css?1737133120" rel="stylesheet">
+    <link href="/cis580/css/print.css?1737133120" rel="stylesheet" media="print">
+    <link href="/cis580/css/format-print.css?1737133120" rel="stylesheet">
+    <script src="/cis580/js/variant.js?1737133120"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -745,7 +745,7 @@ This means that not only do you need to process user input, update a simulated w
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
     
-    <link href="/cis580/css/custom.css?1723670679" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1737133120" rel="stylesheet">
   </head>
   <body class="mobile-support print disableInlineCopyToClipboard" data-url="/cis580/07-game-architecture/01-introduction/">
     <div id="R-body" class="default-animation">
@@ -784,8 +784,8 @@ This means that not only do you need to process user input, update a simulated w
 </blockquote>
 <p>This means that not only do you need to process user input, update a simulated world, and then render that simulated world, you <em>also</em> have to do this in realtime (i.e. within 1/60th of a second)!  This is not a trivial challenge!</p>
 <p>As with any software system, organization can go a long way to managing this complexity.  Consider this diagram of a AAA game engine&rsquo;s software architecture:</p>
-<p><a href="#R-image-11401ae87a9cf2cf169af745e9382278" class="lightbox-link"><img alt="Software Engine Architecture" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/7.1.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-11401ae87a9cf2cf169af745e9382278"><img alt="Software Engine Architecture" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/7.1.1.png"></a></p>
+<p><a href="#R-image-4c78c5330d23b164b3dde7f5ab75b8f3" class="lightbox-link"><img alt="Software Engine Architecture" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/7.1.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4c78c5330d23b164b3dde7f5ab75b8f3"><img alt="Software Engine Architecture" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/7.1.1.png"></a></p>
 <p>Note how the engine is broken into systems and organized into layers.  Building an engine like this is outside the scope of this book (I encourage you to read Jason Gregory&rsquo;s <em>Game Engine Architecture</em> if you&rsquo;d like to delve into it), but the idea of loosely coupled systems is certainly something we can adapt.  Moreover, it is already explicitly supported by the MonoGame framework.  We&rsquo;ll explore how in this chapter.</p>
 
             <footer class="footline">
@@ -809,8 +809,8 @@ This means that not only do you need to process user input, update a simulated w
   
     
     </div>
-    <script src="/cis580/js/clipboard.min.js?1723670679" defer></script>
-    <script src="/cis580/js/perfect-scrollbar.min.js?1723670679" defer></script>
-    <script src="/cis580/js/theme.js?1723670679" defer></script>
+    <script src="/cis580/js/clipboard.min.js?1737133120" defer></script>
+    <script src="/cis580/js/perfect-scrollbar.min.js?1737133120" defer></script>
+    <script src="/cis580/js/theme.js?1737133120" defer></script>
   </body>
 </html>

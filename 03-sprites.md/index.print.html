@@ -703,18 +703,18 @@
     <link href="/cis580/03-sprites.md/index.xml" rel="alternate" type="application/rss+xml" title="Sprites :: K-State CIS 580 Textbook">
     <link href="/cis580/03-sprites.md/tele.html" rel="alternate" type="text/html" title="Sprites :: K-State CIS 580 Textbook">
     <link href="/cis580/03-sprites.md/embed.html" rel="alternate" type="text/html" title="Sprites :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/fontawesome-all.min.css?1723670679" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fontawesome-all.min.css?1723670679" rel="stylesheet"></noscript>
-    <link href="/cis580/css/nucleus.css?1723670679" rel="stylesheet">
-    <link href="/cis580/css/auto-complete.css?1723670679" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/auto-complete.css?1723670679" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar.min.css?1723670679" rel="stylesheet">
-    <link href="/cis580/css/fonts.css?1723670679" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fonts.css?1723670679" rel="stylesheet"></noscript>
-    <link href="/cis580/css/theme.css?1723670679" rel="stylesheet">
-    <link href="/cis580/css/theme-auto.css?1723670679" rel="stylesheet" id="R-variant-style">
-    <link href="/cis580/css/chroma-auto.css?1723670679" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/cis580/css/variant.css?1723670679" rel="stylesheet">
-    <link href="/cis580/css/print.css?1723670679" rel="stylesheet" media="print">
-    <link href="/cis580/css/format-print.css?1723670679" rel="stylesheet">
-    <script src="/cis580/js/variant.js?1723670679"></script>
+    <link href="/cis580/css/fontawesome-all.min.css?1737133120" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fontawesome-all.min.css?1737133120" rel="stylesheet"></noscript>
+    <link href="/cis580/css/nucleus.css?1737133120" rel="stylesheet">
+    <link href="/cis580/css/auto-complete.css?1737133120" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/auto-complete.css?1737133120" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar.min.css?1737133120" rel="stylesheet">
+    <link href="/cis580/css/fonts.css?1737133120" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/css/fonts.css?1737133120" rel="stylesheet"></noscript>
+    <link href="/cis580/css/theme.css?1737133120" rel="stylesheet">
+    <link href="/cis580/css/theme-auto.css?1737133120" rel="stylesheet" id="R-variant-style">
+    <link href="/cis580/css/chroma-auto.css?1737133120" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/cis580/css/variant.css?1737133120" rel="stylesheet">
+    <link href="/cis580/css/print.css?1737133120" rel="stylesheet" media="print">
+    <link href="/cis580/css/format-print.css?1737133120" rel="stylesheet">
+    <script src="/cis580/js/variant.js?1737133120"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..';
@@ -734,7 +734,7 @@
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
     
-    <link href="/cis580/css/custom.css?1723670679" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1737133120" rel="stylesheet">
   </head>
   <body class="mobile-support print disableInlineCopyToClipboard" data-url="/cis580/03-sprites.md/">
     <div id="R-body" class="default-animation">
@@ -888,8 +888,8 @@
 <h1 id="texture-atlases">Texture Atlases</h1>
 
 <p>A <em>texture atlas</em> is a texture that is used to represent <em>multiple</em> sprites.  For example, this texture from Kinney&rsquo;s 1Bit Pack <a href="https://opengameart.org/content/1-bit-pack" rel="external" target="_blank">available on OpenGameArt</a> contains all the sprites to create a roguelike in a single texture:</p>
-<p><a href="#R-image-6e6a742768a02b801bc93099de84c095" class="lightbox-link"><img alt="Kinney&rsquo;s 1Bit Pack Texture Atlas" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/1bitpack/colored_packed.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6e6a742768a02b801bc93099de84c095"><img alt="Kinney&rsquo;s 1Bit Pack Texture Atlas" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/1bitpack/colored_packed.png"></a></p>
+<p><a href="#R-image-f65451206b8188e41f3782888b827b27" class="lightbox-link"><img alt="Kinney&rsquo;s 1Bit Pack Texture Atlas" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/1bitpack/colored_packed.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f65451206b8188e41f3782888b827b27"><img alt="Kinney&rsquo;s 1Bit Pack Texture Atlas" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/1bitpack/colored_packed.png"></a></p>
 <p>In this case, each sprite is 15x15 pixels, with a 1 pixel outline.  So to draw the cactus in the second row and sixth column of sprites, we would use a source rectangle:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">var</span> <span class="n">sourceRect</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Rectangle</span><span class="p">(</span><span class="m">16</span><span class="p">,</span> <span class="m">96</span><span class="p">,</span> <span class="m">16</span><span class="p">,</span> <span class="m">16</span><span class="p">);</span></span></span></code></pre></div><p>Thus, to draw the sprite on-screen at position 
 <span class="math align-center">$ (50,50) $</span> we could use:</p>
@@ -904,8 +904,8 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">base</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div><p>And we&rsquo;d see:</p>
-<p><a href="#R-image-7d4fc966130dfee91e885cb481b6dd3d" class="lightbox-link"><img alt="The rendered sprite from the sprite atlas" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/3.3.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7d4fc966130dfee91e885cb481b6dd3d"><img alt="The rendered sprite from the sprite atlas" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/3.3.1.png"></a></p>
+<p><a href="#R-image-71efd6f6ed85089b3dfc8f5936bc81eb" class="lightbox-link"><img alt="The rendered sprite from the sprite atlas" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/3.3.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-71efd6f6ed85089b3dfc8f5936bc81eb"><img alt="The rendered sprite from the sprite atlas" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/3.3.1.png"></a></p>
 <p>This texture atlas is laid out in 16x16 tiles, which makes calculating the <code>X</code> and <code>Y</code> of our source rectangle straightforward:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">var</span> <span class="n">x</span> <span class="p">=</span> <span class="n">xIndex</span> <span class="p">*</span> <span class="m">16</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="kt">var</span> <span class="n">y</span> <span class="p">=</span> <span class="n">yIndex</span> <span class="p">*</span> <span class="m">16</span><span class="p">;</span></span></span></code></pre></div><p>The formula involved for a particular texture atlas will depend on the size and spacing between sprites.  Also, some texture atlases are not evenly spaced.  In those cases, it may be useful to define a <code>Rectangle</code> constant for each one, i.e.</p>
@@ -918,11 +918,11 @@
   <div class="box-content">
 
 <p>The texture used in the above example has a brown background.  If you would like to replace this with transparent black, you can set a <em>color key color</em> in the mgcb content editor.  Any pixel this color in the source image will be turned into transparent black when the content is compiled.  In this case, our color&rsquo;s RGB values are (71, 45, 60):</p>
-<p><a href="#R-image-f39a817857630ebc911840b8f2bda089" class="lightbox-link"><img alt="Setting the Color Key Color" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/3.3.2.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f39a817857630ebc911840b8f2bda089"><img alt="Setting the Color Key Color" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/3.3.2.png"></a></p>
+<p><a href="#R-image-d12a7ebd0e32d36859a6aeb347188356" class="lightbox-link"><img alt="Setting the Color Key Color" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/3.3.2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d12a7ebd0e32d36859a6aeb347188356"><img alt="Setting the Color Key Color" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/3.3.2.png"></a></p>
 <p>The result is that sprites rendered from the texture now have a transparent background:</p>
-<p><a href="#R-image-bb7a46104362183e11974f8a8ecbbfc2" class="lightbox-link"><img alt="The rendered sprite with a transparent background" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/3.3.3.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bb7a46104362183e11974f8a8ecbbfc2"><img alt="The rendered sprite with a transparent background" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/3.3.3.png"></a></p>
+<p><a href="#R-image-ceee0dd9a9539e1f60351838eb5a255d" class="lightbox-link"><img alt="The rendered sprite with a transparent background" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/3.3.3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ceee0dd9a9539e1f60351838eb5a255d"><img alt="The rendered sprite with a transparent background" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/3.3.3.png"></a></p>
 </div>
 </div>
 
@@ -943,8 +943,8 @@
 <h1 id="animated-sprites">Animated Sprites</h1>
 
 <p>To animate a sprite, we simply swap the image it is using.  Animated sprites typically lay out all their frames in a single texture, just like a texture atlas. Consider this <a href="https://opengameart.org/content/bat-sprite" rel="external" target="_blank">animated bat sprite by bagzie</a> from OpenGameArt:</p>
-<p><a href="#R-image-16c24367d93d7ff94a1ef7c3e51390bd" class="lightbox-link"><img alt="Animated bat spritesheet" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/32x32-bat-sprite.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-16c24367d93d7ff94a1ef7c3e51390bd"><img alt="Animated bat spritesheet" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/32x32-bat-sprite.png"></a></p>
+<p><a href="#R-image-ab5f45d2bc0069e3cfceaf74f6773a96" class="lightbox-link"><img alt="Animated bat spritesheet" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/32x32-bat-sprite.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ab5f45d2bc0069e3cfceaf74f6773a96"><img alt="Animated bat spritesheet" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/32x32-bat-sprite.png"></a></p>
 <p>The images of the bat are laid out into a 4x4 grid of 32x32 pixel tiles.  We can create the illusion of motion by swapping which of these images we display.  However, we don&rsquo;t want to swap it every frame - doing so will be too quick for the viewer to follow, and destroy the illusion.  So we also need a timer and an idea of the direction the sprite is facing.</p>
 <p>To represent the direction, we might define an enum. And since the enum can represent a numerical value, let&rsquo;s assign the corresponding row index to each direction:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="cs">/// &lt;summary&gt;</span>
@@ -1089,8 +1089,8 @@
 <h2 id="spritefonts">SpriteFonts</h2>
 <p>A <code>SpriteFont</code> object is similar to the sprite <code>BatSprite</code> class we worked on in the last section.  It wraps around a texture containing rendered font characters, and provides details on how to render each character.  However, we don&rsquo;t construct <code>SpriteFont</code> objects ourselves, rather we load them through the <code>ContentManager</code> and the content pipeline.</p>
 <p>The content pipeline <em>creates</em> a sprite font from an existing font installed on your computer.  Essentially, it renders each needed character from the font into a texture atlas, and combines that with information about where each character is in that atlas.  To create your sprite font, choose the <em>create new item</em> from the MGCB Editor, and then select &ldquo;SpriteFont Description (.spritefont)&rdquo;:</p>
-<p><a href="#R-image-dbd03ef197067a1f6360cfd0791df517" class="lightbox-link"><img alt="Creating the sprite font in the MGCB Editor" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/3.5.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dbd03ef197067a1f6360cfd0791df517"><img alt="Creating the sprite font in the MGCB Editor" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/3.5.1.png"></a></p>
+<p><a href="#R-image-daec04aae270e17ea00696438b5213f0" class="lightbox-link"><img alt="Creating the sprite font in the MGCB Editor" class="border lazy lightbox noshadow figure-image" loading="lazy" src="/cis580/images/3.5.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-daec04aae270e17ea00696438b5213f0"><img alt="Creating the sprite font in the MGCB Editor" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="/cis580/images/3.5.1.png"></a></p>
 <p>This will create a SpriteFont Description, which will be compiled into a <code>SpriteFont</code>.  It also adds this description into your <em>Content</em> folder.  Open it, and you will see it is nothing more than an XML file, which specifies some details of the font:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="c">&lt;!--
@@ -1271,8 +1271,8 @@
   
     
     </div>
-    <script src="/cis580/js/clipboard.min.js?1723670679" defer></script>
-    <script src="/cis580/js/perfect-scrollbar.min.js?1723670679" defer></script>
+    <script src="/cis580/js/clipboard.min.js?1737133120" defer></script>
+    <script src="/cis580/js/perfect-scrollbar.min.js?1737133120" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -1287,7 +1287,7 @@
       }
       useMathJax( JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1723670679"></script>
-    <script src="/cis580/js/theme.js?1723670679" defer></script>
+    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1737133120"></script>
+    <script src="/cis580/js/theme.js?1737133120" defer></script>
   </body>
 </html>
