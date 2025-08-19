@@ -21,9 +21,9 @@ cleanDestinationDir = true
 # EMBED - Embeddable Version
 # LTI - JSON file for LTI integration tools
 [outputs]
-  home = ["HTML", "RSS"]
-  section = ["HTML", "RSS"]
-  page = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "PRINT", "LTI"]
+  section = ["HTML", "RSS", "PRINT", "TELE", "EMBED"]
+  page = ["HTML", "RSS", "PRINT", "TELE", "EMBED"]
 
 
 [params]
