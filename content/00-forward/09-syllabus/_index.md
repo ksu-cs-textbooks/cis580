@@ -11,13 +11,14 @@ This textbook was authored for the **CIS 580 - Fundamentals of Game Programming*
 
 ## CIS 580 - Fundamentals of Game Programming
 
+[Previous Versions]({{% relref "./old" %}})
 
 ### Instructor Contact Information
 * **Instructor:** Nathan Bean (nhbean AT ksu DOT edu)
 * **Office:** DUE 2216
 * **Phone:** (785)483-9264 (Call/Text)
 * **Website:** [https://nathanhbean.com](https://nathanhbean.com)
-* **Office Hours:** MW 2:00-3:30 or by appointment
+* **Office Hours:** WU 1:00-2:00 or by appointment
 
 ### Preferred Methods of Communication:
 * **Chat:** Quick questions via Ed Discussions are the preferred means of communication.   Questions whose answers may benefit the class I would encourage you to post publicly.  More personal questions should be direct messaged to `@Nathan Bean`.
@@ -166,6 +167,6 @@ Be aware that using assets (images, sounds, etc.) that you do not have permissio
 {{% syllabus exclude="copyright honesty" %}}
 
 ### Copyright Notice
-©2021 The materials in this online course fall under the protection of all intellectual property, copyright and trademark laws of the U.S. The digital materials included here come with the legal permissions and releases of the copyright holders. These course materials should be used for educational purposes only; the contents should not be distributed electronically or otherwise beyond the confines of this online course. The URLs listed here do not suggest endorsement of either the site owners or the contents found at the sites. Likewise, mentioned brands (products and services) do not suggest endorsement. Students own copyright to what they create.
+©2025 The materials in this online course fall under the protection of all intellectual property, copyright and trademark laws of the U.S. The digital materials included here come with the legal permissions and releases of the copyright holders. These course materials should be used for educational purposes only; the contents should not be distributed electronically or otherwise beyond the confines of this online course. The URLs listed here do not suggest endorsement of either the site owners or the contents found at the sites. Likewise, mentioned brands (products and services) do not suggest endorsement. Students own copyright to what they create.
 
 Original content in the course textbook at [{{% ref "/"  %}}]({{% ref "/"  %}}) is licensed under a Creative Commons BY-SA license by Nathan Bean unless otherwise stated.
