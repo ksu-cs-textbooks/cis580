@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction :: K-State CIS 580 Textbook</title>
+    <link>https://textbooks.cs.ksu.edu/cis580/03-sprites/01-introduction/index.html</link>
+    <description>The term “sprite” refers to a graphical element within a two-dimensional game that moves around the screen - often representing a character, powerup, or other actor. The term likely was coined in relation to its older definition - a small fairy creature.&#xA;Traditionally, sprites are a part of two-dimensional games, and are a raster graphic (one composed of a regular grid of pixels, aka a bitmap). As the sprites are simply an array of bits representing pixels, and the scene being presented on screen is also just an array of bits representing pixels, we can place a sprite on-screen by simply copying its bits into the right location.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://textbooks.cs.ksu.edu/cis580/03-sprites/01-introduction/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drawing Sprites :: K-State CIS 580 Textbook</title>
+    <link>https://textbooks.cs.ksu.edu/cis580/03-sprites/02-drawing-sprites/index.html</link>
+    <description>MonoGame provides the SpriteBatch class to help mitigate the complexity of implementing textured quad sprites. It provides an abstraction around the rendering process that lets us render sprites with a minimum of fuss, with as much control as we might need.&#xA;As the name suggests, the SpriteBatch batches sprite draw requests so that they can be drawn in an optimized way. We’ll explore the different modes we can put the SpriteBatch in soon.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://textbooks.cs.ksu.edu/cis580/03-sprites/02-drawing-sprites/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

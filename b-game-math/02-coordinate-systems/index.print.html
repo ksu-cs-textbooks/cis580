@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.128.0">
+    <meta name="generator" content="Relearn 8.0.0">
+    <meta name="description" content="Computer games almost universally take place in a simulated 2D or 3D world. We use coordinate systems to represent the position of various objects within these worlds. Perhaps the simplest coordinate system is one you encountered in elementary school - the number line:
+The number line represents a 1-dimensional coordinate system - its coordinates are a single value that range from $ -\infty $ to $ \infty $. We normally express this as a single number.">
+    <meta name="author" content="Nathan H. Bean">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
+    <meta name="twitter:title" content="Coordinate Systems :: K-State CIS 580 Textbook">
+    <meta name="twitter:description" content="Computer games almost universally take place in a simulated 2D or 3D world. We use coordinate systems to represent the position of various objects within these worlds. Perhaps the simplest coordinate system is one you encountered in elementary school - the number line:
+The number line represents a 1-dimensional coordinate system - its coordinates are a single value that range from $ -\infty $ to $ \infty $. We normally express this as a single number.">
+    <meta property="og:url" content="https://textbooks.cs.ksu.edu/cis580/b-game-math/02-coordinate-systems/index.html">
+    <meta property="og:site_name" content="K-State CIS 580 Textbook">
+    <meta property="og:title" content="Coordinate Systems :: K-State CIS 580 Textbook">
+    <meta property="og:description" content="Computer games almost universally take place in a simulated 2D or 3D world. We use coordinate systems to represent the position of various objects within these worlds. Perhaps the simplest coordinate system is one you encountered in elementary school - the number line:
+The number line represents a 1-dimensional coordinate system - its coordinates are a single value that range from $ -\infty $ to $ \infty $. We normally express this as a single number.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Game Math">
+    <meta property="article:published_time" content="2018-08-24T10:53:26-05:00">
+    <meta property="article:modified_time" content="2025-08-19T13:21:42-05:00">
+    <meta property="og:image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
+    <meta itemprop="name" content="Coordinate Systems :: K-State CIS 580 Textbook">
+    <meta itemprop="description" content="Computer games almost universally take place in a simulated 2D or 3D world. We use coordinate systems to represent the position of various objects within these worlds. Perhaps the simplest coordinate system is one you encountered in elementary school - the number line:
+The number line represents a 1-dimensional coordinate system - its coordinates are a single value that range from $ -\infty $ to $ \infty $. We normally express this as a single number.">
+    <meta itemprop="datePublished" content="2018-08-24T10:53:26-05:00">
+    <meta itemprop="dateModified" content="2025-08-19T13:21:42-05:00">
+    <meta itemprop="wordCount" content="463">
+    <meta itemprop="image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
+    <title>Coordinate Systems :: K-State CIS 580 Textbook</title>
+    <link href="https://textbooks.cs.ksu.edu/cis580/b-game-math/02-coordinate-systems/index.html" rel="canonical" type="text/html" title="Coordinate Systems :: K-State CIS 580 Textbook">
+    <link href="/cis580/b-game-math/02-coordinate-systems/index.xml" rel="alternate" type="application/rss+xml" title="Coordinate Systems :: K-State CIS 580 Textbook">
+    <link href="/cis580/b-game-math/02-coordinate-systems/tele.html" rel="alternate" type="text/html" title="Coordinate Systems :: K-State CIS 580 Textbook">
+    <link href="/cis580/b-game-math/02-coordinate-systems/embed.html" rel="alternate" type="text/html" title="Coordinate Systems :: K-State CIS 580 Textbook">
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1755628803" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1755628803" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1755628803" defer></script>
+    <script src="/cis580/js/search.min.js?1755628803" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1755628803";
+    </script>
+    <script src="/cis580/js/lunr/lunr.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1755628803" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/format-print.min.css?1755628803" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/b-game-math\/02-coordinate-systems\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/textbooks.cs.ksu.edu\/cis580';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=false;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'light-theme' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      // [x] russfeld
+      window.relearn.writeVariant=false;
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          
+          if (window.relearn.writeVariant) {
+            window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+          }
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+    <link href="/cis580/css/custom.css?1755628803" rel="stylesheet">
+  </head>
+  <body class="mobile-support print" data-url="/cis580/b-game-math/02-coordinate-systems/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/cis580/index.html"><span itemprop="name">CIS 580: Foundations of Game Programming</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/cis580/b-game-math/index.html"><span itemprop="name">Game Math</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Coordinate Systems</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/ksu-cs-textbooks/cis580/edit/master/content/b-game-math/02-coordinate-systems.md" rel="external" target="_blank" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/cis580/b-game-math/02-coordinate-systems/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/cis580/b-game-math/01-introduction/index.html" title="Introduction (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/cis580/b-game-math/03-trigonometry/index.html" title="Trigonometry (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+            <div class="topbar-button topbar-button-embed" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/cis580/b-game-math/02-coordinate-systems/embed.html" title="Embeddable Version"><i class="fa-fw fas fa-expand-arrows-alt"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-tele" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/cis580/b-game-math/02-coordinate-systems/tele.html" title="Teleprompter View"><i class="fa-fw fas fa-tv"></i></a>
+            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable b-game-math" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="coordinate-systems">Coordinate Systems</h1>
+
+<p>Computer games almost universally take place in a simulated 2D or 3D world.  We use <em>coordinate systems</em> to represent the position of various objects within these worlds.  Perhaps the simplest coordinate system is one you encountered in elementary school - the <em>number line</em>:</p>
+<p><a href="#R-image-03fa7d872a1949671f4e7cdf096331c7" class="lightbox-link"><img alt="Number Line" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/b.2.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-03fa7d872a1949671f4e7cdf096331c7"><img alt="Number Line" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/b.2.1.png"></a></p>
+<p>The number line represents a 1-dimensional coordinate system - its coordinates are a single value that range from <span class="math align-center">$ -\infty $</span> to <span class="math align-center">$ \infty $</span>.  We normally express this as a single number.  Adding a second number line running perpendicular to the first gives us a 2-dimensional coordinate system.  The coordinate system you are probably most familiar with is the planar Cartesian Coordinate System:</p>
+<p><a href="#R-image-43466608919321cddc4b9d436aa832f1" class="lightbox-link"><img alt="Planar Cartesian Coordinates" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/b.2.2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-43466608919321cddc4b9d436aa832f1"><img alt="Planar Cartesian Coordinates" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/b.2.2.png"></a></p>
+<p>While 2D games sometimes use this coordinate system, most instead adopt the <em>screen coordinate system</em>.  It labels its axes X and Y as does the Cartesian Coordinate System, but the Y-axis increases in the <em>downwards</em> direction.  This arrangement derives from the analog video signals sent to Cathode Ray Tube computer monitors (which were adapted from the earlier television technology), and this legacy has lived on in modern computer monitors.</p>
+<p>Points in both coordinate systems are represented by two values, an x-coordinate (distance along the x-axis), and a y-coordinate (distance along the y-axis).  These are usually expressed as a tuple: <span class="math align-center">$ (x, y) $</span>.  MonoGame provides the <code>Point</code> struct to represent this, however we more commonly use a <code>Vector2</code> as it can embody the same information but has additional, desirable mathematical properties.</p>
+<p>For three dimensions, we add a third axis, the z-axis, perpendicular to both the x-axis and y-axis.  In Cartesian coordinates, the z-axis is typically drawn as being vertical.  However, the two most common 3D rendering hardware libraries (DirectX and OpenGL), have the x-axis horizontal, the y-axis vertical, and the z-axis coming out of or into the screen.  These two approaches are often referred to as <em>left-hand</em> or <em>right-hand</em> coordinate systems, as when you curl the fingers of your right hand from the x-axis to the y-axis, your thumb will point in the direction of the z-axis:</p>
+<p><a href="#R-image-5149b592c0f0f2093a3c7dfe0507205a" class="lightbox-link"><img alt="Left and Right-hand coordinate systems" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/b.2.3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5149b592c0f0f2093a3c7dfe0507205a"><img alt="Left and Right-hand coordinate systems" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/b.2.3.png"></a></p>
+<p>DirectX adopted the left-hand coordinate system, while OpenGL adopted the right-hand system.  There are some implications for this choice involved in matrix math, which we will discuss later, and for importing 3D models.  A 3D model drawn for a left-hand system will have its z-coordinates reflected when drawn in a right-hand system.  This can be reversed by scaling the model by <span class="math align-center">$ -1 $</span> in the z-axis.  When importing models through the content pipeline, this transformation can be specified so that the imported model is already reversed.</p>
+<p>Coordinates in a 3D system can be represented as a tuple of three coordinates along each of the axes: <span class="math align-center">$ (x, y, z) $</span>.  However, video games universally represent coordinates in 3d space with vectors; MonoGame provides the <code>Vector3</code> for this purpose.</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+<div class="git-footer">
+  <p class="theme-version-footer">8.0.0</p>
+<p>Last modified by:
+              <i class='fa-fw fas fa-user'></i> Nathan Bean
+              <i class='fas fa-calendar'></i> <a href="https://github.com/ksu-cs-textbooks/cis580/commit/62ae652403b815125d822842fd28866700dbf1a1">Aug 19, 2025</a>
+</p>
+
+</div>
+    </div>
+    <script>
+      window.MathJax = Object.assign( window.MathJax || {}, {
+        tex: {
+          inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+          displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+        },
+        options: {
+          enableMenu: false 
+        }
+      }, JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1755628803"></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1755628803" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1755628803" defer></script>
+    <script src="/cis580/js/theme.min.js?1755628803" defer></script>
+  </body>
+</html>

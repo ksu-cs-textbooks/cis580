@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.128.0">
+    <meta name="generator" content="Relearn 8.0.0">
+    <meta name="description" content="To animate a sprite, we simply swap the image it is using. Animated sprites typically lay out all their frames in a single texture, just like a texture atlas. Consider this animated bat sprite by bagzie from OpenGameArt:
+The images of the bat are laid out into a 4x4 grid of 32x32 pixel tiles. We can create the illusion of motion by swapping which of these images we display. However, we don’t want to swap it every frame - doing so will be too quick for the viewer to follow, and destroy the illusion.">
+    <meta name="author" content="Nathan H. Bean">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
+    <meta name="twitter:title" content="Animated Sprites :: K-State CIS 580 Textbook">
+    <meta name="twitter:description" content="To animate a sprite, we simply swap the image it is using. Animated sprites typically lay out all their frames in a single texture, just like a texture atlas. Consider this animated bat sprite by bagzie from OpenGameArt:
+The images of the bat are laid out into a 4x4 grid of 32x32 pixel tiles. We can create the illusion of motion by swapping which of these images we display. However, we don’t want to swap it every frame - doing so will be too quick for the viewer to follow, and destroy the illusion.">
+    <meta property="og:url" content="https://textbooks.cs.ksu.edu/cis580/03-sprites/04-animated-sprites/index.html">
+    <meta property="og:site_name" content="K-State CIS 580 Textbook">
+    <meta property="og:title" content="Animated Sprites :: K-State CIS 580 Textbook">
+    <meta property="og:description" content="To animate a sprite, we simply swap the image it is using. Animated sprites typically lay out all their frames in a single texture, just like a texture atlas. Consider this animated bat sprite by bagzie from OpenGameArt:
+The images of the bat are laid out into a 4x4 grid of 32x32 pixel tiles. We can create the illusion of motion by swapping which of these images we display. However, we don’t want to swap it every frame - doing so will be too quick for the viewer to follow, and destroy the illusion.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Sprites">
+    <meta property="article:published_time" content="2018-08-24T10:53:26-05:00">
+    <meta property="article:modified_time" content="2025-08-19T13:21:42-05:00">
+    <meta property="og:image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
+    <meta itemprop="name" content="Animated Sprites :: K-State CIS 580 Textbook">
+    <meta itemprop="description" content="To animate a sprite, we simply swap the image it is using. Animated sprites typically lay out all their frames in a single texture, just like a texture atlas. Consider this animated bat sprite by bagzie from OpenGameArt:
+The images of the bat are laid out into a 4x4 grid of 32x32 pixel tiles. We can create the illusion of motion by swapping which of these images we display. However, we don’t want to swap it every frame - doing so will be too quick for the viewer to follow, and destroy the illusion.">
+    <meta itemprop="datePublished" content="2018-08-24T10:53:26-05:00">
+    <meta itemprop="dateModified" content="2025-08-19T13:21:42-05:00">
+    <meta itemprop="wordCount" content="666">
+    <meta itemprop="image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
+    <title>Animated Sprites :: K-State CIS 580 Textbook</title>
+    <link href="https://textbooks.cs.ksu.edu/cis580/03-sprites/04-animated-sprites/index.html" rel="canonical" type="text/html" title="Animated Sprites :: K-State CIS 580 Textbook">
+    <link href="/cis580/03-sprites/04-animated-sprites/index.xml" rel="alternate" type="application/rss+xml" title="Animated Sprites :: K-State CIS 580 Textbook">
+    <link href="/cis580/03-sprites/04-animated-sprites/index.print.html" rel="alternate" type="text/html" title="Animated Sprites :: K-State CIS 580 Textbook">
+    <link href="/cis580/03-sprites/04-animated-sprites/tele.html" rel="alternate" type="text/html" title="Animated Sprites :: K-State CIS 580 Textbook">
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1755628803" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1755628803" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1755628803" defer></script>
+    <script src="/cis580/js/search.min.js?1755628803" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1755628803";
+    </script>
+    <script src="/cis580/js/lunr/lunr.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1755628803" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/format-html.min.css?1755628803" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/03-sprites\/04-animated-sprites\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/textbooks.cs.ksu.edu\/cis580';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=false;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'light-theme' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      // [x] russfeld
+      window.relearn.writeVariant=false;
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          
+          if (window.relearn.writeVariant) {
+            window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+          }
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+    <link href="/cis580/css/custom.css?1755628803" rel="stylesheet">
+  </head>
+  <body class="mobile-support embed html" data-url="/cis580/03-sprites/04-animated-sprites/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      
+      
+      
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable 03-sprites" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="animated-sprites">Animated Sprites</h1>
+
+<p>To animate a sprite, we simply swap the image it is using.  Animated sprites typically lay out all their frames in a single texture, just like a texture atlas. Consider this <a href="https://opengameart.org/content/bat-sprite" rel="external" target="_blank">animated bat sprite by bagzie</a> from OpenGameArt:</p>
+<p><a href="#R-image-3cd7a53f397c9684432c76e07a5d4572" class="lightbox-link"><img alt="Animated bat spritesheet" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/32x32-bat-sprite.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3cd7a53f397c9684432c76e07a5d4572"><img alt="Animated bat spritesheet" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/32x32-bat-sprite.png"></a></p>
+<p>The images of the bat are laid out into a 4x4 grid of 32x32 pixel tiles.  We can create the illusion of motion by swapping which of these images we display.  However, we don&rsquo;t want to swap it every frame - doing so will be too quick for the viewer to follow, and destroy the illusion.  So we also need a timer and an idea of the direction the sprite is facing.</p>
+<p>To represent the direction, we might define an enum. And since the enum can represent a numerical value, let&rsquo;s assign the corresponding row index to each direction:</p>
+<div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/// The directions a sprite can face </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">enum</span> Direction {
+</span></span><span style="display:flex;"><span>    Down = <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>    Right = <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>    Up = <span style="color:#ae81ff">2</span>, 
+</span></span><span style="display:flex;"><span>    Left = <span style="color:#ae81ff">3</span> 
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>With this extra state to track, it makes sense to create a class to represent our sprite:</p>
+<div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/// A class representing a bat</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BatSprite</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// The animated bat texture </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> Texture2D texture;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// A timer variable for sprite animation</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">double</span> directionTimer;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// A timer variable for sprite animation</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">double</span> animationTimer;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// The current animation frame </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">short</span> animationFrame;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">///&lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// The bat&#39;s position in the world</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">///&lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Vector2 Position { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">///&lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// The bat&#39;s direction</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Direction Direction { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>We&rsquo;ll need a <code>LoadContent()</code> method to load our texture:</p>
+<div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/// Loads the bat sprite texture</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/// &lt;param name=&#34;content&#34;&gt;The ContentManager&lt;/param&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> LoadContent(ContentManager content) 
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    texture = content.Load&lt;Texture2D&gt;(<span style="color:#e6db74">&#34;32x32-bat-sprite.png&#34;</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Let&rsquo;s make our bat fly in a regular pattern, switching directions every two seconds.  To do this, we would want to give our bat an <code>Update()</code> method that updates a timer to determine when it is time to switch:</p>
+<div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> Update(GameTime gameTime) 
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// advance the direction timer</span>
+</span></span><span style="display:flex;"><span>    directionTimer += gameTime.ElapsedGameTime.TotalSeconds;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// every two seconds, change direction</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(directionTimer &gt; <span style="color:#ae81ff">2.0</span>) 
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">switch</span>(Direction)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> Direction.Up: 
+</span></span><span style="display:flex;"><span>                Direction = Direction.Down;
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> Direction.Down:
+</span></span><span style="display:flex;"><span>                Direction = Direction.Left;
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> Direction.Left:
+</span></span><span style="display:flex;"><span>                Direction = Direction.Right;
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> Direction.Right:
+</span></span><span style="display:flex;"><span>                Direction = Direction.Up;
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// roll back timer </span>
+</span></span><span style="display:flex;"><span>        directionTimer -= <span style="color:#ae81ff">2.0</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// move bat in desired direction</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">switch</span> (Direction)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">case</span> Direction.Up:
+</span></span><span style="display:flex;"><span>            Position += <span style="color:#66d9ef">new</span> Vector2(<span style="color:#ae81ff">0</span>, -<span style="color:#ae81ff">1</span>) * <span style="color:#ae81ff">100</span> * (<span style="color:#66d9ef">float</span>)gameTime.ElapsedGameTime.TotalSeconds;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">case</span> Direction.Down:
+</span></span><span style="display:flex;"><span>            Position += <span style="color:#66d9ef">new</span> Vector2(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>) * <span style="color:#ae81ff">100</span> * (<span style="color:#66d9ef">float</span>)gameTime.ElapsedGameTime.TotalSeconds;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">case</span> Direction.Left:
+</span></span><span style="display:flex;"><span>            Position += <span style="color:#66d9ef">new</span> Vector2(-<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>) * <span style="color:#ae81ff">100</span> * (<span style="color:#66d9ef">float</span>)gameTime.ElapsedGameTime.TotalSeconds;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">case</span> Direction.Right:
+</span></span><span style="display:flex;"><span>            Position += <span style="color:#66d9ef">new</span> Vector2(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>) * <span style="color:#ae81ff">100</span> * (<span style="color:#66d9ef">float</span>)gameTime.ElapsedGameTime.TotalSeconds;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>We&rsquo;ll use a similar technique to advance the animation frame - once every 16th of a second, in the <code>Draw()</code> method:</p>
+<div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> Draw(GameTime gameTime, SpriteBatch spriteBatch) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// advance the animation timer </span>
+</span></span><span style="display:flex;"><span>    animationTimer += gameTime.ElapsedGameTime.TotalSeconds;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Every 1/16th of a second, advance the animation frame </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(animationTimer &gt; <span style="color:#ae81ff">1</span>/<span style="color:#ae81ff">16</span>)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        animationFrame++;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(animationFrame &gt; <span style="color:#ae81ff">3</span>) animationFrame = <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>        animationTimer -= <span style="color:#ae81ff">1</span>/<span style="color:#ae81ff">16</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Determine the source rectangle </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> sourceRect = <span style="color:#66d9ef">new</span> Rectangle(animationFrame * <span style="color:#ae81ff">32</span>, (<span style="color:#66d9ef">int</span>)Direction * <span style="color:#ae81ff">32</span>, <span style="color:#ae81ff">32</span>, <span style="color:#ae81ff">32</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Draw the bat using the current animation frame </span>
+</span></span><span style="display:flex;"><span>    spriteBatch.Draw(texture, Position, sourceRect, Color.White);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Notice because our <code>Direction</code> enum uses integer values, we can cast it to be an <code>int</code> and use it to calculate the <code>sourceRect</code>&rsquo;s x-coordinate.</p>
+<p>We can then construct a bat (or multiple bats) in our game, and invoke their <code>LoadContent()</code>, <code>Update()</code>, and <code>Draw()</code> methods in the appropriate places.</p>
+
+<details open class=" box cstyle notices info">
+  <summary class="box-label" tabindex="-1">
+    <i class="fa-fw fas fa-info-circle"></i> 
+    Info
+  </summary>
+  <div class="box-content">
+<p>You may have noticed that our <code>BatSprite</code> can be thought of as a <em>state machine</em>, or the <a href="https://gameprogrammingpatterns.com/state.html" rel="external" target="_blank">state pattern</a>.  You could argue that we have four possible states for each of the directions that bat is flying.  Moreover, you could argue that each of those states has four sub-states for the animation frame that is being displayed.  These are both accurate observations - the state pattern is an <em>extremely useful</em> one in game design.</p>
+  </div>
+</details>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+      
+      
+      
+    </div>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1755628803" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1755628803" defer></script>
+    <script src="/cis580/js/theme.min.js?1755628803" defer></script>
+  <script src="/cis580/js/embed-iframe.min.js?1755628803" defer></script>
+  </body>
+</html>

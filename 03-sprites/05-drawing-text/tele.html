@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.128.0">
+    <meta name="generator" content="Relearn 8.0.0">
+    <meta name="description" content="Text in videogames is challenging. In the early days of computing, video cards had a limited number of modes - the most common was for displaying text that was streamed to the video card as ASCII character data. This is also how the command prompt and terminals work - they operate on streams of character data.
+But games used different modes that used the limited memory of the card to supply pixel data in a variety of formats.">
+    <meta name="author" content="Nathan H. Bean">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
+    <meta name="twitter:title" content="Sprite Text :: K-State CIS 580 Textbook">
+    <meta name="twitter:description" content="Text in videogames is challenging. In the early days of computing, video cards had a limited number of modes - the most common was for displaying text that was streamed to the video card as ASCII character data. This is also how the command prompt and terminals work - they operate on streams of character data.
+But games used different modes that used the limited memory of the card to supply pixel data in a variety of formats.">
+    <meta property="og:url" content="https://textbooks.cs.ksu.edu/cis580/03-sprites/05-drawing-text/index.html">
+    <meta property="og:site_name" content="K-State CIS 580 Textbook">
+    <meta property="og:title" content="Sprite Text :: K-State CIS 580 Textbook">
+    <meta property="og:description" content="Text in videogames is challenging. In the early days of computing, video cards had a limited number of modes - the most common was for displaying text that was streamed to the video card as ASCII character data. This is also how the command prompt and terminals work - they operate on streams of character data.
+But games used different modes that used the limited memory of the card to supply pixel data in a variety of formats.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Sprites">
+    <meta property="article:published_time" content="2018-08-24T10:53:26-05:00">
+    <meta property="article:modified_time" content="2025-08-19T13:21:42-05:00">
+    <meta property="og:image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
+    <meta itemprop="name" content="Sprite Text :: K-State CIS 580 Textbook">
+    <meta itemprop="description" content="Text in videogames is challenging. In the early days of computing, video cards had a limited number of modes - the most common was for displaying text that was streamed to the video card as ASCII character data. This is also how the command prompt and terminals work - they operate on streams of character data.
+But games used different modes that used the limited memory of the card to supply pixel data in a variety of formats.">
+    <meta itemprop="datePublished" content="2018-08-24T10:53:26-05:00">
+    <meta itemprop="dateModified" content="2025-08-19T13:21:42-05:00">
+    <meta itemprop="wordCount" content="1395">
+    <meta itemprop="image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
+    <title>Sprite Text :: K-State CIS 580 Textbook</title>
+    <link href="https://textbooks.cs.ksu.edu/cis580/03-sprites/05-drawing-text/index.html" rel="canonical" type="text/html" title="Sprite Text :: K-State CIS 580 Textbook">
+    <link href="/cis580/03-sprites/05-drawing-text/index.xml" rel="alternate" type="application/rss+xml" title="Sprite Text :: K-State CIS 580 Textbook">
+    <link href="/cis580/03-sprites/05-drawing-text/index.print.html" rel="alternate" type="text/html" title="Sprite Text :: K-State CIS 580 Textbook">
+    <link href="/cis580/03-sprites/05-drawing-text/embed.html" rel="alternate" type="text/html" title="Sprite Text :: K-State CIS 580 Textbook">
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1755628803" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1755628803" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1755628803" defer></script>
+    <script src="/cis580/js/search.min.js?1755628803" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1755628803";
+    </script>
+    <script src="/cis580/js/lunr/lunr.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1755628803" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/format-html.min.css?1755628803" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/03-sprites\/05-drawing-text\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/textbooks.cs.ksu.edu\/cis580';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=false;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'light-theme' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      // [x] russfeld
+      window.relearn.writeVariant=false;
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          
+          if (window.relearn.writeVariant) {
+            window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+          }
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+    <link href="/cis580/css/custom.css?1755628803" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/cis580/03-sprites/05-drawing-text/index.html">
+    
+    <div id="tele" class="tele mirror">
+    
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      
+      
+      
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable 03-sprites" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="sprite-text">Sprite Text</h1>
+
+<p>Text in videogames is challenging.  In the early days of computing, video cards had a limited number of modes - the most common was for displaying text that was streamed to the video card as ASCII character data.  This is also how the command prompt and terminals work - they operate on streams of character data.</p>
+<p>But games used <em>different</em> modes that used the limited memory of the card to supply pixel data in a variety of formats.  Notably, text support was non-existent in these modes.</p>
+<p>Fast-forward to the modern day.  Now text is typically handled by the operating system and its windowing libraries.  Which are notably unusable within a DirectX rendering context.  So we still use the same techniques used in those earliest video games to render text.  Bitmap fonts.</p>
+<p>A bitmap font is one in which each character is represented by a raster graphic - a bitmap.  Much like sprites, these are copied into the bitmap that is the scene.  Thus, we have to bit blit each character one at a time.  This is in contrast to the fonts used by modern operating systems, which are <em>vector</em> based.  A vector font contains the <em>instructions</em> for drawing the font characters, so it can be drawn at any scale.</p>
+<p>MonoGame provides some support for drawing text through the <code>SpriteBatch</code>.  But to use this functionality, we first need to create a <code>SpriteFont</code></p>
+<h2 id="spritefonts">SpriteFonts</h2>
+<p>A <code>SpriteFont</code> object is similar to the sprite <code>BatSprite</code> class we worked on in the last section.  It wraps around a texture containing rendered font characters, and provides details on how to render each character.  However, we don&rsquo;t construct <code>SpriteFont</code> objects ourselves, rather we load them through the <code>ContentManager</code> and the content pipeline.</p>
+<p>The content pipeline <em>creates</em> a sprite font from an existing font installed on your computer.  Essentially, it renders each needed character from the font into a texture atlas, and combines that with information about where each character is in that atlas.  To create your sprite font, choose the <em>create new item</em> from the MGCB Editor, and then select &ldquo;SpriteFont Description (.spritefont)&rdquo;:</p>
+<p><a href="#R-image-15e3d15cdd31eb2d8aebb006ff3fce3f" class="lightbox-link"><img alt="Creating the sprite font in the MGCB Editor" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/3.5.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-15e3d15cdd31eb2d8aebb006ff3fce3f"><img alt="Creating the sprite font in the MGCB Editor" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/3.5.1.png"></a></p>
+<p>This will create a SpriteFont Description, which will be compiled into a <code>SpriteFont</code>.  It also adds this description into your <em>Content</em> folder.  Open it, and you will see it is nothing more than an XML file, which specifies some details of the font:</p>
+<div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">This file contains an xml description of a font, and will be read by the XNA
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">Framework Content Pipeline. Follow the comments to customize the appearance
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">of the font in your game, and to change the characters which are available to draw
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">with.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;XnaContent</span> <span style="color:#a6e22e">xmlns:Graphics=</span><span style="color:#e6db74">&#34;Microsoft.Xna.Framework.Content.Pipeline.Graphics&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;Asset</span> <span style="color:#a6e22e">Type=</span><span style="color:#e6db74">&#34;Graphics:FontDescription&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    Modify this string to change the font that will be imported.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    --&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;FontName&gt;</span>Arial<span style="color:#f92672">&lt;/FontName&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    Size is a float value, measured in points. Modify this value to change
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    the size of the font.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    --&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;Size&gt;</span>12<span style="color:#f92672">&lt;/Size&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    Spacing is a float value, measured in pixels. Modify this value to change
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    the amount of spacing in between characters.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    --&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;Spacing&gt;</span>0<span style="color:#f92672">&lt;/Spacing&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    UseKerning controls the layout of the font. If this value is true, kerning information
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    will be used when placing characters.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    --&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;UseKerning&gt;</span>true<span style="color:#f92672">&lt;/UseKerning&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    Style controls the style of the font. Valid entries are &#34;Regular&#34;, &#34;Bold&#34;, &#34;Italic&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    and &#34;Bold, Italic&#34;, and are case sensitive.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    --&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;Style&gt;</span>Regular<span style="color:#f92672">&lt;/Style&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    If you uncomment this line, the default character will be substituted if you draw
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    or measure text that contains characters which were not included in the font.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    --&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- &lt;DefaultCharacter&gt;*&lt;/DefaultCharacter&gt; --&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    CharacterRegions control what letters are available in the font. Every
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    character from Start to End will be built and made available for drawing. The
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    default range is from 32, (ASCII space), to 126, (&#39;~&#39;), covering the basic Latin
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    character set. The characters are ordered according to the Unicode standard.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    See the documentation for more information.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    --&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;CharacterRegions&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;CharacterRegion&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;Start&gt;</span>&amp;#32;<span style="color:#f92672">&lt;/Start&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;End&gt;</span>&amp;#126;<span style="color:#f92672">&lt;/End&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;/CharacterRegion&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/CharacterRegions&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/Asset&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/XnaContent&gt;</span></span></span></code></pre></div>
+<p>You can edit the values of the various elements to control the font, as well as attributes like size and style that will be used to create the raster representation.  Any font installed on your development machine can be used (though for uncommon fonts, it is a good idea to include the font&rsquo;s file, usually a .ttf, in your repository so you can install it on other development machines).</p>
+<p>The <code>SpriteFont</code> can then be loaded with the <code>ContentManager</code>:</p>
+<div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>SpriteFont spriteFont = Content.Load&lt;SpriteFont&gt;(<span style="color:#e6db74">&#34;name-of-spritefont&#34;</span>);</span></span></code></pre></div>
+<p>Where the supplied string is the same name as the <em>.spritefont</em> file, without the extension.</p>
+<p>Once loaded, text can be drawn to the screen with <code>SpriteBatch.DrawString(SpriteFont spriteFont, Vector2 position, Color color)</code>. There are several overrides to choose from:</p>
+<ul>
+<li><code>DrawString(SpriteFont spriteFont, string text, Vector2 position, Color color)</code></li>
+<li><code>DrawString(SpriteFont spriteFont, string text, Vector2 position, Color color, float rotation, Vector2 origin, Vector2 scale, SpriteEffects effects, float layerDepth)</code></li>
+<li><code>DrawString(SpriteFont spriteFont, string text, Vector2 position, Color color, float rotation, Vector2 origin, float scale, SpriteEffects effects, float layerDepth)</code></li>
+<li><code>DrawString(SpriteFont spriteFont, StringBuilder text, Vector2 position, Color color)</code></li>
+<li><code>DrawString(SpriteFont spriteFont, StringBuilder text, Vector2 position, Color color, float rotation, Vector2 origin, Vector2 scale, SpriteEffects effects, float layerDepth)</code></li>
+<li><code>DrawString(SpriteFont spriteFont, StringBuilder text, Vector2 position, Color color, float rotation, Vector2 origin, float scale, SpriteEffects effects, float layerDepth)</code></li>
+</ul>
+<p>As with <code>SpriteBatch.Draw()</code>, we&rsquo;ll explore what the various parameters are used for, and you can select the one that matches your needs.</p>
+<h4 id="spritefont-spritefont">SpriteFont spriteFont</h4>
+<p>The <code>spriteFont</code> parameter is a <code>SpriteFont</code> object describing the font you want to write with.  If the <code>SpriteFont</code> has not been loaded (is null), then invoking <code>DrawText()</code> will throw an <code>ArgumentNullException</code>.</p>
+<h4 id="string-text">string text</h4>
+<p>The <code>text</code> parameter is the string you want to draw onto the screen.</p>
+<h4 id="stringbuilder-text">StringBuilder text</h4>
+<p>Optionally, a <code>StringBuilder</code> object can be supplied as the <code>text</code> parameter.</p>
+<h4 id="vector2-position">Vector2 position</h4>
+<p>This position specifies the upper-left hand corner of where the text will be drawn on-screen (unless the <code>origin</code> parameter is set).</p>
+<h4 id="color-color">Color color</h4>
+<p>The <code>color</code> parameter is a <code>Color</code> the text will be rendered in (this is actually blended as is with sprites, but the base color is white, so whatever color you choose is the color that will be displayed)</p>
+<h4 id="float-rotation">float rotation</h4>
+<p>The <code>rotation</code> is a rotation value measured in radians that should be applied to the text. This rotation is about the <code>origin</code> of the sprite, which is why all the overrides that specify the <code>rotation</code> also specify the <code>origin</code>.</p>
+<h4 id="vector2-origin">Vector2 origin</h4>
+<p>The <code>origin</code> is the spot within the text where rotations and scaling are centered.  This <em>also</em> affects text placement - the <code>position</code> vector indicates where the <code>origin</code> of the text will fall on-screen.  It is a vector measured relative to the upper-left-hand-corner of the text, in <em>texture</em> coordinates (i.e. pixels of the source texture).</p>
+<h4 id="float-scale">float scale</h4>
+<p>The <code>scale</code> is a scalar value to scale the text by.  For example, a value of <span class="math align-center">$ 2.0f $</span> will make the text twice as big, while <span class="math align-center">$ 0.5f $</span> would make it half as big.  This scaling is in relation to the <code>origin</code>, so if the origin is at the center of the text grows in all directions equally.  If instead it is at <span class="math align-center">$ (0,0) $</span>, the text will grow to the right and down only.</p>
+<h4 id="vector2-scale">Vector2 scale</h4>
+<p>The <code>scale</code> can also be specified as a <code>Vector2</code>, which allows the horizontal and vertical scaling factors to be different.</p>
+<h4 id="spriteeffects-effects">SpriteEffects effects</h4>
+<p>The <code>effects</code> parameter is one of the <code>SpriteEffects</code> enum&rsquo;s values.  These are:</p>
+<ul>
+<li><code>SpriteEffects.None</code> - the text is drawn normally</li>
+<li><code>SpriteEffects.FlipHorizontally</code> - the text is drawn with the texture flipped in the horizontal direction</li>
+<li><code>SpriteEffects.FlipVertically</code> - the text is drawn with the texture flipped in the vertical direction</li>
+</ul>
+<p>Note you can specify both horizontal and vertical flipping with a bitwise or: <code>SpriteEffects.FlipHorizontally | SpriteEffects.FlipVertically</code></p>
+<h4 id="single-layerdepth">single layerDepth</h4>
+<p>The <code>layerDepth</code> is an integer that indicates which sprites should be drawn &ldquo;above&rdquo; or &ldquo;below&rdquo; others (i.e. which ones should obscure the others).  Think of it as assembling a collage.  Sprites with a higher <code>layerDepth</code> value are closer to the top, and if they share screen space with sprites with a <code>lowerDepth</code>, those sprites are obscured.</p>
+<h2 id="measuring-with-spritefont">Measuring with SpriteFont</h2>
+<p>Note that with <code>SpriteFont</code>, there is no way to specify the width the text should be drawn - it is entirely dependent on the font, the string to render, and any scaling factors applied.  Nor is there any automatic word wrapping.</p>
+<p>However, the <code>SpriteFont</code> class does expose a method <code>SpriteFont.Measure(string text)</code> and override <code>SpriteFont.Measure(StringBuilder text)</code> which given a <code>string</code> or <code>StringBuilder</code> return a <code>Vector2</code> indicating the size at which that text would be rendered.</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+      
+      
+      
+    </div>
+    <script>
+      window.MathJax = Object.assign( window.MathJax || {}, {
+        tex: {
+          inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+          displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+        },
+        options: {
+          enableMenu: false 
+        }
+      }, JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1755628803"></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1755628803" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1755628803" defer></script>
+    <script src="/cis580/js/theme.min.js?1755628803" defer></script>
+      
+      
+      
+    </div> 
+  <script src="/cis580/js/tele-scroll.min.js?1755628803" defer></script>
+  </body>
+</html>

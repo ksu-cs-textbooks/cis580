@@ -1,813 +1,136 @@
-
-
-
-
-
-  
-	
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
-	  
-
-  
-	
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-	  
-
-  
-	
-		
-		
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CIS 580: Foundations of Game Programming :: K-State CIS 580 Textbook</title>
-    <link>https://textbooks.cs.ksu.edu/cis580/</link>
+    <link>https://textbooks.cs.ksu.edu/cis580/index.html</link>
     <description>CIS 580 Textbook&#xA;Nathan Bean&#xA;Kansas State University&#xA;© 2021&#xA;This is an open textbook written for the Kansas State University CIS 580 - Foundations of Game Programming course.&#xA;This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Course Information</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/00-forward/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/00-forward/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/00-forward/</guid>
+      <guid>https://textbooks.cs.ksu.edu/cis580/00-forward/index.html</guid>
       <description>Press Start to Begin&#xA;Web Only This textbook was authored for the CIS 580 - Foundations of Game Programming course at Kansas State University. This front matter is specific to that course. If you are not enrolled in the course, please disregard this section.</description>
     </item>
     <item>
       <title>Introduction to MonoGame</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/</guid>
+      <guid>https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/index.html</guid>
       <description>One Framework to Rule them All</description>
     </item>
     <item>
       <title>Player Input</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/02-player-input/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/02-player-input/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/02-player-input/</guid>
-      <description>Need Input! </description>
+      <guid>https://textbooks.cs.ksu.edu/cis580/02-player-input/index.html</guid>
+      <description>Need Input!</description>
     </item>
     <item>
       <title>Sprites</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/03-sprites.md/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/03-sprites/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/03-sprites.md/</guid>
+      <guid>https://textbooks.cs.ksu.edu/cis580/03-sprites/index.html</guid>
       <description>Who are you calling a fairy?</description>
     </item>
     <item>
       <title>Collisions</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/04-collisions/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/04-collisions/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/04-collisions/</guid>
+      <guid>https://textbooks.cs.ksu.edu/cis580/04-collisions/index.html</guid>
       <description>We can’t all live on a frictionless plane in a vacuum</description>
     </item>
     <item>
       <title>Audio</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/05-audio/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/05-audio/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/05-audio/</guid>
+      <guid>https://textbooks.cs.ksu.edu/cis580/05-audio/index.html</guid>
       <description>Chapter 5 Audio Get your games rocking!</description>
     </item>
     <item>
       <title>Physics</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/06-physics/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/06-physics/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/06-physics/</guid>
+      <guid>https://textbooks.cs.ksu.edu/cis580/06-physics/index.html</guid>
       <description>For every action…</description>
     </item>
     <item>
       <title>Game Architecture</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/07-game-architecture/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/07-game-architecture/index.html</link>
       <pubDate>Fri, 20 Mar 2020 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/07-game-architecture/</guid>
+      <guid>https://textbooks.cs.ksu.edu/cis580/07-game-architecture/index.html</guid>
       <description>Reorganizing your code…</description>
     </item>
     <item>
       <title>SpriteBatch Transforms</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/08-spritebatch-transforms/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/08-spritebatch-transforms/index.html</link>
       <pubDate>Fri, 20 Mar 2020 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/08-spritebatch-transforms/</guid>
+      <guid>https://textbooks.cs.ksu.edu/cis580/08-spritebatch-transforms/index.html</guid>
       <description>Moving in place…</description>
     </item>
     <item>
       <title>Particle Systems</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/09-particle-systems/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/09-particle-systems/index.html</link>
       <pubDate>Fri, 20 Mar 2020 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/09-particle-systems/</guid>
+      <guid>https://textbooks.cs.ksu.edu/cis580/09-particle-systems/index.html</guid>
       <description>One, Two, three, … BOOM!</description>
     </item>
     <item>
       <title>Tile Maps</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/10-tile-maps/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/10-tile-maps/index.html</link>
       <pubDate>Fri, 20 Mar 2020 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/10-tile-maps/</guid>
+      <guid>https://textbooks.cs.ksu.edu/cis580/10-tile-maps/index.html</guid>
       <description>I feel like we’ve passed that tree before…&#xA;via GIPHY</description>
     </item>
     <item>
       <title>Content Pipeline</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/11-content-pipeline/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/11-content-pipeline/index.html</link>
       <pubDate>Fri, 20 Mar 2020 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/11-content-pipeline/</guid>
+      <guid>https://textbooks.cs.ksu.edu/cis580/11-content-pipeline/index.html</guid>
       <description>Get Your Assets into the Game!&#xA;via GIPHY</description>
     </item>
     <item>
       <title>Basic 3D Rendering</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/13-basic-3d-rendering/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/13-basic-3d-rendering/index.html</link>
       <pubDate>Fri, 20 Mar 2020 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/13-basic-3d-rendering/</guid>
+      <guid>https://textbooks.cs.ksu.edu/cis580/13-basic-3d-rendering/index.html</guid>
       <description>It’s all triangles!</description>
     </item>
     <item>
       <title>Lighting and Cameras</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/14-lighting-and-cameras/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/14-lighting-and-cameras/index.html</link>
       <pubDate>Fri, 20 Mar 2020 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/14-lighting-and-cameras/</guid>
+      <guid>https://textbooks.cs.ksu.edu/cis580/14-lighting-and-cameras/index.html</guid>
       <description>Lights, Camera, Action!</description>
     </item>
     <item>
       <title>Heightmap Terrain</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/15-heightmap-terrain/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/15-heightmap-terrain/index.html</link>
       <pubDate>Fri, 20 Mar 2020 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/15-heightmap-terrain/</guid>
+      <guid>https://textbooks.cs.ksu.edu/cis580/15-heightmap-terrain/index.html</guid>
       <description>Keep your feet on the ground!</description>
     </item>
     <item>
       <title>Models</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/16-models/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/16-models/index.html</link>
       <pubDate>Fri, 20 Mar 2020 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/16-models/</guid>
+      <guid>https://textbooks.cs.ksu.edu/cis580/16-models/index.html</guid>
       <description>Rendering Complex 3D Objects</description>
     </item>
     <item>
       <title>Simple Games</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/a-simple-games/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/a-simple-games/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/a-simple-games/</guid>
+      <guid>https://textbooks.cs.ksu.edu/cis580/a-simple-games/index.html</guid>
       <description>A good starting point</description>
     </item>
     <item>
       <title>Game Math</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/b-game-math.md/</link>
+      <link>https://textbooks.cs.ksu.edu/cis580/b-game-math/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/b-game-math.md/</guid>
+      <guid>https://textbooks.cs.ksu.edu/cis580/b-game-math/index.html</guid>
       <description>What, you didn’t think games did math?</description>
     </item>
   </channel>

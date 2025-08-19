@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.128.0">
+    <meta name="generator" content="Relearn 8.0.0">
+    <meta name="description" content="The term “sprite” refers to a graphical element within a two-dimensional game that moves around the screen - often representing a character, powerup, or other actor. The term likely was coined in relation to its older definition - a small fairy creature.
+Traditionally, sprites are a part of two-dimensional games, and are a raster graphic (one composed of a regular grid of pixels, aka a bitmap). As the sprites are simply an array of bits representing pixels, and the scene being presented on screen is also just an array of bits representing pixels, we can place a sprite on-screen by simply copying its bits into the right location.">
+    <meta name="author" content="Nathan H. Bean">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
+    <meta name="twitter:title" content="Introduction :: K-State CIS 580 Textbook">
+    <meta name="twitter:description" content="The term “sprite” refers to a graphical element within a two-dimensional game that moves around the screen - often representing a character, powerup, or other actor. The term likely was coined in relation to its older definition - a small fairy creature.
+Traditionally, sprites are a part of two-dimensional games, and are a raster graphic (one composed of a regular grid of pixels, aka a bitmap). As the sprites are simply an array of bits representing pixels, and the scene being presented on screen is also just an array of bits representing pixels, we can place a sprite on-screen by simply copying its bits into the right location.">
+    <meta property="og:url" content="https://textbooks.cs.ksu.edu/cis580/03-sprites/01-introduction/index.html">
+    <meta property="og:site_name" content="K-State CIS 580 Textbook">
+    <meta property="og:title" content="Introduction :: K-State CIS 580 Textbook">
+    <meta property="og:description" content="The term “sprite” refers to a graphical element within a two-dimensional game that moves around the screen - often representing a character, powerup, or other actor. The term likely was coined in relation to its older definition - a small fairy creature.
+Traditionally, sprites are a part of two-dimensional games, and are a raster graphic (one composed of a regular grid of pixels, aka a bitmap). As the sprites are simply an array of bits representing pixels, and the scene being presented on screen is also just an array of bits representing pixels, we can place a sprite on-screen by simply copying its bits into the right location.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Sprites">
+    <meta property="article:published_time" content="2018-08-24T10:53:26-05:00">
+    <meta property="article:modified_time" content="2025-08-19T13:21:42-05:00">
+    <meta property="og:image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
+    <meta itemprop="name" content="Introduction :: K-State CIS 580 Textbook">
+    <meta itemprop="description" content="The term “sprite” refers to a graphical element within a two-dimensional game that moves around the screen - often representing a character, powerup, or other actor. The term likely was coined in relation to its older definition - a small fairy creature.
+Traditionally, sprites are a part of two-dimensional games, and are a raster graphic (one composed of a regular grid of pixels, aka a bitmap). As the sprites are simply an array of bits representing pixels, and the scene being presented on screen is also just an array of bits representing pixels, we can place a sprite on-screen by simply copying its bits into the right location.">
+    <meta itemprop="datePublished" content="2018-08-24T10:53:26-05:00">
+    <meta itemprop="dateModified" content="2025-08-19T13:21:42-05:00">
+    <meta itemprop="wordCount" content="385">
+    <meta itemprop="image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
+    <title>Introduction :: K-State CIS 580 Textbook</title>
+    <link href="https://textbooks.cs.ksu.edu/cis580/03-sprites/01-introduction/index.html" rel="canonical" type="text/html" title="Introduction :: K-State CIS 580 Textbook">
+    <link href="/cis580/03-sprites/01-introduction/index.xml" rel="alternate" type="application/rss+xml" title="Introduction :: K-State CIS 580 Textbook">
+    <link href="/cis580/03-sprites/01-introduction/tele.html" rel="alternate" type="text/html" title="Introduction :: K-State CIS 580 Textbook">
+    <link href="/cis580/03-sprites/01-introduction/embed.html" rel="alternate" type="text/html" title="Introduction :: K-State CIS 580 Textbook">
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1755628803" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1755628803" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1755628803" defer></script>
+    <script src="/cis580/js/search.min.js?1755628803" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1755628803";
+    </script>
+    <script src="/cis580/js/lunr/lunr.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1755628803" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/format-print.min.css?1755628803" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/03-sprites\/01-introduction\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/textbooks.cs.ksu.edu\/cis580';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=false;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'light-theme' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      // [x] russfeld
+      window.relearn.writeVariant=false;
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          
+          if (window.relearn.writeVariant) {
+            window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+          }
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+    <link href="/cis580/css/custom.css?1755628803" rel="stylesheet">
+  </head>
+  <body class="mobile-support print" data-url="/cis580/03-sprites/01-introduction/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#hardware-sprites">Hardware Sprites</a></li>
+    <li><a href="#bit-blitting">Bit Blitting</a></li>
+    <li><a href="#textured-quads">Textured Quads</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/cis580/index.html"><span itemprop="name">CIS 580: Foundations of Game Programming</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/cis580/03-sprites/index.html"><span itemprop="name">Sprites</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Introduction</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/ksu-cs-textbooks/cis580/edit/master/content/03-sprites/01-introduction.md" rel="external" target="_blank" title="Edit (CTRL+ALT+w)"><i class="fa-fw fas fa-pen"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/cis580/03-sprites/01-introduction/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/cis580/03-sprites/index.html" title="Sprites (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/cis580/03-sprites/02-drawing-sprites/index.html" title="Drawing Sprites (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+            <div class="topbar-button topbar-button-embed" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/cis580/03-sprites/01-introduction/embed.html" title="Embeddable Version"><i class="fa-fw fas fa-expand-arrows-alt"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-tele" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/cis580/03-sprites/01-introduction/tele.html" title="Teleprompter View"><i class="fa-fw fas fa-tv"></i></a>
+            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable 03-sprites" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>The term &ldquo;sprite&rdquo; refers to a graphical element within a two-dimensional game that moves around the screen - often representing a character, powerup, or other actor.  The term likely was coined in relation to its older definition - a small fairy creature.</p>
+<p>Traditionally, sprites are a part of two-dimensional games, and are a <em>raster</em> graphic (one composed of a regular grid of pixels, aka a bitmap).  As the sprites are simply an array of bits representing pixels, and the scene being presented on screen is <em>also</em> just an array of bits representing pixels, we can place a sprite on-screen by simply copying its bits into the right location.</p>
+<h2 id="hardware-sprites">Hardware Sprites</h2>
+<p>The earliest implementations of sprites did this by substituting the sprite bits for background image bits <em>as the bits were streamed to the screen</em> as part of an analog frame signal.  This was done by specialized hardware that supported a limited number of sprites (hence the name <em>hardware sprites</em>).</p>
+<h2 id="bit-blitting">Bit Blitting</h2>
+<p>Later games used <em>bit blitting</em> (an abbreviation for bit-boundary block transfer), a technique for copying a smaller bit array into a larger one.  Early graphics hardware implemented bit blitting as a hardware instruction, meaning it could be performed very fast, provided the sprite was drawn to scale.</p>
+<h2 id="textured-quads">Textured Quads</h2>
+<p>Modern games (and MonoGame) often use the 3D hardware to render sprites, which means they are represented as <em>textured quads</em>.  A textured quad is essentially a rectangle composed of two triangles that always faces the screen.</p>
+<p>While it is more complex than traditional sprites, there are several benefits to this approach:</p>
+<ol>
+<li>It is far easier to scale sprites composed as textured quads than bit-blitted sprites (and scaling is impossible with most hardware sprites)</li>
+<li>Textured Quad sprites can be rotated to an arbitrary angle using the graphics hardware.  Bit-blitted sprites could only be flipped (mirrored) in the X or Y direction, true rotations required additional sprite images drawn from the desired angle</li>
+<li>Textured Quad sprites can take advantage of the Z-buffer to do depth sorting.  Traditional bit-blitted sprites had to be drawn using the <em>painters algorithm</em> or similar techniques to ensure proper layering.</li>
+<li>Textured sprites are rendered using <em>shader</em> programs on the graphics card, so many unique effects can be applied to them.</li>
+</ol>
+<p>In this chapter, we&rsquo;ll examine how the MonoGame implementation of textured quads works.</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+<div class="git-footer">
+  <p class="theme-version-footer">8.0.0</p>
+<p>Last modified by:
+              <i class='fa-fw fas fa-user'></i> Nathan Bean
+              <i class='fas fa-calendar'></i> <a href="https://github.com/ksu-cs-textbooks/cis580/commit/62ae652403b815125d822842fd28866700dbf1a1">Aug 19, 2025</a>
+</p>
+
+</div>
+    </div>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1755628803" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1755628803" defer></script>
+    <script src="/cis580/js/theme.min.js?1755628803" defer></script>
+  </body>
+</html>
