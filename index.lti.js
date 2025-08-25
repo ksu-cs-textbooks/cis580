@@ -778,7 +778,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Introduction to MonoGame",
     "description": "Before we actually move into the game loop, we need to initialize the game - load all of its needed parts and set all initial values. The MonoGame Game class provides two virtual hook methods for doing this: Game.Initialize() and Game.LoadContent().\nYou might be wondering why we have two methods, or asking why the constructor is not included in this count. These are all good questions. First, in the documentation we see that Initialize():",
-    "modified": "2024-08-14T16:23:49-05:00",
+    "modified": "2025-08-25T15:18:13-05:00",
     "tags": [],
     "title": "Game Initialization",
     "uri": "/cis580/01-intro-to-monogame/04-game-initialization/index.html"

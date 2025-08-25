@@ -41,26 +41,26 @@ Class Fields We could store our heightmap directly, but all we really need out o
     <link href="/cis580/15-heightmap-terrain/03-terrain-class/index.xml" rel="alternate" type="application/rss+xml" title="Terrain Class :: K-State CIS 580 Textbook">
     <link href="/cis580/15-heightmap-terrain/03-terrain-class/index.print.html" rel="alternate" type="text/html" title="Terrain Class :: K-State CIS 580 Textbook">
     <link href="/cis580/15-heightmap-terrain/03-terrain-class/tele.html" rel="alternate" type="text/html" title="Terrain Class :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1755628803" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search.min.js?1755628803" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756153111" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1755628803";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1756153111";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/format-html.min.css?1755628803" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/format-html.min.css?1756153111" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -119,7 +119,7 @@ Class Fields We could store our heightmap directly, but all we really need out o
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1756153111" rel="stylesheet">
   </head>
   <body class="mobile-support embed html" data-url="/cis580/15-heightmap-terrain/03-terrain-class/index.html">
     <div id="R-body" class="default-animation">
@@ -241,20 +241,20 @@ Class Fields We could store our heightmap directly, but all we really need out o
 </span></span><span style="display:flex;"><span>    vertices.SetData&lt;VertexPositionNormalTexture&gt;(terrainVertices);</span></span></code></pre></div>
 <h3 id="creating-the-indices">Creating the Indices</h3>
 <p>Before we dive into code, let&rsquo;s think about how we want to lay out our triangle mesh.  We could use either a triangle list, or a triangle strip.  With a triangle list, we need to have an index for <em>each</em> of the corners of <em>each</em> triangle.  Since we have two triangles per grid cell, the total number of indices would be <code>indexCount = 3 * width * height</code>.  Conversely, with a triangle strip, we only need <em>one</em> index for each triangle after the first, which needs three.  So its size would be <code>indexCount = width * height + 2</code>.  This is nearly <em>a third</em> of the size!  So naturally, we&rsquo;d like to use a triangle list.  This is pretty straightforward for a single row:</p>
-<p><a href="#R-image-e19d81bdeee12d14f787b0073b85f729" class="lightbox-link"><img alt="Single Row Triangle Strip" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e19d81bdeee12d14f787b0073b85f729"><img alt="Single Row Triangle Strip" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.1.png"></a></p>
+<p><a href="#R-image-9f32accf89ae1eab231c2fa3d029fb8e" class="lightbox-link"><img alt="Single Row Triangle Strip" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9f32accf89ae1eab231c2fa3d029fb8e"><img alt="Single Row Triangle Strip" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.1.png"></a></p>
 <p>The diagram above shows what a row defined as a triangle strip looks like.  Each vertex (the purple circle) is labeled by the order it appears in the indices.  The blue arrows denote the triangle edges defined by successive vertices.  The gray dashed lines denote the side of the triangle inferred from the order of the vertices.  And each triangle is numbered in blue by the order it is defined.</p>
 <p>But what about the next row?  You might be tempted to start on the left again, but doing so will result in a triangle that stretches across the breadth of the terrain - which will look terrible!</p>
-<p><a href="#R-image-d58127db97a2255101f87c4e479ce129" class="lightbox-link"><img alt="Triangle Stretching Across the Row" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.2.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d58127db97a2255101f87c4e479ce129"><img alt="Triangle Stretching Across the Row" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.2.png"></a></p>
+<p><a href="#R-image-4c9591fa0b44d0bd3a35b704734d46cd" class="lightbox-link"><img alt="Triangle Stretching Across the Row" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4c9591fa0b44d0bd3a35b704734d46cd"><img alt="Triangle Stretching Across the Row" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.2.png"></a></p>
 <p>This triangle is outlined in the above diagram by the ochre lines.  Note that in the game they won&rsquo;t be curved - the triangle will just slice through the terrain.</p>
 <p>Or, we can try zig-zagging, by going right-to-left with the second row.</p>
-<p><a href="#R-image-1727ead79744b259324a1595199fa0ba" class="lightbox-link"><img alt="Zig-zagging Triangle Strip" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.3.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1727ead79744b259324a1595199fa0ba"><img alt="Zig-zagging Triangle Strip" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.3.png"></a></p>
+<p><a href="#R-image-72b5e0df1989dc1efedd16ae8e64fae3" class="lightbox-link"><img alt="Zig-zagging Triangle Strip" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-72b5e0df1989dc1efedd16ae8e64fae3"><img alt="Zig-zagging Triangle Strip" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.3.png"></a></p>
 <p>Notice that doing so creates a triangle that stretches along the end of the terrain.  This probably wouldn&rsquo;t be a problem as we probably would obscure the edge of our terrain in the game anyway.  But also notice that the diagonals of each terrain row slant the opposite ways.  This <em>does</em> cause a problem for us, which we&rsquo;ll understand in a bit.</p>
 <p>Instead, we&rsquo;ll create <em>two</em> extra triangles between each row.</p>
-<p><a href="#R-image-25e678b5c8d4ee5418c552c4759a44c8" class="lightbox-link"><img alt="Our Triangle Strip Layout Strategy" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.4.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-25e678b5c8d4ee5418c552c4759a44c8"><img alt="Our Triangle Strip Layout Strategy" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.4.png"></a></p>
+<p><a href="#R-image-25a43e77906d28e02ccab8f102abc113" class="lightbox-link"><img alt="Our Triangle Strip Layout Strategy" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.4.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-25a43e77906d28e02ccab8f102abc113"><img alt="Our Triangle Strip Layout Strategy" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.4.png"></a></p>
 <p>Notice that for the two extra triangles created by this pattern, 6 and 7, two of their vertices are the same.  This means they are actually lines!  And they will be rendered as part of the edge of triangles 5 and 8.  Moreover, all our diagonals are slanting the same direction.</p>
 <p>Let&rsquo;s use this pattern as we declare our indices in the helper method <code>InitializeIndices()</code>:</p>
 <div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
@@ -354,9 +354,9 @@ Class Fields We could store our heightmap directly, but all we really need out o
       
       
     </div>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1755628803" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1755628803" defer></script>
-    <script src="/cis580/js/theme.min.js?1755628803" defer></script>
-  <script src="/cis580/js/embed-iframe.min.js?1755628803" defer></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1756153111" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756153111" defer></script>
+    <script src="/cis580/js/theme.min.js?1756153111" defer></script>
+  <script src="/cis580/js/embed-iframe.min.js?1756153111" defer></script>
   </body>
 </html>

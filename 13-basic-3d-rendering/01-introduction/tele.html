@@ -37,26 +37,26 @@ Remember that games are “real-time”, which means they must present a new fra
     <link href="/cis580/13-basic-3d-rendering/01-introduction/index.xml" rel="alternate" type="application/rss+xml" title="Introduction :: K-State CIS 580 Textbook">
     <link href="/cis580/13-basic-3d-rendering/01-introduction/index.print.html" rel="alternate" type="text/html" title="Introduction :: K-State CIS 580 Textbook">
     <link href="/cis580/13-basic-3d-rendering/01-introduction/embed.html" rel="alternate" type="text/html" title="Introduction :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1755628803" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search.min.js?1755628803" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756153111" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1755628803";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1756153111";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/format-html.min.css?1755628803" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/format-html.min.css?1756153111" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -115,7 +115,7 @@ Remember that games are “real-time”, which means they must present a new fra
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1756153111" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/cis580/13-basic-3d-rendering/01-introduction/index.html">
     
@@ -141,8 +141,8 @@ Remember that games are “real-time”, which means they must present a new fra
 <p>MonoGame supports both, through different kinds of projects, and provides abstractions that provide a platform-independence layer, in the <a href="https://www.monogame.net/documentation/?page=N_Microsoft_Xna_Framework_Graphics" rel="external" target="_blank">Xna.Framework.Graphics namespace</a>.  One important aspect of this layer is that it provides managed memory in conjunction with C#, which is a departure from most game programing (where the developer must manage their memory explicitly, allocating and de-allocating as needed).</p>
 <h2 id="the-graphics-pipeline">The Graphics Pipeline</h2>
 <p>This process of rendering using 3D accelerated hardware is often described as the Graphics Pipeline:</p>
-<p><a href="#R-image-618554124e37abcd16c722c36f90ce69" class="lightbox-link"><img alt="Graphics Pipeline" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/graphics-pipeline.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-618554124e37abcd16c722c36f90ce69"><img alt="Graphics Pipeline" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/graphics-pipeline.png"></a></p>
+<p><a href="#R-image-ec2cd4a89cb04c6cefebbcde0a2a2eb8" class="lightbox-link"><img alt="Graphics Pipeline" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/graphics-pipeline.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ec2cd4a89cb04c6cefebbcde0a2a2eb8"><img alt="Graphics Pipeline" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/graphics-pipeline.png"></a></p>
 <p>We&rsquo;ll walk through this process as we write a demonstration project that will render a rotating 3D cube.  The starter code for this project can be found on <a href="https://github.com/ksu-cis/basic-3d-starter" rel="external" target="_blank">GitHub</a>.</p>
 
   <footer class="footline">
@@ -154,13 +154,13 @@ Remember that games are “real-time”, which means they must present a new fra
       
       
     </div>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1755628803" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1755628803" defer></script>
-    <script src="/cis580/js/theme.min.js?1755628803" defer></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1756153111" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756153111" defer></script>
+    <script src="/cis580/js/theme.min.js?1756153111" defer></script>
       
       
       
     </div> 
-  <script src="/cis580/js/tele-scroll.min.js?1755628803" defer></script>
+  <script src="/cis580/js/tele-scroll.min.js?1756153111" defer></script>
   </body>
 </html>

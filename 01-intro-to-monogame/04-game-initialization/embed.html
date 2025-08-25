@@ -23,13 +23,13 @@ You might be wondering why we have two methods, or asking why the constructor is
     <meta property="og:type" content="article">
     <meta property="article:section" content="Introduction to MonoGame">
     <meta property="article:published_time" content="2018-08-24T10:53:26-05:00">
-    <meta property="article:modified_time" content="2024-08-14T16:23:49-05:00">
+    <meta property="article:modified_time" content="2025-08-25T15:18:13-05:00">
     <meta property="og:image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
     <meta itemprop="name" content="Game Initialization :: K-State CIS 580 Textbook">
     <meta itemprop="description" content="Before we actually move into the game loop, we need to initialize the game - load all of its needed parts and set all initial values. The MonoGame Game class provides two virtual hook methods for doing this: Game.Initialize() and Game.LoadContent().
 You might be wondering why we have two methods, or asking why the constructor is not included in this count. These are all good questions. First, in the documentation we see that Initialize():">
     <meta itemprop="datePublished" content="2018-08-24T10:53:26-05:00">
-    <meta itemprop="dateModified" content="2024-08-14T16:23:49-05:00">
+    <meta itemprop="dateModified" content="2025-08-25T15:18:13-05:00">
     <meta itemprop="wordCount" content="902">
     <meta itemprop="image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
     <title>Game Initialization :: K-State CIS 580 Textbook</title>
@@ -37,26 +37,26 @@ You might be wondering why we have two methods, or asking why the constructor is
     <link href="/cis580/01-intro-to-monogame/04-game-initialization/index.xml" rel="alternate" type="application/rss+xml" title="Game Initialization :: K-State CIS 580 Textbook">
     <link href="/cis580/01-intro-to-monogame/04-game-initialization/index.print.html" rel="alternate" type="text/html" title="Game Initialization :: K-State CIS 580 Textbook">
     <link href="/cis580/01-intro-to-monogame/04-game-initialization/tele.html" rel="alternate" type="text/html" title="Game Initialization :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1755628803" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search.min.js?1755628803" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756153111" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1755628803";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1756153111";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/format-html.min.css?1755628803" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/format-html.min.css?1756153111" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -115,7 +115,7 @@ You might be wondering why we have two methods, or asking why the constructor is
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1756153111" rel="stylesheet">
   </head>
   <body class="mobile-support embed html" data-url="/cis580/01-intro-to-monogame/04-game-initialization/index.html">
     <div id="R-body" class="default-animation">
@@ -146,7 +146,7 @@ You might be wondering why we have two methods, or asking why the constructor is
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 <p>We can see that the <code>Game.Initialize()</code> is only invoked <em>after</em> our own initialization logic.  Thus, it is largely a matter of controlling timing.  We only want content (i.e. sounds, textures, etc.) to be loaded once the game is fully initialized.</p>
 <p>This is largely because we are using the 3D hardware, which has its own RAM (video memory).  Ideally, textures should be stored there for the fastest and most efficient rendering.  So we want to delay loading our graphics until we have finished configuring the graphics device.  Thus, we do any graphics card configuration in the <code>Initialize()</code> method, <em>before</em> invoking <code>base.Initialize()</code>.</p>
-<p>And why not the constructor?  What if we want the player to be able to, upon loosing, immediately restart the game?  If our initialization logic is in <code>Initialize()</code>, we can simply re-invoke that method.  We can&rsquo;t re-construct the <code>Game</code> class though, as it is tied to the life of our application.</p>
+<p>And why not the constructor?  What if we want the player to be able to, upon losing, immediately restart the game?  If our initialization logic is in <code>Initialize()</code>, we can simply re-invoke that method.  We can&rsquo;t re-construct the <code>Game</code> class though, as it is tied to the life of our application.</p>
 <p>Finally, the <code>Game.LoadContent()</code> is invoked after both our <code>Initialze()</code> and the <code>base.Initialize()</code> methods have finished. This means the graphics card is fully initialized, and we can now transfer graphics assets into its memory.</p>
 <h3 id="a-simple-example">A Simple Example</h3>
 <p>Let&rsquo;s look at a super-simple example demonstrating the game loop.  We&rsquo;ll have a ball that moves a bit each frame and bounces off the sides of the window.</p>
@@ -172,11 +172,11 @@ You might be wondering why we have two methods, or asking why the constructor is
 <p>For now we&rsquo;ll use the <code>System.Random</code> class you are used to.  For some game purposes, it is sufficient, though its randomness is not as random as we&rsquo;ll need for some kinds of games.  Also, note that because <code>Random.NextDouble()</code> returns a double, and <code>Vector2</code> uses floats, we need to implicitly cast the result.  Finally, <code>Vector2.Normalize()</code> will shorten our velocity vector to be of length <span class="math align-center">$ 1 $</span>, which the <code>_ballVelocity *= 100;</code> line scales up to a length of <span class="math align-center">$ 100 $</span>.  Eventually this will mean our ball will be traveling 100 pixels per second.</p>
 <h4 id="adding-the-image-to-the-project">Adding the Image to the Project</h4>
 <p>As we said above, <code>LoadContent()</code> is where we load our assets.  For now, we just need an image of a ball.  However, getting this image into our game takes a bit of doing.</p>
-<p>First, we need to find an image to use - a .jpeg, .gif, or .png will work fine. Feel free to use this one <a href="#R-image-ce8239d26071d2c523bbb2c14dd47cfd" class="lightbox-link"><img alt="a golden ball" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/ball.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ce8239d26071d2c523bbb2c14dd47cfd"><img alt="a golden ball" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/ball.png"></a>.</p>
+<p>First, we need to find an image to use - a .jpeg, .gif, or .png will work fine. Feel free to use this one <a href="#R-image-23961023e9de967b6210cfb9af6a303a" class="lightbox-link"><img alt="a golden ball" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/ball.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-23961023e9de967b6210cfb9af6a303a"><img alt="a golden ball" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/ball.png"></a>.</p>
 <p>Look in the <em>Content</em> folder of your <strong>solution explorer</strong> in Visual Studio.  You should also notice a file, <em>Content.mgcb</em> in the same folder.  This is a listing of all content to bring into the game.  Go ahead and open it; it will look something like:</p>
-<p><a href="#R-image-733d63b80a4819468f923c05dcfbd84d" class="lightbox-link"><img alt="The MGCB Editor" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/1.4.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-733d63b80a4819468f923c05dcfbd84d"><img alt="The MGCB Editor" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/1.4.1.png"></a></p>
+<p><a href="#R-image-c9bc338aac413e88832ceba20068ed9b" class="lightbox-link"><img alt="The MGCB Editor" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/1.4.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c9bc338aac413e88832ceba20068ed9b"><img alt="The MGCB Editor" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/1.4.1.png"></a></p>
 
 <details open class=" box cstyle notices tip">
   <summary class="box-label" tabindex="-1">
@@ -190,14 +190,14 @@ You might be wondering why we have two methods, or asking why the constructor is
   </div>
 </details>
 <p>Click the &ldquo;Add Existing Item&rdquo; toolbar button:</p>
-<p><a href="#R-image-543a96da074708523321be314131153d" class="lightbox-link"><img alt="Add Existing Item toolbar button" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/1.4.2.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-543a96da074708523321be314131153d"><img alt="Add Existing Item toolbar button" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/1.4.2.png"></a></p>
+<p><a href="#R-image-b53d5ffd67563a72dd5517c8cbfd1f0e" class="lightbox-link"><img alt="Add Existing Item toolbar button" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/1.4.2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b53d5ffd67563a72dd5517c8cbfd1f0e"><img alt="Add Existing Item toolbar button" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/1.4.2.png"></a></p>
 <p>In the Open dialog that appears, select the ball image and click &ldquo;Open&rdquo;.  Then in the next dialog, choose &ldquo;Copy the file to the directory&rdquo;:</p>
-<p><a href="#R-image-350dd4632d5fa9bc4dc0510e425a5e6f" class="lightbox-link"><img alt="Add File Dialog" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/1.4.3.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-350dd4632d5fa9bc4dc0510e425a5e6f"><img alt="Add File Dialog" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/1.4.3.png"></a></p>
+<p><a href="#R-image-7a486b20719842b9fb13204a341bdd3f" class="lightbox-link"><img alt="Add File Dialog" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/1.4.3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7a486b20719842b9fb13204a341bdd3f"><img alt="Add File Dialog" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/1.4.3.png"></a></p>
 <p>Finally, save the .mgcb file:</p>
-<p><a href="#R-image-6061f6053b68246965e0a74dc92a393e" class="lightbox-link"><img alt="Save the .mgcb file" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/1.4.4.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6061f6053b68246965e0a74dc92a393e"><img alt="Save the .mgcb file" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/1.4.4.png"></a></p>
+<p><a href="#R-image-53ef3545b3cc3fb7ce055e3bd7794aef" class="lightbox-link"><img alt="Save the .mgcb file" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/1.4.4.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-53ef3545b3cc3fb7ce055e3bd7794aef"><img alt="Save the .mgcb file" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/1.4.4.png"></a></p>
 <p>Now the image will be built into a game-specific binary format as part of the build process.  We&rsquo;ll delve deeper into how this works in the chapter on the Content Pipeline.</p>
 <h4 id="loadcontent-additions">LoadContent() Additions</h4>
 <p>To bring the ball texture into the game, we need to load it with a <code>ContentManager</code> class by invoking the <code>ContentManager.Load&lt;T&gt;()</code> method with the name of our content.  The <code>Game</code> class has one already created and ready in the <code>Game.Content</code> property; we&rsquo;ll use it:</p>
@@ -226,10 +226,10 @@ You might be wondering why we have two methods, or asking why the constructor is
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1755628803"></script>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1755628803" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1755628803" defer></script>
-    <script src="/cis580/js/theme.min.js?1755628803" defer></script>
-  <script src="/cis580/js/embed-iframe.min.js?1755628803" defer></script>
+    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1756153111"></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1756153111" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756153111" defer></script>
+    <script src="/cis580/js/theme.min.js?1756153111" defer></script>
+  <script src="/cis580/js/embed-iframe.min.js?1756153111" defer></script>
   </body>
 </html>

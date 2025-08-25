@@ -44,26 +44,26 @@ The polygon can be represented as a data structure using a collection of vectors
     <link href="/cis580/04-collisions/04-separating-axis-theorem/index.xml" rel="alternate" type="application/rss+xml" title="Separating Axis Theorem :: K-State CIS 580 Textbook">
     <link href="/cis580/04-collisions/04-separating-axis-theorem/tele.html" rel="alternate" type="text/html" title="Separating Axis Theorem :: K-State CIS 580 Textbook">
     <link href="/cis580/04-collisions/04-separating-axis-theorem/embed.html" rel="alternate" type="text/html" title="Separating Axis Theorem :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1755628803" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search.min.js?1755628803" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756153111" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1755628803";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1756153111";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/format-print.min.css?1755628803" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/format-print.min.css?1756153111" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -122,7 +122,7 @@ The polygon can be represented as a data structure using a collection of vectors
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1756153111" rel="stylesheet">
   </head>
   <body class="mobile-support print" data-url="/cis580/04-collisions/04-separating-axis-theorem/index.html">
     <div id="R-body" class="default-animation">
@@ -181,14 +181,14 @@ The polygon can be represented as a data structure using a collection of vectors
 <h1 id="separating-axis-theorem">Separating Axis Theorem</h1>
 
 <p>But what about sprites with shapes <em>don&rsquo;t</em> map to a circle or rectangle, such as this spaceship sprite:</p>
-<p><a href="#R-image-d7b0660908ea9c852fd3e3810ed06cf9" class="lightbox-link"><img alt="Polygonal spaceship sprite" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/4.4.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d7b0660908ea9c852fd3e3810ed06cf9"><img alt="Polygonal spaceship sprite" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/4.4.1.png"></a></p>
+<p><a href="#R-image-155298604268c75a5e986026749f9375" class="lightbox-link"><img alt="Polygonal spaceship sprite" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/4.4.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-155298604268c75a5e986026749f9375"><img alt="Polygonal spaceship sprite" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/4.4.1.png"></a></p>
 <p>We could represent this sprite with a bounding polygon:</p>
-<p><a href="#R-image-f20474387aec482e768fe71ff4fb6cf6" class="lightbox-link"><img alt="Bounding Polygon" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/4.4.2.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f20474387aec482e768fe71ff4fb6cf6"><img alt="Bounding Polygon" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/4.4.2.png"></a></p>
+<p><a href="#R-image-0e27a5c5f79a5e9907c9ac57e9375741" class="lightbox-link"><img alt="Bounding Polygon" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/4.4.2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0e27a5c5f79a5e9907c9ac57e9375741"><img alt="Bounding Polygon" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/4.4.2.png"></a></p>
 <p>The polygon can be represented as a data structure using a collection of vectors from its origin (the same <code>origin</code> we use in rendering the sprite) to the points defining its corners:</p>
-<p><a href="#R-image-b5b6da22cdb5aa31f13c43b40459d371" class="lightbox-link"><img alt="Bounding Polygon vectors" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/4.4.3.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b5b6da22cdb5aa31f13c43b40459d371"><img alt="Bounding Polygon vectors" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/4.4.3.png"></a></p>
+<p><a href="#R-image-68b6d5c52f1e2f78a752d49b84efacd2" class="lightbox-link"><img alt="Bounding Polygon vectors" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/4.4.3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-68b6d5c52f1e2f78a752d49b84efacd2"><img alt="Bounding Polygon vectors" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/4.4.3.png"></a></p>
 <div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#75715e">/// &lt;summary&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">/// A struct representing a convex bounding polygon</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">/// &lt;/summary&gt;</span>
@@ -217,11 +217,11 @@ The polygon can be represented as a data structure using a collection of vectors
 <p>This is actually common-sense if you think about it.  If you can draw a line between two shapes without touching either one, they <em>do not overlap</em>. In a drawing, this is quite easy to do - but we don’t have the luxury of using our human minds to solve this problem; instead we’ll need to develop an algorithmic process to do the same.</p>
 <p>We can accomplish this by <em>projecting</em> the shapes onto an axis and checking for overlap.  If we can find one axis where the projections don’t overlap, then we can say that the two shapes don’t collide (you can see this in the figure to the left).  This is exactly the process we used with the bounding box collision test earlier - we simply tested the x and y-axis for separation.</p>
 <p>Mathematically, we represent this by projecting the shapes onto an axis - think of it as casting a shadow.  If we can find an axis where the two shadows don&rsquo;t overlap, then we know the two don&rsquo;t intersect:</p>
-<p><a href="#R-image-058c13a9442c2ace7eee8b89ebde681d" class="lightbox-link"><img alt="Projecting arbitrary shapes onto a separating axis" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/4.4.4.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-058c13a9442c2ace7eee8b89ebde681d"><img alt="Projecting arbitrary shapes onto a separating axis" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/4.4.4.png"></a></p>
+<p><a href="#R-image-c70ea1a96209504ce61bfc0703ead4fc" class="lightbox-link"><img alt="Projecting arbitrary shapes onto a separating axis" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/4.4.4.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c70ea1a96209504ce61bfc0703ead4fc"><img alt="Projecting arbitrary shapes onto a separating axis" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/4.4.4.png"></a></p>
 <p>How do we accomplish the projection?  Consider each edge (the line between vertices in our polygon) as vector <span class="math align-center">$ A $</span>, and the projection axis as vector <span class="math align-center">$ B $</span>, as in the following figure:</p>
-<p><a href="#R-image-578447c7eb9bed11d8c30c6e06e12cd4" class="lightbox-link"><img alt="Mathematical projection onto an axis" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/4.4.5.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-578447c7eb9bed11d8c30c6e06e12cd4"><img alt="Mathematical projection onto an axis" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/4.4.5.png"></a></p>
+<p><a href="#R-image-e53678ddf047ef64272c7ef54974f3cf" class="lightbox-link"><img alt="Mathematical projection onto an axis" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/4.4.5.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e53678ddf047ef64272c7ef54974f3cf"><img alt="Mathematical projection onto an axis" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/4.4.5.png"></a></p>
 <p>We have two formula that can be useful for interpreting this figure: the trigonometric definition of cosine (1) and the geometric definition of the cross-product (2).</p>
 <p><span class="math align-center">$$
 cos\theta = \frac{|projection\ of\ A\ onto\ B|}{|A|} \tag{1}
@@ -275,12 +275,12 @@ $$</span>
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 <p>Since we would only be using this class within the collision helper, we could declare it within that class and make it private - one of the few times it makes sense to declare a private class.</p>
 <p>If we determine the minimum and maximum projection for <em>both</em> shapes, we can see if they overlap:</p>
-<p><a href="#R-image-91bece073b51ae605f53ceb52106c5c2" class="lightbox-link"><img alt="Projecting Bounding Polygons onto an axis" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/4.4.6.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-91bece073b51ae605f53ceb52106c5c2"><img alt="Projecting Bounding Polygons onto an axis" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/4.4.6.png"></a></p>
+<p><a href="#R-image-7e79c0a6db93e8b7874725de250aee8f" class="lightbox-link"><img alt="Projecting Bounding Polygons onto an axis" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/4.4.6.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7e79c0a6db93e8b7874725de250aee8f"><img alt="Projecting Bounding Polygons onto an axis" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/4.4.6.png"></a></p>
 <p>If there is no overlap, then we have found a separating axis, and can terminate the search.</p>
 <p>But just which axes should we test?  Ideally we’d like a minimal set that promises if a separating axis does exist, it will be found.  Geometrically, it can be shown that the bare minimum we need to test is an axis parallel to each edge normal of the polygon - that is, an axis at a right angle to the polygon’s edge.  Each edge has two normals, a left and right:</p>
-<p><a href="#R-image-0720dc975a854a25700525cec6177fac" class="lightbox-link"><img alt="The edge normals" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/4.4.7.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0720dc975a854a25700525cec6177fac"><img alt="The edge normals" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/4.4.7.png"></a></p>
+<p><a href="#R-image-440adda5e3cf39cddd718f11162cb987" class="lightbox-link"><img alt="The edge normals" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/4.4.7.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-440adda5e3cf39cddd718f11162cb987"><img alt="The edge normals" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/4.4.7.png"></a></p>
 <p>In 2D, an edge normal is a unit vector (of length 1) perpendicular to the edge vector (a vector along the edge).  We can calculate it by exchanging the x and y components and negating one of them.</p>
 <p>Depending on the order we’ve declared our points (clockwise or anti-clockwise) one of these normals will face out of the polygon, while the other will face in.  As long as we’re consistent, either direction will work.  We calculate the normals by iterating over our points and creating vectors to represent each edge, and then calculating a perpendicular vector to that edge.</p>
 <p>If we were to keep using a <code>struct</code> to represent our collision shape, we could add a field for the normals and implement the normal generation within the constructor:</p>
@@ -406,9 +406,9 @@ $$</span>
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1755628803"></script>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1755628803" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1755628803" defer></script>
-    <script src="/cis580/js/theme.min.js?1755628803" defer></script>
+    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1756153111"></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1756153111" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756153111" defer></script>
+    <script src="/cis580/js/theme.min.js?1756153111" defer></script>
   </body>
 </html>

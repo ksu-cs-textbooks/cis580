@@ -45,26 +45,26 @@ We can then specify what tile fills a grid cell in the tile map with the same nu
     <link href="/cis580/10-tile-maps/02-tilemap-concepts/index.xml" rel="alternate" type="application/rss+xml" title="Tilemap Concepts :: K-State CIS 580 Textbook">
     <link href="/cis580/10-tile-maps/02-tilemap-concepts/index.print.html" rel="alternate" type="text/html" title="Tilemap Concepts :: K-State CIS 580 Textbook">
     <link href="/cis580/10-tile-maps/02-tilemap-concepts/embed.html" rel="alternate" type="text/html" title="Tilemap Concepts :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1755628803" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search.min.js?1755628803" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756153111" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1755628803";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1756153111";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/format-html.min.css?1755628803" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/format-html.min.css?1756153111" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -123,7 +123,7 @@ We can then specify what tile fills a grid cell in the tile map with the same nu
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1756153111" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/cis580/10-tile-maps/02-tilemap-concepts/index.html">
     
@@ -144,17 +144,17 @@ We can then specify what tile fills a grid cell in the tile map with the same nu
 <h1 id="tilemap-concepts">Tilemap Concepts</h1>
 
 <p>Let&rsquo;s start from a purely conceptual level, with some diagrams using tile assets created <a href="https://opengameart.org/content/platform-tileset-nature" rel="external" target="_blank">by Eris available from OpenGameArt</a>.  A tile map could be thought of as a grid of tiles, as demonstrated in this image:</p>
-<p><a href="#R-image-ed77fee67bd03e8c34160ea1725a4048" class="lightbox-link"><img alt="Tile map Example" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ed77fee67bd03e8c34160ea1725a4048"><img alt="Tile map Example" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.1.png"></a></p>
+<p><a href="#R-image-a08c1534d90731b119b19375b7f0fbcb" class="lightbox-link"><img alt="Tile map Example" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a08c1534d90731b119b19375b7f0fbcb"><img alt="Tile map Example" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.1.png"></a></p>
 <p>Along with the map is the tile set, which defines the individual tiles that can be used within the map, i.e.:</p>
-<p><a href="#R-image-1e88b8299abb35db530e9f58a1b121dd" class="lightbox-link"><img alt="Tile set Example" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.2.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1e88b8299abb35db530e9f58a1b121dd"><img alt="Tile set Example" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.2.png"></a></p>
+<p><a href="#R-image-afdd7322be0ce9747d62c013e0744329" class="lightbox-link"><img alt="Tile set Example" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-afdd7322be0ce9747d62c013e0744329"><img alt="Tile set Example" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.2.png"></a></p>
 <p>We assign a number to each tile in the tile set:</p>
-<p><a href="#R-image-04325e33379a374bb8af1ee347bbc4e6" class="lightbox-link"><img alt="Numbered tile set" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.3.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-04325e33379a374bb8af1ee347bbc4e6"><img alt="Numbered tile set" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.3.png"></a></p>
+<p><a href="#R-image-88e88e35aa416b9e82cf51547bccc422" class="lightbox-link"><img alt="Numbered tile set" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-88e88e35aa416b9e82cf51547bccc422"><img alt="Numbered tile set" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.3.png"></a></p>
 <p>We can then specify what tile fills a grid cell in the tile map with the same number, i.e.:</p>
-<p><a href="#R-image-ba6dcacd9ea2b19de3b54a4c569e3a8a" class="lightbox-link"><img alt="Tile map with numbered tiles" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.4.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ba6dcacd9ea2b19de3b54a4c569e3a8a"><img alt="Tile map with numbered tiles" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.4.png"></a></p>
+<p><a href="#R-image-dc1c0015b9022f77b2032ad89436d72e" class="lightbox-link"><img alt="Tile map with numbered tiles" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.4.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dc1c0015b9022f77b2032ad89436d72e"><img alt="Tile map with numbered tiles" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.4.png"></a></p>
 <p>You can see that a relatively complex map can be quickly assembled from a relative handful of tiles.  Looking at the image above, you may naturally consider a 2-dimensional array:</p>
 <div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> map = <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span>[,] 
 </span></span><span style="display:flex;"><span>{
@@ -188,13 +188,13 @@ We can then specify what tile fills a grid cell in the tile map with the same nu
       
       
     </div>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1755628803" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1755628803" defer></script>
-    <script src="/cis580/js/theme.min.js?1755628803" defer></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1756153111" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756153111" defer></script>
+    <script src="/cis580/js/theme.min.js?1756153111" defer></script>
       
       
       
     </div> 
-  <script src="/cis580/js/tele-scroll.min.js?1755628803" defer></script>
+  <script src="/cis580/js/tele-scroll.min.js?1756153111" defer></script>
   </body>
 </html>

@@ -37,26 +37,26 @@ A heightmap is similar, but instead of using lines, each pixel in the map repres
     <link href="/cis580/15-heightmap-terrain/02-heightmaps/index.xml" rel="alternate" type="application/rss+xml" title="Heightmaps :: K-State CIS 580 Textbook">
     <link href="/cis580/15-heightmap-terrain/02-heightmaps/index.print.html" rel="alternate" type="text/html" title="Heightmaps :: K-State CIS 580 Textbook">
     <link href="/cis580/15-heightmap-terrain/02-heightmaps/tele.html" rel="alternate" type="text/html" title="Heightmaps :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1755628803" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search.min.js?1755628803" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756153111" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1755628803";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1756153111";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/format-html.min.css?1755628803" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/format-html.min.css?1756153111" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -115,7 +115,7 @@ A heightmap is similar, but instead of using lines, each pixel in the map repres
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1756153111" rel="stylesheet">
   </head>
   <body class="mobile-support embed html" data-url="/cis580/15-heightmap-terrain/02-heightmaps/index.html">
     <div id="R-body" class="default-animation">
@@ -134,8 +134,8 @@ A heightmap is similar, but instead of using lines, each pixel in the map repres
 
 <p>You might be wondering just what a <em>heightmap</em> is.  If you&rsquo;ve ever used a <a href="https://en.wikipedia.org/wiki/Topographic_map" rel="external" target="_blank">topographic map</a>, you&rsquo;ve seen a similar idea.  Contour maps include <em>contour</em> lines_, lines that trace when the ground reaches a certain altitude.  Inside the line is higher than that altitude, and outside of the line is lower (or visa-versa).  The contours themselves are typically marked with the altitude they represent.</p>
 <p>A heightmap is similar, but instead of using lines, each <em>pixel</em> in the map represents a square section of land, and the color value at that point indicates the average altitude of that square.  Since there is only one value to represent, heightmaps are typically created in grayscale.  And, to optimize space, they may also be saved in a monochrome format (where each pixel is stored as a single 8-bit value, instead of the 32-bits typical for storing RGB values).</p>
-<p><a href="#R-image-bcf95de8bce15349647817a9607db952" class="lightbox-link"><img alt="Heightmap Example" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/Heightmap.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bcf95de8bce15349647817a9607db952"><img alt="Heightmap Example" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/Heightmap.png"></a></p>
+<p><a href="#R-image-76ebff662ecbbf9075cce3726e894a66" class="lightbox-link"><img alt="Heightmap Example" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/Heightmap.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-76ebff662ecbbf9075cce3726e894a66"><img alt="Heightmap Example" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/Heightmap.png"></a></p>
 <p>You can obtain heightmaps in a number of ways.  You can draw a heightmap with any raster graphics program, though it takes a lot of skill and patience to make one that mimics natural terrain.  You can also get real-world heightmaps directly from organizations like the <a href="http://earthexplorer.usgs.gov/" rel="external" target="_blank">USGS</a> or <a href="http://viewfinderpanoramas.org/Coverage%20map%20viewfinderpanoramas_org3.htm" rel="external" target="_blank">NASA&rsquo;s Viewfinder Project</a>.  Or you can generate one using Perlin Noise and algorithms that mimic the results of plate tectonics.  There also exist many height-map generation programs, both open-source and commercial.</p>
 <p>Along with the height map, you also need to know the sampling resolution (how large each terrain square should be), and the scale that should be applied to the heights (as the pixel values of the heightmap will be in values between 0 and 255).</p>
 <p>Now, let&rsquo;s turn our attention to creating a Terrain class that will use a heightmap.</p>
@@ -149,9 +149,9 @@ A heightmap is similar, but instead of using lines, each pixel in the map repres
       
       
     </div>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1755628803" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1755628803" defer></script>
-    <script src="/cis580/js/theme.min.js?1755628803" defer></script>
-  <script src="/cis580/js/embed-iframe.min.js?1755628803" defer></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1756153111" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756153111" defer></script>
+    <script src="/cis580/js/theme.min.js?1756153111" defer></script>
+  <script src="/cis580/js/embed-iframe.min.js?1756153111" defer></script>
   </body>
 </html>

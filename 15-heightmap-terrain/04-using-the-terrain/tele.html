@@ -45,26 +45,26 @@
     <link href="/cis580/15-heightmap-terrain/04-using-the-terrain/index.xml" rel="alternate" type="application/rss+xml" title="Using the Terrain :: K-State CIS 580 Textbook">
     <link href="/cis580/15-heightmap-terrain/04-using-the-terrain/index.print.html" rel="alternate" type="text/html" title="Using the Terrain :: K-State CIS 580 Textbook">
     <link href="/cis580/15-heightmap-terrain/04-using-the-terrain/embed.html" rel="alternate" type="text/html" title="Using the Terrain :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1755628803" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search.min.js?1755628803" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756153111" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1755628803";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1756153111";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/format-html.min.css?1755628803" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/format-html.min.css?1756153111" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -123,7 +123,7 @@
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1756153111" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/cis580/15-heightmap-terrain/04-using-the-terrain/index.html">
     
@@ -154,8 +154,8 @@
 <div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>    <span style="color:#75715e">// Draw the terrain</span>
 </span></span><span style="display:flex;"><span>    terrain.Draw(camera);</span></span></code></pre></div>
 <p>Now if you run the game, you should see your terrain, and even be able to move around it using the camera controls (WASD + Mouse).</p>
-<p><a href="#R-image-f45f771e5933fac9491477cdb92ea49b" class="lightbox-link"><img alt="The rendered terrain" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-4.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f45f771e5933fac9491477cdb92ea49b"><img alt="The rendered terrain" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-4.1.png"></a></p>
+<p><a href="#R-image-3a8ae57fff1a97e85c234604e4f815be" class="lightbox-link"><img alt="The rendered terrain" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-4.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3a8ae57fff1a97e85c234604e4f815be"><img alt="The rendered terrain" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-4.1.png"></a></p>
 <p>You&rsquo;ll probably notice that your camera does not change position as you move over the terrain - in fact, in some parts of the map you can actually end up looking up from underneath!</p>
 <p>Clearly we need to do a bit more work.  We need a way to tell the camera what its Y-value should be, based on what part of the terrain it is over.</p>
 <h2 id="the-iheightmap-interface">The IHeightMap Interface</h2>
@@ -239,13 +239,13 @@
       
       
     </div>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1755628803" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1755628803" defer></script>
-    <script src="/cis580/js/theme.min.js?1755628803" defer></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1756153111" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756153111" defer></script>
+    <script src="/cis580/js/theme.min.js?1756153111" defer></script>
       
       
       
     </div> 
-  <script src="/cis580/js/tele-scroll.min.js?1755628803" defer></script>
+  <script src="/cis580/js/tele-scroll.min.js?1756153111" defer></script>
   </body>
 </html>

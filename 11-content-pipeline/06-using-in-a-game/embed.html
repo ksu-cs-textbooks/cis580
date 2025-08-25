@@ -33,26 +33,26 @@
     <link href="/cis580/11-content-pipeline/06-using-in-a-game/index.xml" rel="alternate" type="application/rss+xml" title="Using in a Game :: K-State CIS 580 Textbook">
     <link href="/cis580/11-content-pipeline/06-using-in-a-game/index.print.html" rel="alternate" type="text/html" title="Using in a Game :: K-State CIS 580 Textbook">
     <link href="/cis580/11-content-pipeline/06-using-in-a-game/tele.html" rel="alternate" type="text/html" title="Using in a Game :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1755628803" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search.min.js?1755628803" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756153111" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1755628803";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1756153111";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/format-html.min.css?1755628803" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/format-html.min.css?1756153111" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -111,7 +111,7 @@
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1756153111" rel="stylesheet">
   </head>
   <body class="mobile-support embed html" data-url="/cis580/11-content-pipeline/06-using-in-a-game/index.html">
     <div id="R-body" class="default-animation">
@@ -129,11 +129,11 @@
 <h1 id="using-in-a-game">Using in a Game</h1>
 
 <p>Using our newly-created custom pipeline in a game we are building is not terribly complicated, but does require some understanding of how projects in Visual Studio interact. Perhaps most important to this is understanding that the <strong>Content.mgcb</strong> file in your game solution <em>is actually another Visual Studio project!</em> As such, it can reference other project, just like the C# projects you are used to. This can be done through the MGCB Editor.  Just select the content project itself, and scroll down in the properties until you find the <strong>References</strong> value:</p>
-<p><a href="#R-image-c8c164350495969020a826f47a98cf77" class="lightbox-link"><img alt="Selecting the MGCB Project References" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/11.6.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c8c164350495969020a826f47a98cf77"><img alt="Selecting the MGCB Project References" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/11.6.1.png"></a></p>
+<p><a href="#R-image-e198c2a0204581ead7a66edbaeecd2f4" class="lightbox-link"><img alt="Selecting the MGCB Project References" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/11.6.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e198c2a0204581ead7a66edbaeecd2f4"><img alt="Selecting the MGCB Project References" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/11.6.1.png"></a></p>
 <p>This opens a dialog you can use to add custom pipeline projects as references to your MGCB content project (in the form of <strong>.DLL</strong> files). Just browse to their location (and remember, they need to be <em>inside</em> your solution folder if you want them committed to your repository).</p>
-<p><a href="#R-image-82e1b5c0de1a834d5fbb12363f08a47c" class="lightbox-link"><img alt="The references dialog" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/11.6.2.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-82e1b5c0de1a834d5fbb12363f08a47c"><img alt="The references dialog" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/11.6.2.png"></a></p>
+<p><a href="#R-image-cd76194f09d8e77ebb173746478ee046" class="lightbox-link"><img alt="The references dialog" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/11.6.2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cd76194f09d8e77ebb173746478ee046"><img alt="The references dialog" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/11.6.2.png"></a></p>
 <p>If your content pipeline project is in the same solution as your game project, you can browse to your content pipeline&rsquo;s <strong>/bin</strong> folder to find it.</p>
 <p>Alternatively you can set your content project as a dependency of your game project, which will ensure the custom pipeline project built and the DLL is copied into your game project&rsquo;s <strong>/bin</strong> folder <em>before</em> the content project is built.  This will keep everything up-to-date, but you don&rsquo;t need the DLL to run your game (so your <strong>/bin</strong> folder is slightly bloated by this approach). This extra reference can be removed before releasing though, and it is often worth it to ensure changes to your custom pipeline are being applied in development.</p>
 <p>You can also manually add the reference to your <strong>Content.mgcb</strong> file (it is just a text file, after all). The one for our example looks like:</p>
@@ -157,8 +157,8 @@
 /processor:BasicTilemapProcessor
 /build:example.tmap</code></pre></div>
 <p>Once the reference is added using any of these methods, you can add your <strong>.tmap</strong> file to the content project, and it should automatically select the BasicTilemapImporter and BasicTilemapProcessor (You can also manually specify it in the <strong>.mgcb</strong> project file as shown above):</p>
-<p><a href="#R-image-5aea2dfcda119f6bb63187d31aa3ba24" class="lightbox-link"><img alt="The importer and processor in the MGCBEditor" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/11.6.3.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5aea2dfcda119f6bb63187d31aa3ba24"><img alt="The importer and processor in the MGCBEditor" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/11.6.3.png"></a></p>
+<p><a href="#R-image-eeb25126c87a131aa869c6a0261192e3" class="lightbox-link"><img alt="The importer and processor in the MGCBEditor" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/11.6.3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-eeb25126c87a131aa869c6a0261192e3"><img alt="The importer and processor in the MGCBEditor" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/11.6.3.png"></a></p>
 <p>Once added, you can build the project, and an <strong>example.xnb</strong> file will be built and deposited in the <strong>/bin/Content</strong> folder.</p>
 <p>Using it in our game simply requires using <code>Content.Load&lt;BasicTilemap&gt;(&quot;example.tmap&quot;)</code> to load the tilemap into a variable, and invoking its <code>Draw()</code> method to render it.</p>
 
@@ -171,9 +171,9 @@
       
       
     </div>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1755628803" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1755628803" defer></script>
-    <script src="/cis580/js/theme.min.js?1755628803" defer></script>
-  <script src="/cis580/js/embed-iframe.min.js?1755628803" defer></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1756153111" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756153111" defer></script>
+    <script src="/cis580/js/theme.min.js?1756153111" defer></script>
+  <script src="/cis580/js/embed-iframe.min.js?1756153111" defer></script>
   </body>
 </html>

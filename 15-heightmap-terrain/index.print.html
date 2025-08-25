@@ -29,26 +29,26 @@
     <link href="/cis580/15-heightmap-terrain/index.xml" rel="alternate" type="application/rss+xml" title="Heightmap Terrain :: K-State CIS 580 Textbook">
     <link href="/cis580/15-heightmap-terrain/tele.html" rel="alternate" type="text/html" title="Heightmap Terrain :: K-State CIS 580 Textbook">
     <link href="/cis580/15-heightmap-terrain/embed.html" rel="alternate" type="text/html" title="Heightmap Terrain :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1755628803" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search.min.js?1755628803" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756153111" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1755628803";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1756153111";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/format-print.min.css?1755628803" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/format-print.min.css?1756153111" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -107,7 +107,7 @@
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1756153111" rel="stylesheet">
   </head>
   <body class="mobile-support print" data-url="/cis580/15-heightmap-terrain/index.html">
     <div id="R-body" class="default-animation">
@@ -188,8 +188,8 @@
 
 <p>You might be wondering just what a <em>heightmap</em> is.  If you&rsquo;ve ever used a <a href="https://en.wikipedia.org/wiki/Topographic_map" rel="external" target="_blank">topographic map</a>, you&rsquo;ve seen a similar idea.  Contour maps include <em>contour</em> lines_, lines that trace when the ground reaches a certain altitude.  Inside the line is higher than that altitude, and outside of the line is lower (or visa-versa).  The contours themselves are typically marked with the altitude they represent.</p>
 <p>A heightmap is similar, but instead of using lines, each <em>pixel</em> in the map represents a square section of land, and the color value at that point indicates the average altitude of that square.  Since there is only one value to represent, heightmaps are typically created in grayscale.  And, to optimize space, they may also be saved in a monochrome format (where each pixel is stored as a single 8-bit value, instead of the 32-bits typical for storing RGB values).</p>
-<p><a href="#R-image-bcf95de8bce15349647817a9607db952" class="lightbox-link"><img alt="Heightmap Example" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/Heightmap.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bcf95de8bce15349647817a9607db952"><img alt="Heightmap Example" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/Heightmap.png"></a></p>
+<p><a href="#R-image-76ebff662ecbbf9075cce3726e894a66" class="lightbox-link"><img alt="Heightmap Example" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/Heightmap.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-76ebff662ecbbf9075cce3726e894a66"><img alt="Heightmap Example" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/Heightmap.png"></a></p>
 <p>You can obtain heightmaps in a number of ways.  You can draw a heightmap with any raster graphics program, though it takes a lot of skill and patience to make one that mimics natural terrain.  You can also get real-world heightmaps directly from organizations like the <a href="http://earthexplorer.usgs.gov/" rel="external" target="_blank">USGS</a> or <a href="http://viewfinderpanoramas.org/Coverage%20map%20viewfinderpanoramas_org3.htm" rel="external" target="_blank">NASA&rsquo;s Viewfinder Project</a>.  Or you can generate one using Perlin Noise and algorithms that mimic the results of plate tectonics.  There also exist many height-map generation programs, both open-source and commercial.</p>
 <p>Along with the height map, you also need to know the sampling resolution (how large each terrain square should be), and the scale that should be applied to the heights (as the pixel values of the heightmap will be in values between 0 and 255).</p>
 <p>Now, let&rsquo;s turn our attention to creating a Terrain class that will use a heightmap.</p>
@@ -308,20 +308,20 @@
 </span></span><span style="display:flex;"><span>    vertices.SetData&lt;VertexPositionNormalTexture&gt;(terrainVertices);</span></span></code></pre></div>
 <h3 id="creating-the-indices">Creating the Indices</h3>
 <p>Before we dive into code, let&rsquo;s think about how we want to lay out our triangle mesh.  We could use either a triangle list, or a triangle strip.  With a triangle list, we need to have an index for <em>each</em> of the corners of <em>each</em> triangle.  Since we have two triangles per grid cell, the total number of indices would be <code>indexCount = 3 * width * height</code>.  Conversely, with a triangle strip, we only need <em>one</em> index for each triangle after the first, which needs three.  So its size would be <code>indexCount = width * height + 2</code>.  This is nearly <em>a third</em> of the size!  So naturally, we&rsquo;d like to use a triangle list.  This is pretty straightforward for a single row:</p>
-<p><a href="#R-image-e19d81bdeee12d14f787b0073b85f729" class="lightbox-link"><img alt="Single Row Triangle Strip" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e19d81bdeee12d14f787b0073b85f729"><img alt="Single Row Triangle Strip" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.1.png"></a></p>
+<p><a href="#R-image-9f32accf89ae1eab231c2fa3d029fb8e" class="lightbox-link"><img alt="Single Row Triangle Strip" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9f32accf89ae1eab231c2fa3d029fb8e"><img alt="Single Row Triangle Strip" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.1.png"></a></p>
 <p>The diagram above shows what a row defined as a triangle strip looks like.  Each vertex (the purple circle) is labeled by the order it appears in the indices.  The blue arrows denote the triangle edges defined by successive vertices.  The gray dashed lines denote the side of the triangle inferred from the order of the vertices.  And each triangle is numbered in blue by the order it is defined.</p>
 <p>But what about the next row?  You might be tempted to start on the left again, but doing so will result in a triangle that stretches across the breadth of the terrain - which will look terrible!</p>
-<p><a href="#R-image-d58127db97a2255101f87c4e479ce129" class="lightbox-link"><img alt="Triangle Stretching Across the Row" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.2.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d58127db97a2255101f87c4e479ce129"><img alt="Triangle Stretching Across the Row" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.2.png"></a></p>
+<p><a href="#R-image-4c9591fa0b44d0bd3a35b704734d46cd" class="lightbox-link"><img alt="Triangle Stretching Across the Row" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4c9591fa0b44d0bd3a35b704734d46cd"><img alt="Triangle Stretching Across the Row" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.2.png"></a></p>
 <p>This triangle is outlined in the above diagram by the ochre lines.  Note that in the game they won&rsquo;t be curved - the triangle will just slice through the terrain.</p>
 <p>Or, we can try zig-zagging, by going right-to-left with the second row.</p>
-<p><a href="#R-image-1727ead79744b259324a1595199fa0ba" class="lightbox-link"><img alt="Zig-zagging Triangle Strip" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.3.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1727ead79744b259324a1595199fa0ba"><img alt="Zig-zagging Triangle Strip" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.3.png"></a></p>
+<p><a href="#R-image-72b5e0df1989dc1efedd16ae8e64fae3" class="lightbox-link"><img alt="Zig-zagging Triangle Strip" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-72b5e0df1989dc1efedd16ae8e64fae3"><img alt="Zig-zagging Triangle Strip" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.3.png"></a></p>
 <p>Notice that doing so creates a triangle that stretches along the end of the terrain.  This probably wouldn&rsquo;t be a problem as we probably would obscure the edge of our terrain in the game anyway.  But also notice that the diagonals of each terrain row slant the opposite ways.  This <em>does</em> cause a problem for us, which we&rsquo;ll understand in a bit.</p>
 <p>Instead, we&rsquo;ll create <em>two</em> extra triangles between each row.</p>
-<p><a href="#R-image-25e678b5c8d4ee5418c552c4759a44c8" class="lightbox-link"><img alt="Our Triangle Strip Layout Strategy" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.4.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-25e678b5c8d4ee5418c552c4759a44c8"><img alt="Our Triangle Strip Layout Strategy" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.4.png"></a></p>
+<p><a href="#R-image-25a43e77906d28e02ccab8f102abc113" class="lightbox-link"><img alt="Our Triangle Strip Layout Strategy" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.4.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-25a43e77906d28e02ccab8f102abc113"><img alt="Our Triangle Strip Layout Strategy" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-3.4.png"></a></p>
 <p>Notice that for the two extra triangles created by this pattern, 6 and 7, two of their vertices are the same.  This means they are actually lines!  And they will be rendered as part of the edge of triangles 5 and 8.  Moreover, all our diagonals are slanting the same direction.</p>
 <p>Let&rsquo;s use this pattern as we declare our indices in the helper method <code>InitializeIndices()</code>:</p>
 <div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
@@ -432,8 +432,8 @@
 <div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>    <span style="color:#75715e">// Draw the terrain</span>
 </span></span><span style="display:flex;"><span>    terrain.Draw(camera);</span></span></code></pre></div>
 <p>Now if you run the game, you should see your terrain, and even be able to move around it using the camera controls (WASD + Mouse).</p>
-<p><a href="#R-image-f45f771e5933fac9491477cdb92ea49b" class="lightbox-link"><img alt="The rendered terrain" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-4.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f45f771e5933fac9491477cdb92ea49b"><img alt="The rendered terrain" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-4.1.png"></a></p>
+<p><a href="#R-image-3a8ae57fff1a97e85c234604e4f815be" class="lightbox-link"><img alt="The rendered terrain" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-4.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3a8ae57fff1a97e85c234604e4f815be"><img alt="The rendered terrain" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-4.1.png"></a></p>
 <p>You&rsquo;ll probably notice that your camera does not change position as you move over the terrain - in fact, in some parts of the map you can actually end up looking up from underneath!</p>
 <p>Clearly we need to do a bit more work.  We need a way to tell the camera what its Y-value should be, based on what part of the terrain it is over.</p>
 <h2 id="the-iheightmap-interface">The IHeightMap Interface</h2>
@@ -519,11 +519,11 @@
 
 <p>While you can now walk over your terrain, you probably notice that the camera seems really jittery.  Why isn&rsquo;t it smooth?</p>
 <p>Think about how we render our terrain.  The diagram below shows the terrain in one dimension.  At each integral step, we have a height value.  The terrain (represented by green lines) is interpolated between these heights.</p>
-<p><a href="#R-image-9c697e22fec23e847a38d0c4e2fd7812" class="lightbox-link"><img alt="The terrain as rendered" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-5.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9c697e22fec23e847a38d0c4e2fd7812"><img alt="The terrain as rendered" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-5.1.png"></a></p>
+<p><a href="#R-image-aa5cf3c8c663b8839b98d74a9362dac4" class="lightbox-link"><img alt="The terrain as rendered" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-5.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-aa5cf3c8c663b8839b98d74a9362dac4"><img alt="The terrain as rendered" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-5.1.png"></a></p>
 <p>Now think about what our function transforming world coordinates to heights is doing.  It casts <code>tx</code> to an <code>int</code> to throw away the fractional part of the coordinate in order to get an array index.  Thus, it is a step-like function, as indicated by the red lines in the diagram below:</p>
-<p><a href="#R-image-98918f38361fde1c2734a6f1a3c16f9d" class="lightbox-link"><img alt="The current height function" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-5.2.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-98918f38361fde1c2734a6f1a3c16f9d"><img alt="The current height function" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-5.2.png"></a></p>
+<p><a href="#R-image-a956c092aceba58a7e1d133fbc9748ed" class="lightbox-link"><img alt="The current height function" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-5.2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a956c092aceba58a7e1d133fbc9748ed"><img alt="The current height function" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-5.2.png"></a></p>
 <p>No wonder our movement is jerky!</p>
 <p>Instead, we need to <em>interpolate</em> the height between the two coordinates, so we match up with the visual representation.</p>
 <h2 id="linear-interpolation">Linear Interpolation</h2>
@@ -547,8 +547,8 @@
 <p>However, we aren&rsquo;t working with just <em>one</em> dimension, we need to consider <em>two</em>.  In other words, we need to use <em>bilinear interpolation</em>.  But XNA does not define a method for this, so we&rsquo;ll have to do it ourselves.</p>
 <h2 id="implementing-bilinear-interpolation">Implementing Bilinear Interpolation</h2>
 <p>Bilinear interpolation is the extension of linear interpolation into two dimensions.  Instead of interpolating a point on a line (as is the case with linear interpolation), in bilinear interpolation we are interpolating a point on a <em>plane</em>.  But with our terrain, we have <em>two</em> planes per grid cell:</p>
-<p><a href="#R-image-1921f3d5ce35b52d6ec267f1781d3d4d" class="lightbox-link"><img alt="Terrain triangles" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-5.3.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1921f3d5ce35b52d6ec267f1781d3d4d"><img alt="Terrain triangles" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-5.3.png"></a></p>
+<p><a href="#R-image-0ee1067c944c5febce6464096cee0b8c" class="lightbox-link"><img alt="Terrain triangles" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-5.3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0ee1067c944c5febce6464096cee0b8c"><img alt="Terrain triangles" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-5.3.png"></a></p>
 <p>In this diagram, <em>n</em> and <em>m</em> are coordinates in our <code>heights</code> array, corresponding to the vertex making up the grid cell.  So if our <code>(x, y)</code> point is in this grid cell,  <code>n &lt; x &lt; n+1</code> and <code>m &lt; y &lt; m+1</code>.</p>
 <p>Remember, a triangle defines a plane, and we used <em>two</em> triangles to define each grid cell in our terrain.  So we need to know which triangle our point falls on.</p>
 <p>This is why we wanted our diagonals to both face the same way, and also why we wanted them facing the way they do.  If the fractional distance along either the x or y axis is greater than halfway (0.5 in our model coordinates), then we are on the upper-right triangle. The inverse is also true; if both coordinates are less than halfway, we&rsquo;re in the lower left triangle.  Any coordinate falling on line between the two triangles is shared by both.</p>
@@ -613,8 +613,8 @@
 
 </div>
     </div>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1755628803" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1755628803" defer></script>
-    <script src="/cis580/js/theme.min.js?1755628803" defer></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1756153111" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756153111" defer></script>
+    <script src="/cis580/js/theme.min.js?1756153111" defer></script>
   </body>
 </html>

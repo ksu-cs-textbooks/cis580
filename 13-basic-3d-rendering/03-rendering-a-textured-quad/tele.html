@@ -33,26 +33,26 @@
     <link href="/cis580/13-basic-3d-rendering/03-rendering-a-textured-quad/index.xml" rel="alternate" type="application/rss+xml" title="Rendering a Textured Quad :: K-State CIS 580 Textbook">
     <link href="/cis580/13-basic-3d-rendering/03-rendering-a-textured-quad/index.print.html" rel="alternate" type="text/html" title="Rendering a Textured Quad :: K-State CIS 580 Textbook">
     <link href="/cis580/13-basic-3d-rendering/03-rendering-a-textured-quad/embed.html" rel="alternate" type="text/html" title="Rendering a Textured Quad :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1755628803" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search.min.js?1755628803" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756153111" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1755628803";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1756153111";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/format-html.min.css?1755628803" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/format-html.min.css?1756153111" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -111,7 +111,7 @@
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1756153111" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/cis580/13-basic-3d-rendering/03-rendering-a-textured-quad/index.html">
     
@@ -265,8 +265,8 @@
 <div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>    <span style="color:#75715e">// Draw the quad</span>
 </span></span><span style="display:flex;"><span>    quad.Draw();</span></span></code></pre></div>
 <p>If you run your code, you should now see the textured quad rendered:</p>
-<p><a href="#R-image-ee04b0d2d560bc5af5f862a25528ddc4" class="lightbox-link"><img alt="The rendered quad" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/basic-3d-3.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ee04b0d2d560bc5af5f862a25528ddc4"><img alt="The rendered quad" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/basic-3d-3.1.png"></a></p>
+<p><a href="#R-image-aa472a3503c5c29599029b25b52632f9" class="lightbox-link"><img alt="The rendered quad" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/basic-3d-3.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-aa472a3503c5c29599029b25b52632f9"><img alt="The rendered quad" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/basic-3d-3.1.png"></a></p>
 <p>Notice that even though our texture has a transparent background, the background is rendered in black.  Alpha blending is managed by the <code>GraphicsDevice.BlendState</code>, so we&rsquo;ll need to tweak it before we draw the quad:</p>
 <div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>    game.GraphicsDevice.BlendState = BlendState.AlphaBlend;</span></span></code></pre></div>
 <p>Notice the <a href="https://www.monogame.net/documentation/?page=T_Microsoft_Xna_Framework_Graphics_BlendState" rel="external" target="_blank">BlendState</a> class is the same one we used with <code>SpriteBatch</code> - and it works the same way.</p>
@@ -312,13 +312,13 @@
       
       
     </div>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1755628803" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1755628803" defer></script>
-    <script src="/cis580/js/theme.min.js?1755628803" defer></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1756153111" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756153111" defer></script>
+    <script src="/cis580/js/theme.min.js?1756153111" defer></script>
       
       
       
     </div> 
-  <script src="/cis580/js/tele-scroll.min.js?1755628803" defer></script>
+  <script src="/cis580/js/tele-scroll.min.js?1756153111" defer></script>
   </body>
 </html>

@@ -29,26 +29,26 @@
     <link href="/cis580/06-physics/index.xml" rel="alternate" type="application/rss+xml" title="Physics :: K-State CIS 580 Textbook">
     <link href="/cis580/06-physics/tele.html" rel="alternate" type="text/html" title="Physics :: K-State CIS 580 Textbook">
     <link href="/cis580/06-physics/embed.html" rel="alternate" type="text/html" title="Physics :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1755628803" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search.min.js?1755628803" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756153111" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1755628803";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1756153111";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/format-print.min.css?1755628803" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/format-print.min.css?1756153111" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -107,7 +107,7 @@
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1756153111" rel="stylesheet">
   </head>
   <body class="mobile-support print" data-url="/cis580/06-physics/index.html">
     <div id="R-body" class="default-animation">
@@ -317,8 +317,8 @@ acceleration is <em>the rate of change</em> of the velocity</p>
 </details>
 <h3 id="rocket-thrust">Rocket Thrust</h3>
 <p>Let&rsquo;s work through an example.  Consider this diagram:</p>
-<p><a href="#R-image-b184c15f121c0c026561a696d475e28f" class="lightbox-link"><img alt="Torque applied to a spaceship" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/6.3.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b184c15f121c0c026561a696d475e28f"><img alt="Torque applied to a spaceship" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/6.3.1.png"></a></p>
+<p><a href="#R-image-06a79fd59f61eb50ebe338c3e02cab8a" class="lightbox-link"><img alt="Torque applied to a spaceship" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/6.3.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-06a79fd59f61eb50ebe338c3e02cab8a"><img alt="Torque applied to a spaceship" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/6.3.1.png"></a></p>
 <p>The red arrow is the force vector applied from the left rocket.  The green arrow is the vector from the position the force is applied to the center of mass of the ship.  Firing just this one rocket will impose a rotation on the ship in the direction of the white arrow.  Firing <em>both</em> rockets will impose an opposite torque, cancelling both.</p>
 <p>Let&rsquo;s write the control code for this spaceship.  We&rsquo;ll define class fields for both linear and angular velocity and acceleration, as well as position, direction, and angle.  We&rsquo;ll also supply a constant for the amount of linear acceleration applied by our spaceship:</p>
 <div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#75715e">// Constants</span>
@@ -384,8 +384,8 @@ acceleration is <em>the rate of change</em> of the velocity</p>
 <p>Here we need to insert code for calculating the torque.  First, we need to know the distance from the rocket engine to the center of mass of the ship.  Let&rsquo;s assume our ship sprite is <span class="math align-center">$ 152x115 $</span>, and our center of mass is at <span class="math align-center">$ <76,50> $</span>.  Thus, our <code>r</code> vector would be:</p>
 <div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>Vector2 r = <span style="color:#66d9ef">new</span> Vector2(<span style="color:#ae81ff">76</span>,<span style="color:#ae81ff">50</span>);</span></span></code></pre></div>
 <p>The second value we need is our force.  We could factor in our ship rotation at this point, but it is easier if we instead rotate our coordinate system and place its origin at the center of mass for the ship, i.e.:</p>
-<p><a href="#R-image-72761dbb7246da5cc6ac99c7dd2c7811" class="lightbox-link"><img alt="The rotated coordinate system" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/6.3.2.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-72761dbb7246da5cc6ac99c7dd2c7811"><img alt="The rotated coordinate system" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/6.3.2.png"></a></p>
+<p><a href="#R-image-33f80bdaf4d275ec14a9c2de617c34d5" class="lightbox-link"><img alt="The rotated coordinate system" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/6.3.2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-33f80bdaf4d275ec14a9c2de617c34d5"><img alt="The rotated coordinate system" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/6.3.2.png"></a></p>
 <p>Then our force vector is simply a vector in the upward direction, whose magnitude is the amount of the force tangential to the <code>r</code> vector.  For simplicity, we&rsquo;ll use a literal constant instead of calculating this:</p>
 <div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>Vector2 force = <span style="color:#66d9ef">new</span> Vector2(<span style="color:#ae81ff">0</span>, FORCE_MAGNITUDE);</span></span></code></pre></div>
 <p>Then we can calculate the torque with the cross product of these two vectors:</p>
@@ -436,11 +436,11 @@ acceleration is <em>the rate of change</em> of the velocity</p>
 <p><span class="math align-center">$$ v_0 = \frac{m_0 - m_1}{m_0 + m_1}u_0 + \frac{2m_1}{m_0+m_1}u_1 \tag{7} $$</span>
 <span class="math align-center">$$ v_1 = \frac{2m_0}{m_0+m_1}u_0 + \frac{m_1 - m_0}{m_0 + m_1}u_1 \tag{8} $$</span></p>
 <p>These two equations can give us the new velocities in a single dimension.  But we&rsquo;re primarily interested in <em>two</em> dimensions, and our velocities are expressed as <code>Vector2</code> objects.  However, there is a simple solution; use a coordinate system that aligns with the axis of collision, i.e. for two masses colliding, A and B:</p>
-<p><a href="#R-image-16362a6edca5196900b69ab7c0dd85df" class="lightbox-link"><img alt="Aligning the coordinate system with the axis of collision" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/6.4.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-16362a6edca5196900b69ab7c0dd85df"><img alt="Aligning the coordinate system with the axis of collision" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/6.4.1.png"></a></p>
+<p><a href="#R-image-ab0ce64c14e9264a43759168d9f79260" class="lightbox-link"><img alt="Aligning the coordinate system with the axis of collision" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/6.4.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ab0ce64c14e9264a43759168d9f79260"><img alt="Aligning the coordinate system with the axis of collision" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/6.4.1.png"></a></p>
 <p>Note how the X-axis in the diagram is aligned with the line between the centers of mass A and B.  We can accomplish this in code by calculating the vector between the center of the two bodies, and determining the angle between that vector and the x-Axis:</p>
-<p><a href="#R-image-64a4e6dce62a0a860abb2ad9e3d855cb" class="lightbox-link"><img alt="Finding the angle between the line of collision and x-axis" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/6.4.2.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-64a4e6dce62a0a860abb2ad9e3d855cb"><img alt="Finding the angle between the line of collision and x-axis" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/6.4.2.png"></a></p>
+<p><a href="#R-image-eb4b0b1af29db20216d72aff4960ba53" class="lightbox-link"><img alt="Finding the angle between the line of collision and x-axis" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/6.4.2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb4b0b1af29db20216d72aff4960ba53"><img alt="Finding the angle between the line of collision and x-axis" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/6.4.2.png"></a></p>
 <p>Remember that the angle between two vectors is related to the dot product:</p>
 <span class="math align-center">$$ cos\theta = \frac{ a \cdotp b}{||a||*||b||} \tag {9} $$</span>
 <p>If both vectors <span class="math align-center">$ a $</span> and <span class="math align-center">$ b $</span> are of unit length (normalized), then this simplifies to:</p>
@@ -519,9 +519,9 @@ acceleration is <em>the rate of change</em> of the velocity</p>
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1755628803"></script>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1755628803" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1755628803" defer></script>
-    <script src="/cis580/js/theme.min.js?1755628803" defer></script>
+    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1756153111"></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1756153111" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756153111" defer></script>
+    <script src="/cis580/js/theme.min.js?1756153111" defer></script>
   </body>
 </html>

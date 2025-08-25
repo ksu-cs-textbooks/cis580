@@ -37,26 +37,26 @@ The images of the bat are laid out into a 4x4 grid of 32x32 pixel tiles. We can 
     <link href="/cis580/03-sprites/04-animated-sprites/index.xml" rel="alternate" type="application/rss+xml" title="Animated Sprites :: K-State CIS 580 Textbook">
     <link href="/cis580/03-sprites/04-animated-sprites/index.print.html" rel="alternate" type="text/html" title="Animated Sprites :: K-State CIS 580 Textbook">
     <link href="/cis580/03-sprites/04-animated-sprites/embed.html" rel="alternate" type="text/html" title="Animated Sprites :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1755628803" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search.min.js?1755628803" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756153111" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1755628803";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1756153111";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/format-html.min.css?1755628803" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/format-html.min.css?1756153111" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -115,7 +115,7 @@ The images of the bat are laid out into a 4x4 grid of 32x32 pixel tiles. We can 
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1756153111" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/cis580/03-sprites/04-animated-sprites/index.html">
     
@@ -136,8 +136,8 @@ The images of the bat are laid out into a 4x4 grid of 32x32 pixel tiles. We can 
 <h1 id="animated-sprites">Animated Sprites</h1>
 
 <p>To animate a sprite, we simply swap the image it is using.  Animated sprites typically lay out all their frames in a single texture, just like a texture atlas. Consider this <a href="https://opengameart.org/content/bat-sprite" rel="external" target="_blank">animated bat sprite by bagzie</a> from OpenGameArt:</p>
-<p><a href="#R-image-3cd7a53f397c9684432c76e07a5d4572" class="lightbox-link"><img alt="Animated bat spritesheet" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/32x32-bat-sprite.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3cd7a53f397c9684432c76e07a5d4572"><img alt="Animated bat spritesheet" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/32x32-bat-sprite.png"></a></p>
+<p><a href="#R-image-bb0c9fbc943286d957e384e59eacf476" class="lightbox-link"><img alt="Animated bat spritesheet" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/32x32-bat-sprite.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bb0c9fbc943286d957e384e59eacf476"><img alt="Animated bat spritesheet" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/32x32-bat-sprite.png"></a></p>
 <p>The images of the bat are laid out into a 4x4 grid of 32x32 pixel tiles.  We can create the illusion of motion by swapping which of these images we display.  However, we don&rsquo;t want to swap it every frame - doing so will be too quick for the viewer to follow, and destroy the illusion.  So we also need a timer and an idea of the direction the sprite is facing.</p>
 <p>To represent the direction, we might define an enum. And since the enum can represent a numerical value, let&rsquo;s assign the corresponding row index to each direction:</p>
 <div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#75715e">/// &lt;summary&gt;</span>
@@ -272,13 +272,13 @@ The images of the bat are laid out into a 4x4 grid of 32x32 pixel tiles. We can 
       
       
     </div>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1755628803" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1755628803" defer></script>
-    <script src="/cis580/js/theme.min.js?1755628803" defer></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1756153111" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756153111" defer></script>
+    <script src="/cis580/js/theme.min.js?1756153111" defer></script>
       
       
       
     </div> 
-  <script src="/cis580/js/tele-scroll.min.js?1755628803" defer></script>
+  <script src="/cis580/js/tele-scroll.min.js?1756153111" defer></script>
   </body>
 </html>

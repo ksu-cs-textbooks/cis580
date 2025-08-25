@@ -29,26 +29,26 @@
     <link href="/cis580/07-game-architecture/index.xml" rel="alternate" type="application/rss+xml" title="Game Architecture :: K-State CIS 580 Textbook">
     <link href="/cis580/07-game-architecture/tele.html" rel="alternate" type="text/html" title="Game Architecture :: K-State CIS 580 Textbook">
     <link href="/cis580/07-game-architecture/embed.html" rel="alternate" type="text/html" title="Game Architecture :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1755628803" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/search.min.js?1755628803" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756153111" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/search.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1755628803";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1756153111";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1755628803" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1755628803" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1756153111" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1755628803" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1755628803" rel="stylesheet">
-    <link href="/cis580/css/format-print.min.css?1755628803" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/format-print.min.css?1756153111" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -107,7 +107,7 @@
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1755628803" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1756153111" rel="stylesheet">
   </head>
   <body class="mobile-support print" data-url="/cis580/07-game-architecture/index.html">
     <div id="R-body" class="default-animation">
@@ -179,8 +179,8 @@
 </blockquote>
 <p>This means that not only do you need to process user input, update a simulated world, and then render that simulated world, you <em>also</em> have to do this in realtime (i.e. within 1/60th of a second)!  This is not a trivial challenge!</p>
 <p>As with any software system, organization can go a long way to managing this complexity.  Consider this diagram of a AAA game engine&rsquo;s software architecture:</p>
-<p><a href="#R-image-c862479cb942ec49d167304e44838575" class="lightbox-link"><img alt="Software Engine Architecture" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/7.1.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c862479cb942ec49d167304e44838575"><img alt="Software Engine Architecture" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/7.1.1.png"></a></p>
+<p><a href="#R-image-28c7ed7efab676496acff06b147a2750" class="lightbox-link"><img alt="Software Engine Architecture" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/7.1.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-28c7ed7efab676496acff06b147a2750"><img alt="Software Engine Architecture" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/7.1.1.png"></a></p>
 <p>Note how the engine is broken into systems and organized into layers.  Building an engine like this is outside the scope of this book (I encourage you to read Jason Gregory&rsquo;s <em>Game Engine Architecture</em> if you&rsquo;d like to delve into it), but the idea of loosely coupled systems is certainly something we can adapt.  Moreover, it is already explicitly supported by the MonoGame framework.  We&rsquo;ll explore how in this chapter.</p>
 
   <footer class="footline">
@@ -683,8 +683,8 @@
 
 </div>
     </div>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1755628803" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1755628803" defer></script>
-    <script src="/cis580/js/theme.min.js?1755628803" defer></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1756153111" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756153111" defer></script>
+    <script src="/cis580/js/theme.min.js?1756153111" defer></script>
   </body>
 </html>
