@@ -129,13 +129,11 @@ Read the late work policy very carefully! If you are unsure how to interpret it,
 Every student should strive to turn in work on time. Late work will receive a penalty of 10% of the possible points for each day it is late. If you are getting behind in the class, you are encouraged to speak to the instructor for options to make up missed work.
 
 ### Software
-We will be using Visual Studio 2019 as our development environment. You can download a free copy of Visual Studio Community for your own machine at
+We will be using Visual Studio 2022 as our development environment. You can download a free copy of Visual Studio Community for your own machine at
 [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/). You should also be able to get a professional
 development license through your Azure Student Portal. See the CS support documentation for details: [https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA)
 
-MonoGame is available through the Nuget package manager built into Visual Studio.  You can install MonoGame project templates by following the directions here: [https://docs.monogame.net/articles/getting_started/1_setting_up_your_development_environment_windows.html](https://docs.monogame.net/articles/getting_started/1_setting_up_your_development_environment_windows.html).
-
-Discord also offers some free desktop and mobile clients that you may prefer over the web client.  You may download them from: [https://discord.com/download](https://discord.com/download).
+MonoGame is available through the Nuget package manager built into Visual Studio.  You can install MonoGame project templates by following the directions here: [https://docs.monogame.net/articles/getting_started/2_choosing_your_ide_visual_studio.html#install-monogame-extension-for-visual-studio-2022l](https://docs.monogame.net/articles/getting_started/2_choosing_your_ide_visual_studio.html#install-monogame-extension-for-visual-studio-2022).
 
 
 ### Recommended Texts & Supplies
