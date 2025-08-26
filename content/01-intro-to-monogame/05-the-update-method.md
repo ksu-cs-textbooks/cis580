@@ -83,8 +83,9 @@ The vertical bounce is almost identical:
 ```
 
 {{% notice info %}}
-Our bounce here is not quite accurate, as the ball may have moved some pixels off-screen _before_ we reverse the direction.  
-In the worst case, it will actually so far off screen that with floating point error, it might be off-screen next frame as well (which will result in it getting stuck).  But as long as our ball is traveling less than its dimensions each frame, we should be okay.
+Our bounce here is not quite accurate, as the ball may have moved some pixels off-screen _before_ we reverse the direction. In the worst case, it will go so far off-screen that it might be off-screen next frame as well (a problem exacberated by floating-point rounding error).  When this happens the ball gets stuck, bounding back and forth off-screen as we change its direction each frame.  But as long as our ball is traveling less than its dimensions each frame, we should be okay.
+
+Other ways to solve this problem include moving the ball back to the position where it would have collided with the edge, or calculating how many pixels it moved off-screen and adding double that distance in the opposite direction.
 {{% /notice %}}
 
 Now we just need to draw our bouncy ball.
