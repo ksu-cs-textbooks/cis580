@@ -12,7 +12,7 @@ This textbook was authored for the **CIS 580 - Fundamentals of Game Programming*
 A good portion of this course is devoted to learning about algorithms, data structures, and design patterns commonly used in constructing computer games.  To introduce and learn about each of these topics we have adopted the following pedagogical strategies:
 
 1.	To introduce the topic, you will read a textbook chapter or watch a recorded lecture on the theory behind the algorithm, data structure, or design pattern.
-2.	You will then be asked toa video tutorial to implement the approach in a sample/demo project.  When you finish, you will submit the project you have created.
+2.	You will then be asked to follow video tutorial to implement the approach in a sample/demo project.  When you finish, you will submit the project you have created.
 3.	You will then be challenged to use the approach in one (or more) original game assignments.  This requires some thought of what kind of game makes sense for the approach, and it needs to be adapted to work with that game.
 
 In addition to learning about the programming techniques used in games, you are also challenged to build _good_ games.  This requires you to consider games from the standpoint of _an aesthetic experience_, much like any form of art or literature. Accordingly, we are borrowing some techniques from the study of creative subjects:
