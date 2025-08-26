@@ -874,7 +874,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Introduction to MonoGame",
     "description": "As we mentioned before, the virtual Game.Update(GameTime gameTime) method is a hook for adding your game’s logic. By overriding this method, and adding your own game logic code, you fulfill the update step of the game loop.\nThis is where you place the simulation code for your game - where the world the game is representing is updated. Here, all your actors (the parts of the game world that move and interact) are updated.",
-    "modified": "2023-08-14T11:41:07-05:00",
+    "modified": "2025-08-26T10:37:48-05:00",
     "tags": [],
     "title": "The Update Method",
     "uri": "/cis580/01-intro-to-monogame/05-the-update-method/index.html"

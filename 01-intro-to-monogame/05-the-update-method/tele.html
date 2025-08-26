@@ -23,40 +23,40 @@ This is where you place the simulation code for your game - where the world the 
     <meta property="og:type" content="article">
     <meta property="article:section" content="Introduction to MonoGame">
     <meta property="article:published_time" content="2018-08-24T10:53:26-05:00">
-    <meta property="article:modified_time" content="2023-08-14T11:41:07-05:00">
+    <meta property="article:modified_time" content="2025-08-26T10:37:48-05:00">
     <meta property="og:image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
     <meta itemprop="name" content="The Update Method :: K-State CIS 580 Textbook">
     <meta itemprop="description" content="As we mentioned before, the virtual Game.Update(GameTime gameTime) method is a hook for adding your game’s logic. By overriding this method, and adding your own game logic code, you fulfill the update step of the game loop.
 This is where you place the simulation code for your game - where the world the game is representing is updated. Here, all your actors (the parts of the game world that move and interact) are updated.">
     <meta itemprop="datePublished" content="2018-08-24T10:53:26-05:00">
-    <meta itemprop="dateModified" content="2023-08-14T11:41:07-05:00">
-    <meta itemprop="wordCount" content="740">
+    <meta itemprop="dateModified" content="2025-08-26T10:37:48-05:00">
+    <meta itemprop="wordCount" content="793">
     <meta itemprop="image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
     <title>The Update Method :: K-State CIS 580 Textbook</title>
     <link href="https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/05-the-update-method/index.html" rel="canonical" type="text/html" title="The Update Method :: K-State CIS 580 Textbook">
     <link href="/cis580/01-intro-to-monogame/05-the-update-method/index.xml" rel="alternate" type="application/rss+xml" title="The Update Method :: K-State CIS 580 Textbook">
     <link href="/cis580/01-intro-to-monogame/05-the-update-method/index.print.html" rel="alternate" type="text/html" title="The Update Method :: K-State CIS 580 Textbook">
     <link href="/cis580/01-intro-to-monogame/05-the-update-method/embed.html" rel="alternate" type="text/html" title="The Update Method :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756153111" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756153111" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1756153111" defer></script>
-    <script src="/cis580/js/search.min.js?1756153111" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756222687" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756222687" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1756222687" defer></script>
+    <script src="/cis580/js/search.min.js?1756222687" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1756153111";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1756222687";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1756153111" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756153111" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1756153111" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1756153111" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1756222687" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756222687" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1756222687" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1756222687" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756153111" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756153111" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1756153111" rel="stylesheet">
-    <link href="/cis580/css/format-html.min.css?1756153111" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756222687" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756222687" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756222687" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1756222687" rel="stylesheet">
+    <link href="/cis580/css/format-html.min.css?1756222687" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -115,7 +115,7 @@ This is where you place the simulation code for your game - where the world the 
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1756153111" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1756222687" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/cis580/01-intro-to-monogame/05-the-update-method/index.html">
     
@@ -166,8 +166,8 @@ $</span>
 <p>For 1, we have <code>_ballPosition</code>.  Let&rsquo;s assume this is the upper-right corner of the ball image.  We&rsquo;ll also need to factor in the size of the ball.  The image linked above is 64 pixels, so I&rsquo;ll assume that is the size of the ball we&rsquo;re using.  Feel free to change it to match your asset.</p>
 <p>For 2, we can use <code>GraphicsDevice.Viewport</code> to get a rectangle defining the screen.</p>
 <p>It can be very helpful to draw a diagram of this kind of setup <em>before</em> you try to derive the necessary calculations, i.e.:</p>
-<p><a href="#R-image-55408cd7abe0d2e3c74c5945242b6456" class="lightbox-link"><img alt="A diagram of the game" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/1.5.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-55408cd7abe0d2e3c74c5945242b6456"><img alt="A diagram of the game" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/1.5.1.png"></a></p>
+<p><a href="#R-image-d92fce0da872f48bb62bdfaf46e41a6b" class="lightbox-link"><img alt="A diagram of the game" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/1.5.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d92fce0da872f48bb62bdfaf46e41a6b"><img alt="A diagram of the game" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/1.5.1.png"></a></p>
 <p>To check if the ball is moving off the left of the screen, we could use an <code>if</code> statement:</p>
 <div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(_ballPosition.X &lt; GraphicsDevice.Viewport.X) {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// TODO: Bounce ball</span>
@@ -194,8 +194,8 @@ $</span>
     Info
   </summary>
   <div class="box-content">
-<p>Our bounce here is not quite accurate, as the ball may have moved some pixels off-screen <em>before</em> we reverse the direction.<br>
-In the worst case, it will actually so far off screen that with floating point error, it might be off-screen next frame as well (which will result in it getting stuck).  But as long as our ball is traveling less than its dimensions each frame, we should be okay.</p>
+<p>Our bounce here is not quite accurate, as the ball may have moved some pixels off-screen <em>before</em> we reverse the direction. In the worst case, it will go so far off-screen that it might be off-screen next frame as well (a problem exacberated by floating-point rounding error).  When this happens the ball gets stuck, bounding back and forth off-screen as we change its direction each frame.  But as long as our ball is traveling less than its dimensions each frame, we should be okay.</p>
+<p>Other ways to solve this problem include moving the ball back to the position where it would have collided with the edge, or calculating how many pixels it moved off-screen and adding double that distance in the opposite direction.</p>
   </div>
 </details>
 <p>Now we just need to draw our bouncy ball.</p>
@@ -220,14 +220,14 @@ In the worst case, it will actually so far off screen that with floating point e
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1756153111"></script>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1756153111" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756153111" defer></script>
-    <script src="/cis580/js/theme.min.js?1756153111" defer></script>
+    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1756222687"></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1756222687" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756222687" defer></script>
+    <script src="/cis580/js/theme.min.js?1756222687" defer></script>
       
       
       
     </div> 
-  <script src="/cis580/js/tele-scroll.min.js?1756153111" defer></script>
+  <script src="/cis580/js/tele-scroll.min.js?1756222687" defer></script>
   </body>
 </html>
