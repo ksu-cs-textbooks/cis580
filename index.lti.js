@@ -962,7 +962,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Course Information",
     "description": "Web Only This textbook was authored for the CIS 580 - Fundamentals of Game Programming course at Kansas State University. This front matter is specific to that course. If you are not enrolled in the course, please disregard this section.\nMonoGame and Visual Studio For this course, we will be using a number of software packages including:\nMicrosoft Visual Studio 2022 The MonoGame Framework These have been installed in the classroom lab, as well as all Computer Science labs.",
-    "modified": "2024-08-14T16:23:49-05:00",
+    "modified": "2025-08-26T10:46:53-05:00",
     "tags": [],
     "title": "Course Software",
     "uri": "/cis580/00-forward/07-software/index.html"
@@ -1034,7 +1034,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Course Information",
     "description": "Web Only This textbook was authored for the CIS 580 - Fundamentals of Game Programming course at Kansas State University. This front matter is specific to that course. If you are not enrolled in the course, please disregard this section.\nCIS 580 - Fundamentals of Game Programming Previous Versions\nInstructor Contact Information Instructor: Nathan Bean (nhbean AT ksu DOT edu) Office: DUE 2216 Phone: (785)483-9264 (Call/Text) Website: https://nathanhbean.com Office Hours: WU 1:00-2:00 or by appointment Preferred Methods of Communication: Chat: Quick questions via Ed Discussions are the preferred means of communication.",
-    "modified": "2025-08-19T13:39:45-05:00",
+    "modified": "2025-08-26T10:46:32-05:00",
     "tags": [],
     "title": "Syllabus",
     "uri": "/cis580/00-forward/09-syllabus/index.html"
