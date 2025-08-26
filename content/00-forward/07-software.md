@@ -30,7 +30,7 @@ After signing in, click the "Software" option in the left menu, and browse the a
 
 The Visual Studio Community Edition is also available as a free download [here](https://visualstudio.microsoft.com/downloads/). While not as full-featured as the Professional edition you can download through Azure Portal, it will be sufficient for the needs of this class.
 
-MonoGame can then be installed as a plugin to Visual Studio 2022, following the [Setting up your development environment for Windows](https://docs.monogame.net/articles/getting_started/1_setting_up_your_development_environment_windows.html).  While it is possible to develop on Linux or macOS, all course materials will be presented for Windows, and it is recommended you use that development environment.
+MonoGame is packaged as a Nuget Package, which will automatically be downloaded by Visual Studio when you run a project using it. You can manually add it to your package for a new project, but it is very useful to install the MonoGame extension, which provides template projects you can create from the "New Project" menu in Visual Studio.  Here are the [instructions for isntalling the MonoGame extension into Visual Studio 2022](https://docs.monogame.net/articles/getting_started/2_choosing_your_ide_visual_studio.html#install-monogame-extension-for-visual-studio-2022).  While it is possible to develop on Linux or macOS, all course materials will be presented for Windows, and it is recommended you use that development environment.
 
 While not strictly required for the course, these additional software packages may come in very handy:
 
