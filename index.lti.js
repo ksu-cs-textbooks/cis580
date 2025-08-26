@@ -602,7 +602,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Course Information",
     "description": "Web Only This textbook was authored for the CIS 580 - Fundamentals of Game Programming course at Kansas State University. This front matter is specific to that course. If you are not enrolled in the course, please disregard this section.\nA good portion of this course is devoted to learning about algorithms, data structures, and design patterns commonly used in constructing computer games. To introduce and learn about each of these topics we have adopted the following pedagogical strategies:",
-    "modified": "2024-06-27T15:18:14-05:00",
+    "modified": "2025-08-26T10:47:46-05:00",
     "tags": [],
     "title": "Course Structure",
     "uri": "/cis580/00-forward/02-course-structure/index.html"
