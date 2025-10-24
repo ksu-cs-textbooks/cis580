@@ -16,7 +16,7 @@ Let's start with our `RainParticleSystem`, and add rain that runs down the scree
 ```
 
 {{% notice hint %}}
-Because the `ExplosionParticleSystem` inherits from `DrawableGameComponent`, we can add it to the `Game.Components` list.  This means the game will automatically call its `LoadContent()`, `Update()` and `Draw()` methods for us.  We could instead not add it to the components list, and manually invoke these ourselves.
+Because the `RainParticleSystem` inherits from `DrawableGameComponent`, we can add it to the `Game.Components` list.  This means the game will automatically call its `LoadContent()`, `Update()` and `Draw()` methods for us.  We could instead not add it to the components list, and manually invoke these ourselves.
 {{% /notice %}}
 
 ### Adding Explosions

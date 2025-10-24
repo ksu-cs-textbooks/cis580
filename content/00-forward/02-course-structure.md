@@ -64,7 +64,7 @@ The class should play the week's workshop games _before_ the class meeting on We
 In order to earn points for a workshop, you must:
 1. Post your game to be workshopped _before_ the Monday of the week the workshop will be held.
 2. This post should include a description of your game, and a link to a release in your **public** GitHub repository for the game.
-3. The release **must contain a the game binaries as additional downloads**, i.e. zip your release build folder and upload it to the GitHub release page.
+3. The release **must contain the game binaries as additional downloads**, i.e. zip your release build folder and upload it to the GitHub release page.
 
 If one or more of these conditions are not met, you will earn NO POINTS for your workshop. 
 {{% /notice %}}

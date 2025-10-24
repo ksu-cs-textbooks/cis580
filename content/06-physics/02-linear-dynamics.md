@@ -13,10 +13,10 @@ At some point in your K-12 education, you probably encountered the equations of 
 {{< math >}}$$ v^2 = v_0^2 2a(r - r_0) \tag{4} $${{< /math >}}
 {{< math >}}$$ p = p_0 + vt - \frac{1}{2}at^2 \tag{5} $${{< /math >}}
 
-These equations can be used to calculate motion in a video game setting as well, i.e. to calculate an updated position `vector2 position` given velocity `vector2 velocity` and acceleration `vector2 acceleration`, we can take equation (5):
+These equations can be used to calculate motion in a video game setting as well, i.e. to calculate an updated position `vector2 position` given velocity `vector2 velocity` and acceleration `vector2 acceleration`, we can take equation (2):
 
 ```csharp
-position += velocity * gameTime.ElapsedGameTime.TotalSeconds + 1/2 * acceleration * Math.Pow(gameTime.ElapsedGameTime.TotalSeconds);
+position += velocity * gameTime.ElapsedGameTime.TotalSeconds + 1/2 * acceleration * Math.Pow(gameTime.ElapsedGameTime.TotalSeconds, 2);
 ```
 
 This seems like a lot of calculations, and it is.  If you've also taken calculus, you probably encountered the relationship between position, velocity, and acceleration.
@@ -60,7 +60,7 @@ Thus, our acceleration would be the force acting on the body, divided by the mas
 If we have multiple forces acting on an object, we simply sum the individual accelerations to find the net acceleration at that instant, which is then applied to the velocity.
 
 {{% notice tip %}}
-Games are a "soft" simulation, in that we are emulating, but often not _duplicating_ behavior of objects the real world.  This also brings into play [hyperreality](https://en.wikipedia.org/wiki/Hyperreality), a philosophical concept that deals with modern humans' inability to distinguish perceptions of reality and simulated realities.  
+Games are a "soft" simulation, in that we are emulating, but often not _duplicating_ behavior of objects in the real world.  This also brings into play [hyperreality](https://en.wikipedia.org/wiki/Hyperreality), a philosophical concept that deals with modern humans' inability to distinguish perceptions of reality and simulated realities.  
 
 One great example is LucasArt's [Digital Molecular Matter](https://en.wikipedia.org/wiki/Digital_Molecular_Matter) developed for the _Force Unleashed_ series.  Early tests with the physics engine duplicated the breaking of objects based on the actual molecular physics involved.  Playtesters responded that it "felt fake" as wood did not explode into splinters and glass did not shatter into clouds of thousands of pieces when broken... so the developers made the effects more unrealistically intense to satisfy player expectations.
 {{% /notice %}}

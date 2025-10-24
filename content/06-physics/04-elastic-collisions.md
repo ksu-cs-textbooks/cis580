@@ -42,7 +42,7 @@ Substituting equation 4 into 5 yields:
 
 {{< math >}}$$ \frac{1}{2}m_0u_0^2 + \frac{1}{2}m_1u_1^2 = \frac{1}{2}m_0v_0^2 + \frac{1}{2}m_1v_1^2 \tag{6} $${{< /math >}}
 
-Assuming we enter the collision knowing the values of {{< math >}}$ u_0, u_1, m_0, and m_1 ${{< /math >}}, we have two unknowns {{< math >}}$ v_0 ${{< /math >}} and {{< math >}}$ v_1 ${{< /math >}} and two equations containing them (equations 3 and 6).  Thus, we can solve for {{< math >}}$ v_0 ${{< /math >}} and {{< math >}}$ v_1 ${{< /math >}}:
+Assuming we enter the collision knowing the values of {{< math >}}$ u_0, u_1, m_0,{{< /math >}} and {{< math >}}m_1 ${{< /math >}}, we have two unknowns {{< math >}}$ v_0 ${{< /math >}} and {{< math >}}$ v_1 ${{< /math >}} and two equations containing them (equations 3 and 6).  Thus, we can solve for {{< math >}}$ v_0 ${{< /math >}} and {{< math >}}$ v_1 ${{< /math >}}:
 
 {{< math >}}$$ v_0 = \frac{m_0 - m_1}{m_0 + m_1}u_0 + \frac{2m_1}{m_0+m_1}u_1 \tag{7} $${{< /math >}}
 {{< math >}}$$ v_1 = \frac{2m_0}{m_0+m_1}u_0 + \frac{m_1 - m_0}{m_0 + m_1}u_1 \tag{8} $${{< /math >}}

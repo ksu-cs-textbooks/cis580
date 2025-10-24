@@ -12,7 +12,7 @@ A _texture atlas_ is a texture that is used to represent _multiple_ sprites.  Fo
 In this case, each sprite is 15x15 pixels, with a 1 pixel outline.  So to draw the cactus in the second row and sixth column of sprites, we would use a source rectangle:
 
 ```csharp
-var sourceRect = new Rectangle(16, 96, 16, 16);
+var sourceRect = new Rectangle(96, 16, 16, 16);
 ```
 
 Thus, to draw the sprite on-screen at position {{< math >}}$ (50,50) ${{< /math >}} we could use:

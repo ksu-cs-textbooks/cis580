@@ -69,16 +69,7 @@ We can then use this interface within our `FPSCamera` class to change its height
     public IHeightMap HeightMap { get; set; }
 ```
 
-We also might want to add a property to say how far above any heightmap we want the camera to be.  Let's call this `HeightOffset`:
-
-```csharp
-    /// <summary>
-    /// Gets or sets how high above the heightmap the camera should be
-    /// </summary>
-    public float HeightOffset { get; set; } = 5;
-```
-
-And we'll modify our `FPSCamera.Update()` to use the `HeightMap` and `HeightOffset` to determine the camera's Y position:
+And we'll modify our `FPSCamera.Update()` to use the `HeightMap`'s height at the camera position, added to the camerea's `HeightOffset` to determine the camera's actual Y position:
 
 ```csharp
     // Adjust camera height to heightmap 

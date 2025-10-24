@@ -23,7 +23,7 @@ public class IAchievementService
 }
 ```
 
-Then we could author _two_ classes implementing this interface, one for the Xbox and one for the Playstation.  We would initalize and register the appropriate one for the build of our program:
+Then we could author _two_ classes implementing this interface, one for the Xbox and one for the Playstation.  We would initialize and register the appropriate one for the build of our program:
 
 ```csharp
 game.Services.AddService(IAchievementService, new XBoxAchievementService());

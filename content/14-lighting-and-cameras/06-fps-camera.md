@@ -183,7 +183,7 @@ That wraps up moving the camera's position in the world.  Now we need to tackle 
 From these angles, we can calculate the direction the camera is facing, by rotating a forward-facing vector in both the horizontal and vertical axes:
 
 ```csharp 
-    direction =  Vector3.Transform(Vector3.Forward, Matrix.CreateRotationX(verticalAngle) * Matrix.CreateRotationY(horizontalAngle));
+    var direction =  Vector3.Transform(Vector3.Forward, Matrix.CreateRotationX(verticalAngle) * Matrix.CreateRotationY(horizontalAngle));
 ```
 
 With that direction, we can now calculate the view matrix using `Matrix.CreateLookAt()`.  The target vector is the direction vector added to the position:

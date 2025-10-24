@@ -156,7 +156,7 @@ public static bool Collides(BoundingRectangle r1, BoundingRectangle r2)
 ```
 
 ### Point on Circle Collisions 
-To determine if a point and circle collide is a degenerate case of circle on circle collision where one circle has a radius of 0. THus:
+To determine if a point and circle collide is a degenerate case of circle on circle collision where one circle has a radius of 0. Thus:
 
 {{< math >}}$$
 r >= \sqrt{(x_c - x_p)^2 + (y_c - y_p)^2} \quad \text{collision}

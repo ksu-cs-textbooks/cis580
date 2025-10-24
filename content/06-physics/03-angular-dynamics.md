@@ -28,7 +28,7 @@ rotation += angularVelocity * gameTime.elapsedGameTime.TotalSeconds;
 And the change in angular velocity can be calculated from the angular acceleration:
 
 ```csharp
-angularAcceleration = angularVelocity * gameTime.elapsedGameTime.TotalSeconds;
+angularAcceleration += angularVelocity * gameTime.elapsedGameTime.TotalSeconds;
 ```
 
 Finally, angular acceleration can be imposed with an instantaneous force.  However, this is slightly more complex than we saw with linear dynamics, as this force needs to be applied somewhere _other than the center of mass_.  Doing so applies both rotational and linear motion to an object.  This rotational aspect is referred to as _torque_, and is calculated by taking the cross product of the force's point of application relative to the center of mass and the force vector.  Thus:

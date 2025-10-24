@@ -276,7 +276,7 @@ We'll also initialize our `BasicEffect`, turning on texture rendering and settin
     {
         effect = new BasicEffect(game.GraphicsDevice);
         effect.World = world;
-        effect.Texture = grass;
+        effect.Texture = texture;
         effect.TextureEnabled = true;
     }   
 ```
@@ -298,7 +298,7 @@ The constructor will invoke each of the initialization helper methods we just wr
     public Terrain(Game game, Texture2D heightmap, float heightRange, Matrix world)
     {
         this.game = game;
-        grass = game.Content.Load<Texture2D>("ground_grass_gen_08");
+        texture = game.Content.Load<Texture2D>("ground_grass_gen_08");
         LoadHeights(heightmap, heightRange);
         InitializeVertices();
         InitializeIndices();

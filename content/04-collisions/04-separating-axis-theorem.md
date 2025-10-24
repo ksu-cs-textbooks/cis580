@@ -61,7 +61,7 @@ How do we accomplish the projection?  Consider each edge (the line between verti
 
 ![Mathematical projection onto an axis](/images/4.4.5.png)
 
-We have two formula that can be useful for interpreting this figure: the trigonometric definition of cosine (1) and the geometric definition of the cross-product (2).
+We have two formulae that can be useful for interpreting this figure: the trigonometric definition of cosine (1) and the geometric definition of the cross-product (2).
 
 {{< math >}}$$
 cos\theta = \frac{|projection\ of\ A\ onto\ B|}{|A|} \tag{1}

@@ -10,7 +10,7 @@ From the "bing" of a coin box in _Super Mario Bros_ to the reveal chimes of the 
 ### SoundEffect Class
 MonoGame represents sound effects with the [`SoundEffect`](https://docs.monogame.net/api/Microsoft.Xna.Framework.Audio.SoundEffect.html) class.  Like other asset types, we don't normally construct this directly, we rather load it through the content pipeline.  Usually, a sound effect will start as a _.wav_ file, though a handful of other file formats are acceptable.
 
-Once loaded, the `SoundEffect` can be played with the `SoundEffect.Play()` method. This is essentially a fire-and-forget method - you invoke, it and the framework takes care of loading and playing the sound.
+Once loaded, the `SoundEffect` can be played with the `SoundEffect.Play()` method. This is essentially a fire-and-forget method - you invoke it, and the framework takes care of loading and playing the sound.
 
 You can also use the `SoundEffect.Play(float volume, float pitch, float pan)` to customize the playback:
 * `volume` ranges from {{< math >}}$ 0.0 ${{< /math >}} (silence) to {{< math >}}$ 1.0 ${{< /math >}} (full volume)

@@ -79,7 +79,7 @@ namespace ExampleGame
 }
 ```
 
-We also need to provide a content pipeline version of our tilemap class. For this one, we won't need any of the functionality of our `Draw()` or `Load()` methods (as we don't need to draw in the pipeline, and we'll move responsibility for loading into our content importer and processor). So really, we only nee to provide a class to contain all the data contained within our tilemap file. To keep things simple, we'll use the same file format we did in the previous chapter, but we'll give the file a new extension: **.tmap** (it will still be a text file). Such a class might look like:
+We also need to provide a content pipeline version of our tilemap class. For this one, we won't need any of the functionality of our `Draw()` or `Load()` methods (as we don't need to draw in the pipeline, and we'll move responsibility for loading into our content importer and processor). So really, we only need to provide a class to contain all the data contained within our tilemap file. To keep things simple, we'll use the same file format we did in the previous chapter, but we'll give the file a new extension: **.tmap** (it will still be a text file). Such a class might look like:
 
 ```csharp
 namespace BasicTilemapPipeline
