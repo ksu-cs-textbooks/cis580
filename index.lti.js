@@ -2,7 +2,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Basic 3D Rendering",
     "description": "The term “3D rendering” refers to converting a three-dimensional representation of a scene into a two-dimensional frame. While there are multiple ways to represent and render three-dimensional scenes (ray-tracing, voxels, etc.), games are dominated by a standardized technique supported by graphics card hardware. This approach is so ubiquitous that when we talk about 3D rendering in games, this is the approach we are typically referring to.\nRemember that games are “real-time”, which means they must present a new frame every 1/30th of a second to create the illusion of motion.",
-    "modified": "2023-08-11T11:18:05-05:00",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "Introduction",
     "uri": "/cis580/13-basic-3d-rendering/01-introduction/index.html"
@@ -122,7 +122,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Game Architecture",
     "description": "A common approach in software architecture for loose coupling of systems is the use of services. Services are implemented with 1) a service provider - essentially a collection of services that can be searched for a service, and new services can be registered with, 2) interfaces that define specific services how to work with the service, and 3) classes that implement these interfaces. This is the Service Locator Pattern as implemented in C#.",
-    "modified": "2021-02-28T22:49:29-06:00",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "Game Services",
     "uri": "/cis580/07-game-architecture/02-game-services/index.html"
@@ -178,7 +178,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Heightmap Terrain",
     "description": "We’ll start with the class definition:\n/// \u003csummary\u003e /// A class representing terrain /// \u003c/summary\u003e public class Terrain { // The game this Terrain belongs to Game game; } As with most of our classes, we’ll keep a reference to the Game object to access the shared ContentManager and GraphicsDevice.\nClass Fields We could store our heightmap directly, but all we really need out of it are the height values, and these need to be scaled.",
-    "modified": "2023-08-11T11:18:05-05:00",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "Terrain Class",
     "uri": "/cis580/15-heightmap-terrain/03-terrain-class/index.html"
@@ -258,7 +258,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Heightmap Terrain",
     "description": "Let’s see our terrain in action. First we’ll need to make some changes in our ExampleGame class. We’ll add a Terrain field:\n// The terrain Terrain terrain; In our ExampleGame.LoadContent(), we’ll load the heightmap and construct our terrain:\n// Build the terrain Texture2D heightmap = Content.Load\u003cTexture2D\u003e(\"heightmap\"); terrain = new Terrain(this, heightmap, 10f, Matrix.Identity); And in our ExampleGame.Draw() we’ll render it with the existing camera:\n// Draw the terrain terrain.Draw(camera); Now if you run the game, you should see your terrain, and even be able to move around it using the camera controls (WASD + Mouse).",
-    "modified": "2023-11-03T12:55:41-05:00",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "Using the Terrain",
     "uri": "/cis580/15-heightmap-terrain/04-using-the-terrain/index.html"
@@ -362,7 +362,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Particle Systems",
     "description": "Now that we’ve defined some example particle systems, let’s see how we can put them into use.\nAdding Rain Let’s start with our RainParticleSystem, and add rain that runs down the screen. Since we don’t need to start/stop the rain for this simple example, all we need to do is construct the particle system and add it to the Game.Components list in the Game.Initialize() method:\nRainParticleSystem rain = new RainParticleSystem(this, new Rectangle(100, -10, 500, 10)); Components.",
-    "modified": "2021-03-31T13:14:16-05:00",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "Using Particle Systems",
     "uri": "/cis580/09-particle-systems/05-using-particle-systems/index.html"
@@ -378,7 +378,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Lighting and Cameras",
     "description": "Let’s go ahead and create a camera that the player can actually control. This time, we’ll adopt a camera made popular by PC first-person shooters, where the player’s looking direction is controlled by the mouse, and the WASD keys move forward and back and strife side-to-side.\nThe FPS Camera Class Let’s start by defining our class, FPSCamera:\n/// \u003csummary\u003e /// A camera controlled by WASD + Mouse /// \u003c/summary\u003e public class FPSCamera : ICamera { } Private Fields This camera is somewhat unique in it partially the splits vertical from horizontal axes; the vertical axis only controls the angle the player is looking along, while the horizontal axis informs both looking and the direction of the player’s movement.",
-    "modified": "2021-04-23T16:59:02-05:00",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "FPS Camera",
     "uri": "/cis580/14-lighting-and-cameras/06-fps-camera/index.html"
@@ -538,7 +538,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Audio",
     "description": "We often focus on the visual aspects of games, but the audio aspects can really make a game shine. Consider that many game tracks are now presented as orchestral performances:\nAnd how important sound effects can be for conveying what is happening in a game?\nIn this chapter, we will explore both sound effects and music, and how to implement them within MonoGame.",
-    "modified": "2021-02-03T20:43:16-06:00",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "Introduction",
     "uri": "/cis580/05-audio/01-introduction/index.html"
@@ -569,8 +569,8 @@ var relearn_lti_index = [
   },
   {
     "breadcrumb": "Content Pipeline",
-    "description": "As we described in the introduction, the XNA Content Pipeline’s purpose is to transform asset files (content) in to a form most readily useable by our games. It is implemented as a separate build step that is run every time we compile our game. In fact, each XNA game is actually two projects - the Content project, and the Game project.\nThe pipeline is broken up into several steps:\nImporting the asset data Processing the asset data Serializing the asset data Loading the serialized asset data You can see the process here:",
-    "modified": "2023-10-10T18:39:10-05:00",
+    "description": "As we described in the introduction, the XNA Content Pipeline’s purpose is to transform asset files (content) into a form most readily usable by our games. It is implemented as a separate build step that is run every time we compile our game. In fact, each XNA game is actually two projects - the Content project, and the Game project.\nThe pipeline is broken up into several steps:\nImporting the asset data Processing the asset data Serializing the asset data Loading the serialized asset data You can see the process here:",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "The Content Pipeline",
     "uri": "/cis580/11-content-pipeline/02-the-content-pipeline/index.html"
@@ -586,7 +586,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Collisions",
     "description": "Perhaps the most straightforward approach is the use of a collision shape (also called a collision primitive or bounding area). This is a simplified representation of the sprite - simplified in a way that allows for easy mathematical detection of collision events. The collision shape mimics the shape of the overall sprite:\nFor a good visualization of collision shapes and the mathematics behind the collision detection, visit Jeffrey Thompson’s Collision Detection Page",
-    "modified": "2023-08-14T11:41:07-05:00",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "Collision Shapes",
     "uri": "/cis580/04-collisions/02-collision-shapes/index.html"
@@ -602,7 +602,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Course Information",
     "description": "Web Only This textbook was authored for the CIS 580 - Fundamentals of Game Programming course at Kansas State University. This front matter is specific to that course. If you are not enrolled in the course, please disregard this section.\nA good portion of this course is devoted to learning about algorithms, data structures, and design patterns commonly used in constructing computer games. To introduce and learn about each of these topics we have adopted the following pedagogical strategies:",
-    "modified": "2025-08-26T10:47:46-05:00",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "Course Structure",
     "uri": "/cis580/00-forward/02-course-structure/index.html"
@@ -626,7 +626,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Physics",
     "description": "At some point in your K-12 education, you probably encountered the equations of linear motion, which describe motion in terms of time, i.e.:\n$$ v = at + v_0 \\tag{1} $$ $$ p = p_0 + v_ot + \\frac{1}{2}at^2 \\tag{2} $$ $$ p = p_0 + \\frac{1}{2}(v+v_0)t \\tag{3} $$ $$ v^2 = v_0^2 2a(r - r_0) \\tag{4} $$ $$ p = p_0 + vt - \\frac{1}{2}at^2 \\tag{5} $$\nThese equations can be used to calculate motion in a video game setting as well, i.",
-    "modified": "2023-08-14T11:41:07-05:00",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "Linear Dynamics",
     "uri": "/cis580/06-physics/02-linear-dynamics/index.html"
@@ -642,7 +642,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Audio",
     "description": "From the “bing” of a coin box in Super Mario Bros to the reveal chimes of the Zelda series, sound effects provide a powerful mechanism for informing the player of what is happening in your game world.\nSoundEffect Class MonoGame represents sound effects with the SoundEffect class. Like other asset types, we don’t normally construct this directly, we rather load it through the content pipeline. Usually, a sound effect will start as a .",
-    "modified": "2023-08-14T11:41:07-05:00",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "Sound Effects",
     "uri": "/cis580/05-audio/02-sound-effects/index.html"
@@ -666,7 +666,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Content Pipeline",
     "description": "You might be wondering why the content pipeline in XNA was created this way - with importers, processors, content writers, and content readers. The answer is simple - modularity. If you want to load a new image format that the TextureImporter does not handle, you can write your own custom importer to load its data into a TextureContent object, and then still use the existing TextureProcessor and serialization process.\nAlternatively, you may want to handle a new content type that has no associated classes in XNA at all.",
-    "modified": "2023-10-11T12:41:39-05:00",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "Extending the Pipeline",
     "uri": "/cis580/11-content-pipeline/03-extending-the-pipeline/index.html"
@@ -674,7 +674,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Physics",
     "description": "There is a second set of equations that govern angular motion (rotation) you may have encountered, where $ \\omega $ is angular velocity, $ \\alpha $ the angular acceleration, and $ \\theta $ the rotation of the body:\n$$ \\omega = \\omega_0 + \\alpha t \\tag{1} $$ $$ \\theta = \\theta_0 + \\omega_0 t + \\frac{1}{2}\\alpha t^2 \\tag{2} $$ $$ \\theta = \\theta_0 + \\frac{1}{2}(\\omega_0 + \\omega)t \\tag{3} $$ $$ \\omega^2 = \\omega_0^2 + 2\\alpha(\\theta-\\theta_0) \\tag{4} $$ $$ \\theta = \\theta_0 + \\omega t - \\frac{1}{2}\\alpha t^2 \\tag{5} $$",
-    "modified": "2023-08-14T11:41:07-05:00",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "Angular Dynamics",
     "uri": "/cis580/06-physics/03-angular-dynamics/index.html"
@@ -682,7 +682,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Collisions",
     "description": "There are many ways we could organize the methods we saw in the previous section, but one particularly apt one is to organize them into a static helper class, much like our Math and MathHelper classes, i.e. CollisionHelper:\n/// \u003csummary\u003e /// A class containing collision detection methods /// \u003c/summary\u003e public static class CollisionHelper { /// \u003csummary\u003e /// Detects a collision between two points /// \u003c/summary\u003e /// \u003cparam name=\"p1\"\u003ethe first point\u003c/param\u003e /// \u003cparam name=\"p2\"\u003ethe second point\u003c/param\u003e /// \u003creturns\u003etrue when colliding, false otherwise\u003c/returns\u003e public static bool Collides(BoundingPoint p1, BoundingPoint p2) { return p1.",
-    "modified": "2021-02-03T20:43:16-06:00",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "Collision Helper",
     "uri": "/cis580/04-collisions/03-collision-helper/index.html"
@@ -713,8 +713,8 @@ var relearn_lti_index = [
   },
   {
     "breadcrumb": "Sprites",
-    "description": "A texture atlas is a texture that is used to represent multiple sprites. For example, this texture from Kinney’s 1Bit Pack available on OpenGameArt contains all the sprites to create a roguelike in a single texture:\nIn this case, each sprite is 15x15 pixels, with a 1 pixel outline. So to draw the cactus in the second row and sixth column of sprites, we would use a source rectangle:\nvar sourceRect = new Rectangle(16, 96, 16, 16); Thus, to draw the sprite on-screen at position $ (50,50) $ we could use:",
-    "modified": "2025-08-19T13:21:42-05:00",
+    "description": "A texture atlas is a texture that is used to represent multiple sprites. For example, this texture from Kinney’s 1Bit Pack available on OpenGameArt contains all the sprites to create a roguelike in a single texture:\nIn this case, each sprite is 15x15 pixels, with a 1 pixel outline. So to draw the cactus in the second row and sixth column of sprites, we would use a source rectangle:\nvar sourceRect = new Rectangle(96, 16, 16, 16); Thus, to draw the sprite on-screen at position $ (50,50) $ we could use:",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "Texture Atlases",
     "uri": "/cis580/03-sprites/03-texture-atlases/index.html"
@@ -770,7 +770,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Physics",
     "description": "Now that we’ve looked at movement derived from both linear and angular dynamics, let’s revisit them from the perspective of collisions. If we have two rigid bodies that collide, what should be the outcome? Consider an elastic collision (one in which the two objects “bounce off” one another). From Newtonian mechanics we know that:\nEnergy must be conserved Momentum must be conserved Thus, if we consider our two objects in isolation (as a system of two), the total system must have the same energy and momentum after the collision that it had before (Note we are talking about perfectly elastic collisions here - in the real world some energy would be converted to heat and sound).",
-    "modified": "2023-08-14T11:41:07-05:00",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "Elastic Collisions",
     "uri": "/cis580/06-physics/04-elastic-collisions/index.html"
@@ -810,7 +810,7 @@ var relearn_lti_index = [
   {
     "breadcrumb": "Collisions",
     "description": "But what about sprites with shapes don’t map to a circle or rectangle, such as this spaceship sprite:\nWe could represent this sprite with a bounding polygon:\nThe polygon can be represented as a data structure using a collection of vectors from its origin (the same origin we use in rendering the sprite) to the points defining its corners:\n/// \u003csummary\u003e /// A struct representing a convex bounding polygon /// \u003c/summary\u003e public struct BoundingPolygon { /// \u003csummary\u003e /// The corners of the bounding polygon, /// in relation to its origin /// \u003c/summary\u003e public IEnumerable\u003cVector2\u003e Corners; /// \u003csummary\u003e /// The center of the polygon in the game world /// \u003c/summary\u003e public Vector2 Center; } But can we detect collisions between arbitrary polygons?",
-    "modified": "2023-08-14T11:41:07-05:00",
+    "modified": "2025-10-24T13:22:24-05:00",
     "tags": [],
     "title": "Separating Axis Theorem",
     "uri": "/cis580/04-collisions/04-separating-axis-theorem/index.html"

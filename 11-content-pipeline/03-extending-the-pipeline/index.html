@@ -22,13 +22,13 @@ Alternatively, you may want to handle a new content type that has no associated 
     <meta property="og:type" content="article">
     <meta property="article:section" content="Content Pipeline">
     <meta property="article:published_time" content="2020-03-20T10:53:05-05:00">
-    <meta property="article:modified_time" content="2023-10-11T12:41:39-05:00">
+    <meta property="article:modified_time" content="2025-10-24T13:22:24-05:00">
     <meta property="og:image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
     <meta itemprop="name" content="Extending the Pipeline :: K-State CIS 580 Textbook">
     <meta itemprop="description" content="You might be wondering why the content pipeline in XNA was created this way - with importers, processors, content writers, and content readers. The answer is simple - modularity. If you want to load a new image format that the TextureImporter does not handle, you can write your own custom importer to load its data into a TextureContent object, and then still use the existing TextureProcessor and serialization process.
 Alternatively, you may want to handle a new content type that has no associated classes in XNA at all.">
     <meta itemprop="datePublished" content="2020-03-20T10:53:05-05:00">
-    <meta itemprop="dateModified" content="2023-10-11T12:41:39-05:00">
+    <meta itemprop="dateModified" content="2025-10-24T13:22:24-05:00">
     <meta itemprop="wordCount" content="836">
     <meta itemprop="image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
     <title>Extending the Pipeline :: K-State CIS 580 Textbook</title>
@@ -36,26 +36,26 @@ Alternatively, you may want to handle a new content type that has no associated 
     <link href="/cis580/11-content-pipeline/03-extending-the-pipeline/index.print.html" rel="alternate" type="text/html" title="Extending the Pipeline :: K-State CIS 580 Textbook">
     <link href="/cis580/11-content-pipeline/03-extending-the-pipeline/tele.html" rel="alternate" type="text/html" title="Extending the Pipeline :: K-State CIS 580 Textbook">
     <link href="/cis580/11-content-pipeline/03-extending-the-pipeline/embed.html" rel="alternate" type="text/html" title="Extending the Pipeline :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756223284" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756223284" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1756223284" defer></script>
-    <script src="/cis580/js/search.min.js?1756223284" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1761330175" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1761330175" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1761330175" defer></script>
+    <script src="/cis580/js/search.min.js?1761330175" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1756223284";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1761330175";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1756223284" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756223284" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1756223284" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1756223284" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1761330175" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1761330175" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1761330175" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1761330175" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756223284" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756223284" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756223284" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1756223284" rel="stylesheet">
-    <link href="/cis580/css/format-html.min.css?1756223284" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1761330175" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1761330175" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1761330175" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1761330175" rel="stylesheet">
+    <link href="/cis580/css/format-html.min.css?1761330175" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -114,7 +114,7 @@ Alternatively, you may want to handle a new content type that has no associated 
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1756223284" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1761330175" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/cis580/11-content-pipeline/03-extending-the-pipeline/index.html">
     <div id="R-body" class="default-animation">
@@ -234,7 +234,7 @@ Alternatively, you may want to handle a new content type that has no associated 
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
-<p>We also need to provide a content pipeline version of our tilemap class. For this one, we won&rsquo;t need any of the functionality of our <code>Draw()</code> or <code>Load()</code> methods (as we don&rsquo;t need to draw in the pipeline, and we&rsquo;ll move responsibility for loading into our content importer and processor). So really, we only nee to provide a class to contain all the data contained within our tilemap file. To keep things simple, we&rsquo;ll use the same file format we did in the previous chapter, but we&rsquo;ll give the file a new extension: <strong>.tmap</strong> (it will still be a text file). Such a class might look like:</p>
+<p>We also need to provide a content pipeline version of our tilemap class. For this one, we won&rsquo;t need any of the functionality of our <code>Draw()</code> or <code>Load()</code> methods (as we don&rsquo;t need to draw in the pipeline, and we&rsquo;ll move responsibility for loading into our content importer and processor). So really, we only need to provide a class to contain all the data contained within our tilemap file. To keep things simple, we&rsquo;ll use the same file format we did in the previous chapter, but we&rsquo;ll give the file a new extension: <strong>.tmap</strong> (it will still be a text file). Such a class might look like:</p>
 <div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> BasicTilemapPipeline
 </span></span><span style="display:flex;"><span>{  
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">
@@ -279,7 +279,7 @@ Alternatively, you may want to handle a new content type that has no associated 
   <p class="theme-version-footer">8.0.0</p>
 <p>Last modified by:
               <i class='fa-fw fas fa-user'></i> Nathan Bean
-              <i class='fas fa-calendar'></i> <a href="https://github.com/ksu-cs-textbooks/cis580/commit/b1fa47c4804485ab4325f9c8b6064314f8d84462">Oct 11, 2023</a>
+              <i class='fas fa-calendar'></i> <a href="https://github.com/ksu-cs-textbooks/cis580/commit/6bbfe430bfbb2f1b344003c76f215b15ee737e89">Oct 24, 2025</a>
 </p>
 
 </div>
@@ -488,8 +488,8 @@ Alternatively, you may want to handle a new content type that has no associated 
 <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; margin: .5rem auto" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</a></p></div>
       </div>
     </aside>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1756223284" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756223284" defer></script>
-    <script src="/cis580/js/theme.min.js?1756223284" defer></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1761330175" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1761330175" defer></script>
+    <script src="/cis580/js/theme.min.js?1761330175" defer></script>
   </body>
 </html>

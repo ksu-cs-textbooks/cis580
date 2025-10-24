@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/13-basic-3d-rendering/01-introduction/index.html</loc>
-    <lastmod>2023-08-11T11:18:05-05:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/14-lighting-and-cameras/01-introduction/index.html</loc>
@@ -62,7 +62,7 @@
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/07-game-architecture/02-game-services/index.html</loc>
-    <lastmod>2021-02-28T22:49:29-06:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/09-particle-systems/02-particle-class/index.html</loc>
@@ -90,7 +90,7 @@
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/15-heightmap-terrain/03-terrain-class/index.html</loc>
-    <lastmod>2023-08-11T11:18:05-05:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/c-parallax-scrolling/03-sprite-layer-class/index.html</loc>
@@ -130,7 +130,7 @@
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/15-heightmap-terrain/04-using-the-terrain/index.html</loc>
-    <lastmod>2023-11-03T12:55:41-05:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/09-particle-systems/04-example-particle-systems/index.html</loc>
@@ -182,7 +182,7 @@
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/09-particle-systems/05-using-particle-systems/index.html</loc>
-    <lastmod>2021-03-31T13:14:16-05:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/05-audio/index.html</loc>
@@ -190,7 +190,7 @@
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/14-lighting-and-cameras/06-fps-camera/index.html</loc>
-    <lastmod>2021-04-23T16:59:02-05:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/c-parallax-scrolling/06-scrolling-layers/index.html</loc>
@@ -270,7 +270,7 @@
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/05-audio/01-introduction/index.html</loc>
-    <lastmod>2021-02-03T20:43:16-06:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/06-physics/01-introduction/index.html</loc>
@@ -286,7 +286,7 @@
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/11-content-pipeline/02-the-content-pipeline/index.html</loc>
-    <lastmod>2023-10-10T18:39:10-05:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/10-tile-maps/02-tilemap-concepts/index.html</loc>
@@ -294,7 +294,7 @@
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/04-collisions/02-collision-shapes/index.html</loc>
-    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/b-game-math/02-coordinate-systems/index.html</loc>
@@ -302,7 +302,7 @@
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/00-forward/02-course-structure/index.html</loc>
-    <lastmod>2025-08-26T10:47:46-05:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/03-sprites/02-drawing-sprites/index.html</loc>
@@ -314,7 +314,7 @@
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/06-physics/02-linear-dynamics/index.html</loc>
-    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/a-simple-games/02-snake/index.html</loc>
@@ -322,7 +322,7 @@
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/05-audio/02-sound-effects/index.html</loc>
-    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/02-the-game-class/index.html</loc>
@@ -334,15 +334,15 @@
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/11-content-pipeline/03-extending-the-pipeline/index.html</loc>
-    <lastmod>2023-10-11T12:41:39-05:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/06-physics/03-angular-dynamics/index.html</loc>
-    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/04-collisions/03-collision-helper/index.html</loc>
-    <lastmod>2021-02-03T20:43:16-06:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/a-simple-games/03-flappy-bird/index.html</loc>
@@ -358,7 +358,7 @@
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/03-sprites/03-texture-atlases/index.html</loc>
-    <lastmod>2025-08-19T13:21:42-05:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/03-the-game-window/index.html</loc>
@@ -386,7 +386,7 @@
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/06-physics/04-elastic-collisions/index.html</loc>
-    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/04-game-initialization/index.html</loc>
@@ -406,7 +406,7 @@
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/04-collisions/04-separating-axis-theorem/index.html</loc>
-    <lastmod>2023-08-14T11:41:07-05:00</lastmod>
+    <lastmod>2025-10-24T13:22:24-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/cis580/03-sprites/05-drawing-text/index.html</loc>

@@ -29,26 +29,26 @@
     <link href="/cis580/07-game-architecture/index.xml" rel="alternate" type="application/rss+xml" title="Game Architecture :: K-State CIS 580 Textbook">
     <link href="/cis580/07-game-architecture/tele.html" rel="alternate" type="text/html" title="Game Architecture :: K-State CIS 580 Textbook">
     <link href="/cis580/07-game-architecture/embed.html" rel="alternate" type="text/html" title="Game Architecture :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756223284" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756223284" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1756223284" defer></script>
-    <script src="/cis580/js/search.min.js?1756223284" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1761330175" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1761330175" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1761330175" defer></script>
+    <script src="/cis580/js/search.min.js?1761330175" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1756223284";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1761330175";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1756223284" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756223284" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1756223284" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1756223284" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1761330175" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1761330175" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1761330175" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1761330175" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756223284" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756223284" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756223284" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1756223284" rel="stylesheet">
-    <link href="/cis580/css/format-print.min.css?1756223284" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1761330175" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1761330175" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1761330175" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1761330175" rel="stylesheet">
+    <link href="/cis580/css/format-print.min.css?1761330175" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -107,7 +107,7 @@
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1756223284" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1761330175" rel="stylesheet">
   </head>
   <body class="mobile-support print" data-url="/cis580/07-game-architecture/index.html">
     <div id="R-body" class="default-animation">
@@ -179,8 +179,8 @@
 </blockquote>
 <p>This means that not only do you need to process user input, update a simulated world, and then render that simulated world, you <em>also</em> have to do this in realtime (i.e. within 1/60th of a second)!  This is not a trivial challenge!</p>
 <p>As with any software system, organization can go a long way to managing this complexity.  Consider this diagram of a AAA game engine&rsquo;s software architecture:</p>
-<p><a href="#R-image-ffa26b3d3aaf894410206ef7088d6d19" class="lightbox-link"><img alt="Software Engine Architecture" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/7.1.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ffa26b3d3aaf894410206ef7088d6d19"><img alt="Software Engine Architecture" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/7.1.1.png"></a></p>
+<p><a href="#R-image-0751d8d71bd897b4026fca52a765e33c" class="lightbox-link"><img alt="Software Engine Architecture" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/7.1.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0751d8d71bd897b4026fca52a765e33c"><img alt="Software Engine Architecture" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/7.1.1.png"></a></p>
 <p>Note how the engine is broken into systems and organized into layers.  Building an engine like this is outside the scope of this book (I encourage you to read Jason Gregory&rsquo;s <em>Game Engine Architecture</em> if you&rsquo;d like to delve into it), but the idea of loosely coupled systems is certainly something we can adapt.  Moreover, it is already explicitly supported by the MonoGame framework.  We&rsquo;ll explore how in this chapter.</p>
 
   <footer class="footline">
@@ -201,7 +201,7 @@
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> RegisterAchievement(Achievement achievement);
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
-<p>Then we could author <em>two</em> classes implementing this interface, one for the Xbox and one for the Playstation.  We would initalize and register the appropriate one for the build of our program:</p>
+<p>Then we could author <em>two</em> classes implementing this interface, one for the Xbox and one for the Playstation.  We would initialize and register the appropriate one for the build of our program:</p>
 <div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>game.Services.AddService(IAchievementService, <span style="color:#66d9ef">new</span> XBoxAchievementService());</span></span></code></pre></div>
 <p>This provides us with that desirable &ldquo;loose coupling&rdquo;, where the only change we&rsquo;d need to make between the two builds is what achievement service we initialize.  A second common use for the <code>GameServicesContainer</code> is it can be passed to a constructor to provide multiple services as a single parameter, instead of having to pass each one separately.  It can also be held onto to retrieve the service at a later point in the execution, as is the case with the <code>ContentManager</code> constructor.</p>
 <p>Game services are a good replacement for systems that you might otherwise use the <a href="https://gameprogrammingpatterns.com/singleton.html" rel="external" target="_blank">Singleton Pattern</a> to implement.</p>
@@ -683,8 +683,8 @@
 
 </div>
     </div>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1756223284" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756223284" defer></script>
-    <script src="/cis580/js/theme.min.js?1756223284" defer></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1761330175" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1761330175" defer></script>
+    <script src="/cis580/js/theme.min.js?1761330175" defer></script>
   </body>
 </html>

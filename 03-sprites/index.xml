@@ -6,7 +6,7 @@
     <description>Who are you calling a fairy?</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Aug 2025 13:21:42 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 24 Oct 2025 13:22:24 -0500</lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/03-sprites/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction</title>
@@ -27,7 +27,7 @@
       <link>https://textbooks.cs.ksu.edu/cis580/03-sprites/03-texture-atlases/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:26 -0500</pubDate>
       <guid>https://textbooks.cs.ksu.edu/cis580/03-sprites/03-texture-atlases/index.html</guid>
-      <description>A texture atlas is a texture that is used to represent multiple sprites. For example, this texture from Kinney’s 1Bit Pack available on OpenGameArt contains all the sprites to create a roguelike in a single texture:&#xA;In this case, each sprite is 15x15 pixels, with a 1 pixel outline. So to draw the cactus in the second row and sixth column of sprites, we would use a source rectangle:&#xA;var sourceRect = new Rectangle(16, 96, 16, 16); Thus, to draw the sprite on-screen at position $ (50,50) $ we could use:</description>
+      <description>A texture atlas is a texture that is used to represent multiple sprites. For example, this texture from Kinney’s 1Bit Pack available on OpenGameArt contains all the sprites to create a roguelike in a single texture:&#xA;In this case, each sprite is 15x15 pixels, with a 1 pixel outline. So to draw the cactus in the second row and sixth column of sprites, we would use a source rectangle:&#xA;var sourceRect = new Rectangle(96, 16, 16, 16); Thus, to draw the sprite on-screen at position $ (50,50) $ we could use:</description>
     </item>
     <item>
       <title>Animated Sprites</title>

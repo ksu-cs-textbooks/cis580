@@ -29,7 +29,7 @@
     <meta property="og:type" content="article">
     <meta property="article:section" content="Heightmap Terrain">
     <meta property="article:published_time" content="2020-03-24T10:00:00-05:00">
-    <meta property="article:modified_time" content="2023-11-03T12:55:41-05:00">
+    <meta property="article:modified_time" content="2025-10-24T13:22:24-05:00">
     <meta property="og:image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
     <meta itemprop="name" content="Using the Terrain :: K-State CIS 580 Textbook">
     <meta itemprop="description" content="Let’s see our terrain in action. First we’ll need to make some changes in our ExampleGame class. We’ll add a Terrain field:
@@ -37,34 +37,34 @@
 // Build the terrain Texture2D heightmap = Content.Load&lt;Texture2D&gt;(&#34;heightmap&#34;); terrain = new Terrain(this, heightmap, 10f, Matrix.Identity); And in our ExampleGame.Draw() we’ll render it with the existing camera:
 // Draw the terrain terrain.Draw(camera); Now if you run the game, you should see your terrain, and even be able to move around it using the camera controls (WASD &#43; Mouse).">
     <meta itemprop="datePublished" content="2020-03-24T10:00:00-05:00">
-    <meta itemprop="dateModified" content="2023-11-03T12:55:41-05:00">
-    <meta itemprop="wordCount" content="909">
+    <meta itemprop="dateModified" content="2025-10-24T13:22:24-05:00">
+    <meta itemprop="wordCount" content="867">
     <meta itemprop="image" content="https://textbooks.cs.ksu.edu/cis580/images/hero.png">
     <title>Using the Terrain :: K-State CIS 580 Textbook</title>
     <link href="https://textbooks.cs.ksu.edu/cis580/15-heightmap-terrain/04-using-the-terrain/index.html" rel="canonical" type="text/html" title="Using the Terrain :: K-State CIS 580 Textbook">
     <link href="/cis580/15-heightmap-terrain/04-using-the-terrain/index.xml" rel="alternate" type="application/rss+xml" title="Using the Terrain :: K-State CIS 580 Textbook">
     <link href="/cis580/15-heightmap-terrain/04-using-the-terrain/index.print.html" rel="alternate" type="text/html" title="Using the Terrain :: K-State CIS 580 Textbook">
     <link href="/cis580/15-heightmap-terrain/04-using-the-terrain/tele.html" rel="alternate" type="text/html" title="Using the Terrain :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1756223284" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1756223284" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1756223284" defer></script>
-    <script src="/cis580/js/search.min.js?1756223284" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1761330175" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1761330175" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1761330175" defer></script>
+    <script src="/cis580/js/search.min.js?1761330175" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1756223284";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1761330175";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1756223284" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1756223284" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1756223284" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1756223284" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1761330175" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1761330175" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1761330175" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1761330175" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756223284" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1756223284" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1756223284" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1756223284" rel="stylesheet">
-    <link href="/cis580/css/format-html.min.css?1756223284" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1761330175" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1761330175" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1761330175" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1761330175" rel="stylesheet">
+    <link href="/cis580/css/format-html.min.css?1761330175" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -123,7 +123,7 @@
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1756223284" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1761330175" rel="stylesheet">
   </head>
   <body class="mobile-support embed html" data-url="/cis580/15-heightmap-terrain/04-using-the-terrain/index.html">
     <div id="R-body" class="default-animation">
@@ -151,8 +151,8 @@
 <div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>    <span style="color:#75715e">// Draw the terrain</span>
 </span></span><span style="display:flex;"><span>    terrain.Draw(camera);</span></span></code></pre></div>
 <p>Now if you run the game, you should see your terrain, and even be able to move around it using the camera controls (WASD + Mouse).</p>
-<p><a href="#R-image-c1ae73918474548bc69b925b57b1a7f2" class="lightbox-link"><img alt="The rendered terrain" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-4.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c1ae73918474548bc69b925b57b1a7f2"><img alt="The rendered terrain" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-4.1.png"></a></p>
+<p><a href="#R-image-f48ee0cf2a2ce3af75e749511a13ee12" class="lightbox-link"><img alt="The rendered terrain" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/heightmap-terrain-4.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f48ee0cf2a2ce3af75e749511a13ee12"><img alt="The rendered terrain" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/heightmap-terrain-4.1.png"></a></p>
 <p>You&rsquo;ll probably notice that your camera does not change position as you move over the terrain - in fact, in some parts of the map you can actually end up looking up from underneath!</p>
 <p>Clearly we need to do a bit more work.  We need a way to tell the camera what its Y-value should be, based on what part of the terrain it is over.</p>
 <h2 id="the-iheightmap-interface">The IHeightMap Interface</h2>
@@ -178,12 +178,7 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// Gets or sets the heightmap this camera is interacting with</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> IHeightMap HeightMap { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }</span></span></code></pre></div>
-<p>We also might want to add a property to say how far above any heightmap we want the camera to be.  Let&rsquo;s call this <code>HeightOffset</code>:</p>
-<div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// Gets or sets how high above the heightmap the camera should be</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">float</span> HeightOffset { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; } = <span style="color:#ae81ff">5</span>;</span></span></code></pre></div>
-<p>And we&rsquo;ll modify our <code>FPSCamera.Update()</code> to use the <code>HeightMap</code> and <code>HeightOffset</code> to determine the camera&rsquo;s Y position:</p>
+<p>And we&rsquo;ll modify our <code>FPSCamera.Update()</code> to use the <code>HeightMap</code>&rsquo;s height at the camera position, added to the camerea&rsquo;s <code>HeightOffset</code> to determine the camera&rsquo;s actual Y position:</p>
 <div class="highlight" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>    <span style="color:#75715e">// Adjust camera height to heightmap </span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(HeightMap != <span style="color:#66d9ef">null</span>)
 </span></span><span style="display:flex;"><span>    {
@@ -236,9 +231,9 @@
       
       
     </div>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1756223284" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1756223284" defer></script>
-    <script src="/cis580/js/theme.min.js?1756223284" defer></script>
-  <script src="/cis580/js/embed-iframe.min.js?1756223284" defer></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1761330175" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1761330175" defer></script>
+    <script src="/cis580/js/theme.min.js?1761330175" defer></script>
+  <script src="/cis580/js/embed-iframe.min.js?1761330175" defer></script>
   </body>
 </html>

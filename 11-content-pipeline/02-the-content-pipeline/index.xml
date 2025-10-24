@@ -3,7 +3,7 @@
   <channel>
     <title>The Content Pipeline :: K-State CIS 580 Textbook</title>
     <link>https://textbooks.cs.ksu.edu/cis580/11-content-pipeline/02-the-content-pipeline/index.html</link>
-    <description>As we described in the introduction, the XNA Content Pipeline’s purpose is to transform asset files (content) in to a form most readily useable by our games. It is implemented as a separate build step that is run every time we compile our game. In fact, each XNA game is actually two projects - the Content project, and the Game project.&#xA;The pipeline is broken up into several steps:&#xA;Importing the asset data Processing the asset data Serializing the asset data Loading the serialized asset data You can see the process here:</description>
+    <description>As we described in the introduction, the XNA Content Pipeline’s purpose is to transform asset files (content) into a form most readily usable by our games. It is implemented as a separate build step that is run every time we compile our game. In fact, each XNA game is actually two projects - the Content project, and the Game project.&#xA;The pipeline is broken up into several steps:&#xA;Importing the asset data Processing the asset data Serializing the asset data Loading the serialized asset data You can see the process here:</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
