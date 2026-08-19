@@ -1,7 +1,7 @@
 # Base URL where the site will be hosted
 baseURL = "https://textbooks.cs.ksu.edu/cis580"
 # Default language for the site
-languageCode = "en-us"
+languageLocale = "en-us"
 # Site Title
 title = "K-State CIS 580 Textbook"
 # This setting is deprecated and should be turned off
