@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/03-sprites/03-texture-atlases/index.html</link>
     <description>A texture atlas is a texture that is used to represent multiple sprites. For example, this texture from Kinney’s 1Bit Pack available on OpenGameArt contains all the sprites to create a roguelike in a single texture:&#xA;In this case, each sprite is 15x15 pixels, with a 1 pixel outline. So to draw the cactus in the second row and sixth column of sprites, we would use a source rectangle:&#xA;var sourceRect = new Rectangle(96, 16, 16, 16); Thus, to draw the sprite on-screen at position $ (50,50) $ we could use:</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/03-sprites/03-texture-atlases/index.xml" rel="self" type="application/rss+xml" />
   </channel>

@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/06-physics/02-linear-dynamics/index.html</link>
     <description>At some point in your K-12 education, you probably encountered the equations of linear motion, which describe motion in terms of time, i.e.:&#xA;$$ v = at + v_0 \tag{1} $$ $$ p = p_0 + v_ot + \frac{1}{2}at^2 \tag{2} $$ $$ p = p_0 + \frac{1}{2}(v+v_0)t \tag{3} $$ $$ v^2 = v_0^2 2a(r - r_0) \tag{4} $$ $$ p = p_0 + vt - \frac{1}{2}at^2 \tag{5} $$&#xA;These equations can be used to calculate motion in a video game setting as well, i.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/06-physics/02-linear-dynamics/index.xml" rel="self" type="application/rss+xml" />
   </channel>

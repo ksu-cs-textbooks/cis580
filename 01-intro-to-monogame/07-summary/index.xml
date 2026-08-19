@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/07-summary/index.html</link>
     <description>In this chapter we looked at how MonoGame implements the Game Loop pattern within its Game class. We also saw how the Game class interacts with the GameWindow class, which provides an abstraction of the operating system’s window representation. We saw how we can add our own custom code into the MonoGame game loop by overriding the Game.Update() and Game.Draw() methods, as well as the overriding Game.Initialize() and Game.LoadContent() to set up the game world.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/07-summary/index.xml" rel="self" type="application/rss+xml" />
   </channel>

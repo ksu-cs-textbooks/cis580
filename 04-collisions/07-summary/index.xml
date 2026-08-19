@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/04-collisions/07-summary/index.html</link>
     <description>In this chapter we looked at implementing collision detection using bounding shapes, the separating axis theorem, and per-pixel evaluation. We discussed the merits of the different approaches, and saw how multiphase collision detection can avoid expensive collision detection tests.&#xA;There are other techniques we can use to avoid unneeded collision tests as well. We’ll talk about one of these, spatial partitioning in an upcoming chapter.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/04-collisions/07-summary/index.xml" rel="self" type="application/rss+xml" />
   </channel>

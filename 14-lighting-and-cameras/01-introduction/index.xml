@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/14-lighting-and-cameras/01-introduction/index.html</link>
     <description>You’ve now seen how vertices are grouped into triangles and rendered using accelerated hardware, how we can use a mesh of triangles to represent more complex objects, and how we can apply a texture to that mesh to provide visual detail. Now we need to add light sources that can add shading to our models, and a camera which can be shared by all objects in a scene to provide a common view and projection matrix.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/14-lighting-and-cameras/01-introduction/index.xml" rel="self" type="application/rss+xml" />
   </channel>

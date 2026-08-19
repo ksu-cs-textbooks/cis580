@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/15-heightmap-terrain/03-terrain-class/index.html</link>
     <description>We’ll start with the class definition:&#xA;/// &lt;summary&gt; /// A class representing terrain /// &lt;/summary&gt; public class Terrain { // The game this Terrain belongs to Game game; } As with most of our classes, we’ll keep a reference to the Game object to access the shared ContentManager and GraphicsDevice.&#xA;Class Fields We could store our heightmap directly, but all we really need out of it are the height values, and these need to be scaled.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/15-heightmap-terrain/03-terrain-class/index.xml" rel="self" type="application/rss+xml" />
   </channel>

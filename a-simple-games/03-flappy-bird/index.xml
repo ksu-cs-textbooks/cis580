@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/a-simple-games/03-flappy-bird/index.html</link>
     <description>The addictive and oft-copied flappy bird game consists of few elements - a scrolling background, an animated sprite, and obstacles that scroll across the screen, creating the impression of an infinitely large world.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/a-simple-games/03-flappy-bird/index.xml" rel="self" type="application/rss+xml" />
   </channel>

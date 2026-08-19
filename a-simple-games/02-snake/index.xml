@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/a-simple-games/02-snake/index.html</link>
     <description>Consider the classic game “Snake”, which has been ported to the first cellular phones, graphing calculators, and even adapted for Google Maps in this project. While very simple in implementation, it remains an enjoyable game to play.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/a-simple-games/02-snake/index.xml" rel="self" type="application/rss+xml" />
   </channel>

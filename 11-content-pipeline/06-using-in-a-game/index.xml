@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/11-content-pipeline/06-using-in-a-game/index.html</link>
     <description>Using our newly-created custom pipeline in a game we are building is not terribly complicated, but does require some understanding of how projects in Visual Studio interact. Perhaps most important to this is understanding that the Content.mgcb file in your game solution is actually another Visual Studio project! As such, it can reference other project, just like the C# projects you are used to. This can be done through the MGCB Editor.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/11-content-pipeline/06-using-in-a-game/index.xml" rel="self" type="application/rss+xml" />
   </channel>

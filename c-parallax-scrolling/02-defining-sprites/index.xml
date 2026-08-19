@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/c-parallax-scrolling/02-defining-sprites/index.html</link>
     <description>At its most basic, a parallax layer consists of a transformation which shifts images in the layer to the correct position.&#xA;There are several ways we could structure this. We could have a single transformation and image per layer, or we could share the same transformation amongst multiple images or even game objects. The latter has the benefit of a lot of flexibility with very little overhead, so let’s adopt that approach here.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/c-parallax-scrolling/02-defining-sprites/index.xml" rel="self" type="application/rss+xml" />
   </channel>

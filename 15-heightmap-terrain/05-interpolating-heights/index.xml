@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/15-heightmap-terrain/05-interpolating-heights/index.html</link>
     <description>While you can now walk over your terrain, you probably notice that the camera seems really jittery. Why isn’t it smooth?&#xA;Think about how we render our terrain. The diagram below shows the terrain in one dimension. At each integral step, we have a height value. The terrain (represented by green lines) is interpolated between these heights.&#xA;Now think about what our function transforming world coordinates to heights is doing. It casts tx to an int to throw away the fractional part of the coordinate in order to get an array index.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/15-heightmap-terrain/05-interpolating-heights/index.xml" rel="self" type="application/rss+xml" />
   </channel>

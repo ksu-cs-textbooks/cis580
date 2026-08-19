@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/11-content-pipeline/05-custom-processor/index.html</link>
     <description>A processor is a class that extends the ContentProcessor&lt;TInput, TOutput&gt;class and overrides its Process() method. Like the importer, this is a template class, but with two templates! The TInput identifies the class coming into the Process() method as an argument, and the TOutput identifies the class being returned from the method. Not that these don’t have to be different classes - in our case, we’ll continue using the TilemapContent class we defined earlier, and just populate a few more of its properties:</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/11-content-pipeline/05-custom-processor/index.xml" rel="self" type="application/rss+xml" />
   </channel>

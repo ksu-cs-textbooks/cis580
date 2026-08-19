@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/05-the-update-method/index.html</link>
     <description>As we mentioned before, the virtual Game.Update(GameTime gameTime) method is a hook for adding your game’s logic. By overriding this method, and adding your own game logic code, you fulfill the update step of the game loop.&#xA;This is where you place the simulation code for your game - where the world the game is representing is updated. Here, all your actors (the parts of the game world that move and interact) are updated.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/05-the-update-method/index.xml" rel="self" type="application/rss+xml" />
   </channel>

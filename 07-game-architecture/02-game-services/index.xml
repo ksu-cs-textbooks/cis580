@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/07-game-architecture/02-game-services/index.html</link>
     <description>A common approach in software architecture for loose coupling of systems is the use of services. Services are implemented with 1) a service provider - essentially a collection of services that can be searched for a service, and new services can be registered with, 2) interfaces that define specific services how to work with the service, and 3) classes that implement these interfaces. This is the Service Locator Pattern as implemented in C#.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/07-game-architecture/02-game-services/index.xml" rel="self" type="application/rss+xml" />
   </channel>

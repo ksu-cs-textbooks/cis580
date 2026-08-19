@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/04-collisions/01-introduction/index.html</link>
     <description>At the heart of every game design is interaction - interaction between the player and a simulated game world. This simulation imposes rules about how interaction is allowed to unfold, and in nearly all cases is built upon the mechanism of collision detection - detecting when one sprite touches or overlaps another within the game world.&#xA;Consider the basic mechanics of many classic games:&#xA;In Space Invaders, bullets from the player’s turret destroy invading aliens, while alien’s bullets chew away the player’s shields and kill the player if they strike him or her.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/04-collisions/01-introduction/index.xml" rel="self" type="application/rss+xml" />
   </channel>

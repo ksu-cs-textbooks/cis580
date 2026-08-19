@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/11-content-pipeline/08-summary/index.html</link>
     <description>In this chapter we explored the XNA Content Pipeline in more detail, and saw how to extend the pipeline with new custom importers and processors. We saw how these can offload preparing assets for inclusion in our game to the build step, rather than performing that work while running the game. We also saw how to add custom parameters to our content processors, allowing us to tweak how assets are prepared.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/11-content-pipeline/08-summary/index.xml" rel="self" type="application/rss+xml" />
   </channel>

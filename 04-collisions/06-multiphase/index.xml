@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/04-collisions/06-multiphase/index.html</link>
     <description>It should be clear that the per-pixel and SAT-based approaches can become very computationally expensive. For this reason, games that need fine-grained collision detection often resort to a multi-phase approach, which utilizes two or more processing passes. Each pass uses an increasingly sophisticated (and therefore costly) collision detection algorithm to find collisions, but only tests those objects that previous passes identified as “possibly colliding”. The more simple methods employed in the first few passes typically can reject a great deal of possible collisions, reducing the number of more expensive comparisons that will be tried later.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/04-collisions/06-multiphase/index.xml" rel="self" type="application/rss+xml" />
   </channel>

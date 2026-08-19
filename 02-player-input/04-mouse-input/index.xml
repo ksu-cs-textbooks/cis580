@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/02-player-input/04-mouse-input/index.html</link>
     <description>Mouse input works much like keyboard input - we have a MouseState struct that represents the state of the mouse, and we can get the current state from the static Mouse class’s GetState() method. You’ll also want to use the same caching strategy of a current and prior state if you want to know when a button goes down or comes up, i.e.:&#xA;MouseState currentMouseState; MouseState priorMouseState; public override void Update(GameTime gameTime) { priorMouseState = currentMouseState; currentMouseState = Mouse.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/02-player-input/04-mouse-input/index.xml" rel="self" type="application/rss+xml" />
   </channel>

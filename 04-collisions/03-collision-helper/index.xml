@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/04-collisions/03-collision-helper/index.html</link>
     <description>There are many ways we could organize the methods we saw in the previous section, but one particularly apt one is to organize them into a static helper class, much like our Math and MathHelper classes, i.e. CollisionHelper:&#xA;/// &lt;summary&gt; /// A class containing collision detection methods /// &lt;/summary&gt; public static class CollisionHelper { /// &lt;summary&gt; /// Detects a collision between two points /// &lt;/summary&gt; /// &lt;param name=&#34;p1&#34;&gt;the first point&lt;/param&gt; /// &lt;param name=&#34;p2&#34;&gt;the second point&lt;/param&gt; /// &lt;returns&gt;true when colliding, false otherwise&lt;/returns&gt; public static bool Collides(BoundingPoint p1, BoundingPoint p2) { return p1.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/04-collisions/03-collision-helper/index.xml" rel="self" type="application/rss+xml" />
   </channel>

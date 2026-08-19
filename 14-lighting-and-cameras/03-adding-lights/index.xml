@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/14-lighting-and-cameras/03-adding-lights/index.html</link>
     <description>Well, we have a crate. Let’s make it more interesting by adding some lights. To start with, we’ll use the BasicEffect’s default lights. Add the line:&#xA;effect.EnableDefaultLighting(); Into your Crate.IntializeEffect() method. Then run the program again. Notice a difference?&#xA;.&#xA;The default lighting is useful to quickly see what our object will look like illuminated, but ultimately, we’ll want to define our own lights and how they interact with our objects.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/14-lighting-and-cameras/03-adding-lights/index.xml" rel="self" type="application/rss+xml" />
   </channel>

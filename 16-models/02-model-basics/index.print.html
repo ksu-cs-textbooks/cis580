@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.128.0">
-    <meta name="generator" content="Relearn 8.0.0">
+    <meta name="generator" content="Relearn 8.0.4">
     <meta name="description" content="A model is a collection of the information that defines a 3D object. Rather than being hand-created or hard-coded (as we have done in our previous work), a model is usually created using 3D modeling software (i.e. Blender, 3D Studio, Maya, etc). Instead of exposing the raw data of the meshes, these software packages provide an abstraction, often based on real-world sculpting techniques or constructive geometry transformations that assist artists in creating complex three-dimensional shapes.">
     <meta name="author" content="Nathan H. Bean">
     <meta name="twitter:card" content="summary_large_image">
@@ -15,7 +15,7 @@
     <meta property="og:site_name" content="K-State CIS 580 Textbook">
     <meta property="og:title" content="Model Basics :: K-State CIS 580 Textbook">
     <meta property="og:description" content="A model is a collection of the information that defines a 3D object. Rather than being hand-created or hard-coded (as we have done in our previous work), a model is usually created using 3D modeling software (i.e. Blender, 3D Studio, Maya, etc). Instead of exposing the raw data of the meshes, these software packages provide an abstraction, often based on real-world sculpting techniques or constructive geometry transformations that assist artists in creating complex three-dimensional shapes.">
-    <meta property="og:locale" content="en_us">
+    <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Models">
     <meta property="article:published_time" content="2020-03-24T10:00:00-05:00">
@@ -32,26 +32,26 @@
     <link href="/cis580/16-models/02-model-basics/index.xml" rel="alternate" type="application/rss+xml" title="Model Basics :: K-State CIS 580 Textbook">
     <link href="/cis580/16-models/02-model-basics/tele.html" rel="alternate" type="text/html" title="Model Basics :: K-State CIS 580 Textbook">
     <link href="/cis580/16-models/02-model-basics/embed.html" rel="alternate" type="text/html" title="Model Basics :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1761330175" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1761330175" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1761330175" defer></script>
-    <script src="/cis580/js/search.min.js?1761330175" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1787149864" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1787149864" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1787149864" defer></script>
+    <script src="/cis580/js/search.min.js?1787149864" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1761330175";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1787149864";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1761330175" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1761330175" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1761330175" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1761330175" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1787149864" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1787149864" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1787149864" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1787149864" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1761330175" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1761330175" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1761330175" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1761330175" rel="stylesheet">
-    <link href="/cis580/css/format-print.min.css?1761330175" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1787149864" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1787149864" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1787149864" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1787149864" rel="stylesheet">
+    <link href="/cis580/css/format-print.min.css?1787149864" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -110,7 +110,7 @@
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1761330175" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1787149864" rel="stylesheet">
   </head>
   <body class="mobile-support print" data-url="/cis580/16-models/02-model-basics/index.html">
     <div id="R-body" class="default-animation">
@@ -192,8 +192,8 @@
 </span></span><span style="display:flex;"><span>    tank.Draw(Matrix.Identity, camera.View, camera.Projection);</span></span></code></pre></div>
 <p>Note we need to provide a world, view, and projection matrix to the model to draw it.</p>
 <p>If we run the game now, you should see the tank on (actually a bit <em>in</em>) the terrain:</p>
-<p><a href="#R-image-c9c6e16f4034763b4baa8aa5e307f230" class="lightbox-link"><img alt="The Rendered Model" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/models-2.1.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c9c6e16f4034763b4baa8aa5e307f230"><img alt="The Rendered Model" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/models-2.1.png"></a></p>
+<p><a href="#R-image-50f787a13593d17e1f3b3dfa5734bd7d" class="lightbox-link"><img alt="The Rendered Model" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/models-2.1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-50f787a13593d17e1f3b3dfa5734bd7d"><img alt="The Rendered Model" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/models-2.1.png"></a></p>
 <p>But, that is about the extent of the functionality offered to us by the <code>Model</code> class.  Much like the <code>Texture2D</code>, it is simply providing us with the data from a content file in a more manageable format.  But as with the <code>Texture2D</code>, we will only use that as a starting point for doing some really interesting things.</p>
 <p>Let&rsquo;s start that exploration by defining our own class to use this model.</p>
 
@@ -203,7 +203,7 @@
         </div>
       </main>
 <div class="git-footer">
-  <p class="theme-version-footer">8.0.0</p>
+  <p class="theme-version-footer">8.0.4</p>
 <p>Last modified by:
               <i class='fa-fw fas fa-user'></i> Russell Feldhausen
               <i class='fas fa-calendar'></i> <a href="https://github.com/ksu-cs-textbooks/cis580/commit/43f194969a638fa4572819da4b31060ad574a9ce">Aug 11, 2023</a>
@@ -211,8 +211,8 @@
 
 </div>
     </div>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1761330175" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1761330175" defer></script>
-    <script src="/cis580/js/theme.min.js?1761330175" defer></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1787149864" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1787149864" defer></script>
+    <script src="/cis580/js/theme.min.js?1787149864" defer></script>
   </body>
 </html>

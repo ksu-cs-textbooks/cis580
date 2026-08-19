@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/05-audio/02-sound-effects/index.html</link>
     <description>From the “bing” of a coin box in Super Mario Bros to the reveal chimes of the Zelda series, sound effects provide a powerful mechanism for informing the player of what is happening in your game world.&#xA;SoundEffect Class MonoGame represents sound effects with the SoundEffect class. Like other asset types, we don’t normally construct this directly, we rather load it through the content pipeline. Usually, a sound effect will start as a .</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/05-audio/02-sound-effects/index.xml" rel="self" type="application/rss+xml" />
   </channel>

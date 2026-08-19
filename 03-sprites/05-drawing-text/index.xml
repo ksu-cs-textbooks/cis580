@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/03-sprites/05-drawing-text/index.html</link>
     <description>Text in videogames is challenging. In the early days of computing, video cards had a limited number of modes - the most common was for displaying text that was streamed to the video card as ASCII character data. This is also how the command prompt and terminals work - they operate on streams of character data.&#xA;But games used different modes that used the limited memory of the card to supply pixel data in a variety of formats.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/03-sprites/05-drawing-text/index.xml" rel="self" type="application/rss+xml" />
   </channel>

@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/03-the-game-window/index.html</link>
     <description>While MonoGame does support 3D rendering, we’re going to start with 2D games. When working in 2D, MonoGame uses a coordinate system similar to the screen coordinates you’ve seen in your earlier classes. The origin of the coordinate system $ (0, 0) $, is the upper-left corner of the game window’s client area, and the X-axis increases to the right and the Y-axis increases downward.&#xA;The part of the game world that appears on-screen is determined by the active viewport, represented by a Viewport struct - basically a rectangle plus a minimum and maximum depth.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/03-the-game-window/index.xml" rel="self" type="application/rss+xml" />
   </channel>

@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/00-forward/07-software/index.html</link>
     <description>Web Only This textbook was authored for the CIS 580 - Fundamentals of Game Programming course at Kansas State University. This front matter is specific to that course. If you are not enrolled in the course, please disregard this section.&#xA;MonoGame and Visual Studio For this course, we will be using a number of software packages including:&#xA;Microsoft Visual Studio 2022 The MonoGame Framework These have been installed in the classroom lab, as well as all Computer Science labs.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/00-forward/07-software/index.xml" rel="self" type="application/rss+xml" />
   </channel>

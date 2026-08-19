@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/c-parallax-scrolling/04-add-the-background/index.html</link>
     <description>Now that we have our ParallaxLayer class, let’s add instances of it to our Game1 class.&#xA;The Background Layer Let’s start with the background layer. First, we’ll need to import our three texture, in our LoadContent method:&#xA;var backgroundTexture = Content.Load&lt;Texture2D&gt;(&#34;background&#34;); Then we can create StaticSprite instance:&#xA;var backgroundSprite = new StaticSprite(backgroundTexture); And finally, create our ParallaxLayer instance:&#xA;var backgroundLayer = new ParallaxLayer(this); We’ll add our sprite to it:&#xA;backgroundLayer.Sprites.Add(backgroundSprite); And set its DrawOrder.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/c-parallax-scrolling/04-add-the-background/index.xml" rel="self" type="application/rss+xml" />
   </channel>

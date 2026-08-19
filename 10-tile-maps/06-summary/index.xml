@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/10-tile-maps/06-summary/index.html</link>
     <description>In this chapter we learned about tile maps, an important technique for creating large game worlds with small memory footprints. We also examined the Tiled map editor and saw an example of loading a Tiled map. However, this approach used traditional File I/O. In our next chapter, we’ll learn how to use the Content Pipeline to process the TMX file directly.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/10-tile-maps/06-summary/index.xml" rel="self" type="application/rss+xml" />
   </channel>

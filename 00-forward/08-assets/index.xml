@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/00-forward/08-assets/index.html</link>
     <description>Web Only This textbook was authored for the CIS 580 - Fundamentals of Game Programming course at Kansas State University. This front matter is specific to that course. If you are not enrolled in the course, please disregard this section.&#xA;Assets are all the resources - art, sound, music - that go into a game. While you can create entirely original assets for your games, this is not required. However, if you choose to use assets created by other people, you must follow copyright law.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/00-forward/08-assets/index.xml" rel="self" type="application/rss+xml" />
   </channel>

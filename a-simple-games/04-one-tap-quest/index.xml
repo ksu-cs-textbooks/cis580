@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/a-simple-games/04-one-tap-quest/index.html</link>
     <description>A masterful exploration of minimalist interaction, One-Tap-Quest uses a single click as the input to start the player on their path to victory or failure. The game uses static backgrounds, and a limited number of enemies and power-ups. Variety and replayability is provided entirely by random spawn locations.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/a-simple-games/04-one-tap-quest/index.xml" rel="self" type="application/rss+xml" />
   </channel>

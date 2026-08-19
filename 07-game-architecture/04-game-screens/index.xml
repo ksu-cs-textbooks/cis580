@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/07-game-architecture/04-game-screens/index.html</link>
     <description>XNA offered a sample building with these ideas that further organized a game into screens that has been ported to MonoGame.This was heavily influenced by Windows Phone, and includes gestures and “tombstoning” support. A more simplified form is presented here. It organizes a game into “screens”, each with its own logic and rendering, such as a menu, puzzle, cutscene, etc.&#xA;A scene manager game component manages a stack of these screens, and updates and renders the topmost.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/07-game-architecture/04-game-screens/index.xml" rel="self" type="application/rss+xml" />
   </channel>

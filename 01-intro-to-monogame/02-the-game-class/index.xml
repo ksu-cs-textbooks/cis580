@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/02-the-game-class/index.html</link>
     <description>At the heart of an XNA project is a class that inherits from Game. This class handles initializing the graphics device, manages components, and most importantly, implements the game loop.&#xA;The MonoGame Game Loop As you saw in the Game Loop Chapter of Game Programming Patterns:&#xA;A game loop runs continuously during gameplay. Each turn of the loop, it processes user input without blocking, updates the game state, and renders the game.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/01-intro-to-monogame/02-the-game-class/index.xml" rel="self" type="application/rss+xml" />
   </channel>

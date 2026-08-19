@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/02-player-input/06-input-manager/index.html</link>
     <description>At this point, you may be noticing that our input processing could quickly dominate our Game class, and can be very messy. Especially if we want to support multiple forms of input in the same game. Consider if we wanted to do a platformer - we might want the player to be able to use the keyboard or a gamepad.&#xA;One technique we can employ is an input manager, a class that handles polling the input and abstracts it to just the commands we care about.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/02-player-input/06-input-manager/index.xml" rel="self" type="application/rss+xml" />
   </channel>

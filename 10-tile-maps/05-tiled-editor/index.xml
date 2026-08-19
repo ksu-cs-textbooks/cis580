@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/10-tile-maps/05-tiled-editor/index.html</link>
     <description>Once we start thinking in terms of large, complex maps editing the map by hand becomes a daunting task. Instead, we want a tool to edit the map visually. One of the best free tools to do so is the Tiled Map Editor. Tiled is free, open-source, and widely used in the games industry. It allows you to quickly create a tilemap by importing tilesets and drawing the map using a suite of visual tools.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/10-tile-maps/05-tiled-editor/index.xml" rel="self" type="application/rss+xml" />
   </channel>

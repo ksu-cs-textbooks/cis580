@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/04-collisions/04-separating-axis-theorem/index.html</link>
     <description>But what about sprites with shapes don’t map to a circle or rectangle, such as this spaceship sprite:&#xA;We could represent this sprite with a bounding polygon:&#xA;The polygon can be represented as a data structure using a collection of vectors from its origin (the same origin we use in rendering the sprite) to the points defining its corners:&#xA;/// &lt;summary&gt; /// A struct representing a convex bounding polygon /// &lt;/summary&gt; public struct BoundingPolygon { /// &lt;summary&gt; /// The corners of the bounding polygon, /// in relation to its origin /// &lt;/summary&gt; public IEnumerable&lt;Vector2&gt; Corners; /// &lt;summary&gt; /// The center of the polygon in the game world /// &lt;/summary&gt; public Vector2 Center; } But can we detect collisions between arbitrary polygons?</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/04-collisions/04-separating-axis-theorem/index.xml" rel="self" type="application/rss+xml" />
   </channel>

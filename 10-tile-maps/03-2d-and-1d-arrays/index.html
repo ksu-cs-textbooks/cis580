@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.128.0">
-    <meta name="generator" content="Relearn 8.0.0">
+    <meta name="generator" content="Relearn 8.0.4">
     <meta name="description" content="Let’s talk briefly about how a 2d array is actually stored in memory. We like to think of it as looking something like this visualization:
 But in reality, it is stored linearly, like this:
 To access a particular element in the array, the 2d coordinates must be transformed into a 1d index. Note that each row follows the proceeding rows, so the starting index of each row would be the width of the row, plus the x-coordinate, i.">
@@ -21,7 +21,7 @@ To access a particular element in the array, the 2d coordinates must be transfor
     <meta property="og:description" content="Let’s talk briefly about how a 2d array is actually stored in memory. We like to think of it as looking something like this visualization:
 But in reality, it is stored linearly, like this:
 To access a particular element in the array, the 2d coordinates must be transformed into a 1d index. Note that each row follows the proceeding rows, so the starting index of each row would be the width of the row, plus the x-coordinate, i.">
-    <meta property="og:locale" content="en_us">
+    <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Tile Maps">
     <meta property="article:published_time" content="2020-03-20T10:53:05-05:00">
@@ -40,26 +40,26 @@ To access a particular element in the array, the 2d coordinates must be transfor
     <link href="/cis580/10-tile-maps/03-2d-and-1d-arrays/index.print.html" rel="alternate" type="text/html" title="2D and 1D Arrays :: K-State CIS 580 Textbook">
     <link href="/cis580/10-tile-maps/03-2d-and-1d-arrays/tele.html" rel="alternate" type="text/html" title="2D and 1D Arrays :: K-State CIS 580 Textbook">
     <link href="/cis580/10-tile-maps/03-2d-and-1d-arrays/embed.html" rel="alternate" type="text/html" title="2D and 1D Arrays :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1761330175" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1761330175" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1761330175" defer></script>
-    <script src="/cis580/js/search.min.js?1761330175" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1787149864" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1787149864" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1787149864" defer></script>
+    <script src="/cis580/js/search.min.js?1787149864" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1761330175";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1787149864";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1761330175" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1761330175" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1761330175" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1761330175" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1787149864" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1787149864" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1787149864" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1787149864" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1761330175" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1761330175" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1761330175" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1761330175" rel="stylesheet">
-    <link href="/cis580/css/format-html.min.css?1761330175" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1787149864" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1787149864" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1787149864" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1787149864" rel="stylesheet">
+    <link href="/cis580/css/format-html.min.css?1787149864" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -118,7 +118,7 @@ To access a particular element in the array, the 2d coordinates must be transfor
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1761330175" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1787149864" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/cis580/10-tile-maps/03-2d-and-1d-arrays/index.html">
     <div id="R-body" class="default-animation">
@@ -181,14 +181,14 @@ To access a particular element in the array, the 2d coordinates must be transfor
 <h1 id="2d-and-1d-arrays">2D and 1D Arrays</h1>
 
 <p>Let&rsquo;s talk briefly about how a 2d array is actually stored <em>in memory</em>.  We like to think of it as looking something like this visualization:</p>
-<p><a href="#R-image-85e93efad496f8d3991e91270ccb5aac" class="lightbox-link"><img alt="2D array visualization" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.5.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-85e93efad496f8d3991e91270ccb5aac"><img alt="2D array visualization" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.5.png"></a></p>
+<p><a href="#R-image-89fc94875cad35f740cfff84ff1f7719" class="lightbox-link"><img alt="2D array visualization" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.5.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-89fc94875cad35f740cfff84ff1f7719"><img alt="2D array visualization" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.5.png"></a></p>
 <p>But in reality, it is stored <em>linearly</em>, like this:</p>
-<p><a href="#R-image-23bb143c1381ec655f6ab2782cd8f801" class="lightbox-link"><img alt="2D array in memory" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.6.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-23bb143c1381ec655f6ab2782cd8f801"><img alt="2D array in memory" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.6.png"></a></p>
+<p><a href="#R-image-bde55644f9dea20baa86378130410ebe" class="lightbox-link"><img alt="2D array in memory" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.6.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bde55644f9dea20baa86378130410ebe"><img alt="2D array in memory" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.6.png"></a></p>
 <p>To access a particular element in the array, the 2d coordinates must be transformed into a 1d index.  Note that each row follows the proceeding rows, so the starting index of each row would be the width of the row, <em>plus</em> the x-coordinate, i.e. the index of <span class="math align-center">$ (3,1) $</span> would be <span class="math align-center">$ 1 * width + 3 $</span>:</p>
-<p><a href="#R-image-5f9bd1ae3732145f25cb87f5edd43cc7" class="lightbox-link"><img alt="Accessing (3,1)" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.7.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5f9bd1ae3732145f25cb87f5edd43cc7"><img alt="Accessing (3,1)" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.7.png"></a></p>
+<p><a href="#R-image-003132bae8206ca5a29301433bd26b0d" class="lightbox-link"><img alt="Accessing (3,1)" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.7.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-003132bae8206ca5a29301433bd26b0d"><img alt="Accessing (3,1)" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.7.png"></a></p>
 <p>This can be generalized into the equation:</p>
 <span class="math align-center">$$ 
 i = y * width + x
@@ -239,11 +239,11 @@ size = width * height
 <p>You probably would think they are effectively the same, and <em>logically</em> they are - they both will compute the sum of all the elements in the array.  But loop 2 will potentially run much faster.  The reason comes down to a hardware detail - how RAM and the L2 and L1 caches interact.</p>
 <p>When you load a variable into a hardware register to do a calculation, it is loaded from RAM.  But as it is loaded, the memory containing it, and some of the memory around it is also loaded into the L2 and L1 caches.  If the next value in memory you try to access is cached, then it can be loaded from the cache instead of RAM.  This makes the operation much faster, as the L2 and L1 caches are located quite close to the CPU, and RAM is a good distance away (possibly many inches!).</p>
 <p>Consider the order in which loop 1 accesses the array.  It first accesses the first element in the first row.  Then the first element in the second row, and then the first element in the third row, then the second element in the first row, and so on&hellip; You can see this in the figure below:</p>
-<p><a href="#R-image-2a2a03406def1c6becba1c14179dc415" class="lightbox-link"><img alt="Loop 1 access order" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.8.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2a2a03406def1c6becba1c14179dc415"><img alt="Loop 1 access order" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.8.png"></a></p>
+<p><a href="#R-image-fb49e1f7b4720a6e23ea5af9932f22bf" class="lightbox-link"><img alt="Loop 1 access order" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.8.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fb49e1f7b4720a6e23ea5af9932f22bf"><img alt="Loop 1 access order" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.8.png"></a></p>
 <p>Now, consider the same process for Loop 2:</p>
-<p><a href="#R-image-b958d059f998c1ca5662cb436c66ad76" class="lightbox-link"><img alt="Loop 2 access order" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.9.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b958d059f998c1ca5662cb436c66ad76"><img alt="Loop 2 access order" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.9.png"></a></p>
+<p><a href="#R-image-8d74615346a0c6b99d341498ce1a3e61" class="lightbox-link"><img alt="Loop 2 access order" class="border lazy lightbox figure-image" loading="lazy" src="/cis580/images/10.2.9.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8d74615346a0c6b99d341498ce1a3e61"><img alt="Loop 2 access order" class="border lazy lightbox lightbox-image" loading="lazy" src="/cis580/images/10.2.9.png"></a></p>
 <p>Notice how all the memory access happens linearly? This makes the most efficient use of the cached data, and will perform much better when your array is large.</p>
 
   <footer class="footline">
@@ -252,7 +252,7 @@ size = width * height
         </div>
       </main>
 <div class="git-footer">
-  <p class="theme-version-footer">8.0.0</p>
+  <p class="theme-version-footer">8.0.4</p>
 <p>Last modified by:
               <i class='fa-fw fas fa-user'></i> Russell Feldhausen
               <i class='fas fa-calendar'></i> <a href="https://github.com/ksu-cs-textbooks/cis580/commit/5f59dff29e6746cb45cf91bffa33b978549f76a8">Aug 14, 2023</a>
@@ -475,9 +475,9 @@ size = width * height
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1761330175"></script>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1761330175" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1761330175" defer></script>
-    <script src="/cis580/js/theme.min.js?1761330175" defer></script>
+    <script id="MathJax-script" async src="/cis580/js/mathjax/tex-mml-chtml.js?1787149864"></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1787149864" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1787149864" defer></script>
+    <script src="/cis580/js/theme.min.js?1787149864" defer></script>
   </body>
 </html>

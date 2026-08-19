@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/15-heightmap-terrain/06-summary/index.html</link>
     <description>Now you’ve seen the basics of creating a terrain from a heightmap. Armed with this knowledge, you can create an outdoor game world. You can find or create additional heightmaps to add new terrains to your game. You can swap the textures to create different kinds of environments as well.&#xA;But you could also create an even larger worlds by using multiple terrains and stitching them together at the edges - a technique often called terrain patches.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/15-heightmap-terrain/06-summary/index.xml" rel="self" type="application/rss+xml" />
   </channel>

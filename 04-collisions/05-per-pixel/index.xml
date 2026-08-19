@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/04-collisions/05-per-pixel/index.html</link>
     <description>Another brute-force approach that can be used with raster graphics when a high degree of accuracy is needed is per-pixel collision detection. This process assumes that a portion of the raster graphics being examined are composed of transparent pixels (i.e. not a part of the object portrayed).&#xA;Consider the figure above - there are two raster graphics that overlap. To determine if they collide on a per-pixel basis, we must compare every overlapping pixel between the two images (the purple area).</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/04-collisions/05-per-pixel/index.xml" rel="self" type="application/rss+xml" />
   </channel>

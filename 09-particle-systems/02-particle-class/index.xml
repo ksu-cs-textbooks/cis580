@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/09-particle-systems/02-particle-class/index.html</link>
     <description>At the heart of a particle system is a collection of particles - tiny sprites that move independently of one another, but when rendered together, create the interesting effects we are after. To draw each individual particle, we need to know where on the screen it should appear, as well as the texture we should be rendering, and any color effects we might want to apply. Moreover, each frame our particles will be moving, so we’ll also want to be able to track information to make that process easier, like velocity, acceleration, and how long a particle has been “alive”.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/09-particle-systems/02-particle-class/index.xml" rel="self" type="application/rss+xml" />
   </channel>

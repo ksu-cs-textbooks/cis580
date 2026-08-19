@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/07-game-architecture/03-game-components/index.html</link>
     <description>A second useful decoupling pattern in MonoGame is the use of game components. You’ve probably noticed that many of the classes you have written have a similar pattern: they each have a LoadContent(), Update(), and Draw() method, and these often take the same arguments. In your game class, you probably mostly invoke these methods for each class in turn. MonoGame provides the concept of game components to help manage this task.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/07-game-architecture/03-game-components/index.xml" rel="self" type="application/rss+xml" />
   </channel>

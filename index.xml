@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/index.html</link>
     <description>CIS 580 Textbook&#xA;Nathan Bean&#xA;Kansas State University&#xA;© 2021&#xA;This is an open textbook written for the Kansas State University CIS 580 - Foundations of Game Programming course.&#xA;This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Course Information</title>

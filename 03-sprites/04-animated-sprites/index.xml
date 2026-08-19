@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/03-sprites/04-animated-sprites/index.html</link>
     <description>To animate a sprite, we simply swap the image it is using. Animated sprites typically lay out all their frames in a single texture, just like a texture atlas. Consider this animated bat sprite by bagzie from OpenGameArt:&#xA;The images of the bat are laid out into a 4x4 grid of 32x32 pixel tiles. We can create the illusion of motion by swapping which of these images we display. However, we don’t want to swap it every frame - doing so will be too quick for the viewer to follow, and destroy the illusion.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/03-sprites/04-animated-sprites/index.xml" rel="self" type="application/rss+xml" />
   </channel>

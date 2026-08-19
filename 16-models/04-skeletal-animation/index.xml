@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/16-models/04-skeletal-animation/index.html</link>
     <description>Now that we can see our tank clearly, let’s see if we can’t get that turret to aim. Doing so requires us to explore the concept of skeletal animation. If you remember in our discussion of models, we said most models include both triangle meshes and bones. These “bones” are really just transformation matrices, which are applied to a specific mesh in the model. Often they also are arranged in a hierarchy, often referred to as a skeleton.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/16-models/04-skeletal-animation/index.xml" rel="self" type="application/rss+xml" />
   </channel>

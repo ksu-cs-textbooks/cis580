@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/15-heightmap-terrain/04-using-the-terrain/index.html</link>
     <description>Let’s see our terrain in action. First we’ll need to make some changes in our ExampleGame class. We’ll add a Terrain field:&#xA;// The terrain Terrain terrain; In our ExampleGame.LoadContent(), we’ll load the heightmap and construct our terrain:&#xA;// Build the terrain Texture2D heightmap = Content.Load&lt;Texture2D&gt;(&#34;heightmap&#34;); terrain = new Terrain(this, heightmap, 10f, Matrix.Identity); And in our ExampleGame.Draw() we’ll render it with the existing camera:&#xA;// Draw the terrain terrain.Draw(camera); Now if you run the game, you should see your terrain, and even be able to move around it using the camera controls (WASD + Mouse).</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/15-heightmap-terrain/04-using-the-terrain/index.xml" rel="self" type="application/rss+xml" />
   </channel>

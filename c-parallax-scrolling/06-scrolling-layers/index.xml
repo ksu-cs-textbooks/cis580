@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/c-parallax-scrolling/06-scrolling-layers/index.html</link>
     <description>Parallax scrolling is almost always tied to player movement - as the player moves, the layer scrolls in relation to the player’s position. But we could also tie the scrolling to a timer function - and have it scroll at a set speed. Or we could apply it to a secondary target - something like a drone the player might launch. We might also use the scrolling effect with no player, maybe as some kind of level preview, or for a cutscene.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/c-parallax-scrolling/06-scrolling-layers/index.xml" rel="self" type="application/rss+xml" />
   </channel>

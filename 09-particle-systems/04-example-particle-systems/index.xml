@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/09-particle-systems/04-example-particle-systems/index.html</link>
     <description>To create a particle system, we’ll derive a class from the ParticleSystem class and override its InitializeConstants(), and possibly its InitializeParticle() and UpdateParticle() methods. Let’s look at some examples:&#xA;Rain Particle System This is a simplistic implementation of rain that is spawned in a predefined rectangle and falls to the bottom of the screen. The texture we’ll use is this drop&#xA;We start by defining a class extending the ParticleSystem:</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/09-particle-systems/04-example-particle-systems/index.xml" rel="self" type="application/rss+xml" />
   </channel>

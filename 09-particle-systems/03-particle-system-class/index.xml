@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/09-particle-systems/03-particle-system-class/index.html</link>
     <description>The next part of the particle system is the class representing the particle system itself. Like any other sprite-based strategy, this will involve both an Update() and Draw() method that must be invoked every time through the game loop. But ideally we’d like our particle systems to be an almost hands-off system - once it’s created, we can just let it do its thing without intervention. This is where the idea of game components from our architecture discussion can come into play - our particle system can inherit from the DrawableGameComponent class, which means it can be added to to our Game.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/09-particle-systems/03-particle-system-class/index.xml" rel="self" type="application/rss+xml" />
   </channel>

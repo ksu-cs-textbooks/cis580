@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/00-forward/01-introduction/index.html</link>
     <description>Web Only This textbook was authored for the CIS 580 - Fundamentals of Game Programming course at Kansas State University. This front matter is specific to that course. If you are not enrolled in the course, please disregard this section.&#xA;Course Goals This course is intended to introduce the fundamentals of creating computer game systems. Computer games are uniquely challenging in the field of software development, as they are considerably complex systems composed of many interconnected subsystems that draw upon the breadth of the field - and must operate within real-time constraints.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/00-forward/01-introduction/index.xml" rel="self" type="application/rss+xml" />
   </channel>

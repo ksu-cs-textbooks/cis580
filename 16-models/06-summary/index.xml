@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/16-models/06-summary/index.html</link>
     <description>Now that you have a closer view of your tank, you might want to make the individual wheels rotate. I’ll leave that as an exercise for the reader, but the bones you’d be interested in are “r_back_wheel_geo”, “l_back_wheel_geo”, “r_front_wheel_geo”, and “l_front_wheel_geo”. The front wheels are also set up to be rotated, using the “r_steer_geo” and “l_steer_geo” bones.&#xA;Clearly there is a lot more you could do just with the tank model.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/16-models/06-summary/index.xml" rel="self" type="application/rss+xml" />
   </channel>

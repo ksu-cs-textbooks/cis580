@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/05-audio/04-music/index.html</link>
     <description>Music also has a powerful role to play in setting the mood. It can also be used to convey information to the player, as Super Mario Bros does when the remaining time to finish the level falls below 1 minute.&#xA;Song Class While it is possible to play music using a SoundEffect, MonoGame supports music through the Song class. This represents a song loaded from a wav or mp4 file.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/05-audio/04-music/index.xml" rel="self" type="application/rss+xml" />
   </channel>

@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/11-content-pipeline/07-the-context/index.html</link>
     <description>You probably noticed that we supply a context object to both our importer and processor - a ContentImporterContext for the importer and a ContentProcessorContext for the processor.&#xA;They both contain a Logger property, which allows us to log messages during the build process of our assets. This is important, as we can’t use breakpoints in a content project. So instead, we often use context.Logger.LogMessage(), context.Logger.LogImportantMessage(), and context.Logger.LogWarning() to let us expose the inner workings of our context pipeline.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/11-content-pipeline/07-the-context/index.xml" rel="self" type="application/rss+xml" />
   </channel>

@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/c-parallax-scrolling/08-scrolling-with-the-player/index.html</link>
     <description>One of the benefits of the IScrollController interface is that we can swap out the default controller for a new one. Let’s do so now.&#xA;Player Tracking ScrollController A second common implementation of parallax scrolling is one where the screen scrolls as the player moves. Let’s implement this one by defining a new controller named PlayerTrackingScrollController that follows our player. The class will need to implement the IScrollController interface:&#xA;/// &lt;summary&gt; /// A parallax scroll controller that tracks a player&#39;s position.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/c-parallax-scrolling/08-scrolling-with-the-player/index.xml" rel="self" type="application/rss+xml" />
   </channel>

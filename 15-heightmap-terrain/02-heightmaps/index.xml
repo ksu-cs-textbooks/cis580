@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/15-heightmap-terrain/02-heightmaps/index.html</link>
     <description>You might be wondering just what a heightmap is. If you’ve ever used a topographic map, you’ve seen a similar idea. Contour maps include contour lines_, lines that trace when the ground reaches a certain altitude. Inside the line is higher than that altitude, and outside of the line is lower (or visa-versa). The contours themselves are typically marked with the altitude they represent.&#xA;A heightmap is similar, but instead of using lines, each pixel in the map represents a square section of land, and the color value at that point indicates the average altitude of that square.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/15-heightmap-terrain/02-heightmaps/index.xml" rel="self" type="application/rss+xml" />
   </channel>

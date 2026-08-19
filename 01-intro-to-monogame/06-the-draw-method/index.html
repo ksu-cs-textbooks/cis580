@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.128.0">
-    <meta name="generator" content="Relearn 8.0.0">
+    <meta name="generator" content="Relearn 8.0.4">
     <meta name="description" content="The Game.Draw(Game.Update(GameTime gameTime) method is a another hook, this one for adding your game’s rendering code. By overriding this method, and adding your own rendering code, you fulfill the draw step of the game loop.
 MonoGame uses the graphics hardware to render the scene, along with double buffering. Thus, when we render, we are drawing into a back buffer, and once that drawing is complete, we flip the buffers so that the one we just finished is what ends up being rendered on-screen, and we now can start drawing into the next back buffer.">
     <meta name="author" content="Nathan H. Bean">
@@ -18,7 +18,7 @@ MonoGame uses the graphics hardware to render the scene, along with double buffe
     <meta property="og:title" content="The Draw Method :: K-State CIS 580 Textbook">
     <meta property="og:description" content="The Game.Draw(Game.Update(GameTime gameTime) method is a another hook, this one for adding your game’s rendering code. By overriding this method, and adding your own rendering code, you fulfill the draw step of the game loop.
 MonoGame uses the graphics hardware to render the scene, along with double buffering. Thus, when we render, we are drawing into a back buffer, and once that drawing is complete, we flip the buffers so that the one we just finished is what ends up being rendered on-screen, and we now can start drawing into the next back buffer.">
-    <meta property="og:locale" content="en_us">
+    <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Introduction to MonoGame">
     <meta property="article:published_time" content="2018-08-24T10:53:26-05:00">
@@ -36,26 +36,26 @@ MonoGame uses the graphics hardware to render the scene, along with double buffe
     <link href="/cis580/01-intro-to-monogame/06-the-draw-method/index.print.html" rel="alternate" type="text/html" title="The Draw Method :: K-State CIS 580 Textbook">
     <link href="/cis580/01-intro-to-monogame/06-the-draw-method/tele.html" rel="alternate" type="text/html" title="The Draw Method :: K-State CIS 580 Textbook">
     <link href="/cis580/01-intro-to-monogame/06-the-draw-method/embed.html" rel="alternate" type="text/html" title="The Draw Method :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1761330175" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1761330175" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1761330175" defer></script>
-    <script src="/cis580/js/search.min.js?1761330175" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1787149864" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1787149864" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1787149864" defer></script>
+    <script src="/cis580/js/search.min.js?1787149864" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1761330175";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1787149864";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1761330175" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1761330175" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1761330175" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1761330175" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1787149864" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1787149864" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1787149864" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1787149864" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1761330175" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1761330175" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1761330175" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1761330175" rel="stylesheet">
-    <link href="/cis580/css/format-html.min.css?1761330175" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1787149864" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1787149864" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1787149864" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1787149864" rel="stylesheet">
+    <link href="/cis580/css/format-html.min.css?1787149864" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -114,7 +114,7 @@ MonoGame uses the graphics hardware to render the scene, along with double buffe
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1761330175" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1787149864" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/cis580/01-intro-to-monogame/06-the-draw-method/index.html">
     <div id="R-body" class="default-animation">
@@ -197,7 +197,7 @@ MonoGame uses the graphics hardware to render the scene, along with double buffe
         </div>
       </main>
 <div class="git-footer">
-  <p class="theme-version-footer">8.0.0</p>
+  <p class="theme-version-footer">8.0.4</p>
 <p>Last modified by:
               <i class='fa-fw fas fa-user'></i> Nathan Bean
               <i class='fas fa-calendar'></i> <a href="https://github.com/ksu-cs-textbooks/cis580/commit/e287c5976dca0ef40ca72c99181a4dd33a3ce52b">Jan 18, 2021</a>
@@ -409,8 +409,8 @@ MonoGame uses the graphics hardware to render the scene, along with double buffe
 <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; margin: .5rem auto" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</a></p></div>
       </div>
     </aside>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1761330175" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1761330175" defer></script>
-    <script src="/cis580/js/theme.min.js?1761330175" defer></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1787149864" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1787149864" defer></script>
+    <script src="/cis580/js/theme.min.js?1787149864" defer></script>
   </body>
 </html>

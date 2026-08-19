@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/14-lighting-and-cameras/07-summary/index.html</link>
     <description>In this lesson, we’ve seen how to apply Phong lighting using the BasicEffect, and how to set up cameras. Armed with this knowledge, you’re ready to start building explorable game environments.&#xA;A good next step is to think about what other kinds of cameras you can create. What about an over-the-shoulder camera that follows the player? Or a first-person camera that uses GamePad input? As you now know, a game camera is nothing more than code to determine where the camera is in a scene, and where it is pointed.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/14-lighting-and-cameras/07-summary/index.xml" rel="self" type="application/rss+xml" />
   </channel>

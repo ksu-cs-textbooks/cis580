@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.128.0">
-    <meta name="generator" content="Relearn 8.0.0">
+    <meta name="generator" content="Relearn 8.0.4">
     <meta name="description" content="Mouse input works much like keyboard input - we have a MouseState struct that represents the state of the mouse, and we can get the current state from the static Mouse class’s GetState() method. You’ll also want to use the same caching strategy of a current and prior state if you want to know when a button goes down or comes up, i.e.:
 MouseState currentMouseState; MouseState priorMouseState; public override void Update(GameTime gameTime) { priorMouseState = currentMouseState; currentMouseState = Mouse.">
     <meta name="author" content="Nathan H. Bean">
@@ -19,7 +19,7 @@ MouseState currentMouseState; MouseState priorMouseState; public override void U
     <meta property="og:title" content="Mouse Input :: K-State CIS 580 Textbook">
     <meta property="og:description" content="Mouse input works much like keyboard input - we have a MouseState struct that represents the state of the mouse, and we can get the current state from the static Mouse class’s GetState() method. You’ll also want to use the same caching strategy of a current and prior state if you want to know when a button goes down or comes up, i.e.:
 MouseState currentMouseState; MouseState priorMouseState; public override void Update(GameTime gameTime) { priorMouseState = currentMouseState; currentMouseState = Mouse.">
-    <meta property="og:locale" content="en_us">
+    <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Player Input">
     <meta property="article:published_time" content="2018-08-24T10:53:26-05:00">
@@ -37,26 +37,26 @@ MouseState currentMouseState; MouseState priorMouseState; public override void U
     <link href="/cis580/02-player-input/04-mouse-input/index.xml" rel="alternate" type="application/rss+xml" title="Mouse Input :: K-State CIS 580 Textbook">
     <link href="/cis580/02-player-input/04-mouse-input/index.print.html" rel="alternate" type="text/html" title="Mouse Input :: K-State CIS 580 Textbook">
     <link href="/cis580/02-player-input/04-mouse-input/tele.html" rel="alternate" type="text/html" title="Mouse Input :: K-State CIS 580 Textbook">
-    <link href="/cis580/css/auto-complete/auto-complete.min.css?1761330175" rel="stylesheet">
-    <script src="/cis580/js/auto-complete/auto-complete.min.js?1761330175" defer></script>
-    <script src="/cis580/js/search-lunr.min.js?1761330175" defer></script>
-    <script src="/cis580/js/search.min.js?1761330175" defer></script>
+    <link href="/cis580/css/auto-complete/auto-complete.min.css?1787149864" rel="stylesheet">
+    <script src="/cis580/js/auto-complete/auto-complete.min.js?1787149864" defer></script>
+    <script src="/cis580/js/search-lunr.min.js?1787149864" defer></script>
+    <script src="/cis580/js/search.min.js?1787149864" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/cis580/searchindex.en.js?1761330175";
+      window.relearn.index_js_url="/cis580/searchindex.en.js?1787149864";
     </script>
-    <script src="/cis580/js/lunr/lunr.min.js?1761330175" defer></script>
-    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1761330175" defer></script>
-    <script src="/cis580/js/lunr/lunr.multi.min.js?1761330175" defer></script>
-    <script src="/cis580/js/lunr/lunr.en.min.js?1761330175" defer></script>
+    <script src="/cis580/js/lunr/lunr.min.js?1787149864" defer></script>
+    <script src="/cis580/js/lunr/lunr.stemmer.support.min.js?1787149864" defer></script>
+    <script src="/cis580/js/lunr/lunr.multi.min.js?1787149864" defer></script>
+    <script src="/cis580/js/lunr/lunr.en.min.js?1787149864" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1761330175" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1761330175" rel="stylesheet"></noscript>
-    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1761330175" rel="stylesheet">
-    <link href="/cis580/css/theme.min.css?1761330175" rel="stylesheet">
-    <link href="/cis580/css/format-html.min.css?1761330175" rel="stylesheet" id="R-format-style">
+    <link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1787149864" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/cis580/fonts/fontawesome/css/fontawesome-all.min.css?1787149864" rel="stylesheet"></noscript>
+    <link href="/cis580/css/perfect-scrollbar/perfect-scrollbar.min.css?1787149864" rel="stylesheet">
+    <link href="/cis580/css/theme.min.css?1787149864" rel="stylesheet">
+    <link href="/cis580/css/format-html.min.css?1787149864" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -115,7 +115,7 @@ MouseState currentMouseState; MouseState priorMouseState; public override void U
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/cis580/css/custom.css?1761330175" rel="stylesheet">
+    <link href="/cis580/css/custom.css?1787149864" rel="stylesheet">
   </head>
   <body class="mobile-support embed html" data-url="/cis580/02-player-input/04-mouse-input/index.html">
     <div id="R-body" class="default-animation">
@@ -187,9 +187,9 @@ MouseState currentMouseState; MouseState priorMouseState; public override void U
       
       
     </div>
-    <script src="/cis580/js/clipboard/clipboard.min.js?1761330175" defer></script>
-    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1761330175" defer></script>
-    <script src="/cis580/js/theme.min.js?1761330175" defer></script>
-  <script src="/cis580/js/embed-iframe.min.js?1761330175" defer></script>
+    <script src="/cis580/js/clipboard/clipboard.min.js?1787149864" defer></script>
+    <script src="/cis580/js/perfect-scrollbar/perfect-scrollbar.min.js?1787149864" defer></script>
+    <script src="/cis580/js/theme.min.js?1787149864" defer></script>
+  <script src="/cis580/js/embed-iframe.min.js?1787149864" defer></script>
   </body>
 </html>

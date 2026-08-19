@@ -5,7 +5,7 @@
     <link>https://textbooks.cs.ksu.edu/cis580/08-spritebatch-transforms/02-transforms/index.html</link>
     <description>Before we delve into using the SpriteBatch, let’s quickly revisit the concept of Transformations using Matrices. Our MonoGame games use 3D hardware to render 2D scenes, and the individual sprites are represented as textured quads - a polygon consisting of two triangles arranged in a rectangle. The SpriteBatch computes the coordinates of the corners of this quad from the SpriteBatch.Draw() parameters. These vectors are then transformed for the final drawing process by multiplying them by a matrix specified in the SpriteBatch.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/08-spritebatch-transforms/02-transforms/index.xml" rel="self" type="application/rss+xml" />
   </channel>
