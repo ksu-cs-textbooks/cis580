@@ -21,9 +21,9 @@ games.
 
 All of our activities this semester will be informed by these goals. 
 
-## Course Resources 
+## Course Resources
 
-* [Syllabus]({{% ref "00-forward/09-syllabus.md" %}})
+* Syllabus (See official syllabus in Canvas)
 * [Course Textbook]({{% ref "/" %}})
 * [Game Programming Patterns Textbook](https://gameprogrammingpatterns.com/)
 * [MonoGame Documentation](https://docs.monogame.net/)

@@ -3,6 +3,6 @@ title = "Previous Versions"
 hidden = true 
 +++
 
-Previous Versions of this page:
+Previous Versions of the Course Information page:
 
 {{% children %}}
