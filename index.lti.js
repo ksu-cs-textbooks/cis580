@@ -7,12 +7,12 @@
         "breadcrumb": "Course Information",
         "children": [],
         "isSection": false,
-        "modified": "2024-06-27T15:18:14-05:00",
+        "modified": "2026-08-19T14:47:07+00:00",
         "tags": [],
         "title": "Course Introduction",
         "uri": "/cis580/00-forward/01-introduction/index.html",
         "weight": 10,
-        "wordCount": 232
+        "wordCount": 237
       },
       {
         "breadcrumb": "Course Information",
@@ -95,12 +95,12 @@
         "breadcrumb": "Course Information",
         "children": [],
         "isSection": true,
-        "modified": "2025-08-26T10:46:32-05:00",
+        "modified": "2026-08-25T10:11:23-05:00",
         "tags": [],
-        "title": "Syllabus",
-        "uri": "/cis580/00-forward/09-syllabus/index.html",
+        "title": "Course Info",
+        "uri": "/cis580/00-forward/09-course-info/index.html",
         "weight": 90,
-        "wordCount": 4388
+        "wordCount": 5935
       }
     ],
     "isSection": true,

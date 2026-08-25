@@ -6,7 +6,7 @@
     <description>Press Start to Begin&#xA;Web Only This textbook was authored for the CIS 580 - Foundations of Game Programming course at Kansas State University. This front matter is specific to that course. If you are not enrolled in the course, please disregard this section.</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Oct 2025 13:22:24 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 25 Aug 2026 10:11:23 -0500</lastBuildDate>
     <atom:link href="https://textbooks.cs.ksu.edu/cis580/00-forward/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Course Introduction</title>
@@ -65,11 +65,11 @@
       <description>Web Only This textbook was authored for the CIS 580 - Fundamentals of Game Programming course at Kansas State University. This front matter is specific to that course. If you are not enrolled in the course, please disregard this section.&#xA;Assets are all the resources - art, sound, music - that go into a game. While you can create entirely original assets for your games, this is not required. However, if you choose to use assets created by other people, you must follow copyright law.</description>
     </item>
     <item>
-      <title>Syllabus</title>
-      <link>https://textbooks.cs.ksu.edu/cis580/00-forward/09-syllabus/index.html</link>
+      <title>Course Info</title>
+      <link>https://textbooks.cs.ksu.edu/cis580/00-forward/09-course-info/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:26 -0500</pubDate>
-      <guid>https://textbooks.cs.ksu.edu/cis580/00-forward/09-syllabus/index.html</guid>
-      <description>Web Only This textbook was authored for the CIS 580 - Fundamentals of Game Programming course at Kansas State University. This front matter is specific to that course. If you are not enrolled in the course, please disregard this section.&#xA;CIS 580 - Fundamentals of Game Programming Previous Versions&#xA;Instructor Contact Information Instructor: Nathan Bean (nhbean AT ksu DOT edu) Office: DUE 2216 Phone: (785)483-9264 (Call/Text) Website: https://nathanhbean.com Office Hours: WU 1:00-2:00 or by appointment Preferred Methods of Communication: Chat: Quick questions via Ed Discussions are the preferred means of communication.</description>
+      <guid>https://textbooks.cs.ksu.edu/cis580/00-forward/09-course-info/index.html</guid>
+      <description>Web Only This textbook was authored for the CIS 580 - Fundamentals of Game Programming course at Kansas State University. This front matter is specific to that course. If you are not enrolled in the course, please disregard this section.&#xA;CIS 580 - Fundamentals of Game Programming Previous Versions&#xA;Instructor Contact Information Instructor: Nathan Bean (nhbean AT ksu DOT edu) Office: DUE 2216 Phone: (785)483-9264 (Call/Text) Website: https://nathanhbean.com Office Hours: MW 2:00-3:30 or by appointment Preferred Methods of Communication: Chat: Quick questions via Ed Discussions are the preferred means of communication.</description>
     </item>
   </channel>
 </rss>
