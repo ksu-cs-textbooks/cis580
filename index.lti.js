@@ -574,7 +574,7 @@
         "breadcrumb": "Physics",
         "children": [],
         "isSection": false,
-        "modified": "2025-10-24T13:22:24-05:00",
+        "modified": "2026-10-07T13:33:47-04:00",
         "tags": [],
         "title": "Elastic Collisions",
         "uri": "/cis580/06-physics/04-elastic-collisions/index.html",
