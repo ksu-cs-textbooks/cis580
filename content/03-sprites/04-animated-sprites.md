@@ -127,11 +127,11 @@ public void Draw(GameTime gameTime, SpriteBatch spriteBatch) {
     animationTimer += gameTime.ElapsedGameTime.TotalSeconds;
 
     // Every 1/16th of a second, advance the animation frame 
-    if(animationTimer > 1/16)
+    if(animationTimer > 1.0/16.0)
     {
         animationFrame++;
         if(animationFrame > 3) animationFrame = 0;
-        animationTimer -= 1/16;
+        animationTimer -= 1.0/16.0;
     }
 
     // Determine the source rectangle 
