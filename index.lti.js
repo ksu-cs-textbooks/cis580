@@ -340,7 +340,7 @@
         "breadcrumb": "Sprites",
         "children": [],
         "isSection": false,
-        "modified": "2025-08-19T13:21:42-05:00",
+        "modified": "2026-10-07T13:37:26-04:00",
         "tags": [],
         "title": "Animated Sprites",
         "uri": "/cis580/03-sprites/04-animated-sprites/index.html",
