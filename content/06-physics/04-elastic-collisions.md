@@ -81,8 +81,8 @@ float angle = Math.Acos(Vector2.Dot(collisionLine, Vector2.UnitX));
 Once we have this angle, we can rotate our velocity vectors using it, so that the coordinate system now aligns with that axis:
 
 ```csharp 
-Vector2 u0 = Vector2.Transform(Matrix.CreateRotationZ(A.Velocity, angle));
-Vector2 u1 = Vector2.Transform(Matrix.CreateRotationZ(B.Velocity, angle));
+Vector2 u0 = Vector2.Transform(A.Velocity, Matrix.CreateRotationZ(angle));
+Vector2 u1 = Vector2.Transform(B.Velocity, Matrix.CreateRotationZ(angle));
 ```
 
 We can use these values, along with the masses of the two objects, to calculate the changes in the X-component of the velocity using equations (7) and (8):
@@ -100,7 +100,7 @@ And, because the collision axis and the x-axis are the same, this transfer of ve
 
 ```csharp
 v0.Y = u0.Y;
-v1.Y = u0.Y;
+v1.Y = u1.Y;
 ```
 
 Then, we can rotate the velocities back to the original coordinate system and assign the transformed velocities to our bodies:
