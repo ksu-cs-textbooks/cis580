@@ -236,7 +236,7 @@ cleanDestinationDir = true
   # in the pages frontmatter. This is useful if you want to give the opportunity
   # for people to create merge request for your content.
   # TODO changeme
-  editURL = 'https://github.com/ksu-cs-textbooks/cis580/edit/master/content/${FilePath}'
+  editURL = 'https://github.com/ksu-cs-textbooks/cis580/edit/main/content/${FilePath}'
 
   #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   # Search
