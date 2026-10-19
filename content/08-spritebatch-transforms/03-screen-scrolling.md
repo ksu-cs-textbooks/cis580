@@ -74,10 +74,11 @@ Thus, each frame you update the offset vector based on the offset and the player
 public void Draw(GameTime gameTime)
 {
     // Player-synched scrolling
-    offset = PlayerOffset - Player.Position;
+    Vector2 playerOffset = new(_viewportWidth / 2, _viewportHeight / 2);
+    Vector2 viewportOffset = playerOffset - Player.Position;
 
     // Create the translation matrix representing the offset
-    Matrix transform = Matrix.CreateTranslation(offset.X, offset.Y, 0);
+    Matrix transform = Matrix.CreateTranslation(viewportOffset.X,viewportOffset.Y, 0);
     // Draw the transformed game world
     spriteBatch.Begin(transformMatrix: transform);
     // TODO: Draw game sprites within the world, however you need to.
@@ -93,12 +94,17 @@ If we want our player to be able to reach the edge of the screen without the "bl
 public void Draw(GameTime gameTime)
 {
     // Player-synched scrolling
-    offset = Player.Position - PlayerOffset;
+    Vector2 playerOffset = new(_viewportWidth / 2, _viewportHeight / 2);
+    Vector2 scroll = Player.Position - playerOffset;
+
     // Clamp the resulting vector to the visible region
-    offset = Vector2.Clamp(offset, MinScroll, MaxScroll);
+    Vector2 minScroll = Vector2.Zero;
+    Vector2 maxScroll = new(_worldWidth - _viewportWidth, _worldHeight - _viewportHeight);
+    scroll = Vector2.Clamp(scroll, minScroll, maxScroll);
+    Vector2 viewportOffset = -scroll;
 
     // Create the translation matrix representing the offset
-    Matrix transform = Matrix.CreateTranslation(offset.X, offset.Y, 0);
+    Matrix transform = Matrix.CreateTranslation(viewportOffset.X, viewportOffset.Y, 0);
     // Draw the transformed game world
     spriteBatch.Begin(transformMatrix: transform);
     // TODO: Draw game sprites within the world, however you need to.
