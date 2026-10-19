@@ -55,34 +55,34 @@ Note how the X-axis in the diagram is aligned with the line between the centers 
 
 ![Finding the angle between the line of collision and x-axis](/images/6.4.2.png)
 
-Remember that the angle between two vectors is related to the dot product:
+Remember that the angle between a vector {{< math >}}$ v ${{< /math >}} and the X axis is related to the tangent:
 
-{{< math >}}$$ cos\theta = \frac{ a \cdotp b}{||a||*||b||} \tag {9} $${{< /math >}}
+{{< math >}}$$ \tan\theta = \frac{ v.y }{ v.x } \tag {9} $${{< /math >}}
 
-If both vectors {{< math >}}$ a ${{< /math >}} and {{< math >}}$ b ${{< /math >}} are of unit length (normalized), then this simplifies to:
+Solving for {{< math >}}$ \theta ${{< /math >}} gives us:
 
-{{< math >}}$$ cos\theta = a \cdotp b \tag {10} $${{< /math >}}
+{{< math >}}$$ \theta = \arctan\left( \frac{ v.y }{ v.x }\right) \tag{10} $${{< /math >}}
 
 And {{< math >}}$ \theta ${{< /math >}} can be solved for by:
 
-{{< math >}}$$ \theta = cos^{-1}(a \cdotp b) \tag{11} $${{< /math >}}
+However, the inverse tangent function has a shortcoming. It cannot distinguish between two vectors pointing 180 degrees away from each other, such as {{< math >}}$(2,1)${{< /math >}} and {{< math >}}$(-2,-1)${{< /math >}}, on account of the fact that {{< math >}}$ y/x = -y/-x ${{< /math >}}. Therefore, we must instead use the two-argument version of the arctangent function:
+
+{{< math >}}$$ \theta = \operatorname{atan2}(  v.y, v.x ) \tag{11} $${{< /math >}}
 
 Given two rigid bodies `A` and `B`, we could then calculate this angle using their centers:
 
 ```csharp
 // Determine the line between centers of colliding objects A and B
 Vector2 collisionLine = A.Center - B.Center;
-// Normalize that line
-collisionLine.Normalize();
 // Determine the angle between the collision line and the x-axis
-float angle = Math.Acos(Vector2.Dot(collisionLine, Vector2.UnitX));
+float angle = (float)Math.Atan2(collisionLine.Y, collisionLine.X);
 ```
 
-Once we have this angle, we can rotate our velocity vectors using it, so that the coordinate system now aligns with that axis:
+Once we have the angle of the collision line, we rotate the coordinate system by its negation, so that it becomes aligned with the X axis:
 
 ```csharp 
-Vector2 u0 = Vector2.Transform(A.Velocity, Matrix.CreateRotationZ(angle));
-Vector2 u1 = Vector2.Transform(B.Velocity, Matrix.CreateRotationZ(angle));
+Vector2 u0 = Vector2.Transform(A.Velocity, Matrix.CreateRotationZ(-angle));
+Vector2 u1 = Vector2.Transform(B.Velocity, Matrix.CreateRotationZ(-angle));
 ```
 
 We can use these values, along with the masses of the two objects, to calculate the changes in the X-component of the velocity using equations (7) and (8):
@@ -106,8 +106,8 @@ v1.Y = u1.Y;
 Then, we can rotate the velocities back to the original coordinate system and assign the transformed velocities to our bodies:
 
 ```csharp
-A.Velocity = Vector2.Transform(v0, Matrix.CreateRotationZ(-angle));
-B.Velocity = Vector2.Transform(v1, Matrix.CreateRotationZ(-angle));
+A.Velocity = Vector2.Transform(v0, Matrix.CreateRotationZ(angle));
+B.Velocity = Vector2.Transform(v1, Matrix.CreateRotationZ(angle));
 ```
 
 Some notes on this process:
