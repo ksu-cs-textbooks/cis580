@@ -51,25 +51,25 @@ public void Draw(GameTime gameTime)
     // assuming offset is the calculated offset
 
     offsets[0] = offset;
-    offsets[1] = 0.666f * offset; // 1/3 the main layer's speed
-    offsets[2] = 0.333f * offset; // 2/3 the main layer's speed
+    offsets[1] = 0.666f * offset; // 2/3 the main layer's speed
+    offsets[2] = 0.333f * offset; // 1/3 the main layer's speed
 
     // Create the translation matrix representing the first layer's offset
-    Matrix transform = Matrix.CreateTranslation(offset[2].X, offset[2].Y, 0);
+    Matrix transform = Matrix.CreateTranslation(offsets[2].X, offsets[2].Y, 0);
     // Draw the transformed game world
     spriteBatch.Begin(transformMatrix: transform);
     // TODO: Draw third layer's sprites
     spriteBatch.End();
 
     // Create the translation matrix representing the second layer's offset
-    Matrix transform = Matrix.CreateTranslation(offset[1].X, offset[1].Y, 0);
+    transform = Matrix.CreateTranslation(offsets[1].X, offsets[1].Y, 0);
     // Draw the transformed game world
     spriteBatch.Begin(transformMatrix: transform);
     // TODO: Draw second layer's sprites
     spriteBatch.End();
 
     // Create the translation matrix representing the first layer's offset
-    Matrix transform = Matrix.CreateTranslation(offset[0].X, offset[0].Y, 0);
+    transform = Matrix.CreateTranslation(offsets[0].X, offsets[0].Y, 0);
     // Draw the transformed game world
     spriteBatch.Begin(transformMatrix: transform);
     // TODO: Draw first layer's sprites
@@ -96,7 +96,7 @@ public void Draw(GameTime gameTime)
     spriteBatch.End();
 
     // Create the translation and scale matrix representing the second layer's offset and resizing
-    Matrix transform = Matrix.CreateTranslation(offset[1].X, offset[1].Y, 0) * Matrix.CreateScale(0.666f);
+    Matrix transform = Matrix.CreateTranslation(offset.X, offset.Y, 0) * Matrix.CreateScale(0.666f);
     // Draw the transformed game world
     spriteBatch.Begin(transformMatrix: transform);
     // TODO: Draw second layer's sprites
